@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g data-name="사각형 23067" transform="translate(2)" style="stroke:#707070;stroke-width:1.5px;fill:none">
+        <rect width="20" height="24" rx="2" style="stroke:none"/>
+        <rect x=".75" y=".75" width="18.5" height="22.5" rx="1.25" style="fill:none"/>
+    </g>
+    <g data-name="타원 237" transform="translate(5 2)" style="stroke:#707070;stroke-width:1.5px;fill:none">
+        <circle cx="7" cy="7" r="7" style="stroke:none"/>
+        <circle cx="7" cy="7" r="6.25" style="fill:none"/>
+    </g>
+    <g data-name="타원 236" transform="translate(8 5)" style="stroke:#707070;stroke-width:1.5px;fill:none">
+        <circle cx="4" cy="4" r="4" style="stroke:none"/>
+        <circle cx="4" cy="4" r="3.25" style="fill:none"/>
+    </g>
+    <g data-name="타원 235" transform="translate(11 8)" style="stroke:#707070;stroke-width:1.5px;fill:#fff">
+        <circle cx="1" cy="1" r="1" style="stroke:none"/>
+        <circle cx="1" cy="1" r=".25" style="fill:none"/>
+    </g>
+    <g data-name="타원 238" transform="translate(10 18)" style="stroke:#707070;stroke-width:1.5px;fill:#fff">
+        <circle cx="2" cy="2" r="2" style="stroke:none"/>
+        <circle cx="2" cy="2" r="1.25" style="fill:none"/>
+    </g>
+</svg>

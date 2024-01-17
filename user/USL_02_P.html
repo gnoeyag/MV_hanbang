@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>분양 지도 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/mptl/h_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+<section id="wrapper" class="wrapper mapWrapper02"> <!--지도 전용 mapWrapper02 class 추가-->
+	<header>
+		<button type="button" class="btprev">이전</button>
+		<h1 class="titPage">분양 지도</h1>
+	</header>
+	
+	<div id="container" class="container">
+		<!-- start of contents -->
+		
+		<!--검색 필드-->
+		<div class="decoSearch">
+			<a href="#" class="searchWord">
+				<strong class="keyword">서울 중구 도렴동</strong>
+			</a>
+			<button type="button" class="btFilter layPopBtn" data-id="pop_searchSetting">필터</button>
+		</div>
+		
+		
+		<div class="btnSwiper type02">
+			<button type="button" class="btnDefault btnRound isSelected" data-controls="anchorTabContents01">아파트 +2</button>
+			<button type="button" class="btnDefault btnRound isSelected" data-controls="anchorTabContents02">접수예정, 접수중, 접수마감, 입주예정, 입주모집</button>
+			<button type="button" class="btnDefault btnRound isSelected" data-controls="anchorTabContents03">면적 전체</button>
+		</div>
+		<!--//검색 필드-->
+		
+		
+		
+		<div class="mapArea">
+			<!--sample 지도 이미지 : 작업시에는 지워주세요!-->
+			<img src="/images/mptl/dummy/@img_map_vertical.jpg" alt="" style="position:absolute;top:0;left:0">
+			
+			<!--좌측 컨트롤 영역-->
+			<div class="mapControl">
+				<button type="button" class="ico icoMyPosition"><span class="hidden">현재 위치</span></button>
+				<div class="group">
+					<button type="button" class="ico icoMapPlus"><span class="hidden">지도 확대</span></button>
+					<button type="button" class="ico icoMapMinus"><span class="hidden">지도 축소</span></button>
+				</div>
+			</div>
+			<!--//좌측 컨트롤 영역-->
+			
+			<!--우측 컨트롤 영역-->
+			<div class="featureControl">
+				<div class="item">
+					<button type="button" class="ico icoSetting layPopBtn" data-id="pop_mapSetting">설정</button>
+				</div>
+				<div class="item">
+					<div class="option tool">
+						<button type="button" class="ico icoDrawing">그리기</button>
+						<button type="button" class="ico icoDistance">거리재기</button>
+					</div>
+					<button type="button" class="ico icoTool isCurrent">도구</button>
+				</div>
+			</div>
+			<!--//우측 컨트롤 영역-->
+			
+			<!--지도 비율-->
+			<div class="mapRate">
+				<span class="hidden">지도 비율</span>
+				<span class="mapSizeRate">500m</span>
+			</div>
+			<!--//지도 비율-->
+			
+			<!--관심 버튼-->
+			<div class="favoriteArea">
+				<input type="checkbox" class="icoFavorite" id="favorite" name="favorite">
+				<label for="favorite"><span>관심 지역 등록</span></label>
+			</div>
+			<!--//관심 버튼-->
+			
+			<!--역세권 버튼 -->
+			<button type="button" class="btnSubway" style="top:193px;left:130px">경복궁역</button>
+			<button type="button" class="btnSubway" style="top:260px;left:163px">광화문역</button>
+			<!--//역세권 버튼 -->
+			
+			<!--매물 수 버튼-->
+			<!-- class명 참고 :  sizeSmall : 매물수 1~9 / sizeMedium : 매물수 10~99 / sizeLarge : 매물수 100 이상 -->
+			<div class="saleCount sizeSmall" style="top:142px;left:70px">
+				<strong class="count" role="button"><span class="hidden">매물 수</span>9</strong>
+			</div>
+			<div class="saleCount sizeMedium" style="top:297px;left:254px">
+				<strong class="count" role="button"><span class="hidden">매물 수</span>51</strong>
+			</div>
+			<!--매물 숫자 선택 시 isActive 클래스 추가-->
+			<div class="saleCount sizeLarge isActive" style="top:260px;left:100px">
+				<strong class="count" role="button"><span class="hidden">매물 수</span>101</strong>
+			</div>
+			<!--//매물 수 버튼-->
+			
+			<!--안전 / 편의 시설 LP 내에서 시설 선택 시, 아이콘 노출-->
+			<i class="icoPlace convenience" style="top:30px;left:60px"><span class="placeName">세븐일레븐 광화문2호점</span></i>
+			<i class="icoPlace medical" style="top:50px;left:70px"><span class="placeName">ㅇㅇ병원</span></i>
+			<i class="icoPlace shopping" style="top:70px;left:90px"><span class="placeName">롯데 백화점</span></i>
+			<i class="icoPlace gym" style="top:90px;left:70px"><span class="placeName">ㅇㅇ필라테스</span></i>
+			<i class="icoPlace traffic" style="top:40px;left:120px"><span class="placeName">버스정류장</span></i>
+			<i class="icoPlace police isActive" style="top:35px;left:160px"><span class="placeName">서대문 경찰서</span></i> <!--아이콘 클릭시 말풍선 노출 : isActive 클래스 추가-->
+			<i class="icoPlace cctv" style="top:75px;left:130px"><span class="hidden">cctv</span></i>
+			<!--//안전 / 편의 시설 LP 내에서 시설 선택 시, 아이콘 노출-->
+			
+			
+			<!-- wrap div 클래스 삭제하여 전달드립니다. 개발작업시 필요하시면 말씀주세요 -->
+			<div class="ingWrap" style="position:absolute;top:120px;left:50%;transform:translateX(-50%);z-index:10;"><!-- 2023.09.05 클래스 추가 -->
+				<strong class="popBubPrice">분양가 6.8억~</strong>
+				<button type="button" class="btnDefault btnPop">입주예정</button>
+			</div>
+			<!--// wrap div 클래스 삭제하여 전달드립니다. 개발작업시 필요하시면 말씀주세요 -->
+			
+			
+			<!--거리재기-->
+			<div class="distance distanceLabel start" style="display:block;top:200px;left:40px">
+				<span class="text">시작점</span>
+				<i class="distance distancePoint start" style="display:block;top:22px;left:38px"></i>
+			</div>
+			
+			<!--샘플입니다. 라인 색상 : #ff694a  , rgb(254 105 74) -->
+			<span class="line" style="position:absolute;top:284px;left:9px;display:block;width:115px;height:2px;background:#ff694a;transform:rotate(107deg);z-index:5"></span>
+			
+			<i class="distance distancePoint" style="display:block;top:337px;left:45px"></i>
+			<div class="distance distanceLabel middle" style="display:block;top:350px;left:31px">
+				<span class="num">481</span><span class="unit">m</span>
+			</div>
+			
+			<!--샘플입니다. 라인 색상 : #ff694a  , rgb(254 105 74) -->
+			<span class="line" style="position:absolute;top:305px;left:44px;display:block;width:150px;height:2px;background:#ff694a;transform:rotate(150deg);z-index:5"></span>
+			
+			<i class="distance distancePoint" style="display:block;top:265px;left:175px"></i>
+			<div class="distance distanceSummary" style="display:block;top:275px;left:187px">
+				<dl class="distanceResult">
+					<dt><span class="text">총 거리</span></dt>
+					<dd><span class="num totDistance">481</span><span class="unit">m</span></dd>
+					<dt><span class="text">도보</span></dt>
+					<dd><span class="num workTime">7</span><span class="text">분</span></dd>
+					<dt><span class="text">자전거</span></dt>
+					<dd><span class="num bclTime">2</span><span class="text">분</span></dd>
+				</dl>
+				<button type="button" class="icBtn icDelS">레이어 닫기</button>
+			</div>
+			<!--//거리재기-->
+			
+			<!--그리기 패스 삭제 버튼-->
+			<button type="button" class="ico_drawClear"><span class="hidden">그리기 패스 삭제</span></button><!-- 2023.09.18 style 삭제 -->
+			<!--//그리기 패스 삭제 버튼-->
+		
+		</div>
+		
+		<!--하단 목록 레이어-->
+		<div class="listDestination">
+			<!--지도 위 매물, 단지, 중개사무소 아이콘(말풍선) 선택 시 half 추가 -->
+			<!--목록이 1개 일 경우 oneList 추가-->
+			<!--목록 이외 지도 영역 터치 시 half 또는 oneList 클래스 삭제됨 -->
+			
+			<div class="destiWrap">
+				<button type="button" class="dragBtn">매물정보 보기</button>
+				<!--목록이 1개 일 경우 탭 비노출-->
+				<ul class="tabType01">
+					<li><a href="#" role="button" aria-selected="true">분양 28,352</a></li>
+				</ul>
+				<div class="scrollArea">
+					
+					<div id="tabContTotalWrap" class="tabContTotalWrap">
+						<div class="tabInner">
+							<!--[D] 활성화 된 탭 컨텐츠, 해당 영역 안에서 토글로 보여짐-->
+							
+							<!--매물-->
+							<ul class="objectList">
+								<li>
+									<article class="figSec">
+										<div class="figSecItem">
+											<a href="#" class="defineSec">
+												<span class="flag accept02">접수중</span> <span class="flagLabel">2023.04.29 특별공급</span>  <!--20230831 flag class변경 및 기타 케이스 추가-->
+												<strong class="defineSecTitle sizeUp">새절역 두산위브 트레지움(신사1구역 재개발)</strong> <!--20230821 sizeUp class 추가-->
+												<p class="defineSecNormal">서울 은평구 신사동</p>
+												<span class="defineSecInfo">
+													<em class="item">분양가 6억 7,980</em>
+													<em class="item">아파트</em>
+													<em class="item">235세대</em>
+													<em class="item">민간분양</em>
+												</span>
+											</a>
+										</div>
+									</article>
+								</li>
+								<li>
+									<article class="figSec">
+										<div class="figSecItem">
+											<a href="#" class="defineSec">
+												<span class="flag accept01">접수예정</span> <span class="flagLabel">2023.04.29 특별공급</span>
+												<strong class="defineSecTitle sizeUp">새절역 두산위브 트레지움(신사1구역 재개발)</strong> <!--20230821 sizeUp class 추가-->
+												<p class="defineSecNormal">서울 은평구 신사동</p>
+												<span class="defineSecInfo">
+													<em class="item">분양가 6억 7,980</em>
+													<em class="item">아파트</em>
+													<em class="item">235세대</em>
+													<em class="item">민간분양</em>
+												</span>
+											</a>
+										</div>
+									</article>
+								</li>
+								<li>
+									<article class="figSec">
+										<div class="figSecItem">
+											<a href="#" class="defineSec">
+												<span class="flag accept04">입주예정</span> <span class="flagLabel">2023.04.29 특별공급</span>
+												<strong class="defineSecTitle sizeUp">새절역 두산위브 트레지움(신사1구역 재개발)</strong> <!--20230821 sizeUp class 추가-->
+												<p class="defineSecNormal">서울 은평구 신사동</p>
+												<span class="defineSecInfo">
+													<em class="item">분양가 6억 7,980</em>
+													<em class="item">아파트</em>
+													<em class="item">235세대</em>
+													<em class="item">민간분양</em>
+												</span>
+											</a>
+										</div>
+									</article>
+								</li>
+								<li>
+									<article class="figSec">
+										<div class="figSecItem">
+											<a href="#" class="defineSec">
+												<span class="flag accept05">입주모집</span> <span class="flagLabel">2023.04.29 특별공급</span>
+												<strong class="defineSecTitle sizeUp">새절역 두산위브 트레지움(신사1구역 재개발)</strong> <!--20230821 sizeUp class 추가-->
+												<p class="defineSecNormal">서울 은평구 신사동</p>
+												<span class="defineSecInfo">
+													<em class="item">분양가 6억 7,980</em>
+													<em class="item">아파트</em>
+													<em class="item">235세대</em>
+													<em class="item">민간분양</em>
+												</span>
+											</a>
+										</div>
+									</article>
+								</li>
+								<li>
+									<article class="figSec">
+										<div class="figSecItem">
+											<a href="#" class="defineSec">
+												<span class="flag accept03">접수마감</span> <span class="flagLabel">2023.04.29 특별공급</span>
+												<strong class="defineSecTitle sizeUp">새절역 두산위브 트레지움(신사1구역 재개발)</strong> <!--20230821 sizeUp class 추가-->
+												<p class="defineSecNormal">서울 은평구 신사동</p>
+												<span class="defineSecInfo">
+													<em class="item">분양가 6억 7,980</em>
+													<em class="item">아파트</em>
+													<em class="item">235세대</em>
+													<em class="item">민간분양</em>
+												</span>
+											</a>
+										</div>
+									</article>
+								</li>
+							</ul>
+							<!--//매물-->
+						
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		<!--//하단 목록 레이어-->
+		
+		<!-- // end of contents -->
+	</div><!-- //container -->
+	
+	
+</section>
+
+<!-- toastPopup -->
+<div class="toastPopup" style="display:block"><!-- 토스트팝업 띄울때 display:block 시켜줌.-->
+	<p class="txt">관심 지역으로 등록되었어요</p>
+</div>
+<!-- //toastPopup -->
+
+
+<!-- 지도 설정 BS -->
+<section id="pop_mapSetting" class="layPop layBtm" tabindex="0">
+	<header>
+		<h2 class="titLay">지도 설정</h2>
+	</header>
+	<div class="layContainer" tabindex="0">
+		<div class="layContent">
+			
+			<h3 class="titDep4 mt0">지도 유형</h3>
+			<ul class="frmBox mapTypeSelect">
+				<li><input type="radio" id="normal" name="chkMapType" class="img_mapTypeNormal" checked><label for="normal">일반</label></li>
+				<li><input type="radio" id="land" name="chkMapType" class="img_mapTypeLand"><label for="land">지적</label></li>
+				<li><input type="radio" id="terrain" name="chkMapType" class="img_mapTypeTerrain"><label for="terrain">지형</label></li>
+			</ul>
+			
+			<h3 class="titDep4">안전 / 편의 시설</h3>
+			<ul class="frmBox selectFacility">
+				<li><input type="radio" id="convenience" name="chkFacility" class="icon_convenience"><label for="convenience">편의점</label></li>
+				<li><input type="radio" id="medical" name="chkFacility" class="icon_medical"><label for="medical">의료</label></li>
+				<li><input type="radio" id="shopping" name="chkFacility" class="icon_shopping"><label for="shopping">쇼핑</label></li>
+				<li><input type="radio" id="gym" name="chkFacility" class="icon_gym"><label for="gym">운동</label></li>
+				<li><input type="radio" id="traffic" name="chkFacility" class="icon_traffic"><label for="traffic">교통</label></li>
+				<li><input type="radio" id="police" name="chkFacility" class="icon_police"><label for="police">치안</label></li>
+				<li><input type="radio" id="cctv" name="chkFacility" class="icon_cctv"><label for="cctv">CCTV</label></li>
+			</ul>
+			
+			<p class="referText mt16">안전/편의 시설은 100m 비율부터 노출돼요.</p>
+		</div>
+		<div class="popBtns">
+			<div class="inner btnArea type02">
+				<button type="button" class="btnDefault btnL action">확인</button>
+			</div>
+		</div>
+	</div><!-- //layContainer-->
+	<button type="button" class="closeL">팝업 닫기</button>
+</section>
+<!--// 지도 설정 BS -->
+
+<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/mptl/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/mptl/swiper.min.js"></script>
+<script type="text/javascript" src="/js/mptl/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/mptl/m_common.js"></script>
+
+</html>
+

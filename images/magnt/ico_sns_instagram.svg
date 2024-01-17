@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g data-name="icon_24px_instagram" transform="translate(-101 -16)">
+        <circle data-name="타원 199" cx="12" cy="12" r="12" transform="translate(101 16)" style="fill:#b7b7b7"/>
+        <path data-name="패스 65893" d="M7.466 0H3.029A3.029 3.029 0 0 0 0 3.029v4.437A3.029 3.029 0 0 0 3.029 10.5h4.437A3.029 3.029 0 0 0 10.5 7.466V3.029A3.029 3.029 0 0 0 7.466 0" transform="translate(107.753 22.753)" style="fill:#fff"/>
+        <path data-name="패스 65894" d="M20 18.218a2.864 2.864 0 1 0 2.871 2.86A2.891 2.891 0 0 0 20 18.218" transform="translate(92.987 6.918)" style="fill:#b7b7b7"/>
+        <path data-name="패스 65891" d="M19.053 18.218a1.909 1.909 0 1 0 1.914 1.906 1.927 1.927 0 0 0-1.914-1.906" transform="translate(93.941 7.873)" style="fill:#fff"/>
+        <path data-name="패스 65895" d="M17.891 18.218a.74.74 0 1 0 .745.739.748.748 0 0 0-.745-.739" transform="translate(98.376 6.093)" style="fill:#b7b7b7"/>
+    </g>
+</svg>

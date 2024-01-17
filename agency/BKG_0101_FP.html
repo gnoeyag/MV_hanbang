@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>계약서 목록 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- 필터 Layer -->
+	<section id="pop_filter" class="layPop layFull btTopAdd" tabindex="0" style="display: block;">
+		<header>
+			<h2 class="titLay">계약서 조회 설정</h2>
+		</header>
+	
+		<div class="layContainer" tabindex="0">
+			<div class="layContent">
+                <div id="laypopTop"></div>
+                <ul class="inpList">
+                    <li class="inpFrm">
+                        <label for="inpCalSearch" class="titInp">날짜 조회</label>
+                        <span class="inpA">
+                            <div class="selectWrap">
+                                <select id="inpCalSearch" title="계약일 선택" data-msg="전체" data-header="날짜조회">
+                                    <option value="01">전체</option>
+                                    <option value="02">계약일</option>
+                                    <option value="03">중도1차일</option>
+                                    <option value="04">중도2차일</option>
+                                    <option value="05">잔금일</option>
+                                    <option value="06">임대만기일</option>
+                                    <option value="07">(미입력)계약일</option>
+                                    <option value="08">(미입력)중도1차일</option>
+                                    <option value="09">(미입력)중도2차일</option>
+                                    <option value="10">(미입력)잔금일</option>
+                                </select>
+                            </div>
+                        </span>
+                        <div class="calendar">
+                            <div class="inpA">
+                                <input type="date" id="" data-placeholder="YYYY-MM-DD" required>
+                            </div>
+                            <span class="wave">~</span>
+                            <div class="inpA">
+                                <input type="date" id="" data-placeholder="YYYY-MM-DD" required>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="inpFrm">
+                        <strong class="titInp">정렬 기준</strong>
+                        <ul class="frmBox col02">
+                            <li><input type="radio" id="sortBy01" name="sortBy" checked><label for="sortBy01">계약일</label></li>
+                            <li><input type="radio" id="sortBy02" name="sortBy"><label for="sortBy02">계약서 번호</label></li>
+                        </ul>
+                    </li>
+                    <li class="inpFrm">
+                        <strong class="titInp">계약 상태</strong>
+                        <ul class="frmBox col02">
+                            <li><input type="radio" id="contractStatus01" name="contractStatus" checked><label for="contractStatus01">전체</label></li>
+                            <li><input type="radio" id="contractStatus02" name="contractStatus"><label for="contractStatus02">작성중</label></li>
+                            <li><input type="radio" id="contractStatus03" name="contractStatus"><label for="contractStatus03">진행중</label></li>
+                            <li><input type="radio" id="contractStatus04" name="contractStatus"><label for="contractStatus04">계약완료</label></li>
+                        </ul>
+                    </li>
+                    <li class="inpFrm doubleSelect">
+                        <label for="typeContract" class="titInp">계약서 종류/유형</label>
+                        <span class="inpA">
+                            <div class="selectWrap">
+                                <select id="typeContract" title="계약서 종류 선택" data-msg="전체" data-header="계약서 종류">
+                                    <option value="01">전체</option>
+                                    <option value="02">부동산</option>
+                                    <option value="03">분양권</option>
+                                    <option value="04">부동산</option>
+                                    <option value="05">권리양도양수</option>
+                                    <option value="06">표준임대차계약서</option>
+                                    <option value="07">상가권리금계약서</option>
+                                    <option value="08">상가임대차계약서</option>
+                                    <option value="09">조합원입주권매매계약서</option>
+                                    <option value="10">전대차계약서</option>
+                                </select>
+                            </div>
+                        </span>
+                        <span class="inpA">
+                            <div class="selectWrap">
+                                <select id="typeContract" title="계약서 유형 선택" data-msg="전체" data-header="계약서 유형">
+                                    <option value="01">아파트</option>
+                                    <option value="02">주상복합</option>
+                                    <option value="03">연립주택</option>
+                                    <option value="04">다세대주택</option>
+                                    <option value="05">다가구주택</option>
+                                    <option value="06">다중주택</option>
+                                    <option value="07">도시형생활주택</option>
+                                    <option value="08">주택</option>
+                                    <option value="09">오피스텔</option>
+                                    <option value="10">원룸</option>
+                                    <option value="11">상가</option>
+                                    <option value="12">상가주택</option>
+                                    <option value="13">상가건물</option>
+                                    <option value="14">건물</option>
+                                    <option value="15">사무실</option>
+                                    <option value="16">토지</option>
+                                    <option value="17">공장</option>
+                                    <option value="18">창고</option>
+                                    <option value="19">부동산</option>
+                                </select>
+                            </div>
+                        </span>
+                    </li>
+                    <li class="inpFrm doubleSelect">
+                        <label for="typeContract" class="titInp">거래 유형</label>
+                        <span class="inpA">
+                            <div class="selectWrap">
+                                <select id="typeContract" title="거래유형 선택" data-msg="전체" data-header="거래유형">
+                                    <option value="01">전체</option>
+                                    <option value="02">매매</option>
+                                    <option value="03">전세</option>
+                                    <option value="04">월세</option>
+                                    <option value="05">연세</option>
+                                </select>
+                            </div>
+                        </span>
+                    </li>
+                    <li class="inpFrm">
+                        <strong class="titInp">중개 유형</strong>
+                        <ul class="frmBox col03">
+                            <li><input type="radio" id="brokerageType01" name="brokerageType" checked><label for="brokerageType01">전체</label></li>
+                            <li><input type="radio" id="brokerageType02" name="brokerageType"><label for="brokerageType02">단독중개</label></li>
+                            <li><input type="radio" id="brokerageType03" name="brokerageType"><label for="brokerageType03">공동중개</label></li>
+                        </ul>
+                    </li>
+                </ul>
+			</div>
+			<div class="popBtns">
+				<div class="inner">
+					<button type="button" class="btnDefault btnL btLineP">초기화</button>
+					<button type="button" class="btnDefault btnL action">적용하기</button>
+				</div>
+			</div>
+		</div><!-- //layCont-->
+		<button type="button" class="closeL">팝업 닫기</button>
+        <button type="button" class="btTopL" onclick="location.href='#laypopTop'">페이지 상단으로 이동</button>
+	
+	</section>
+	<!-- //필터 Layer -->
+
+</body>
+
+<script type="text/javascript" src="/js/magnt/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/magnt/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/magnt/swiper.min.js"></script>
+<script type="text/javascript" src="/js/magnt/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/magnt/m_common.js"></script>
+
+</html>

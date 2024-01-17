@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>중개 요청 정보 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/mptl/h_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">중개 요청 정보</h1>
+		</header>
+
+		<div id="container" class="container">
+			<!-- start of contents -->
+
+
+
+			<!-- // end of contents -->
+		</div><!-- //container -->
+
+		<div class="floatingBtns">
+			<div class="btnArea type02">
+				<button type="button" class="btnDefault btnL">삭제</button>
+				<button type="button" class="btnDefault btnL action">목록으로 이동</button>
+			</div>
+		</div>
+
+		<aside>
+			<div class="asideRight">
+				<button type="button" class="btTop">페이지 상단으로 이동</button><!-- 2023.08.16 onClick 이벤트 삭제 -->
+			</div>
+		</aside>
+	</section>
+
+
+	<!--중개 요청 정보 FP-->
+	<section id="pop_requestInfoFP" class="layPop layFull" tabindex="0"><!-- 스크롤 시 layScroll 클래스 추가 -->
+		<header>
+			<h2 class="titLay">중개 요청 정보</h2>
+		</header>
+
+		<div class="layContainer" tabindex="0">
+			<div class="layContent">
+
+				<h2 class="hidden">중개 요청 정보 상세</h2>
+
+				<div class="detailInfoList mt0">
+					<dl class="list">
+						<dt class="subject">등록자</dt>
+						<dd class="cont">이고객</dd>
+						<dt class="subject">휴대폰 번호</dt>  <!--20230731 수정 - 문구 기획 수정 1.7v -->
+						<dd class="cont">010-1234-5678</dd>
+						<dt class="subject">등록일</dt>
+						<dd class="cont">2023.05.15</dd>
+					</dl>
+				</div>
+				<div class="detailInfoList divider">
+					<dl class="list">
+						<dt class="subject">매물 종류</dt>
+						<dd class="cont">아파트</dd>
+						<dt class="subject">거래 유형</dt>
+						<dd class="cont">매매</dd>
+						<dt class="subject">거래 금액</dt>
+						<dd class="cont">4억 5,000</dd>
+						<dt class="subject">매물 주소</dt>
+						<dd class="cont">
+							서울 동작구 신대방동 724 <br>
+							보라매아파트 101동 1306호
+						</dd>
+						<dt class="subject">방/욕실 수</dt>
+						<dd class="cont">3/2개</dd>
+						<dt class="subject">테마 정보</dt>
+						<dd class="cont">풀옵션, 신축 5년 이내, 전세자금대출 가능, 역세권</dd>
+					</dl>
+
+					<article class="mapWrap mt24">
+						<div class="map"> <!--20230802 수정 : 디자인 변경-->
+							<div class="inner">
+								<img src="/images/mptl/dummy/@img_map.jpg" alt="">
+								<strong class="icoPin" style="top:50px;left:164px"><span class="hidden">현재위치</span></strong>
+								<div class="mapBtnArea">
+									<span class="frmMap icNormal"><input type="radio" id="radMapNormal02" name="radMapSel"><label for="radMapNormal02">일반지도로 보기</label></span>
+									<span class="frmMap icRoadview"><input type="radio" id="radMapRoad02" name="radMapSel"><label for="radMapRoad02">로드맵으로 보기</label></span>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<!--중개사무소 직접 선택한 경우-->
+				<h2 class="titDep4 mt32">중개 요청한 중개사무소</h2>
+				<ul class="anchorList">
+					<li>
+						<div class="item">
+							<em class="tit">대성공인중개사</em>
+							<p class="cont">서울 동작구 대방동 (대표 김대성)</p>
+						</div>
+					</li>
+					<li>
+						<div class="item">
+							<em class="tit">굿모닝공인중개사사무소</em>
+							<p class="cont">서울 동작구 상도동 (대표 오아침)</p>
+						</div>
+					</li>
+				</ul>
+				<p class="referText">최대 5곳의 중개사무소에서 중개를 수락할 수 있어요.</p><!--20230803 수정 : 문구변경-->
+				<!--//중개사무소 직접 선택한 경우-->
+
+				<!--중개사무소 자동 선택한 경우-->
+				<div class="titWrap mt32">
+					<h2 class="titDep4 mt0">중개 요청한 중개사무소</h2>
+					<span class="count">총 <strong class="pointCol01">20</strong>곳</span> <!--20230803 수정 : 문구변경-->
+				</div>
+				<p class="referText">최대 5곳의 중개사무소에서 중개를 수락할 수 있어요.</p><!--20230803 수정 : 문구변경-->
+				<!--//중개사무소 자동 선택한 경우-->
+			</div>
+
+		</div>
+		<button type="button" class="closeL">팝업 닫기</button>
+	</section>
+	<!--//중개 요청 정보 FP-->
+
+
+
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/mptl/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/mptl/swiper.min.js"></script>
+<script type="text/javascript" src="/js/mptl/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/mptl/m_common.js"></script>
+
+<script>
+	$(function(){
+		// 중개 요청 정보 미리보기 팝업 실행
+		mvJs.popup.show($('#pop_requestInfoFP'));
+	})
+</script>
+
+</html>
+

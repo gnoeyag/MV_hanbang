@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>페이지 타이틀 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+<style>
+	.anchorTab{background:pink;height:650px}
+</style>
+</head>
+
+<body>
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">페이지 타이틀페이지 타이틀페이지 타이틀페이지 타이틀페이지 타이틀페이지 타이틀</h1>
+			<div class="menuWrap">
+				<button type="button" class="btNav" aria-expanded="false">메뉴</button>
+				<nav>
+					<div class="navInner">메뉴영역</div>
+				</nav>
+			</div>
+		</header>
+	
+		<div id="container" class="container">
+			<!-- start of contents -->
+			<a href="#" class="layPopBtn" data-id="pop_sampleM">Bottom layer Popup</a><br><br>
+			<div style="height:500px"></div>
+			<div class="tabWrap viewTab anchorTabFixed">
+				<ul class="tabType02">
+					<li><a href="#" role="button" aria-selected="true" data-controls="anchorTabContents01">앵커 스크롤 탭 고정</a></li>
+					<li><a href="#" role="button" aria-selected="false" data-controls="anchorTabContents02">스크롤 탭1</a></li>
+					<li><a href="#" role="button" aria-selected="false" data-controls="anchorTabContents03">스크롤 탭2</a></li>
+					<li><a href="#" role="button" aria-selected="false" data-controls="anchorTabContents04">법정동</a></li>
+				</ul>
+			</div>
+		
+			<div id="anchorTabContents01" class="anchorTab">
+				<div class="tabInner">
+					탭 컨텐츠1
+				</div>
+			</div>
+		
+			<div id="anchorTabContents02" class="anchorTab">
+				<div class="tabInner">
+					탭 컨텐츠2
+				</div>
+			</div>
+		
+			<div id="anchorTabContents03" class="anchorTab">
+				<div class="tabInner">
+					탭 컨텐츠3
+				</div>
+			</div>
+		
+			<div id="anchorTabContents04" class="anchorTab">
+				<div class="tabInner">
+					탭 컨텐츠4
+				</div>
+			</div>
+
+			<input type="text">
+			컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>
+
+			<!-- // end of contents -->
+		</div><!-- //container -->
+		
+		<div class="floatingBtns">
+			<div class="btnArea">
+				<button type="button" class="btnDefault btnL">취소</button>
+				<button type="button" class="btnDefault btnL action">확인</button>
+			</div>
+		</div>
+		<aside>
+			<div class="asideRight">
+				<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+				<div class="pageAside">
+					<button type="button" class="btTool" aria-expanded="false">매물등록</button>
+					<div class="btnWraps">
+						<button type="button" class="btSave">임시저장</button>
+						<button type="button" class="btFind">구합니다</button>
+						<button type="button" class="btSale">있습니다</button>
+					</div>
+				</div>
+			</div>
+		</aside>
+	</section>
+	
+	<!-- toastPopup -->
+	<div class="toastPopup" style="display:block"><!-- 토스트팝업 띄울때 display:block 시켜줌.-->
+		<p class="txt">관심 지역으로 등록되었어요.</p>
+	</div>
+	<!-- //toastPopup -->
+	
+	<section id="pop_sampleM" class="layPop layBtm" tabindex="0">
+		<header>
+			<h2 class="titLay">타이틀</h2>
+		</header>
+	
+		<div class="layContainer" tabindex="0">
+			<div class="layContent">
+				<div class="selectWrap">
+					<select id="inpName" title="탑승자 선택" data-msg="선택하세요." data-header="탑승자 선택">
+						<option value="01" data-option="">LEE PASS</option>
+						<option value="02">LEE PASS2</option>
+						<option value="03">LEE PASS3</option>
+					</select>
+				</div>
+				<input type="text">
+				컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>컨텐츠 영역<br>
+			</div>
+			<div class="popBtns">
+				<div class="inner">
+					<button type="button" class="btnDefault btnL">이전</button>
+					<button type="button" class="btnDefault btnL action">다음</button>
+				</div>
+			</div>
+		</div><!-- //layContainer-->
+		<button type="button" class="closeL">팝업 닫기</button>
+	
+	</section>
+
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/magnt/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/magnt/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/magnt/swiper.min.js"></script>
+<script type="text/javascript" src="/js/magnt/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/magnt/m_common.js"></script>
+
+</html>
+

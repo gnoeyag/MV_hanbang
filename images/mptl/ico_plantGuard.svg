@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g data-name="icon / icon_24px_facility_guard">
+        <g data-name="패스 65878" style="stroke-linecap:round;stroke-linejoin:round;fill:none">
+            <path d="m.761 19.949-3.018-3.958 4.342-3.839 6.116-1.2 6.28 1.2 4.174 3.839-3.07 3.958z" style="stroke:none" transform="translate(3.801 -8.95)"/>
+            <path d="m15.586 19.95 3.069-3.958-4.174-3.84-6.28-1.203-6.116 1.203-4.342 3.84 3.018 3.957h14.825m0 1.5H.76a1.5 1.5 0 0 1-1.193-.59L-3.449 16.9a1.5 1.5 0 0 1 .199-2.033l4.342-3.84a1.5 1.5 0 0 1 .704-.348l6.116-1.203a1.5 1.5 0 0 1 .571-.001l6.28 1.203a1.5 1.5 0 0 1 .734.37l4.174 3.839a1.5 1.5 0 0 1 .17 2.023l-3.07 3.958a1.5 1.5 0 0 1-1.185.58z" style="fill:#707070;stroke:none" transform="translate(3.801 -8.95)"/>
+        </g>
+        <path data-name="패스 65879" d="m7.514 17.75-1.97-1.736V13.3h3.893v2.713z" transform="translate(4.456 -8.301)" style="stroke:#707070;stroke-width:1.5px;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+        <g data-name="패스 65880" style="fill:none">
+            <path d="M-.135 0h11.564a1.018 1.018 0 0 1 .865 1.121L10.91 3.362c-.347.658-.8 1.121-1.282 1.121H1.654c-.478 0-.8-.547-1.235-1.121L-1 1.121A1.018 1.018 0 0 1-.135 0z" style="stroke:none" transform="translate(6.579 11)"/>
+            <path d="m1.016 1.5.64 1.01.14.191c.065.088.142.194.21.281h7.373c.053-.065.125-.17.204-.32l.024-.045.69-1.117H1.016M-.134 0h11.563c.478 0 .865.502.865 1.12L10.91 3.363c-.347.658-.804 1.12-1.282 1.12H1.654c-.477 0-.804-.547-1.234-1.12L-1 1.12C-1 .5-.613 0-.135 0z" style="fill:#707070;stroke:none" transform="translate(6.579 11)"/>
+        </g>
+        <g data-name="사각형 23075" style="stroke:#707070;stroke-width:1.5px;fill:none">
+            <path d="M0 0h18v4a9 9 0 0 1-9 9 9 9 0 0 1-9-9V0z" style="stroke:none" transform="translate(3.044 11)"/>
+            <path d="M.75.75h16.5V4A8.25 8.25 0 0 1 9 12.25 8.25 8.25 0 0 1 .75 4V.75z" style="fill:none" transform="translate(3.044 11)"/>
+        </g>
+    </g>
+</svg>

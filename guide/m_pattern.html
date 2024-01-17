@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>페이지 타이틀 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">페이지 타이틀페이지 타이틀페이지 타이틀페이지 타이틀페이지 타이틀페이지 타이틀</h1>
+		</header>
+	
+		<div id="container" class="container">
+			<!-- start of contents -->
+			<br><br><br>
+			<div class="tabWrap viewTab">
+				<ul class="tabType02">
+					<li><a href="#" role="button" aria-selected="true" data-controls="tabContents01">컨텐츠 변경</a></li>
+					<li><a href="#" role="button" aria-selected="false" data-controls="tabContents02">1/n 탭</a></li>
+					<li><a href="#" role="button" aria-selected="false" data-controls="tabContents03">1/n 탭</a></li>
+				</ul>
+			</div>
+			<div id="tabContents01" class="tabContentWrap tabON">
+				탭 컨텐츠 1
+			</div>
+		
+			<div id="tabContents02" class="tabContentWrap">
+				탭 컨텐츠 2
+			</div>
+		
+			<div id="tabContents03" class="tabContentWrap">
+				탭 컨텐츠 3
+			</div>
+
+			<ul class="inpList">
+				<li class="inpFrm inpDeleteAni"><!-- input value값 있을 때 삭제버튼 출력 -->
+					<label class="titInp" for="inpAptname">아파트명</label>
+					<span class="inpA">
+						<input type="text" id="inpAptname" placeholder="아파트명 입력">
+						<button type="button" class="icBtn icDel">삭제</button>
+					</span>
+				</li>
+				<li class="inpFrm inpDeleteAni">
+					<label class="titInp" for="inpAptname">아파트명</label>
+					<span class="inpA">
+						<input type="text" id="inpAptname" placeholder="아파트명 입력">
+						<button type="button" class="icBtn icDel">삭제</button>
+					</span>
+				</li>
+				<li class="inpFrm inpFrmType03">
+					<label for="inpSubDivi" class="titInp">단지명<span class="ness">필수입력 항목</span></label>
+					<span class="inpA">
+						<div class="selectWrap">
+							<select id="inpSubDivi" title="단지명 선택" data-msg="선택" data-header="단지명">
+								<option value="01">[연수동] 솔밭마을</option>
+								<option value="02">[연수동] 솔밭마을</option>rhd
+								<option value="03">[연수동] 솔밭마을</option>
+							</select>
+						</div>
+					</span>
+					<div class="absArea">
+						<button type="button" class="btnDefault btnXS">버튼명</button>
+						<button type="button" class="btnDefault btnXS">버튼명</button>
+					</div>
+				</li>
+				<li class="inpFrm">
+					<label class="titInp" for="inpAptname">매물 상태<span class="ness">필수입력 항목</span></label>
+					<span class="inpA">
+						<div class="selectWrap">
+							<select title="매물상태 선택" data-header="매물 상태">
+								<option value="01" selected>정상</option>
+								<option value="02">급</option>
+								<option value="03">전속</option>
+								<option value="04">단기임대</option>
+								<option value="05">세안고</option>
+								<option value="06">보류</option>
+								<option value="07">가망</option>
+								<option value="08">잠재</option>
+								<option value="08">타계</option>
+								<option value="08">단독중개</option>
+								<option value="08">임차인중개완료</option>
+								<option value="08">임대인중개완료</option>
+								<option value="08">매도인중개완료</option>
+								<option value="08">체결</option>
+							</select>
+						</div>
+					</span>
+					<div class="absArea">
+						<span class="frmInp txt"><input type="checkbox" id="chkAuction"><label for="chkAuction">경매</label></span>
+					</div>
+				</li>
+				<li class="inpFrm">
+					<strong class="titInp">매물 노출</strong>
+					<div class="inpA">
+						<ul class="togList">
+							<li><span class="btTog txt"><input type="checkbox" id="togDeal01" checked=""><label for="togDeal01">거래완료</label></span></li>
+							<li><span class="btTog txt"><input type="checkbox" id="togDeal02"><label for="togDeal02">전송종료</label></span></li>
+						</ul>
+					</div>
+				</li>
+				<li class="inpFrm tooltipWrap inpDeleteAni">
+					<label class="titInp" for="inpAptname">방향 기준<span class="ness">필수입력 항목</span></label>
+					<button type="button" class="btnTool" aria-expanded="false">설명보기</button>
+					<div class="tooltipCont">
+						<div class="context">
+							※ 제 6조(건축물 및 그 밖에 토지의 정착물에 관한 인터넷 표시 〮 광고 명시사항)12호에 따라 “방향”은 주거용 건축물의 경우 거실이나 안방 등 주실(主室)의 방향을 기준으로, 그 밖의 건축물은 주된 출입구의 방향을 기준으로 8가지 방향(동향, 서향, 남향, 북향, 북동향, 남동향, 남서향, 북서향)으로 표시하되, 그 기준을 함께 표시하여야 합니다.<br>
+							※ 네이버부동산 방향기준 항목 추가에 따라 한방거래정보망과의 데이터 연계를 위해 주거용 매물에 대해서 기존의 직접입력이 아닌 항목(거실, 안방) 선택으로 매물정보 기재 방식이 변경 되었습니다. 불편하시더라도 기존에 입력하신 회원님들께서는 매물수정 시 재선택을 하셔야 합니다. 불편을 드린점에 대해 양해부탁드립니다.</div>
+						<button type="button" class="btnClose">닫기</button>
+					</div>
+					<span class="inpA">
+						<input type="text" id="inpAptname" placeholder="아파트명 입력">
+						<button type="button" class="icBtn icDel">삭제</button>
+					</span>
+				</li>
+				<li class="inpFrm">
+					<label for="inpSubDivi" class="titInp">날짜조회</label>
+					<span class="inpA">
+						<div class="selectWrap">
+							<select id="inpSubDivi" title="계약일 선택" data-msg="전체" data-header="날짜조회">
+								<option value="01">계약일</option>
+								<option value="02">중도1차일</option>
+								<option value="03">중도2차일</option>
+								<option value="04">잔금일</option>
+								<option value="05">임대만기일</option>
+							</select>
+						</div>
+					</span>
+					<div class="calendar">
+						<div class="inpA">
+							<input type="date" id="" data-placeholder="날짜입력" required>
+						</div>
+						<span class="wave">~</span>
+						<div class="inpA">
+							<input type="date" id="" data-placeholder="날짜입력" required>
+						</div>
+					</div>
+				</li>
+				<li class="inpFrm doubleSelect"> <!-- selectbox 두개가 연속으로 올 경우 doubleSelect 클래스 사용 -->
+					<label for="typeContract" class="titInp">계약서 종류/유형</label>
+					<span class="inpA">
+						<div class="selectWrap">
+							<select id="typeContract" title="계약서 종류 선택" data-msg="전체" data-header="계약서 종류">
+								<option value="01">전체</option>
+								<option value="02">부동산</option>
+								<option value="03">분양권</option>
+								<option value="04">부동산</option>
+								<option value="05">권리양도양수</option>
+								<option value="06">표준임대차계약서</option>
+								<option value="07">상가권리금계약서</option>
+								<option value="08">상가임대차계약서</option>
+								<option value="09">조합원입주권매매계약서</option>
+								<option value="10">전대차계약서</option>
+							</select>
+						</div>
+					</span>
+					<span class="inpA">
+						<div class="selectWrap">
+							<select id="typeContract" title="계약서 유형 선택" data-msg="전체" data-header="계약서 유형">
+								<option value="01">아파트</option>
+								<option value="02">주상복합</option>
+								<option value="03">연립주택</option>
+								<option value="04">다세대주택</option>
+								<option value="05">다가구주택</option>
+								<option value="06">다중주택</option>
+								<option value="07">도시형생활주택</option>
+								<option value="08">주택</option>
+								<option value="09">오피스텔</option>
+								<option value="10">원룸</option>
+								<option value="11">상가</option>
+								<option value="12">상가주택</option>
+								<option value="13">상가건물</option>
+								<option value="14">건물</option>
+								<option value="15">사무실</option>
+								<option value="16">토지</option>
+								<option value="17">공장</option>
+								<option value="18">창고</option>
+								<option value="19">부동산</option>
+							</select>
+						</div>
+					</span>
+				</li>
+			</ul>
+			<br><br>
+
+			<span class="flag deal01">매매</span>
+			<span class="flag deal02">전세</span>
+			<span class="flag deal03">월세</span>
+			<span class="flag deal04">연세</span><br><br>
+
+			<span class="flag request01">매도</span>
+			<span class="flag request02">임대월세</span>
+			<span class="flag request03">임대전세</span>
+			<span class="flag request04">임차월세</span>
+			<span class="flag request05">임차전세</span>
+			<span class="flag request06">매수</span>
+			<span class="flag request07">투자</span>
+			<span class="flag request08">기타</span>
+			<span class="flag request09">현임차인</span>
+			<span class="flag request09">주인거주</span>
+			<br><br>
+
+			<span class="flag schedule01">매물</span>
+			<span class="flag schedule02">계약</span>
+			<span class="flag schedule03">고객</span>
+			<span class="flag schedule04">일반</span><br><br>
+
+			<span class="flag sthType">아파트</span>
+			<span class="flag sthType">아파트분양권</span>
+			<span class="flag sthType">주상복합</span>
+			<span class="flag sthType">상업용</span>
+			<span class="flag sthType">주거용</span><br><br>
+
+			<span class="flag write01">진행중</span>
+			<span class="flag write02">작성완료</span><br><br>
+
+			<span class="flag public01">공개</span>
+			<span class="flag public02">거래완료</span>
+			<span class="flag public03">전송종료</span>
+			<span class="flag public04">추천매물</span><br><br>
+
+			<span class="flag state01">급</span>
+			<span class="flag state02">추</span>
+			<span class="flag state03">경매</span><br><br>
+
+			<span class="flag special">아파트 전문</span><br><br>
+
+			<span class="flag sthDate01">검증매물 YYYY.MM.DD</span>
+			<span class="flag sthDate02">일반매물 YYYY.MM.DD</span>
+			<span class="flag sthDate03">전문매물</span><br><br>
+
+			<span class="flag live">LIVE</span>
+			<span class="flag photo">대표사진</span><br><br>
+
+			<span class="flag sales01">우수중개</span>
+			<span class="flag sales02">시세제공</span>
+			<span class="flag sales03">우수중개</span>
+			<br><br>
+
+			<span class="flag scheIng-01">임대만기</span>
+			<span class="flag scheIng-02">중도금1차</span>
+			<span class="flag scheIng-03">중도금2차</span>
+			<span class="flag scheIng-04">잔금</span>
+			<span class="flag scheIng-05">계약만기</span>
+			<span class="flag scheIng-06">신고마감</span>
+			<br><br>
+
+			<span class="flag false01">미처리</span>
+			<span class="flag false02">검증단계</span>
+			<span class="flag false03">정상매물</span>
+			<span class="flag false04">기간만료</span>
+			<span class="flag false04">허위매물</span>
+			<span class="flag false04">부재종료</span>
+			<span class="flag false04">검증불가</span>
+			<span class="flag false04">거래완료</span>
+			<br><br>
+
+			<span class="flag note01">받은쪽지</span>
+			<span class="flag note02">보낸쪽지</span>
+			<br><br>
+
+			<span class="flag accept01">접수예정</span>
+			<span class="flag accept02">접수중</span>
+			<span class="flag accept03">접수마감</span>
+			<span class="flag accept04">입주예정</span>
+			<span class="flag accept05">입주모집</span>
+			<br><br>
+
+			<div class="flagTxt">
+				<span>아파트</span><span>원룸/빌라</span><span>재개발/재건축 전문</span>
+			</div>
+			<br><br>
+			<div class="slideArea">	
+				<ul class="slideValue">
+					<li class="value01">0</li>
+					<li class="value02"></li>
+					<li class="value03">10억원</li>
+					<li class="value04"></li>
+					<li class="value05">최대</li>
+				</ul>			
+				<div id="slider-range" class="slider" data-options='{"range": true, "min": 0, "max": 20, "step": 5, "values": [0, 10], "text":"" }'></div>
+				
+				<div class="slideInp">
+					<div class="inpW">
+						<input type="text" class="amount amountMin">
+						<span class="unit">만원</span>
+					</div>
+					<span class="dash">~</span>
+					<div class="inpW">
+						<input type="text" class="amount amountMax">
+						<span class="unit">만원</span>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			<div class="slideArea">	
+				<ul class="slideValue">
+					<li class="value01">0</li>
+					<li class="value02"></li>
+					<li class="value03">5억원</li>
+					<li class="value04"></li>
+					<li class="value05">최대</li>
+				</ul>			
+				<div id="slider-range02" class="slider" data-options='{"range": true, "min": 0, "max": 10, "step": 1, "values": [2, 5], "text":"" }'></div>
+				
+				<div class="slideInp">
+					<div class="inpW">
+						<input type="text" class="amount amountMin">
+						<span class="unit">만원</span>
+					</div>
+					<span class="dash">~</span>
+					<div class="inpW">
+						<input type="text" class="amount amountMax">
+						<span class="unit">만원</span>
+					</div>
+				</div>
+			</div>
+			<br><br>
+
+			<div class="slideArea">
+				<ul class="slideValue">
+					<li class="value01">0</li>
+					<li class="value02">66.11㎡</li>
+					<li class="value03">123.23㎡</li>
+					<li class="value04">198.34㎡</li>
+					<li class="value05">최대</li>
+				</ul>	
+				<div id="slider01" class="slider" data-options='{"range":false, "min" : 0, "max": 4, "step": 1}'></div>
+				<input type="hidden" class="amount">
+			</div>
+			
+
+			<br><br>
+
+			<div class="moreCont">
+                <ul class="moreList">
+                    <li class="tripCase01">1111111111111111111111111111111111</li>
+                    <li class="tripCase02">222222222222222222222222222222222</li>
+                    <li class="tripCase03">333333333333333333333333333333333333</li>
+                    <li class="tripCase04 none">444444444444444444444444444444444444444444444</li>
+                    <li class="tripCase05 none">5555555555555555555555555555555555555</li>
+                    <li class="tripCase06 none">6666666666666666666666666666666666666</li>
+                    <li class="tripCase07 none">777777777777777777777777777777777777777777777</li>
+                    <li class="tripCase08 none">888888888888888888888888888888888888888888888</li>
+                    <li class="tripCase09 none">999999999999999999999999999999999999999999999999</li>
+                </ul>
+                <button type="button" class="toggleBtn">
+                    <span class="true">더보기</span><span class="false">닫기</span>
+                </button>
+            </div>
+			<br><br>
+
+			<div class="moreContType02">
+                <div class="moreCont" style="background:#ccc">
+					내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
+				</div>
+                <button type="button" class="toggleBtn close">
+                    <span class="true">더보기</span><span class="false">닫기</span>
+                </button>
+            </div>
+			<br><br>
+
+			<div class="noData">
+				최근 검색어 내역이 없어요.
+				<span class="subTxt">맞춤법을 확인하거나 다른 검색어를 입력해 주세요.</span>
+			</div>
+
+			<!-- // end of contents -->
+		</div><!-- //container -->
+		
+		
+	</section>
+	
+	<div class="dimmed"></div>	
+</body>
+
+<script type="text/javascript" src="/js/magnt/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/magnt/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/magnt/swiper.min.js"></script>
+<script type="text/javascript" src="/js/magnt/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/magnt/m_common.js"></script>
+
+</html>
+

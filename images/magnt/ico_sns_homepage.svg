@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="flel8pnt8a">
+            <path data-name="패스 65890" d="M8.19 10.071H1.382A1.382 1.382 0 0 1 0 8.69V4.234a1.381 1.381 0 0 1 .414-.987L3.819.4a1.381 1.381 0 0 1 1.934 0l3.4 2.852a1.381 1.381 0 0 1 .414.987V8.69a1.382 1.382 0 0 1-1.377 1.381" transform="translate(0 -.001)" style="fill:#fff"/>
+        </clipPath>
+    </defs>
+    <g data-name="icon_24px_homepage" transform="translate(-101 -16)">
+        <circle data-name="타원 199" cx="12" cy="12" r="12" transform="translate(101 16)" style="fill:#b7b7b7"/>
+        <path data-name="패스 65889" d="M8.19 10.071H1.382A1.382 1.382 0 0 1 0 8.69V4.234a1.381 1.381 0 0 1 .414-.987L3.819.4a1.381 1.381 0 0 1 1.934 0l3.4 2.852a1.381 1.381 0 0 1 .414.987V8.69a1.382 1.382 0 0 1-1.377 1.381" transform="translate(108.215 22.5)" style="fill:#fff"/>
+        <g style="clip-path:url(#flel8pnt8a)">
+            <path data-name="선 353" transform="translate(113.001 29.929)" style="fill:none;stroke:#b7b7b7;stroke-linecap:round;stroke-miterlimit:10" d="M0 0v2.871"/>
+        </g>
+    </g>
+</svg>

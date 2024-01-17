@@ -1,0 +1,123 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+	<title>한방부동산 - HTML List</title>
+	<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+	<link href="guide.css" rel="stylesheet" type="text/css">
+	<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<section class='guideHeader'>
+	<script>$('.guideHeader').load('include/gnb00.html');</script>
+	
+</section>
+
+<section class="guideContents">
+	
+	
+    <h2 class="guideTit2">Button</h2>
+
+	<h3 class="guideTit3">Large Button</h3>
+		
+	<button type="button" class="btnDefault btnL">Large Button</button><br>
+	<button type="button" class="btnDefault btnL action">Primary Button</button><br>
+	<button type="button" class="btnDefault btnL btLineP">Line Button</button><br>
+	<button type="button" class="btnDefault btnL btGrayL">Gray Line Button</button><br>
+	<button type="button" class="btnDefault btnL btGray01">Gray bg Line Button</button><br>
+	<button type="button" class="btnDefault btnL btGrayL icPdf">Gray bg Line Button</button><br>
+	<button type="button" class="btnDefault btnL" disabled>disabled Button</button><br>
+	<button type="button" class="btnDefault btnL action" disabled>Primary  disabled Button</button><br>
+	<button type="button" class="btnDefault btnL btLineP" disabled>Line disabled Button</button><br>
+	<button type="button" class="btnDefault btnL btGrayL">Gray Line Button</button><br>
+	<button type="button" class="btnDefault btnL btGrayL" disabled>Gray Line disabled Button</button>
+
+	<h3 class="guideTit3">Medium Button</h3>
+		
+	<button type="button" class="btnDefault btnM">Medium Button</button><br>
+	<button type="button" class="btnDefault btnM action">Primary Button</button><br>
+	<button type="button" class="btnDefault btnM btLineP">Line Button</button><br>
+	<button type="button" class="btnDefault btnM btGrayL icPdf">Gray bg Line Button</button><br>
+	<button type="button" class="btnDefault btnM" disabled>disabled Button</button><br>
+	<button type="button" class="btnDefault btnM action" disabled>Primary  disabled Button</button><br>
+	<button type="button" class="btnDefault btnM btLineP" disabled>Line disabled Button</button><br>
+
+	<h3 class="guideTit3">Small Button</h3>
+		
+	<button type="button" class="btnDefault btnS">Small Button</button><br>
+	<button type="button" class="btnDefault btnS action">Primary Button</button><br>
+	<button type="button" class="btnDefault btnS btLineP">Line Button</button><br>
+	<button type="button" class="btnDefault btnS" disabled>disabled Button</button><br>
+	<button type="button" class="btnDefault btnS action" disabled>Primary  disabled Button</button><br>
+	<button type="button" class="btnDefault btnS btLineP" disabled>Line disabled Button</button><br><br>
+
+	<h3 class="guideTit3">SSmall Button</h3>
+	<button type="button" class="btnDefault btnSS">버튼명</button>
+	<button type="button" class="btnDefault btnSS btIco icoView">버튼명</button>
+	<button type="button" class="btnDefault btnSS btIco icoView" disabled>버튼명</button>
+
+	<button type="button" class="btnDefault btnSS btIco icoEdit02">수정</button>
+	<button type="button" class="btnDefault btnSS btIco icoDelete">삭제</button>
+
+	<h3 class="guideTit3">XSmall Button</h3>
+	<button type="button" class="btnDefault btnXS">버튼명</button>
+	<button type="button" class="btnDefault btnXS btIco icoView">버튼명</button>
+	<button type="button" class="btnDefault btnXS btIco icoView" disabled>버튼명</button>
+	<!-- 
+	<button type="button" class="btnDefault btnXS btIco icoModify">수정하기</button>
+	<button type="button" class="btIco icArr">전체보기</button>
+	<button type="button" class="btnDefault btIco icArr">자세히보기</button>
+	-->
+	
+
+	<h3 class="guideTit3">Etc Button</h3>
+	<span class="btTog"><input type="checkbox" id="togSample01"><label for="togSample01">Text</label></span>
+	<span class="btTog txt"><input type="checkbox" id="togSample02"><label for="togSample02">Text</label></span><br>
+
+	<span class="btTog"><input type="checkbox" id="togSample03" disabled><label for="togSample03">disabled</label></span>
+	<span class="btTog txt"><input type="checkbox" id="togSample022" disabled><label for="togSample022">disabled</label></span>
+	<span class="btTog txt"><input type="checkbox" id="togSample022" disabled checked><label for="togSample022">checked disabled</label></span>
+	<button type="button" class="btnDefault btnSelect">선택</button>
+
+	<a href="#" role="button" class="btIco icArr">내 매물 관리</a>
+	<a href="#" role="button" class="btLink">상세보기</a>
+
+	<div style="padding:20px;background-image: linear-gradient(to bottom, #9585ff, #6c5ae6, #9585ff);">
+		<a href="#" role="button" class="btIco icArrW">계약서 관리</a>
+	</div>
+	
+
+	<h3 class="guideTit3">Button 조합</h3>
+	<div class="btnArea">
+		<button type="button" class="btnDefault btnL btLineP">일반버튼명</button>
+		<button type="button" class="btnDefault btnL action">버튼명</button>
+	</div>
+	<br><br>
+	<div class="btnArea type02">
+		<button type="button" class="btnDefault btnL">취소</button>
+		<button type="button" class="btnDefault btnL action">확인</button>
+	</div>
+
+	<div class="floatingBtns">
+		<div class="btnArea">
+			<button type="button" class="btnDefault btnL">취소</button>
+			<button type="button" class="btnDefault btnL action">확인</button>
+		</div>
+	</div>
+</section>
+</body>
+
+<script type="text/javascript" src="guide.js"></script>
+<script type="text/javascript">
+
+	var gnbNO = 0;
+	var snbNO = 1;
+  
+</script>
+
+</html>
+

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g transform="translate(.361 2.383)">
+        <rect data-name="사각형 23035" width="37.278" height="18.832" rx="1" transform="translate(1 16.403)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+        <path data-name="선 312" transform="translate(21.393 2.111)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="m0 0 7.275 14.121"/>
+        <path data-name="선 313" transform="translate(10.609 2.179)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="M0 14.054 7.232 0"/>
+        <circle data-name="타원 228" cx="1.843" cy="1.843" r="1.843" transform="translate(17.796 -1)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+        <text transform="translate(19.639 29.617)" style="fill:#656565;font-size:11px;font-family:Pretendard-Bold,Pretendard;font-weight:700;letter-spacing:.07em"><tspan x="-14.72" y="0">SALE</tspan></text>
+    </g>
+</svg>

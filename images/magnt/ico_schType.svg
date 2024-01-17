@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <g transform="translate(-2 -2)">
+        <path data-name="선 299" transform="translate(7 5)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px" d="M0 0h14"/>
+        <path data-name="선 300" transform="translate(7 12)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px" d="M0 0h14"/>
+        <path data-name="선 301" transform="translate(7 19)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px" d="M0 0h14"/>
+        <rect data-name="사각형 15109" width="2" height="2" rx="1" transform="translate(2 4)" style="fill:#fff"/>
+        <rect data-name="사각형 15115" width="2" height="2" rx="1" transform="translate(2 11)" style="fill:#fff"/>
+        <rect data-name="사각형 15116" width="2" height="2" rx="1" transform="translate(2 18)" style="fill:#fff"/>
+    </g>
+</svg>

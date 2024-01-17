@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>금액/옵션 정보 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body >
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">금액/옵션 정보</h1>
+			<div class="menuWrap">
+				<button type="button" class="btNav" aria-expanded="false">메뉴</button>
+				<nav>
+					<div class="navInner">메뉴영역</div>
+				</nav>
+			</div>
+		</header>
+	
+		<div id="container" class="container">
+			<!-- start of contents -->
+
+			<div class="boxTop">
+				<h2 class="titDep2">매물 금액과 옵션<span>을 <br>입력해 주세요.</span></h2>
+				<p class="alertArea">
+					<span class="altTxt">[필드명] + “을/를” +  “선택/입력해 주세요.”</span>
+				</p>
+			</div>
+			
+			<ul class="inpList">
+				<li class="inpFrm frmUnit">
+					<label class="titInp" for="inpRentFee">월세금/ 연세금<span class="ness">필수입력 항목</span></label>
+					<span class="inpA">
+						<input type="tel" id="inpRentFee" placeholder="0">
+						<span class="unit">만원</span>
+					</span>
+				</li>
+				<li class="inpFrm frmUnit">
+					<label class="titInp" for="inpDeposit">보증금<span class="ness">필수입력 항목</span></label>
+					<span class="inpA">
+						<input type="tel" id="inpDeposit" placeholder="0">
+						<span class="unit">만원</span>
+					</span>
+				</li>
+				<li class="inpFrm frmUnit">
+					<label class="titInp" for="inpLoan">융자금<span class="ness">필수입력 항목</span></label>
+					<span class="inpA">
+						<input type="tel" id="inpLoan" placeholder="0">
+						<span class="unit">만원</span>
+					</span>
+				</li>
+				<li class="inpFrm">
+					<label class="titInp" for="inpLoan">융자금 비율<span class="ness">필수입력 항목</span></label>
+					<span class="inpA">
+						<div class="selectWrap">
+							<select id="inpWay" title="융자금 비율 선택" data-msg="선택" data-header="융자금 비율">
+								<option value="01">융자금 없음</option>
+								<option value="02">30% 미만(시세 대비)</option>
+								<option value="03">30% 이상(시세 대비)</option><!-- 2023.08.28 띄어쓰기 수정 -->
+							</select>
+						</div>
+					</span>
+				</li>
+			</ul>
+
+			<ul class="inpList divider">
+				<li class="inpFrm frmUnit"><!-- 2023.08.23 클래스 추가 -->
+					<label class="titInp" for="inpGroundArea">토지 면적<span class="ness">필수입력 항목</span></label>
+					<span class="inpA inpA02"><!-- 2023.08.23 클래스 추가 -->
+						<input type="number" id="inpGroundArea" placeholder="0"><!-- 2023.08.23 placeholder 추가 -->
+						<span class="unit">㎡</span><!-- 2023.08.23 단위 추가 -->
+						<span class="unitChange">21.13평</span>
+					</span>
+					<div class="groundUnit">
+						<span>3.3㎡당</span>
+						<span class="money">약 <em>0</em>만원</span>
+					</div>
+				</li>
+				<li class="inpFrm">
+					<label class="titInp" for="inpCategoryLand">지목<span class="ness">필수입력 항목</span></label>
+					<span class="inpA">
+						<div class="selectWrap">
+							<select id="inpCategoryLand" title="지목 선택" data-header="지목" data-msg="선택">
+								<option value="01">(대)대</option>
+								<option value="02">(전)전</option>
+								<option value="03">(과)과수원 </option>
+								<option value="04">(목)목장용지</option>
+								<option value="05">(임)임야</option>
+								<option value="06">(광)광천지</option>
+								<option value="07">(염)염전</option>
+								<option value="08">(장)공장용지</option>
+								<option value="09">(학)학교용지</option>
+								<option value="10">(차)주차장</option>
+								<option value="11">(주)주유소용지</option>
+								<option value="12">(창)창고용지</option>
+								<option value="13">(도)도로</option>
+								<option value="14">(철)철도용지</option>
+								<option value="15">(제)제방</option>
+								<option value="16">(천)하천</option>
+								<option value="17">(구)구거</option>
+								<option value="18">(유)유지</option>
+								<option value="19">(양)양어장</option>
+								<option value="20">(수)수도용지</option>
+								<option value="21">(공)공원</option>
+								<option value="22">(체)체육용지</option>
+								<option value="23">(원)유원지</option>
+								<option value="24">(종)종교용지</option>
+								<option value="25">(사)사적지</option>
+								<option value="26">(묘)묘지</option>
+								<option value="27">(잡)잡종지</option>
+							</select>
+						</div>
+					</span>
+				</li>
+				<li class="inpFrm">
+					<label class="titInp" for="inpCategoryLandItem">지목 구성</label>
+					<span class="inpA">
+						<input type="text" id="inpCategoryLandItem">
+					</span>
+				</li>
+				<li class="inpFrm">
+					<label class="titInp" for="inpUsedArea1">용도지역 1</label>
+					<span class="inpA">
+						<div class="selectWrap">
+							<select id="inpUsedArea1" title="용도지역 1 선택" data-header="용도지역 1" data-msg="용도지역 선택">
+								<option value="01">도시지역</option>
+								<option value="02">관리지역</option>
+								<option value="03">농림지역 </option>
+								<option value="04">자연환경보전지역</option>
+								<option value="05">(선택)않음</option>
+							</select>
+						</div>
+					</span>
+				</li>
+				<li class="inpFrm">
+					<label class="titInp" for="inpUsedArea2">용도지역 2</label>
+					<span class="inpA">
+						<div class="selectWrap">
+							<select id="inpUsedArea2" title="용도지역 2 선택" data-header="용도지역 2" data-msg="선택">
+								<option value="01">주거_1종 전용</option>
+								<option value="02">주거_2종 전용</option>
+								<option value="03">주거_1종 일반 </option>
+								<option value="04">주거_2종 일반</option>
+								<option value="05">주거_3종 일반</option>
+								<option value="06">주거_준주거</option>
+								<option value="07">상업_중심</option>
+								<option value="08">상업_일반</option>
+								<option value="09">상업_그린</option>
+								<option value="10">상업_유통</option>
+								<option value="11">공업_전용</option>
+								<option value="12">공업_일반</option>
+								<option value="13">공업_준공업</option>
+								<option value="14">녹지_보전</option>
+								<option value="15">녹지_생산</option>
+								<option value="16">녹지_자연</option>
+								<option value="17">(선택)않음</option>
+							</select>
+						</div>
+					</span>
+				</li>
+				<li class="inpFrm">
+					<label class="titInp" for="inpRecentUse">현 용도</label>
+					<span class="inpA">
+						<input type="text" id="inpRecentUse">
+					</span>
+				</li>
+				<li class="inpFrm">
+					<label class="titInp" for="inpUseValen">추천 용도</label>
+					<span class="inpA">
+						<input type="text" id="inpUseValen">
+					</span>
+				</li>
+				<li class="inpFrm frmUnit"><!-- 2023.08.29 클래스 수정-->
+					<label class="titInp" for="inpLoadAdjoin">접한 도로<span class="ness">필수입력 항목</span></label>
+					<div class="inpA inpA02"><!-- 2023.08.29 클래스 추가-->
+						<input type="tel" id="inpLoadAdjoin" placeholder="0">
+						<span class="unit">m</span>
+					</div>
+					<div class="absArea">
+						<span class="frmInp frmInpS txt"><input type="checkbox" id="chkLoadNone"><label for="chkLoadNone">없음</label></span>
+					</div>
+				</li>
+				<li class="inpFrm">
+					<label class="titInp" for="inpUseClass">용도 분류<span class="ness">필수입력 항목</span></label><!-- 2023.08.29 띄어쓰기 수정 -->
+					<span class="inpA">
+						<div class="selectWrap">
+							<select id="inpUseClass" title="용도분류 선택" data-header="용도분류" data-msg="선택">
+								<option value="01">농지</option>
+								<option value="02">공장창고용지</option>
+								<option value="03">상업용지</option>
+								<option value="04">전원주택지</option>
+								<option value="05">일반주택지</option>
+								<option value="06">임야</option>
+								<option value="07">기타</option>
+							</select>
+						</div>
+					</span>
+				</li>
+			</ul>
+			<!-- // end of contents -->
+		</div><!-- //container -->
+		
+		<div class="floatingBtns">
+			<div class="btnArea">
+				<button type="button" class="btnDefault btnL btLineP">임시저장</button>
+				<button type="button" class="btnDefault btnL action">완료</button>
+			</div>
+		</div>
+
+		<aside>
+			<div class="asideRight">
+				<button type="button" class="btTop">페이지 상단으로 이동</button><!-- 2023.08.16 onClick 이벤트 삭제 -->
+			</div>
+		</aside>
+	</section>
+
+	
+
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/magnt/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/magnt/swiper.min.js"></script>
+<script type="text/javascript" src="/js/magnt/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/magnt/m_common.js"></script>
+
+</html>
+

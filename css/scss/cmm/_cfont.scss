@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+	$font-url:"/fonts/magnt";
+
+	@font-face {
+		font-family: 'Pretendard';
+		font-weight: 400;
+		font-display: swap;
+		src: local('Pretendard Regular'), url(#{$font-url}/Pretendard-Regular.woff) format('woff'), url(#{$font-url}/Pretendard-Light.woff2) format('woff2');
+	}
+
+	@font-face {
+		font-family: 'Pretendard';
+		font-weight: 500;
+		font-display: swap;
+		src: local('Pretendard Medium'), url(#{$font-url}/Pretendard-Medium.woff) format('woff'), url(#{$font-url}/Pretendard-Medium.woff2) format('woff2');
+	}
+
+	@font-face {
+		font-family: 'Pretendard';
+		font-weight: 700;
+		font-display: swap;
+		src: local('Pretendard Bold'), url(#{$font-url}/Pretendard-Bold.woff) format('woff'), url(#{$font-url}/Pretendard-Bold.woff2) format('woff2');
+	}	

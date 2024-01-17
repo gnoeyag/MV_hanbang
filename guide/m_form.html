@@ -1,0 +1,408 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+	<title>한방부동산 - HTML List</title>
+	<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+	<link href="guide.css" rel="stylesheet" type="text/css">
+	<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<section class='guideHeader'>
+	<script>$('.guideHeader').load('include/gnb00.html');</script>
+	
+</section>
+
+<section class="guideContents">
+	
+	
+    <h2 class="guideTit2">Form</h2>
+
+	<h3 class="guideTit3">Input</h3>
+	<input type="text" placeholder="placeholder값 입력"><br>
+	<input type="tel" placeholder="placeholder right정렬" class="placeR"><br>
+	<input type="tel" placeholder="오른쪽 정렬" class="inpR"><br>
+	<input type="text" placeholder="disabled" disabled value="disabled"><br>
+	<input type="text" placeholder="readonly" readonly value="readonly"><br><br>
+	<input type="text" placeholder="32px height input" class="inpSmall"><br><br>
+	<input type="date" data-placeholder="날짜입력" required class="inpSmall">
+
+	<div class="inpFrm inpDeleteAni"><!-- input value값 있을 때 삭제버튼 출력 -->
+		<label class="titInp" for="inpAptname">아파트명</label>
+		<div class="inpA">
+			<input type="text" id="inpAptname" placeholder="아파트명 입력">
+			<button type="button" class="icBtn icDel">삭제</button>
+		</div>
+	</div>
+
+	<div class="inpFrm inpDeleteAni inpError"><!-- error시 inpError 클래스 추가 -->
+		<label class="titInp" for="inpAptname2">아파트명2<span class="ness">필수입력 항목</span></label>
+		<div class="inpA">
+			<input type="text" id="inpAptname2" placeholder="아파트명 입력" value="오류">
+			<button type="button" class="icBtn icDel">삭제</button>
+		</div>
+		<p class="txtErr">오류메시지 노출 영역</p>
+	</div>
+	<div class="inpFrm">
+		<label class="titInp" for="inpTitsample01">Title</label>
+		<div class="inpA">
+			<input type="date" id="inpTitsample01" data-placeholder="YYYY-MM-DD" required>
+		</div>
+	</div>
+	<br><br>
+
+	<div class="inpFrm">
+		<label class="titInp" for="inpTitsample0001">수정가능 날짜 폼</label>
+		<div class="inpA inpDateF">
+			<input type="tel" id="inpTitsample0001" placeholder="YYYY-MM-DD" value="2022-02-30">
+			<input type="date">
+		</div>
+	</div>
+	<div class="inpFrm frmUnit">
+		<div class="inpA">
+			<span class="inpW">
+				<input type="tel" id="inpTitsample02" placeholder="단위 2자 기본">
+				<span class="unit">만원</span>
+			</span>
+			
+		</div>
+	</div>
+	<div class="inpFrm frmUnit">
+		<div class="inpA inpA02">
+			<span class="inpW">
+				<input type="tel" id="inpTitsample02" placeholder="단위 1자 기본">
+				<span class="unit">만원</span>
+			</span>
+			
+		</div>
+	</div>
+	<div class="inpFrm frmUnit-03">
+		<div class="inpA">
+			<span class="inpW">
+				<span class="label">최대</span>
+				<input type="tel" id="inpTitsample04">
+				<span class="unit">만원</span>
+			</span>
+			<span class="inpW">
+				<span class="label">최소</span>
+				<input type="tel" id="inpTitsample05">
+				<span class="unit">만원</span>
+			</span>
+			
+		</div>
+	</div>
+	<div class="inpFrm frmUnit-04">
+		<div class="inpA">
+			<span class="inpW">
+				<input type="tel" id="inpTitsample04" placeholder="총 가능 주차수" class="placeR">
+			</span>
+			<span class="inpW">
+				<input type="tel" id="inpTitsample05" placeholder="가구당 가능 주차수" class="placeR">
+			</span>
+		</div>
+	</div>	
+	<br>
+
+	<div class="inpFrm frmUnit-06">
+		<div class="inpA">
+			<span class="inpW inpDateF">
+				<input type="tel" id="inpTitsample0001" placeholder="YYYY-MM-DD" value="2022-02-30">
+				<input type="date">
+			</span>
+			<span class="dash">~</span>
+			<span class="inpW inpDateF">
+				<input type="tel" id="inpTitsample0001" placeholder="YYYY-MM-DD" value="2022-02-30">
+				<input type="date">
+			</span>
+		</div>
+	</div>
+	<br><br>
+	<div class="inpFrm">
+		<strong class="titInp">매물 노출</strong>
+		<div class="inpA">
+			<ul class="togList">
+				<li><span class="btTog txt"><input type="checkbox" id="togDeal01" checked=""><label for="togDeal01">거래완료</label></span></li>
+				<li><span class="btTog txt"><input type="checkbox" id="togDeal02"><label for="togDeal02">전송종료</label></span></li>
+			</ul>
+		</div>
+	</div>
+	<br><br>
+
+	<div class="inpFrm">
+		<label for="inpMemo" class="titInp">메모</label>
+		<div class="inpA">
+			<textarea cols="10" rows="10" placeholder="메모 내용을 입력해 주세요.">11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</textarea>
+			<span class="txtNum"><em title="메모 글자 수">0</em>/50</span>
+		</div>
+	</div>
+	
+	<div class="inpFrm frmUnit-03">
+		<div class="inpA">
+			<div class="selectWrap selectError">
+				<select title="매물상태 선택" data-header="매물 상태">
+					<option value="01" selected>정상</option>
+					<option value="02">급</option>
+					<option value="03">전속</option>
+					<option value="04">단기임대</option>
+					<option value="05">세안고</option>
+					<option value="06">보류</option>
+					<option value="07">가망</option>
+					<option value="08">잠재</option>
+					<option value="08">타계</option>
+					<option value="08">단독중개</option>
+					<option value="08">임차인중개완료</option>
+					<option value="08">임대인중개완료</option>
+					<option value="08">매도인중개완료</option>
+					<option value="08">체결</option>
+				</select>
+			</div>
+			<span class="dash">~</span>
+			<div class="selectWrap">
+				<select title="매물상태 선택" data-header="매물 상태">
+					<option value="01" selected>정상</option>
+					<option value="02">급</option>
+					<option value="03">전속</option>
+					<option value="04">단기임대</option>
+					<option value="05">세안고</option>
+					<option value="06">보류</option>
+					<option value="07">가망</option>
+					<option value="08">잠재</option>
+					<option value="08">타계</option>
+					<option value="08">단독중개</option>
+					<option value="08">임차인중개완료</option>
+					<option value="08">임대인중개완료</option>
+					<option value="08">매도인중개완료</option>
+					<option value="08">체결</option>
+				</select>
+			</div>
+		</div>
+		<p class="txtErr">오류 안내문구 노출되는 영역입니다.</p>
+	</div>
+
+	<div class="inpFrm searchArea inpDeleteAni">
+		<div class="inpA">
+			<input type="search" id="inpSearch" placeholder="매물 검색어 입력" title="매물 검색어 입력">
+			<button type="button" class="icBtn icDel">삭제</button>
+			<button type="submit" class="icBtn icSearch">검색</button>
+		</div>
+		<button type="button" class="btFilter" data-id="pop_sampleL">필터</button>
+	</div>
+	<br>
+	<div class="inpFrm searchArea type02 inpDeleteAni">
+		<div class="inpA">
+			<input type="search" id="inpSearch02" placeholder="읍/면/동 검색" title="읍/면/동 검색">
+			<button type="button" class="icBtn icDel">삭제</button>
+			<button type="submit" class="icBtn icSearch">검색</button>
+		</div>
+	</div>
+	<br><br>
+	<div class="inpFrm inpBtns">
+		<label class="titInp" for="inpTitsample00001">input 옆 button<span class="ness">필수입력 항목</span></label>
+		<div class="inpA">
+			<input type="text" id="inpTitsample00001" placeholder="입력 힌트 노출" required>
+			<button type="button" class="btnDefault btnMS">버튼명11111</button>
+		</div>
+	</div>
+
+	<h3 class="guideTit3">Radio/Checkbox</h3>
+	<span class="frmInp"><input type="radio" id="radDefault00" name="radDefault0001"><label for="radDefault00"></label></span>
+	<span class="frmInp"><input type="radio" id="radDefault" name="radDefault0002" checked><label for="radDefault"></label></span>
+	<span class="frmInp txt"><input type="radio" id="radDefault01" name="radDefault01"><label for="radDefault01">선택</label></span>
+	<span class="frmInp txt"><input type="radio" id="radDefault02" disabled name="radDefault02"><label for="radDefault02">disabled</label></span>
+	<span class="frmInp txt"><input type="radio" id="radDefault003111111" checked disabled name="radDefault033"><label for="radDefault003111111">checked disabled</label></span>
+	<br><br>
+
+
+	<span class="frmInp"><input type="checkbox" id="chkSample01"><label for="chkSample01"></label></span>
+	<span class="frmInp"><input type="checkbox" id="chkSample01" checked><label for="chkSample01"></label></span>
+	<span class="frmInp txt"><input type="checkbox" id="chkSample02"><label for="chkSample02">선택</label></span>
+	<span class="frmInp txt"><input type="checkbox" id="chkSample03" disabled><label for="chkSample03">disabled</label></span>
+	<span class="frmInp txt"><input type="checkbox" id="chkSample03334" checked disabled><label for="chkSample03334">checked disabled</label></span>
+	<br><br>
+
+	<span class="frmInp frmInpS"><input type="radio" id="radDefault000"><label for="radDefault000"></label></span>
+	<span class="frmInp frmInpS"><input type="radio" id="radDefault0001" checked><label for="radDefault0001"></label></span>
+	<span class="frmInp frmInpS txt"><input type="radio" id="radDefault001" name="radDefault01"><label for="radDefault001">small radio</label></span>
+	<span class="frmInp frmInpS txt"><input type="radio" id="radDefault002" disabled name="radDefault02"><label for="radDefault002">disabled</label></span>
+	<span class="frmInp frmInpS txt"><input type="radio" id="radDefault003" checked disabled name="radDefault03"><label for="radDefault003">checked disabled</label></span>
+	<br><br>
+
+
+	<span class="frmInp frmInpS"><input type="checkbox" id="chkSample01"><label for="chkSample01"></label></span>
+	<span class="frmInp frmInpS"><input type="checkbox" id="chkSample01" checked><label for="chkSample01"></label></span>
+	<span class="frmInp frmInpS txt"><input type="checkbox" id="chkSample02"><label for="chkSample02">선택</label></span>
+	<span class="frmInp frmInpS txt"><input type="checkbox" id="chkSample03" disabled><label for="chkSample03">disabled</label></span>
+	<span class="frmInp frmInpS txt"><input type="checkbox" id="chkSample03" checked disabled><label for="chkSample03">checked disabled</label></span>
+	<br><br>
+
+	<ul class="frmList">
+		<li><span class="frmInp txt"><input type="checkbox" id="chkSam01"><label for="chkSam01">주민 거주</label></span></li>
+		<li><span class="frmInp txt"><input type="checkbox" id="chkSam02"><label for="chkSam02">빌라</label></span></li>
+		<li><span class="frmInp txt"><input type="checkbox" id="chkSam03"><label for="chkSam03">다세대</label></span></li>
+		<li><span class="frmInp txt"><input type="checkbox" id="chkSam04"><label for="chkSam04">영등포구 전세영등포구 전세</label></span></li>
+		<li><span class="frmInp txt"><input type="checkbox" id="chkSam05"><label for="chkSam05">빌라</label></span></li>
+		<li><span class="frmInp txt"><input type="checkbox" id="chkSam06"><label for="chkSam06">다세대</label></span></li>
+	</ul>
+	<br><br>
+	<ul class="frmList col02">
+		<li><span class="frmInp txt"><input type="checkbox" id="chkFavo01"><label for="chkFavo01">주민 거주2</label></span></li>
+		<li><span class="frmInp txt"><input type="checkbox" id="chkFavo02"><label for="chkFavo02">빌라</label></span></li>
+		<li><span class="frmInp txt"><input type="checkbox" id="chkFavo03"><label for="chkFavo03">다세대</label></span></li>
+		<li><span class="frmInp txt"><input type="checkbox" id="chkFavo033"><label for="chkFavo033">영등포구 전세영등포구 전세</label></span></li>
+		<li><span class="frmInp txt"><input type="checkbox" id="chkFavo022"><label for="chkFavo022">빌라</label></span></li>
+		<li><span class="frmInp txt"><input type="checkbox" id="chkFavo0334"><label for="chkFavo0334">다세대</label></span></li>
+	</ul>
+	<br><br>
+
+	<ul class="frmList col03">
+		<li><span class="frmInp txt"><input type="checkbox" id="chkFavo01"><label for="chkFavo04">주민 거주3</label></span></li>
+		<li><span class="frmInp txt"><input type="checkbox" id="chkFavo02"><label for="chkFavo05">빌라</label></span></li>
+		<li><span class="frmInp txt"><input type="checkbox" id="chkFavo03"><label for="chkFavo06">다세대</label></span></li>
+	</ul>
+	<br><br>
+
+	<ul class="togList">
+		<li><span class="btTog txt"><input type="checkbox" id="togDeal01" checked><label for="togDeal01">거래완료</label></span></li>
+		<li><span class="btTog txt"><input type="checkbox" id="togDeal02"><label for="togDeal02">전송종료</label></span></li>
+	</ul>
+
+	<ul class="frmChk">
+		<li><input type="checkbox" id="chkChannel01"><label for="chkChannel01">전국망(오픈망)</label></li>
+		<li><input type="checkbox" id="chkChannel02"><label for="chkChannel02">한방(앱)</label></li>
+		<li><input type="checkbox" id="chkChannel03"><label for="chkChannel03">한방포털(51/200)</label></li>
+		<li><input type="checkbox" id="chkChannel04"><label for="chkChannel04">네이버(3/15)</label></li>
+		<li><input type="checkbox" id="chkChannel05"><label for="chkChannel05">KB 부동산(3/15)</label></li>
+	</ul>
+	<br><br>
+
+	<ul class="frmBox">
+		<li><input type="radio" id="chkSampp01" name="chkSampp" checked><label for="chkSampp01">1/n 라디오</label></li>
+		<li><input type="radio" id="chkSampp02" name="chkSampp"><label for="chkSampp02">직접 선택</label></li>
+		<li><input type="radio" id="chkSampp03" name="chkSampp"><label for="chkSampp03">직접 선택</label></li>
+	</ul>
+	<br>
+	
+	<ul class="frmBox col01">
+		<li><input type="radio" id="chkSampp01" name="chkSampp" checked><label for="chkSampp01">1/n 라디오</label></li>
+		<li><input type="radio" id="chkSampp02" name="chkSampp"><label for="chkSampp02">직접 선택</label></li>
+		<li><input type="radio" id="chkSampp03" name="chkSampp"><label for="chkSampp03">직접 선택</label></li>
+		<li><input type="radio" id="chkSampp03" name="chkSampp"><label for="chkSampp03">직접</label></li>
+	</ul>
+	<br>
+
+	<ul class="frmBox col02">
+		<li><input type="radio" id="chkSamppp01" name="chkSamppp" checked><label for="chkSamppp01">1/2 라디오</label></li>
+		<li><input type="radio" id="chkSamppp02" name="chkSamppp"><label for="chkSamppp02">직접 선택</label></li>
+		<li><input type="radio" id="chkSamppp03" name="chkSamppp"><label for="chkSamppp03">직접 선택</label></li>
+	</ul>
+	<ul class="frmBox col03">
+		<li><input type="radio" id="chkSampppp01" name="chkSampppp" checked><label for="chkSampppp01">1/3 라디오</label></li>
+		<li><input type="radio" id="chkSampppp02" name="chkSampppp"><label for="chkSampppp02">직접 선택</label></li>
+		<li><input type="radio" id="chkSampppp03" name="chkSampppp"><label for="chkSampppp03">직접 선택</label></li>
+		<li><input type="radio" id="chkSampppp04" name="chkSampppp"><label for="chkSampppp04">직접 선택</label></li>
+		<li><input type="radio" id="chkSampppp05" name="chkSampppp"><label for="chkSampppp05">직접 선택</label></li>
+	</ul>
+
+	<h3 class="guideTit3">Textarea</h3>
+	<textarea placeholder="매물에 관련된 메모/ 기타정보를 입력해 주세요."></textarea>
+
+	<h3 class="guideTit3">Selectbox</h3>
+	<div class="selectWrap">
+		<select title="매물상태 선택" data-header="매물 상태" data-msg="선택">
+			<option value="01" selected>정상</option>
+			<option value="02">급</option>
+			<option value="03">전속</option>
+			<option value="04">단기임대</option>
+			<option value="05">세안고</option>
+			<option value="06">보류</option>
+			<option value="07">가망</option>
+			<option value="08">잠재</option>
+			<option value="08">타계</option>
+			<option value="08">단독중개</option>
+			<option value="08">임차인중개완료</option>
+			<option value="08">임대인중개완료</option>
+			<option value="08">매도인중개완료</option>
+			<option value="08">체결</option>
+		</select>
+	</div>
+	<br><br>
+	<div class="selectWrap">
+		<select title="매물상태 선택" data-header="매물 상태" data-msg="disabled" disabled>
+			<option value="01" selected>정상</option>
+			<option value="02">급</option>
+			<option value="03">전속</option>
+			<option value="04">단기임대</option>
+			<option value="05">세안고</option>
+			<option value="06">보류</option>
+			<option value="07">가망</option>
+			<option value="08">잠재</option>
+			<option value="08">타계</option>
+			<option value="08">단독중개</option>
+			<option value="08">임차인중개완료</option>
+			<option value="08">임대인중개완료</option>
+			<option value="08">매도인중개완료</option>
+			<option value="08">체결</option>
+		</select>
+	</div>
+	<br><br>
+	<div class="selectWrap selectWrapS">
+		<select title="매물상태 선택" data-header="매물 상태" data-msg="small select">
+			<option value="01" selected>정상</option>
+			<option value="02">급</option>
+			<option value="03">전속</option>
+			<option value="04">단기임대</option>
+			<option value="05">세안고</option>
+			<option value="06">보류</option>
+			<option value="07">가망</option>
+			<option value="08">잠재</option>
+			<option value="08">타계</option>
+			<option value="08">단독중개</option>
+			<option value="08">임차인중개완료</option>
+			<option value="08">임대인중개완료</option>
+			<option value="08">매도인중개완료</option>
+			<option value="08">체결</option>
+		</select>
+	</div>
+	<br><br>
+
+	<div class="selectWrap selectWrapSS">
+		<select title="매물상태 선택" data-header="매물 상태" data-msg="xsmall select">
+			<option value="01">정상</option>
+			<option value="02">급</option>
+			<option value="03">전속</option>
+			<option value="04">단기임대</option>
+			<option value="05">세안고</option>
+			<option value="06">보류</option>
+			<option value="07">가망</option>
+			<option value="08">잠재</option>
+			<option value="08">타계</option>
+			<option value="08">단독중개</option>
+			<option value="08">임차인중개완료</option>
+			<option value="08">임대인중개완료</option>
+			<option value="08">매도인중개완료</option>
+			<option value="08">체결</option>
+		</select>
+	</div>
+</section>
+
+<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/magnt/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/magnt/swiper.min.js"></script>
+<script type="text/javascript" src="/js/magnt/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/magnt/m_common.js"></script>
+<script type="text/javascript" src="guide.js"></script>
+<script type="text/javascript">
+
+	var gnbNO = 0;
+	var snbNO = 2;
+  
+</script>
+
+</html>

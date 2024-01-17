@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="88" viewBox="0 0 96 88">
+    <defs>
+        <filter id="wj86441aac" x="61.031" y="56.28" width="30.875" height="30.875" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="2" result="blur"/>
+            <feFlood flood-color="#1f1495" flood-opacity=".302"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="zlt1wd31zd" x="60.031" y="56.28" width="30.875" height="30.875" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="2" result="blur-2"/>
+            <feFlood flood-color="#1f1495" flood-opacity=".302"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="8y3a1ezcje" x="32.754" y="29.424" width="47.03" height="47.03" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="2" result="blur-3"/>
+            <feFlood flood-color="#1f1495" flood-opacity=".502"/>
+            <feComposite operator="in" in2="blur-3"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="rrd6t3j22f" x="31.754" y="29.424" width="47.03" height="47.03" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="2" result="blur-4"/>
+            <feFlood flood-color="#1f1495" flood-opacity=".302"/>
+            <feComposite operator="in" in2="blur-4"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="s2hopmgajg" x="65.82" y="61.927" width="27.672" height="27.814" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="2" result="blur-5"/>
+            <feFlood flood-color="#1f1495" flood-opacity=".4"/>
+            <feComposite operator="in" in2="blur-5"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="3str81qpoh" x="65.82" y="61.927" width="27.672" height="27.814" filterUnits="userSpaceOnUse">
+            <feOffset dx="-.2" dy=".5"/>
+            <feGaussianBlur result="blur-6"/>
+            <feFlood flood-color="#5580ff" result="color"/>
+            <feComposite operator="out" in="SourceGraphic" in2="blur-6"/>
+            <feComposite operator="in" in="color"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+        <filter id="ari2c23mli" x="41.854" y="41.148" width="25.27" height="21.349" filterUnits="userSpaceOnUse">
+            <feOffset dy="1"/>
+            <feGaussianBlur stdDeviation="1.5" result="blur-7"/>
+            <feFlood flood-color="#1f1495" flood-opacity=".302"/>
+            <feComposite operator="in" in2="blur-7"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="jx1nwav6wj" x="41.854" y="41.148" width="25.27" height="21.349" filterUnits="userSpaceOnUse">
+            <feOffset dx="-.2" dy="-.2"/>
+            <feGaussianBlur result="blur-8"/>
+            <feFlood flood-color="#2ea895" result="color-2"/>
+            <feComposite operator="out" in="SourceGraphic" in2="blur-8"/>
+            <feComposite operator="in" in="color-2"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+        <clipPath id="qa6a5wsmwa">
+            <path transform="translate(256 2260)" style="opacity:0;fill:#fff" d="M0 0h96v88H0z"/>
+        </clipPath>
+        <clipPath id="507mjf4xib">
+            <path data-name="사각형 23098" style="fill:none" d="M0 0h78.352v86.12H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="마스크 그룹 20636" style="clip-path:url(#qa6a5wsmwa)" transform="translate(-256 -2260)">
+        <g data-name="그룹 21461">
+            <g data-name="마스크 그룹 20635" style="clip-path:url(#507mjf4xib)" transform="translate(256 2259.88)">
+                <path data-name="패스 66365" d="M78.345 13.466S78.841 0 71.467 0H21.86s-9.081-.251-8.448 13.466z" style="fill:#9bbaf1"/>
+                <path data-name="패스 66368" d="M20.639 0s-7.227 1-7.227 9.974V86.12h43.676s7.775-.224 7.775-12.413V9.974S64.043.834 71.467 0z" transform="translate(1)" style="fill:#f9feff"/>
+                <path data-name="패스 66366" d="M20.639 0s-7.227 1-7.227 9.974V86.12h43.676s7.775-.224 7.775-12.413V9.974S64.043.834 71.467 0z" style="fill:#dce7fd"/>
+                <path data-name="패스 66369" d="M6.4 86.12C-1.75 82.955.206 72.088.206 72.088h51.258s-1.956 10.867 6.191 14.032z" transform="translate(1)" style="fill:#f9feff"/>
+                <path data-name="패스 66367" d="M6.4 86.12C-1.75 82.955.206 72.088.206 72.088h51.258s-1.956 10.867 6.191 14.032z" style="fill:#c9d7f8"/>
+            </g>
+        </g>
+        <path data-name="패스 66370" d="M-22936.85 7150h35.207" transform="translate(23214 -4865)" style="stroke:#b2c5e5;stroke-linecap:round;stroke-width:3px;fill:none"/>
+        <path data-name="패스 66371" d="M-22936.85 7150h35.207" transform="translate(23214 -4855)" style="stroke:#b2c5e5;stroke-linecap:round;stroke-width:3px;fill:none"/>
+        <path data-name="패스 66372" d="M-22936.85 7150h35.207" transform="translate(23214 -4845)" style="stroke:#b2c5e5;stroke-linecap:round;stroke-width:3px;fill:none"/>
+        <path data-name="패스 66373" d="M-22936.85 7150h17.6" transform="translate(23214 -4835)" style="stroke:#b2c5e5;stroke-linecap:round;stroke-width:3px;fill:none"/>
+        <g data-name="그룹 21463">
+            <g style="filter:url(#wj86441aac)" transform="translate(256.004 2260.004)">
+                <path data-name="선 442" transform="translate(68.45 61.69)" style="stroke-miterlimit:10;stroke-width:4px;stroke:#9586ff;fill:none" d="m0 0 16.047 16.047"/>
+            </g>
+            <g style="filter:url(#zlt1wd31zd)" transform="translate(256.004 2260.004)">
+                <path data-name="선 444" transform="translate(67.45 61.69)" style="stroke-miterlimit:10;stroke-width:4px;stroke:#9586ff;fill:none" d="m0 0 16.047 16.047"/>
+            </g>
+            <g style="filter:url(#8y3a1ezcje)" transform="translate(256.004 2260.004)">
+                <circle data-name="타원 229" cx="15.515" cy="15.515" r="15.515" transform="translate(40.75 35.42)" style="stroke:#6c5ae6;stroke-miterlimit:10;stroke-width:4px;fill:none"/>
+            </g>
+            <g style="filter:url(#rrd6t3j22f)" transform="translate(256.004 2260.004)">
+                <circle data-name="타원 230" cx="15.515" cy="15.515" r="15.515" transform="translate(39.75 35.42)" style="fill:rgba(255,255,255,.5);stroke:#6c5ae6;stroke-miterlimit:10;stroke-width:4px"/>
+            </g>
+            <g data-type="innerShadowGroup">
+                <g style="filter:url(#s2hopmgajg)" transform="translate(256.004 2260.004)">
+                    <path data-name="선 445" d="M7.672 11.814a3.988 3.988 0 0 1-2.855-1.2L-2.854 2.8A4 4 0 0 1-2.8-2.854a4 4 0 0 1 5.654.054l7.672 7.814a4 4 0 0 1-2.854 6.8z" transform="translate(75.82 69.93)" style="fill:#638bff"/>
+                </g>
+                <g style="filter:url(#3str81qpoh)" transform="translate(256.004 2260.004)">
+                    <path data-name="선 445" d="M7.672 11.814a3.988 3.988 0 0 1-2.855-1.2L-2.854 2.8A4 4 0 0 1-2.8-2.854a4 4 0 0 1 5.654.054l7.672 7.814a4 4 0 0 1-2.854 6.8z" transform="translate(75.82 69.93)" style="fill:#fff"/>
+                </g>
+            </g>
+        </g>
+        <g data-type="innerShadowGroup">
+            <g style="filter:url(#ari2c23mli)" transform="translate(256 2260)">
+                <path data-name="패스 66375" d="M-22841.633 7181.744h-.117a2 2 0 0 1-1.453-.758l-3.922-4.972a2 2 0 0 1 .332-2.809 2 2 0 0 1 2.809.332l2.527 3.205 6.758-6.757a2 2 0 0 1 2.828 0 2 2 0 0 1 0 2.828l-8.348 8.349a2 2 0 0 1-1.414.582z" transform="translate(22893.91 -7124.75)" style="fill:#61d3c1"/>
+            </g>
+            <g style="filter:url(#jx1nwav6wj)" transform="translate(256 2260)">
+                <path data-name="패스 66375" d="M-22841.633 7181.744h-.117a2 2 0 0 1-1.453-.758l-3.922-4.972a2 2 0 0 1 .332-2.809 2 2 0 0 1 2.809.332l2.527 3.205 6.758-6.757a2 2 0 0 1 2.828 0 2 2 0 0 1 0 2.828l-8.348 8.349a2 2 0 0 1-1.414.582z" transform="translate(22893.91 -7124.75)" style="fill:#fff"/>
+            </g>
+        </g>
+    </g>
+</svg>

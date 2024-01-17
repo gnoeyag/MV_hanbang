@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <g data-name="그룹 18168" transform="translate(-270 -286.885)">
+        <path data-name="사각형 13684" transform="translate(270 286.885)" style="fill:#638bff;opacity:.001" d="M0 0h32v32H0z"/>
+        <path data-name="패스 64168" d="m0 4 9-5" transform="translate(281 297.385)" style="stroke:#fff;stroke-linecap:round;stroke-width:1.5px;fill:none"/>
+        <path data-name="패스 64167" d="m0 0 9 5" transform="translate(281 303.885)" style="stroke:#fff;stroke-linecap:round;stroke-width:1.5px;fill:none"/>
+        <circle data-name="타원 167" cx="3.5" cy="3.5" r="3.5" transform="translate(290.5 290.885)" style="fill:rgba(255,255,255,.1);stroke-linejoin:round;stroke-miterlimit:10;stroke:#fff;stroke-linecap:round;stroke-width:1.5px"/>
+        <circle data-name="타원 168" cx="3.5" cy="3.5" r="3.5" transform="translate(290.5 307.885)" style="fill:rgba(255,255,255,.1);stroke-linejoin:round;stroke-miterlimit:10;stroke:#fff;stroke-linecap:round;stroke-width:1.5px"/>
+        <circle data-name="타원 169" cx="3.5" cy="3.5" r="3.5" transform="translate(274 298.885)" style="fill:rgba(255,255,255,.1);stroke-linejoin:round;stroke-miterlimit:10;stroke:#fff;stroke-linecap:round;stroke-width:1.5px"/>
+    </g>
+</svg>

@@ -1,0 +1,242 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+	<title>한방부동산 - HTML List</title>
+	<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+	<link href="guide.css" rel="stylesheet" type="text/css">
+	<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+	<style>
+		.swiperWrap .swiper-wrapper .swiper-slide{height:200px;background:pink}
+		.swiperVertical{height:200px;}
+	</style>
+</head>
+
+<body>
+<section class='guideHeader'>
+	<script>$('.guideHeader').load('include/gnb00.html');</script>
+	
+</section>
+
+<section class="guideContents">
+	
+	
+    <h2 class="guideTit2">Swiper</h2>
+
+	<div style="font-size:18px;background:#f5f5f5;padding:20px">
+		<strong>swiper Option</strong><br><br>
+
+		1. 무한루프 : loop - false/true<br>
+		2. 자동롤링 : autoplay - 속도(예 - 2000)
+		3. pagination : 기본 bullets, fraction - 페이징 숫자, all - bullets/ faction 모두 나옴
+
+
+	</div>
+
+	<h3 class="guideTit3">Default</h3>
+	
+	<div class="swiperWrap" data-options='{"loop": true, "autoplay": "0", "Spacebetween": 20}'>
+		<div class="swiper-container">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide">Slide 1</li>
+				<li class="swiper-slide">Slide 2</li>
+				<li class="swiper-slide">Slide 3</li>
+				<li class="swiper-slide">Slide 4</li>
+				<li class="swiper-slide">Slide 5</li>
+				<li class="swiper-slide">Slide 6</li>
+				<li class="swiper-slide">Slide 7</li>
+				<li class="swiper-slide">Slide 8</li>
+				<li class="swiper-slide">Slide 9</li>
+			</ul>
+		</div>
+		<div class="swiper-pagination">
+			<div class="btAutoplays">
+				<button type="button" class="btStop">정지</button>
+				<button type="button" class="btPlay">재생</button>
+			</div>
+		</div>	
+	</div>
+
+	<h3 class="guideTit3">paging</h3>
+	
+	<div class="swiperWrap swiperPaging" data-options='{"loop": true, "Spacebetween": 20, "pagination": "all"}'>
+		<button type="button" class="swiper-button-prev">이전</button>			
+		<div class="swiper-container">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide">Slide 1</li>
+				<li class="swiper-slide">Slide 2</li>
+				<li class="swiper-slide">Slide 3</li>
+				<li class="swiper-slide">Slide 4</li>
+				<li class="swiper-slide">Slide 5</li>
+				<li class="swiper-slide">Slide 6</li>
+				<li class="swiper-slide">Slide 7</li>
+				<li class="swiper-slide">Slide 8</li>
+				<li class="swiper-slide">Slide 9</li>
+			</ul>
+		</div>	
+		<button type="button" class="swiper-button-next">다음</button>
+		<div class="swiper-pagination"></div>	
+	</div>
+	<br><br>
+
+	<div class="swiperWrap swiperPaging" data-options='{"loop": true, "Spacebetween": 20, "pagination": "all"}'>
+		<div class="swiper-container">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide">페이징 화이트 Slide 1</li>
+				<li class="swiper-slide">Slide 2</li>
+				<li class="swiper-slide">Slide 3</li>
+				<li class="swiper-slide">Slide 4</li>
+				<li class="swiper-slide">Slide 5</li>
+				<li class="swiper-slide">Slide 6</li>
+				<li class="swiper-slide">Slide 7</li>
+				<li class="swiper-slide">Slide 8</li>
+				<li class="swiper-slide">Slide 9</li>
+			</ul>
+		</div>	
+		<div class="swiper-pagination swiper-pagination-white"></div>	
+	</div>
+	<br><br>
+
+	<div class="swiperWrap swiperGap" data-options='{"Spacebetween": 12}'>
+		<div class="swiper-container">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide">Slide Gap1</li>
+				<li class="swiper-slide">Slide 2</li>
+				<li class="swiper-slide">Slide 3</li>
+				<li class="swiper-slide">Slide 4</li>
+				<li class="swiper-slide">Slide 5</li>
+				<li class="swiper-slide">Slide 6</li>
+				<li class="swiper-slide">Slide 7</li>
+				<li class="swiper-slide">Slide 8</li>
+				<li class="swiper-slide">Slide 9</li>
+			</ul>
+		</div>
+		<div class="swiper-pagination"></div>		
+	</div>
+	<br><br>
+
+	<div class="swiperWrap swiperView" data-options='{"Spacebetween": 12, "centeredSlides": true, "view":2}'>
+		<div class="swiper-container">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide">Slide auto</li>
+				<li class="swiper-slide">Slide 2</li>
+				<li class="swiper-slide">Slide 3</li>
+				<li class="swiper-slide">Slide 4</li>
+				<li class="swiper-slide">Slide 5</li>
+				<li class="swiper-slide">Slide 6</li>
+				<li class="swiper-slide">Slide 7</li>
+				<li class="swiper-slide">Slide 8</li>
+				<li class="swiper-slide">Slide 9</li>
+			</ul>
+		</div>
+		<div class="swiper-pagination"></div>		
+	</div>
+	<br><br>
+
+	<div class="swiperWrap swiperVertical" data-options='{"vertical": true, "centeredSlides": true, "view":5, "initialSlide":9}'>
+		<div class="swiper-container">
+			<ul class="swiper-wrapper">				
+				<li class="swiper-slide">2015</li>
+				<li class="swiper-slide">2016</li>
+				<li class="swiper-slide">2017</li>
+				<li class="swiper-slide">2018</li>
+				<li class="swiper-slide">2019</li>
+				<li class="swiper-slide">2020</li>
+				<li class="swiper-slide">2021</li>
+				<li class="swiper-slide">2022</li>
+				<li class="swiper-slide">2023</li>
+			</ul>
+		</div>	
+	</div>
+	<br><br>
+
+	<div dir="rtl" class="swiperWrap swiperVertical" data-options='{"vertical": true, "centeredSlides": true, "view":5}'>
+		<div class="swiper-container">
+			<ul class="swiper-wrapper">				
+				<li class="swiper-slide">2023</li>
+				<li class="swiper-slide">2022</li>
+				<li class="swiper-slide">2021</li>
+				<li class="swiper-slide">2020</li>
+				<li class="swiper-slide"></li>
+				<li class="swiper-slide"></li>
+				<li class="swiper-slide"></li>
+				<li class="swiper-slide"></li>
+				<li class="swiper-slide"></li>
+				<li class="swiper-slide"></li>
+				<li class="swiper-slide"></li>
+				<li class="swiper-slide"></li>
+				<li class="swiper-slide"></li>
+				<li class="swiper-slide"></li>
+			</ul>
+		</div>	
+	</div>
+
+
+	<br><br><br>
+	<div style="height:1000px"></div>
+
+	<div class="swiperWrap swiperHeight" data-options='{"Spacebetween": 20, "autoHeight": true}'>
+		<div class="swiper-container">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide" style="height:300px">height auto</li>
+				<li class="swiper-slide" style="height:600px">Slide 2</li>
+				<li class="swiper-slide" style="height:200px">Slide 3</li>
+				<li class="swiper-slide" style="height:100px">Slide 4</li>
+				<li class="swiper-slide" style="height:300px">Slide 5</li>
+				<li class="swiper-slide" style="height:400px">Slide 6</li>
+				<li class="swiper-slide" style="height:200px">Slide 7</li>
+				<li class="swiper-slide" style="height:500px">Slide 8</li>
+				<li class="swiper-slide" style="height:100px">Slide 9</li>
+			</ul>
+		</div>
+		<div class="swiper-pagination"></div>		
+	</div>
+	<br><br>
+	<div class="swiperGallery">
+		<div class="swiperWrap swiperImgBig" data-options='{"Spacebetween" : 20}'>
+			<div class="swiper-container">
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide"><img src="/images/magnt/dummy/@img_thumb01.jpg" alt=""></li>
+					<li class="swiper-slide"><img src="/images/magnt/dummy/@img_thumb02.jpg" alt=""></li>
+					<li class="swiper-slide"><img src="/images/magnt/dummy/@img_thumb01.jpg" alt=""></li>
+					<li class="swiper-slide"><img src="/images/magnt/dummy/@img_thumb03.jpg" alt=""></li>
+					<li class="swiper-slide"><img src="/images/magnt/dummy/@img_thumb01.jpg" alt=""></li>
+					<li class="swiper-slide"><img src="/images/magnt/dummy/@img_thumb01.jpg" alt=""></li>
+				</ul>
+			</div>
+		</div>
+
+		<div thumbsSlider="" class="swiperWrap swiperThumb" data-options='{"view": 4, "Spacebetween" : 8}'>
+			<div class="swiper-container">
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide"><a href="#"><img src="/images/magnt/dummy/@img_thumb01.jpg" alt=""></a></li>
+					<li class="swiper-slide"><a href="#"><img src="/images/magnt/dummy/@img_thumb02.jpg" alt=""></a></li>
+					<li class="swiper-slide"><a href="#"><img src="/images/magnt/dummy/@img_thumb01.jpg" alt=""></a></li>
+					<li class="swiper-slide"><a href="#"><img src="/images/magnt/dummy/@img_thumb03.jpg" alt=""></a></li>
+					<li class="swiper-slide"><a href="#"><img src="/images/magnt/dummy/@img_thumb01.jpg" alt=""></a></li>
+					<li class="swiper-slide"><a href="#"><img src="/images/magnt/dummy/@img_thumb01.jpg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+</section>
+</body>
+
+<script type="text/javascript" src="/js/magnt/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/magnt/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/magnt/swiper.min.js"></script>
+<script type="text/javascript" src="/js/magnt/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/magnt/m_common.js"></script>
+<script type="text/javascript" src="guide.js"></script>
+<script type="text/javascript">
+
+	var gnbNO = 0;
+	var snbNO = 9;
+  
+</script>
+
+</html>

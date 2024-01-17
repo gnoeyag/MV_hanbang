@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g data-name="icon / icon_40px_hh">
+        <g data-name="그룹 21479">
+            <path data-name="패스 66391" d="M0 1h4.043v8.253L0 5.514z" transform="translate(23.955 8)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+            <path data-name="사각형 23185" transform="translate(14.001 28)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="M0 0h7v10H0z"/>
+            <path data-name="선 329" transform="translate(1 38)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="M0 0h38"/>
+            <path data-name="패스 66399" d="M16.581.75 4.081 12.3v18.45h25V12.3z" transform="translate(.92 7.25)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+            <path data-name="패스 66400" d="M31.5 14.333 16.126.75.75 14.333" transform="translate(1.372 7.251)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+        </g>
+        <path data-name="패스 66396" d="M10.944 3.259A2.536 2.536 0 0 0 8.278.75a2.664 2.664 0 0 0-2.431 1.575A2.663 2.663 0 0 0 3.416.75 2.537 2.537 0 0 0 .75 3.259a3.746 3.746 0 0 0 .667 1.882 17.362 17.362 0 0 0 4.43 4.391c.387 0 3.034-2.382 4.352-4.391a5.488 5.488 0 0 0 .745-1.882z" transform="translate(28.152 .25)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+    </g>
+</svg>

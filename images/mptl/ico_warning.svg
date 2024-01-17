@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+    <g data-name="warning icon">
+        <g data-name="그룹 133">
+            <path data-name="사각형 61" d="M1 0h10a1 1 0 0 1 1 1v1.052H0V1a1 1 0 0 1 1-1z" transform="translate(0 9.948)" style="fill:#747474"/>
+            <path data-name="사각형 13572" d="M5 0a5 5 0 0 1 5 5v5H0V5a5 5 0 0 1 5-5z" transform="translate(1)" style="fill:#fc6242"/>
+            <path data-name="사각형 13571" d="M1 0a1 1 0 0 1 1 1v5H0V1a1 1 0 0 1 1-1z" transform="translate(5 4)" style="fill:#121212;opacity:.2"/>
+        </g>
+    </g>
+</svg>

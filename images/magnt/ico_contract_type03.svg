@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <path data-name="패스 65891" d="M5.091 16.482h-2.27A1.822 1.822 0 0 1 1 14.661V2.821A1.822 1.822 0 0 1 2.821 1h9.107a1.822 1.822 0 0 1 1.822 1.821V8.74" transform="translate(2.625 .258)" style="fill:none;stroke:#3a3a3a;stroke-linecap:round;stroke-miterlimit:10"/>
+    <path data-name="선 351" transform="translate(7 8)" style="fill:none;stroke:#3a3a3a;stroke-linecap:round;stroke-miterlimit:10" d="M0 0h6"/>
+    <path data-name="선 352" transform="translate(7 5)" style="fill:none;stroke:#3a3a3a;stroke-linecap:round;stroke-miterlimit:10" d="M0 0h6"/>
+    <path data-name="Path 3260" d="M8.189-.25a2.127 2.127 0 0 1 2.137 2.1 2.342 2.342 0 0 1-.287 1.143 4.622 4.622 0 0 0-.279 2.719l.129.576H6.516l.121-.57a4.753 4.753 0 0 0-.3-2.726 2.347 2.347 0 0 1-.288-1.145A2.128 2.128 0 0 1 8.189-.25zM9.3 1.906V1.863a1.111 1.111 0 1 0-2.221 0v.047a1.547 1.547 0 0 0 .192.678 5.257 5.257 0 0 1 .453 2.747h.949a5.165 5.165 0 0 1 .437-2.752 1.536 1.536 0 0 0 .19-.677z" transform="translate(6.324 10.734)" style="fill:#353535"/>
+    <path data-name="Path 3261" d="M1.178 15.833h6.169a1.482 1.482 0 0 1 1.428 1.528V18.4a.513.513 0 0 1-.513.513h-8A.513.513 0 0 1-.25 18.4v-1.039a1.482 1.482 0 0 1 1.428-1.528zm6.571 2.053v-.525a.466.466 0 0 0-.4-.5H1.178a.466.466 0 0 0-.4.5v.525z" transform="translate(10.25 .162)" style="fill:#353535"/>
+</svg>

@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>지도 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/mptl/h_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper mapWrapper"> <!--지도 전용 mapWrap class 추가-->
+		<header>
+			<h1 class="titPage hidden">지도</h1>
+			<!--검색 필드-->
+			<div class="decoSearch">
+				<div class="searchWord">
+					<strong class="keyword">서울 중구 도렴동</strong> <!--20230825 서울시 -> 서울-->
+				</div>
+				<button type="button" class="btFilter layPopBtn" data-id="pop_searchSetting">필터</button>
+			</div>
+
+
+			<div class="btnSwiper">
+				<button type="button" class="btnDefault btnRound isSelected" data-controls="anchorTabContents01">아파트</button>
+				<button type="button" class="btnDefault btnRound isSelected" data-controls="anchorTabContents02">매매, 전세, 월세, 연세</button>
+				<button type="button" class="btnDefault btnRound isSelected" data-controls="anchorTabContents03">면적 전체</button>
+			</div>
+			<!--//검색 필드-->
+
+		</header>
+
+		<div id="container" class="container">
+			<!-- start of contents -->
+
+			<div class="mapArea">
+				<!--sample 지도 이미지 : 작업시에는 지워주세요!-->
+				<img src="/images/mptl/dummy/@img_map_vertical.jpg" alt="" style="position:fixed;top:0;left:0">
+
+				<!--좌측 컨트롤 영역-->
+				<div class="mapControl">
+					<button type="button" class="ico icoMyPosition"><span class="hidden">현재 위치</span></button>
+					<div class="group">
+						<button type="button" class="ico icoMapPlus"><span class="hidden">지도 확대</span></button>
+						<button type="button" class="ico icoMapMinus"><span class="hidden">지도 축소</span></button>
+					</div>
+				</div>
+				<!--//좌측 컨트롤 영역-->
+
+				<!--우측 컨트롤 영역-->
+				<div class="featureControl">
+					<div class="item">
+						<button type="button" class="ico icoSetting layPopBtn" data-id="pop_mapSetting">설정</button>
+					</div>
+					<div class="item">
+						<div class="option sale">
+							<button type="button" class="ico icoSale">매물</button>
+							<button type="button" class="ico icoEstate">단지</button>
+							<button type="button" class="ico icoAgency">중개소</button>
+						</div>
+						<button type="button" class="ico icoSale isCurrent">매물</button><!--선택 상태 : isSelected class 추가-->
+					</div>
+					<div class="item">
+						<div class="option tool">
+							<button type="button" class="ico icoDrawing">그리기</button>
+							<button type="button" class="ico icoDistance">거리재기</button>
+						</div>
+						<button type="button" class="ico icoTool isCurrent">도구</button>
+					</div>
+				</div>
+				<!--//우측 컨트롤 영역-->
+
+				<!--지도 비율-->
+				<div class="mapRate">
+					<span class="hidden">지도 비율</span>
+					<span class="mapSizeRate">500m</span>
+				</div>
+				<!--//지도 비율-->
+
+				<!--관심 버튼-->
+				<div class="favoriteArea">
+					<input type="checkbox" class="icoFavorite" id="favorite" name="favorite">
+					<label for="favorite"><span>관심 지역 등록</span></label>
+				</div>
+				<!--//관심 버튼-->
+
+				<!--역세권 버튼 -->
+				<button type="button" class="btnSubway" style="top:193px;left:130px">경복궁역</button>
+				<button type="button" class="btnSubway" style="top:260px;left:163px">광화문역</button>
+				<!--//역세권 버튼 -->
+
+				<!--매물 수 버튼-->
+				<!-- class명 참고 :  sizeSmall : 매물수 1~9 / sizeMedium : 매물수 10~99 / sizeLarge : 매물수 100 이상 -->
+				<div class="saleCount sizeSmall" style="top:142px;left:70px">
+					<strong class="count" role="button"><span class="hidden">매물 수</span>9</strong>
+				</div>
+				<div class="saleCount sizeMedium" style="top:297px;left:254px">
+					<strong class="count" role="button"><span class="hidden">매물 수</span>51</strong>
+				</div>
+				<div class="saleCount sizeLarge" style="top:260px;left:100px">
+					<strong class="count" role="button"><span class="hidden">매물 수</span>101</strong>
+				</div>
+				<!--//매물 수 버튼-->
+
+
+				<!--중개소 선택 시 아이콘 노출 - 카운트가 0일 경우 값을 비워주세요-->
+				<i class="pin pinAgency" style="top:240px;left:100px"><span class="hidden">중개소</span><em class="count">10000</em></i>
+				<!--중개소 선택 시 아이콘 노출-->
+
+
+
+			</div>
+
+			<!--하단 목록 레이어-->
+			<div class="listDestination oneList">
+				<!--목록이 1개 일 경우 oneList 추가-->
+				<!--목록 이외 지도 영역 터치 시 half 또는 oneList 클래스 삭제됨 -->
+
+				<div class="destiWrap">
+					<button type="button" class="dragBtn">매물정보 보기</button>
+
+					<div class="scrollArea">
+
+						<div id="tabContTotalWrap" class="tabContTotalWrap">
+							<div class="tabInner">
+								<!--[D] 활성화 된 탭 컨텐츠, 해당 영역 안에서 토글로 보여짐-->
+
+								<!--중개사사무소-->
+								<ul class="objectList">
+									<li>
+										<article class="figSec reverse fixerSec">
+											<a href="#" class="figSecItem alignC">
+												<figure class="figSecImg">
+													<div class="profile">
+														<img src="/images/mptl/dummy/@img_profile.png" alt="중개사무소 프로필" onerror="this.onerror=null; this.src='/images/mptl/img_noProfile.png'">
+													</div>
+												</figure>
+												<div class="defineSec">
+													<span class="defineSecPart"><span class="flag sales02">시세제공</span></span>
+													<strong class="defineSecPrice"><em class="price">서울e부동산중개사무소</em></strong>
+													<span class="defineSecNormal">서울 관악구 청림6길 3</span>
+													<span class="defineSecNormal">대표 김한방</span>
+													<div class="figMap">
+														<span class="figMapItem">매매 <em class="figMapBold hasValue">3</em></span>
+														<span class="figMapItem">전세 <em class="figMapBold hasValue">2</em></span>
+														<span class="figMapItem">월세 <em class="figMapBold hasValue">8</em></span>
+														<span class="figMapItem">연세 <em class="figMapBold">0</em></span>
+													</div>
+													<p class="subNotiText mt12">아파트 분양권 &middot; 오피스텔 분양권 &middot; 지식산업센터 전문</p>
+												</div>
+											</a>
+										</article>
+									</li>
+								</ul>
+								<!--//중개사사무소-->
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!--//하단 목록 레이어-->
+
+			<!-- // end of contents -->
+		</div><!-- //container -->
+
+		<div class="dockBar">
+			<div class="inner">
+				<a href="#" role="button" class="btNavi01" aria-selected="false">홈</a>
+				<a href="#" role="button" class="btNavi02" aria-selected="false">분양</a>
+				<a href="#" role="button" class="btNavi03" aria-selected="true">지도</a>
+				<a href="#" role="button" class="btNavi04" aria-selected="false">관심</a>
+				<div id="navi" class="naviWrap">
+					<button type="button" class="btNav" aria-expanded="false">메뉴</button>
+					<nav>
+						<div class="navInner">메뉴영역</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<div class="dimmed"></div>
+
+
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/mptl/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/mptl/swiper.min.js"></script>
+<script type="text/javascript" src="/js/mptl/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/mptl/m_common.js"></script>
+
+</html>
+

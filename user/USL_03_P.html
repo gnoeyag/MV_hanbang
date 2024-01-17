@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>분양 일정 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/mptl/h_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+<section id="wrapper" class="wrapper">
+	<header>
+		<button type="button" class="btprev">이전</button>
+		<h1 class="titPage tCenter">분양 일정</h1>
+	</header>
+	
+	<div id="container" class="container">
+		<!-- start of contents -->
+		
+		
+		<div class="calendarWrap">
+			<div class="selectCalendar">
+				<button type="button" class="btCalendar layPopBtn" data-id="pop_yearMonth">2023년 7월</button>
+			</div>
+			<div class="dotFilterBg">
+				<div class="dotFilter">
+					<div class="tabWrap">
+						<div class="inner">
+							<ul class="tabType02">
+								<li><span class="frmInp frmInpS txt"><input type="checkbox" id="chkDot04" checked><label
+									for="chkDot04" class="dot01">공고</label></span></li>
+								<li><span class="frmInp frmInpS txt"><input type="checkbox" id="chkDot03" checked><label
+									for="chkDot03" class="dot02">접수</label></span></li>
+								<li><span class="frmInp frmInpS txt"><input type="checkbox" id="chkDot05" checked><label
+									for="chkDot05" class="dot03">발표</label></span></li>
+								<li><span class="frmInp frmInpS txt"><input type="checkbox" id="chkDot01" checked><label
+									for="chkDot01" class="dot04">계약</label></span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="calendarContainer">
+				<div class="weekArea">
+					<span class="day">일</span>
+					<span class="day">월</span>
+					<span class="day">화</span>
+					<span class="day">수</span>
+					<span class="day">목</span>
+					<span class="day">금</span>
+					<span class="day">토</span>
+				</div>
+				<div class="dayArea">
+					<div class="row">
+						<span class="day"></span>
+						<span class="day"><button type="button" disabled>1</button></span> <!-- 선택되지 않는 기간은 disabled 추가 -->
+						<span class="day"><button type="button" disabled>2</button></span>
+						<span class="day"><button type="button" disabled>3</button></span>
+						<span class="day"><button type="button" disabled>4</button></span>
+						<span class="day"><button type="button" disabled>5</button></span>
+						<span class="day"><button type="button" disabled>6</button></span>
+					</div>
+					<div class="row">
+						<span class="day"><button type="button" disabled>7</button></span>
+						<span class="day"><button type="button" disabled>8</button></span>
+						<span class="day"><button type="button">9</button></span>
+						<span class="day"><button type="button">10</button></span>
+						<span class="day today"> <!-- 오늘날짜에 today 클래스 추가 -->
+                                <button type="button">11</button>
+                                <span class="dotArea">
+                                    <em class="dot01">공고</em>
+                                    <em class="dot02">접수</em>
+                                    <em class="dot03">발표</em>
+                                    <em class="dot04">계약</em>
+                                </span>
+                            </span>
+						<span class="day"><button type="button">12</button></span>
+						<span class="day"><button type="button">13</button></span>
+					</div>
+					<div class="row">
+						<span class="day"><button type="button">14</button></span>
+						<span class="day"><button type="button">15</button></span>
+						<span class="day"><button type="button">16</button></span>
+						<span class="day selectDay"> <!-- 선택 된 날짜에 selectDay 클래스 추가 -->
+                                <button type="button">17</button>
+                                <span class="dotArea">
+                                    <em class="dot01">공고</em>
+                                    <em class="dot02">접수</em>
+                                    <em class="dot03">발표</em>
+                                    <em class="dot04">계약</em>
+                                </span>
+                            </span>
+						<span class="day"><button type="button">18</button></span>
+						<span class="day"><button type="button">19</button></span>
+						<span class="day"><button type="button">20</button></span>
+					</div>
+					<div class="row">
+						<span class="day"><button type="button">21</button></span>
+						<span class="day"><button type="button">22</button></span>
+						<span class="day"><button type="button">23</button></span>
+						<span class="day">
+                                <button type="button">24</button>
+                                <span class="dotArea">
+                                    <em class="dot01">공고</em>
+                                    <em class="dot02">접수</em>
+                                    <em class="dot03">발표</em>
+                                </span>
+                            </span>
+						<span class="day"><button type="button">25</button></span>
+						<span class="day"><button type="button">26</button></span>
+						<span class="day"><button type="button">27</button></span>
+					</div>
+					<div class="row">
+						<span class="day"><button type="button">28</button></span>
+						<span class="day"><button type="button">29</button></span>
+						<span class="day"><button type="button">30</button></span>
+						<span class="day">
+                                <button type="button">31</button>
+                                <span class="dotArea">
+                                    <em class="dot03">발표</em>
+                                </span>
+                            </span>
+						<span class="day"></span>
+						<span class="day"></span>
+						<span class="day"></span>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		<!-- //calendarWrap -->
+		
+		<!--하단 목록 레이어-->
+		<div id="dragTop" class="listDestination calendarHandle">
+			<div class="destiWrap">
+				<button type="button" class="dragBtn">일정목록 보기</button>
+				<div class="scrollArea">
+					<div class="agendaList">
+						<div class="item">
+							<div class="titArea">
+								<span class="txt"><strong class="today">오늘</strong> 2023.07.12(목)</span>
+							</div>
+							
+							<div class="noDataS noneLine">공시된 분양 일정이 없어요</div>
+							
+							
+							<div class="lineListTit">
+								공고 <strong class="count">2</strong>건
+							</div>
+							<ul class="lineList typeLink">
+								<li>
+									<a href="#" class="link">
+										<span class="left">[모집공고] 부산 에코델타시티 금강펜테리움</span>
+										<span class="right">~ MM.DD</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="link">
+										<span class="left">[모집공고] 서울 새절역 두산위브 트레지움 [모집공고] 서울 새절역 두산위브 트레지움</span>
+										<span class="right">~ MM.DD</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="link">
+										<span class="left">[모집공고] 강원 [무순위] 춘천 하우스디 [모집공고] 강원 [무순위] 춘천 하우스디 시그…</span>
+										<span class="right">~ MM.DD</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="link">
+										<span class="left">[모집공고] 부산 에코델타시티 금강펜테리움</span>
+										<span class="right">~ MM.DD</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="link">
+										<span class="left">[모집공고] 부산 에코델타시티 금강펜테리움</span>
+										<span class="right">~ MM.DD</span>
+									</a>
+								</li>
+							</ul>
+							
+							<div class="lineListTit">
+								접수 <strong class="count">1</strong>건
+							</div>
+							<ul class="lineList typeLink">
+								<li>
+									<a href="#" class="link">
+										<span class="left">[모집접수] 부산 에코델타시티 금강펜테리움</span>
+										<span class="right">~ MM.DD</span>
+									</a>
+								</li>
+							</ul>
+							
+							<div class="lineListTit">
+								발표 <strong class="count">5</strong>건
+							</div>
+							<ul class="lineList typeLink">
+								<li>
+									<a href="#" class="link">
+										<span class="left">[모집발표] 부산 에코델타시티 금강펜테리움</span>
+										<span class="right">~ MM.DD</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="link">
+										<span class="left">[모집발표] 서울 새절역 두산위브 트레지움 [모집공고] 서울 새절역 두산위브 트레지움</span>
+										<span class="right">~ MM.DD</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="link">
+										<span class="left">[모집발표] 강원 [무순위] 춘천 하우스디 [모집공고] 강원 [무순위] 춘천 하우스디 시그…</span>
+										<span class="right">~ MM.DD</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="link">
+										<span class="left">[모집발표] 부산 에코델타시티 금강펜테리움</span>
+										<span class="right">~ MM.DD</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="link">
+										<span class="left">[모집발표] 부산 에코델타시티 금강펜테리움</span>
+										<span class="right">~ MM.DD</span>
+									</a>
+								</li>
+							</ul>
+							
+							<div class="lineListTit">
+								계약 <strong class="count">2</strong>건
+							</div>
+							<ul class="lineList typeLink">
+								<li>
+									<a href="#" class="link">
+										<span class="left">[계약] 부산 에코델타시티 금강펜테리움</span>
+										<span class="right">~ MM.DD</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="link">
+										<span class="left">[계약] 서울 새절역 두산위브 트레지움 [모집공고] 서울 새절역 두산위브 트레지움</span>
+										<span class="right">~ MM.DD</span>
+									</a>
+								</li>
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--//하단 목록 레이어-->
+		
+		
+		<!-- // end of contents -->
+	</div><!-- //container -->
+	
+	<div class="dockBar">
+		<div class="inner">
+			<a href="#" role="button" class="btNavi01" aria-selected="false">홈</a>
+			<a href="#" role="button" class="btNavi02" aria-selected="true">분양</a>
+			<a href="#" role="button" class="btNavi03" aria-selected="false">지도</a>
+			<a href="#" role="button" class="btNavi04" aria-selected="false">관심</a>
+			<div id="navi" class="naviWrap">
+				<button type="button" class="btNav" aria-expanded="false">메뉴</button>
+				<nav>
+					<div class="navInner">메뉴영역</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!-- 년/월 선택 Layer -->
+<section id="pop_yearMonth" class="layPop layBtm" tabindex="0">
+	<header>
+		<h2 class="titLay">날짜 선택</h2> <!-- 2023.08.16 수정 / 텍스트 수정 -->
+	</header>
+	
+	<div class="layContainer" tabindex="0">
+		<div class="layContent">
+			<div class="yearMonth">
+				<div class="item">
+					<div dir="rtl"  class="swiperWrap swiperVertical" data-options='{"vertical": true, "view":"5", "centeredSlides": true}'>
+						<div class="swiper-container">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">2015년</li>
+								<li class="swiper-slide">2016년</li>
+								<li class="swiper-slide">2017년</li>
+								<li class="swiper-slide">2018년</li>
+								<li class="swiper-slide">2019년</li>
+								<li class="swiper-slide">2020년</li>
+								<li class="swiper-slide">2021년</li>
+								<li class="swiper-slide" data-active>2022년</li>
+								<li class="swiper-slide">2023년</li> <!-- 선택 된 영역에 data-active 추가 -->
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div dir="rtl" class="swiperWrap swiperVertical" data-options='{"loop" : true, "vertical": true, "view":"5", "centeredSlides": true}'>
+						<div class="swiper-container">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">1월</li>
+								<li class="swiper-slide">2월</li>
+								<li class="swiper-slide">3월</li>
+								<li class="swiper-slide">4월</li>
+								<li class="swiper-slide">5월</li>
+								<li class="swiper-slide">6월</li>
+								<li class="swiper-slide">7월</li>
+								<li class="swiper-slide" data-active>8월</li> <!-- 선택 된 영역에 data-active 추가 -->
+								<li class="swiper-slide">9월</li>
+								<li class="swiper-slide">10월</li>
+								<li class="swiper-slide">11월</li>
+								<li class="swiper-slide">12월</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //yearMonth -->
+		</div>
+		<div class="popBtns">
+			<div class="inner">
+				<button type="button" class="btnDefault btnL action">선택하기</button>
+			</div>
+		</div>
+	</div><!-- //layContainer-->
+	<button type="button" class="closeL">팝업 닫기</button>
+
+</section>
+<!-- //년/월 선택 Layer -->
+
+
+
+<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/mptl/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/mptl/swiper.min.js"></script>
+<script type="text/javascript" src="/js/mptl/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/mptl/m_common.js"></script>
+
+</html>
+

@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>내 집 찾기 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/mptl/h_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">내 집 찾기</h1>
+		</header>
+	
+		<div id="container" class="container">
+			<!-- start of contents -->
+			
+			<div class="titWithFavo titTop">
+				<h2 class="titDep2"><a href="#" class="btIco decoArr">서울 관악구 신림동</a></h2>
+				<span class="chkFavorite">
+					<input type="checkbox" id="chkFavo" class="chkInp">
+					<label for="chkFavo">관심 설정</label>
+				</span>
+			</div>
+			
+			<article class="conveniPlant">
+				<ul>
+					<li>
+						<span class="titPlant plantMart">쇼핑 <strong class="count">165</strong></span>
+					</li>
+					<li>
+						<span class="titPlant plantPark">공원 <strong class="count">11</strong></span>
+					</li>
+					<li>
+						<span class="titPlant plantHospital">의료 <strong class="count">24</strong></span>
+					</li>
+					<li>
+						<span class="titPlant plantGym">운동 <strong class="count">20</strong></span>
+					</li>
+					<li>
+						<span class="titPlant plantSchool">교육 <strong class="count">1</strong></span>
+					</li>
+				</ul>
+			</article>
+			
+			<ul class="dealBoard mt24">
+				<li class="item">
+					<span class="case">매매</span>
+					<strong class="count hasValue">43</strong>건
+				</li>
+				<li class="item">
+					<span class="case">전세</span>
+					<strong class="count hasValue">13</strong>건
+				</li>
+				<li class="item">
+					<span class="case">월세</span>
+					<strong class="count hasValue">3</strong>건
+				</li>
+				<li class="item">
+					<span class="case">연세</span>
+					<strong class="count">0</strong>건
+				</li>
+			</ul>
+			
+			<div class="divider fewSpace">
+				<div class="tabWrap viewTab roundTab blackVer">
+					<ul class="tabType02">
+						<li><a href="#" role="button" aria-selected="true" data-js-tabacc="acc1">전체</a></li>
+						<li><a href="#" role="button" aria-selected="false" data-js-tabacc="acc2">봉천동 <strong
+							class="count">150</strong></a></li>
+						<li><a href="#" role="button" aria-selected="false" data-js-tabacc="acc3">남현동 <strong
+							class="count">100</strong></a></li>
+						<li><a href="#" role="button" aria-selected="false" data-js-tabacc="acc4">보라매동 <strong
+							class="count">90</strong></a></li>
+						<li><a href="#" role="button" aria-selected="false" data-js-tabacc="acc5">봉천동 <strong
+							class="count">150</strong></a></li>
+						<li><a href="#" role="button" aria-selected="false" data-js-tabacc="acc6">남현동 <strong
+							class="count">70</strong></a></li>
+						<li><a href="#" role="button" aria-selected="false" data-js-tabacc="acc7">보라매동 <strong
+							class="count">90</strong></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 2023.10.13 수정 / 필터 추가 -->
+			<div class="sortingFillter">
+				<div class="item">
+					<button type="button" class="btnSorting active">최신순</button> <!-- [D] 선택 시 active 클래스 추가 -->
+					<button type="button" class="btnSorting">관심순</button>
+					<button type="button" class="btnSorting">조회순</button>
+					<button type="button" class="btnSorting">가격순</button> <!-- 가격순이 디폴트 / 높은가격순 class : rateUp, 낮은가격순 class : rateDown 추가 -->
+					<button type="button" class="btnSorting">면적순</button> <!-- 가격순이 디폴트 / 넓은면적순 class : rateUp, 낮은면적순 class : rateDown 추가 -->
+				</div>
+			</div>
+			<!-- //2023.10.13 수정 / 필터 추가 -->
+			
+			
+			
+			<div id="tabContTotalWrap" class="tabContTotalWrap">
+				<div class="tabInner">
+					<!--[D] 활성화 된 탭 컨텐츠, 해당 영역 안에서 토글로 보여짐-->
+					
+					<ul class="objectList">
+						<li>
+							<article class="figSec">
+								<a href="#" class="figSecItem">
+									<div class="defineSec">
+										<span class="defineSecPart"><span class="flag sthType">아파트</span> 광나루 현대 103동</span>
+										<strong class="defineSecPrice"><span class="flag state01">급</span> <em class="price">매매 12억 5,000 ~ 13억 8,000</em></strong> <!--20230818 중복매물일 경우 금액 범위로 수정(하기 공통)-->
+										<span class="defineSecNormal">132/152㎡, 15/30층, 남동향, 방12</span>
+									</div>
+									<!--20230818 중복 중개 매물 건 일 경우 이미지 비노출-->
+								</a>
+								<!--중복 중개 매물 존재 할 경우 해당 버튼 노출 : show/hide - isActive class 유무-->
+								<button type="button" class="btnDuplicate isActive">중개사 <strong class="pointCol01">4</strong>곳</button>
+							</article>
+						</li>
+						<!--중복 중개 매물일 경우-->
+						<li class="listDuplicate" style="display:block">
+							<article class="figSec">
+								<a href="#" class="figSecItem">
+									<div class="defineSec">
+										<span class="defineSecPart"><span class="flag sthType">아파트</span> 광나루 현대 103동</span>
+										<strong class="defineSecPrice"><span class="flag state01">급</span> <em class="price">매매 15억 8,000</em></strong>
+										<span class="defineSecNormal">132/152㎡, 15/30층, 남동향, 방12</span>
+										<span class="defineSecNormal">광진구, 경기고학군, 아차산역 5호선</span>
+										<span class="defineSecNormal mtGap">여의도그랜드공인중개사</span>
+										<span class="flag sthDate01">검증매물 2023.05.23</span>
+									</div>
+									<figure class="figSecImg"><img src="/images/mptl/dummy/@img_sample.jpg" alt=""></figure>
+								</a>
+							</article>
+						</li>
+						<!--중복 중개 매물일 경우-->
+						<li class="listDuplicate" style="display:block">
+							<article class="figSec">
+								<a href="#" class="figSecItem">
+									<div class="defineSec">
+										<span class="defineSecPart"><span class="flag sthType">아파트</span> 광나루 현대 103동</span>
+										<strong class="defineSecPrice"><span class="flag state01">급</span> <em class="price">매매 15억 8,000</em></strong>
+										<span class="defineSecNormal">132/152㎡, 15/30층, 남동향, 방12</span>
+										<span class="defineSecNormal">광진구, 경기고학군, 아차산역 5호선</span>
+										<span class="defineSecNormal mtGap">여의도그랜드공인중개사</span>
+										<span class="flag sthDate01">검증매물 2023.05.23</span>
+									</div>
+									<figure class="figSecImg"><img src="/images/mptl/dummy/@img_sample.jpg" alt=""></figure>
+								</a>
+							</article>
+						</li>
+						<!--중복 중개 매물일 경우-->
+						<li class="listDuplicate" style="display:block">
+							<article class="figSec">
+								<a href="#" class="figSecItem">
+									<div class="defineSec">
+										<span class="defineSecPart"><span class="flag sthType">아파트</span> 광나루 현대 103동</span>
+										<strong class="defineSecPrice"><span class="flag state01">급</span> <em class="price">매매 15억 8,000</em></strong>
+										<span class="defineSecNormal">132/152㎡, 15/30층, 남동향, 방12</span>
+										<span class="defineSecNormal">광진구, 경기고학군, 아차산역 5호선</span>
+										<span class="defineSecNormal mtGap">여의도그랜드공인중개사</span>
+										<span class="flag sthDate01">검증매물 2023.05.23</span>
+									</div>
+									<figure class="figSecImg"><img src="/images/mptl/dummy/@img_sample.jpg" alt=""></figure>
+								</a>
+							</article>
+						</li>
+						<li>
+							<article class="figSec">
+								<a href="#" class="figSecItem">
+									<div class="defineSec">
+										<span class="defineSecPart"><span class="flag sthType">빌라</span> 현대 테라타워 영통동</span>
+										<strong class="defineSecPrice"><span class="flag state01">급</span> <em class="price">매매 12억 5,000 ~ 13억 8,000</em></strong><!--20230818 중복매물일 경우 금액 범위로 수정(하기 공통)-->
+										<span class="defineSecNormal">132/152㎡, 15/30층, 남동향, 방12</span>
+									</div>
+									<!--20230818 중복 중개 매물 건 일 경우 이미지 비노출-->
+								</a>
+								<!--중복 중개 매물 존재 할 경우 해당 버튼 노출 : show/hide - isActive class 유무-->
+								<button type="button" class="btnDuplicate">중개사 <strong class="pointCol01">4</strong>곳</button>
+							</article>
+						</li>
+						<!--거래완료/노출종료(진입불가)-->
+						<li class="listDone"><!-- .listDone 추가-->
+							<article class="figSec">
+								<div class="figSecItem">
+									<div class="defineSec">
+										<span class="defineSecPart"><span class="flag sthType">아파트</span> 현대 테라타워 영통동</span>
+										<strong class="defineSecPrice"><em class="price">매매 15억 8,000</em></strong>
+										<span class="defineSecNormal">132/152㎡, 15/30층, 남동향, 방12</span>
+										<span class="defineSecNormal">광진구, 경기고학군, 아차산역 5호선</span>
+										<span class="defineSecNormal mtGap">여의도그랜드공인중개사</span>
+										<span class="flag sthDate01">검증매물 2023.05.23</span>
+									</div>
+									<figure class="figSecImg"><img src="/images/mptl/img_default.png" alt="" onerror="this.onerror=null; this.src='/images/mptl/img_noImg.jpg'"></figure> <!--20230828 noImage 추가-->
+								</div>
+							</article>
+						</li>
+						<!--//거래완료/노출종료(진입불가)-->
+					</ul>
+				
+				</div>
+			</div>
+			
+			<button type="button" class="btnDefault btnS btnBlt wAuto"><span>더 보기</span></button>
+			
+			
+			<!-- // end of contents -->
+		</div><!-- //container -->
+		
+		
+		<aside>
+			<div class="asideRight">
+				<button type="button" class="btTop">페이지 상단으로 이동</button><!-- 2023.08.16 onClick 이벤트 삭제 -->
+			</div>
+		</aside>
+	</section>
+	
+	
+	<div class="toastPopup" style="display:block;"><!-- 토스트팝업 띄울때 display:block 시켜줌.-->
+		<p class="txt">관심 지역으로 등록되었어요.</p>
+	</div>
+	
+	
+	
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/mptl/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/mptl/swiper.min.js"></script>
+<script type="text/javascript" src="/js/mptl/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/mptl/m_common.js"></script>
+
+</html>
+

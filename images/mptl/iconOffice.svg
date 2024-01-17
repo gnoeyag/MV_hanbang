@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+    <defs>
+        <clipPath id="f635cr0kxa">
+            <path data-name="사각형 24727" style="fill:none" d="M0 0h28.315v21.574H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 22272">
+        <g data-name="그룹 22271">
+            <g data-name="그룹 22270" style="clip-path:url(#f635cr0kxa)" transform="translate(3.601 7.199)">
+                <path data-name="선 458" transform="translate(.675 5.731)" style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none" d="M0 0h16.639"/>
+                <path data-name="패스 67596" d="M.75 20.974V.75h26.965v20.224" transform="translate(-.075 -.075)" style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none"/>
+                <path data-name="사각형 24726" transform="translate(17.528 .675)" style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none" d="M0 0h10.113v15.168H0z"/>
+                <path data-name="선 459" transform="translate(17.528 8.259)" style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none" d="M10.113 0H0"/>
+            </g>
+        </g>
+        <path data-name="선 460" transform="translate(24.607 11.245)" style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none" d="M0 0h3.156"/>
+        <path data-name="선 461" transform="translate(24.607 18.829)" style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none" d="M0 0h3.156"/>
+    </g>
+</svg>

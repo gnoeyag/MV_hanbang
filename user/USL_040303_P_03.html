@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>자가진단 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/mptl/h_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+<section id="wrapper" class="wrapper">
+	<header>
+		<button type="button" class="btprev">이전</button>
+		<h1 class="titPage">자가진단</h1>
+	</header>
+	
+	<div id="container" class="container">
+		<!-- start of contents -->
+		
+		<h2 class="titDep2">행복주택 자가진단</h2>
+		
+		<h3 class="titDep4">자신에게 맞는 계층을 선택해 주세요</h3>
+		<ul class="frmBox col02 formBoxDep">
+			<li><input type="radio" id="chkQus01_01" name="chkQus01"><label for="chkQus01_01">대학생</label></li>
+			<li><input type="radio" id="chkQus01_02" name="chkQus01"><label for="chkQus01_02">청년</label></li>
+			<li><input type="radio" id="chkQus01_03" name="chkQus01" checked><label for="chkQus01_03">신혼부부·한부모</label></li>
+			<li><input type="radio" id="chkQus01_04" name="chkQus01"><label for="chkQus01_04">고령자</label></li>
+			<li><input type="radio" id="chkQus01_05" name="chkQus01"><label for="chkQus01_05">주거급여수급자</label></li>
+			<li><input type="radio" id="chkQus01_06" name="chkQus01"><label for="chkQus01_06">산업단지근로자</label></li>
+		</ul>
+		
+		
+		
+		<h3 class="titDep4">무주택 여부를 선택해 주세요 (세대구성원 포함)</h3>
+		<ul class="frmBox col02 formBoxDep">
+			<li><input type="radio" id="chkQus02_01" name="chkQus02"><label for="chkQus02_01">무주택자</label></li>
+			<li><input type="radio" id="chkQus02_02" name="chkQus02"><label for="chkQus02_02">유주택자</label></li>
+		</ul>
+		
+		<h3 class="titDep4">해당하는 자격을 선택해 주세요</h3>
+		<ul class="frmBox col02 formBoxDep">
+			<li><input type="radio" id="chkQus03_01" name="chkQus03"><label for="chkQus03_01">신혼부부</label></li>
+			<li><input type="radio" id="chkQus03_02" name="chkQus03"><label for="chkQus03_02">예비신혼부부</label></li>
+			<li><input type="radio" id="chkQus03_03" name="chkQus03"><label for="chkQus03_03">한부모 가족</label></li>
+		</ul>
+		
+		<!--신혼부부 선택 시 노출-->
+		<h3 class="titDep4">혼인 날짜를 선택해 주세요</h3>
+		<div class="formBoxDep02">
+			<!-- 2023.09.04 placeholder값 수정 및 달력 UI 수정 -->
+			<div class="inpA btDate">
+				<input type="tel" id="inpUsedCheck" placeholder="YYYY-MM-DD" data-id="pop_yearMonth" class="layPopBtn" readonly>
+			</div>
+			<!-- 2023.09.04 placeholder값 수정 및 달력 UI 수정 -->
+		</div>
+		<!--//신혼부부 선택 시 노출-->
+		
+		<!--예비신혼부부 선택 시 노출-->
+		<h3 class="titDep4">입주 전까지 혼인사실 증명이 가능하신가요?</h3>
+		<ul class="frmBox col02 formBoxDep">
+			<li><input type="radio" id="chkQus03-02_01" name="chkQus03-02"><label for="chkQus03-02_01">네</label></li>
+			<li><input type="radio" id="chkQus03-02_02" name="chkQus03-02"><label for="chkQus03-02_02">아니오</label></li>
+		</ul>
+		<!--//예비신혼부부 선택 시 노출-->
+		
+		<!--한부모 가족 선택 시 노출-->
+		<h3 class="titDep4">만 6세 이하 자녀(태아 포함)가 있으신가요?</h3>
+		<ul class="frmBox col02 formBoxDep">
+			<li><input type="radio" id="chkQus03-03_01" name="chkQus03-03"><label for="chkQus03-03_01">네</label></li>
+			<li><input type="radio" id="chkQus03-03_02" name="chkQus03-03"><label for="chkQus03-03_02">아니오</label></li>
+		</ul>
+		<!--//한부모 가족 선택 시 노출-->
+		
+		<h3 class="titDep4">현재 본인의 가구원수를 입력해 주세요</h3>
+		<div class="inpFrm frmUnit formBoxDep02">
+			<span class="inpA inpA02">
+				<input type="tel" id="chkQusPer" placeholder="0" title="가구원수 입력">
+				<span class="unit">인</span>
+			</span>
+		</div>
+		
+		<h3 class="titDep4">해당세대 가구원수별 월평균 소득을 선택해 주세요</h3>
+		<h4 class="frmTit">해당세대</h4>
+		<ul class="frmBox col02 formBoxDep">
+			<li><input type="radio" id="chkQus06-02_01" name="chkQus06-02"><label for="chkQus06-02_01">5,505,914원 이하</label></li>
+			<li><input type="radio" id="chkQus06-02_02" name="chkQus06-02"><label for="chkQus06-02_02">6,718,198원 이하</label></li>
+			<li><input type="radio" id="chkQus06-02_03" name="chkQus06-02"><label for="chkQus06-02_03">7,622,056원 이하</label></li>
+			<li><input type="radio" id="chkQus06-02_04" name="chkQus06-02"><label for="chkQus06-02_04">8,040,492원 이하</label></li>
+			<li><input type="radio" id="chkQus06-02_05" name="chkQus06-02"><label for="chkQus06-02_05">8,701,639원 이하</label></li>
+			<li><input type="radio" id="chkQus06-02_06" name="chkQus06-02"><label for="chkQus06-02_06">9,362,786원 이하</label></li>
+			<li><input type="radio" id="chkQus06-02_07" name="chkQus06-02"><label for="chkQus06-02_07">10,023,933원 이하</label></li>
+		</ul>
+		
+		<h4 class="frmTit">맞벌이</h4>
+		<ul class="frmBox col02 formBoxDep">
+			<li><input type="radio" id="chkQus06-02_08" name="chkQus06-02"><label for="chkQus06-02_08">6,506,989원 이하</label></li>
+			<li><input type="radio" id="chkQus06-02_09" name="chkQus06-02"><label for="chkQus06-02_09">8,061,838원 이하</label></li>
+			<li><input type="radio" id="chkQus06-02_10" name="chkQus06-02"><label for="chkQus06-02_10">9,146,467원 이하</label></li>
+			<li><input type="radio" id="chkQus06-02_11" name="chkQus06-02"><label for="chkQus06-02_11">9,648,590원 이하</label></li>
+			<li><input type="radio" id="chkQus06-02_12" name="chkQus06-02"><label for="chkQus06-02_12">10,441,967원 이하</label></li>
+			<li><input type="radio" id="chkQus06-02_13" name="chkQus06-02"><label for="chkQus06-02_13">11,235,343원 이하</label></li>
+			<li><input type="radio" id="chkQus06-02_14" name="chkQus06-02"><label for="chkQus06-02_14">12,028,720원 이하</label></li>
+		</ul>
+		
+		<h3 class="titDep4">총자산이 361,000,000원 이하인가요?</h3>
+		<ul class="frmBox col02 formBoxDep">
+			<li><input type="radio" id="chkQus06-04_01" name="chkQus06-04"><label for="chkQus06-04_01">네</label></li>
+			<li><input type="radio" id="chkQus06-04_02" name="chkQus06-04"><label for="chkQus06-04_02">아니오</label></li>
+		</ul>
+		<p class="referText">총자산=부동산+자동차+금융자산+기타자산-부채</p>
+		
+		
+		<h3 class="titDep4">자동차를 보유하고 계신가요?</h3>
+		<ul class="frmBox col02 formBoxDep">
+			<li><input type="radio" id="chkQus09_01" name="chkQus09"><label for="chkQus09_01">네</label></li>
+			<li><input type="radio" id="chkQus09_02" name="chkQus09"><label for="chkQus09_02">아니오</label></li>
+		</ul>
+		
+		<h3 class="titDep4">보유하신 자동차 금액이 36,830,000원 이하인가요?</h3>
+		<ul class="frmBox col02 formBoxDep">
+			<li><input type="radio" id="chkQus06-06_01" name="chkQus06-06"><label for="chkQus06-06_01">네</label></li>
+			<li><input type="radio" id="chkQus06-06_02" name="chkQus06-06"><label for="chkQus06-06_02">아니오</label></li>
+		</ul>
+		
+		
+		<article class="bnnNormal bnnNotiApply">
+			<a href="https://www.myhome.go.kr/hws/portal/dgn/moveSelfDiagnosisResultView.do?selfDiagDivId=6&res=1%3A1%3A%3B3%3A1%3A%3B4%3A1%3A%3B5%3A1%3A%3B2%3A9%3A3018496%3B2%3A2%3A2%EC%9D%B8%3B" class="bnnLink" target="_blank" title="새창열림">
+				<strong class="bnnTit">행복주택 신청<span>이 가능해요</span></strong>
+				<p class="btIco icArr">모집공고 바로가기</p>
+			</a>
+		</article>
+		
+		<!--조건에 해당되지 않을 시 노출-->
+		<div class="noDataS noneLine">
+			행복주택 입주대상이 아니에요
+		</div>
+		<!--//조건에 해당되지 않을 시 노출-->
+		
+		
+		<!-- // end of contents -->
+	</div><!-- //container -->
+	
+
+	<aside>
+		<div class="asideRight">
+			<button type="button" class="btTop">페이지 상단으로 이동</button><!-- 2023.08.16 onClick 이벤트 삭제 -->
+		</div>
+	</aside>
+	
+</section>
+
+<!-- 년/월 선택 Layer -->
+<section id="pop_yearMonth" class="layPop layBtm" tabindex="0">
+	<header>
+		<h2 class="titLay">날짜 선택</h2> <!-- 2023.08.16 수정 / 텍스트 수정 -->
+	</header>
+
+	<div class="layContainer" tabindex="0">
+		<div class="layContent">
+			<div class="yearMonth">
+				<div class="item">
+					<div dir="rtl"  class="swiperWrap swiperVertical" data-options='{"vertical": true, "view":"5", "centeredSlides": true}'>
+						<div class="swiper-container">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">2015년</li>
+								<li class="swiper-slide">2016년</li>
+								<li class="swiper-slide">2017년</li>
+								<li class="swiper-slide">2018년</li>
+								<li class="swiper-slide">2019년</li>
+								<li class="swiper-slide">2020년</li>
+								<li class="swiper-slide">2021년</li>
+								<li class="swiper-slide" data-active>2022년</li>
+								<li class="swiper-slide">2023년</li> <!-- 선택 된 영역에 data-active 추가 -->
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div dir="rtl" class="swiperWrap swiperVertical" data-options='{"loop" : true, "vertical": true, "view":"5", "centeredSlides": true}'>
+						<div class="swiper-container">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">1월</li>
+								<li class="swiper-slide">2월</li>
+								<li class="swiper-slide">3월</li>
+								<li class="swiper-slide">4월</li>
+								<li class="swiper-slide">5월</li>
+								<li class="swiper-slide">6월</li>
+								<li class="swiper-slide">7월</li>
+								<li class="swiper-slide">8월</li> <!-- 선택 된 영역에 data-active 추가 -->
+								<li class="swiper-slide" data-active>9월</li>
+								<li class="swiper-slide">10월</li>
+								<li class="swiper-slide">11월</li>
+								<li class="swiper-slide">12월</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div dir="rtl"  class="swiperWrap swiperVertical" data-options='{"vertical": true, "view":"5", "centeredSlides": true}'>
+						<div class="swiper-container">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">01일</li>
+								<li class="swiper-slide">02일</li>
+								<li class="swiper-slide">03일</li>
+								<li class="swiper-slide">04일</li>
+								<li class="swiper-slide">05일</li>
+								<li class="swiper-slide">06일</li>
+								<li class="swiper-slide">07일</li>
+								<li class="swiper-slide" data-active>08일</li><!-- 선택 된 영역에 data-active 추가 -->
+								<li class="swiper-slide">09일</li> 
+								<li class="swiper-slide">10일</li>
+								<li class="swiper-slide">11일</li>
+								<li class="swiper-slide">12일</li>
+								<li class="swiper-slide">13일</li>
+								<li class="swiper-slide">14일</li>
+								<li class="swiper-slide">15일</li>
+								<li class="swiper-slide">16일</li>
+								<li class="swiper-slide">17일</li>
+								<li class="swiper-slide">18일</li>
+								<li class="swiper-slide">19일</li>
+								<li class="swiper-slide">20일</li>
+								<li class="swiper-slide">21일</li>
+								<li class="swiper-slide">22일</li>
+								<li class="swiper-slide">23일</li>
+								<li class="swiper-slide">24일</li>
+								<li class="swiper-slide">25일</li>
+								<li class="swiper-slide">26일</li>
+								<li class="swiper-slide">27일</li>
+								<li class="swiper-slide">28일</li>
+								<li class="swiper-slide">29일</li>
+								<li class="swiper-slide">30일</li>
+								<li class="swiper-slide">31일</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //yearMonth -->
+		</div>
+		<div class="popBtns">
+			<div class="inner">
+				<button type="button" class="btnDefault btnL action">선택하기</button>
+			</div>
+		</div>
+	</div><!-- //layContainer-->
+	<button type="button" class="closeL">팝업 닫기</button>
+
+</section>
+<!-- //년/월 선택 Layer -->
+
+
+
+<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/mptl/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/mptl/swiper.min.js"></script>
+<script type="text/javascript" src="/js/mptl/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/mptl/m_common.js"></script>
+
+</html>
+

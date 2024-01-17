@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>계약서 수정 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body >
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">계약서 수정</h1>
+		</header>
+
+		<div id="container" class="container">
+			<!-- start of contents -->
+			<div class="contractDetail">
+				<div class="objectInfor">
+					<div class="flagWrap">
+						<span class="flag deal01">매매</span>
+						<!-- flag 
+							매매 deal01
+							전세 deal02
+							월세 deal03
+							연세 deal04
+						-->
+					</div>
+					<div class="typeWrap">
+						<strong class="tit"><span class="hidden">계약서 종류</span>부동산(아파트)</strong>
+						<span class="number"><span class="hidden">계약서 번호</span><em>37449527</em></span>
+					</div>
+					<div class="inforType">
+						<div class="row">
+							<strong class="tit">토지</strong>
+							<span class="txt02">지목/대</span>
+						</div>
+						<div class="row">
+							<strong class="tit">대지권 종류</strong>
+							<span class="txt02">소유권대지권</span>
+						</div>
+						<div class="row">
+							<strong class="tit">대지권 비율</strong>
+							<span class="txt02">12184.5분의 19.07</span>
+						</div>
+						<div class="row">
+							<strong class="tit">건물 구조</strong>
+							<span class="txt02">철근콘크리트구조</span>
+						</div>
+						<div class="row">
+							<strong class="tit">건물 용도</strong> <!-- 2022.08.11 수정 / 텍스트 수정 -->
+							<span class="txt02">아파트</span>
+						</div>
+						<!-- 2022.08.11 수정 / 추가 -->
+						<div class="row">
+							<strong class="tit">전대할 부분</strong>
+							<span class="txt02">101호 전체</span>
+						</div>
+						<!-- //2022.08.11 수정 / 추가 -->
+					</div>
+					<div class="btnWrap">
+						<span class="type01"><button type="button" class="layPopBtn" disabled>확인설명서</button></span>
+						<span class="type02"><button type="button" class="layPopBtn">미리보기</button></span>
+						<span class="type03"><button type="button" class="layPopBtn">계약내용</button></span>
+						<span class="type04"><button type="button" class="layPopBtn">특약사항</button></span>
+					</div>
+				</div>
+				<!-- //objectInfor -->
+
+				<div class="contractTabCont">
+					<div class="tabWrap viewTab contractTab">
+						<ul class="tabType01">
+							<li><a href="#" role="button" aria-selected="true" data-js-tabacc="acc1">소재/면적</a></li>
+							<li><a href="#" role="button" aria-selected="false" data-js-tabacc="acc2">금액 정보</a></li>
+							<li><a href="#" role="button" aria-selected="false" data-js-tabacc="acc3">지급 시기</a></li>
+						</ul>
+					</div>
+
+					<div class="toggleType02 contractAcc">
+						<div class="acctItem" data-js-tabacc="acc1">
+							<button type="button" class="toggleBtn" aria-expanded="true">소재/면적</button>
+							<div class="toggleCont">
+								<ul class="inpList">
+									<li class="inpFrm">
+										<strong class="titInp">완료 여부</strong>
+										<ul class="frmBox">
+											<li><input type="radio" id="chkSamppp01" name="chkSamppp" checked><label for="chkSamppp01">계약중</label></li>
+											<li><input type="radio" id="chkSamppp02" name="chkSamppp"><label for="chkSamppp02">계약완료</label></li>
+										</ul>
+									</li>
+									<li class="inpFrm inpDeleteAni"><!-- input value값 있을 때 삭제버튼 출력 -->
+										<label class="titInp" for="inp01_01">소재지</label>
+										<!-- 
+										<span class="inpA">
+											<input type="text" id="inp01_01" value="서울특별시 종로구 도렴동 60">
+											<button type="button" class="icBtn icDel" style="display: none;">삭제</button>
+										</span>
+										-->
+										<!-- 2023.08.02 수정 / textarea 로 변경 -->
+										<span class="inpA">
+											<textarea id="inp01_01" cols="10" rows="10" placeholder="50자 이내 입력 가능"></textarea><!-- 2023.08.31 id값 수정 -->
+											<span class="txtNum"><em title="메모 글자 수">0</em> / 50자</span>
+										</span>
+										<p class="listGuide2">50자 이상 소재지는 PC에서 수정하세요.</p> <!-- 2023.08.16 수정 / 안내문구 추가 --> <!-- 2023.08.23 수정 / 문구 수정 --><!-- 2023.08.31 mt12 클래스 삭제 -->
+									</li>
+									<li class="inpFrm frmUnit-03">
+										<strong class="titInp">동/호</strong>
+										<div class="inpA inpA02">
+											<span class="inpW">
+												<input type="text" title="동 입력" value="101">
+												<span class="unit">동</span>
+											</span>
+											<span class="inpW">
+												<input type="text" title="호 입력" value="504">
+												<span class="unit">호</span>
+											</span>
+										</div>
+									</li>
+									<li class="inpFrm frmUnit">
+										<label class="titInp" for="inp01_02">토지 면적</label>
+										<div class="inpA inpA02">
+											<input type="tel" id="inp01_02" value="810"><!-- 2023.08.31 id값 수정 -->
+											<span class="unit">㎡</span>
+										</div>
+									</li>
+									<li class="inpFrm frmUnit">
+										<label class="titInp" for="inp01_03">건물 면적</label>
+										<div class="inpA inpA02">
+											<input type="tel" id="inp01_03" value="99"><!-- 2023.08.31 id값 수정 -->
+											<span class="unit">㎡</span>
+										</div>
+									</li>
+									<li class="inpFrm frmUnit">
+										<label class="titInp" for="inp01_04">합계</label>
+										<span class="inpA inpA02">
+											<input type="tel" id="inp01_04" value="84" disabled>
+											<span class="unit">㎡</span>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="acctItem" data-js-tabacc="acc2">
+							<button type="button" class="toggleBtn" aria-expanded="false">금액 정보</button>
+							<div class="toggleCont">
+								<ul class="inpList">
+									<li class="inpFrm frmUnit">
+										<label class="titInp" for="inp02_01">매매대금</label>
+										<span class="inpA inpA02">
+											<input type="tel" id="inp02_01" value="3,000,000,000">
+											<span class="unit">원</span>
+										</span>
+										<em class="moneyKor">일백만</em>
+									</li>
+									<li class="inpFrm frmUnit">
+										<label class="titInp" for="inp02_02">계약금</label>
+										<span class="inpA inpA02">
+											<input type="tel" id="inp02_02" value="3,000,000">
+											<span class="unit">원</span>
+										</span>
+										<em class="moneyKor">일백만</em>
+									</li>
+									<li class="inpFrm frmUnit">
+										<label class="titInp" for="inp02_03">융자금</label>
+										<span class="inpA inpA02">
+											<span class="inpW">
+												<input type="tel" id="inp02_03" value="120,000,000">
+												<span class="unit">원</span>
+												<em class="moneyKor">일백만</em>
+											</span>
+											<span class="inpW">
+												<div class="selectWrap">
+													<select title="융자금 선택" data-header="융자금" data-msg="선택">
+														<option value="01" selected>현 상태에서 매수인이 승계함.</option>
+														<option value="02">매도인이 잔금지급일까지 말소한다.</option>
+														<option value="03">특약사항에 별도 명시한다.</option>
+														<option value="04">매수인이 인수한다.</option>
+														<option value="05">매수인이 인수하지 아니한다.</option>
+													</select>
+												</div>
+											</span>
+										</span>
+									</li>
+									<li class="inpFrm frmUnit">
+										<label class="titInp" for="inp02_04">현 임대보증금</label>
+										<span class="inpA inpA02">
+											<span class="inpW">
+												<input type="tel" id="inp02_04" value="55,000,000">
+												<span class="unit">원</span>
+												<em class="moneyKor">일백만</em>
+											</span>
+											<span class="inpW">
+												<div class="selectWrap">
+													<select title="현 임대보증금 선택" data-header="현 임대보증금" data-msg="선택">
+														<option value="01" selected>현 상태에서 매수인이 승계함.</option>
+														<option value="02">매도인이 잔금지급일까지 말소한다.</option>
+														<option value="03">특약사항에 별도 명시한다.</option>
+														<option value="04">매수인이 인수한다.</option>
+														<option value="05">매수인이 인수하지 아니한다.</option>
+													</select>
+												</div>
+											</span>
+										</span>
+									</li>
+									<li class="inpFrm frmUnit">
+										<label class="titInp" for="inp02_05">프리미엄</label>
+										<span class="inpA inpA02">
+											<input type="tel" id="inp02_05" value="1,000,000">
+											<span class="unit">원</span>
+										</span>
+										<em class="moneyKor">일백만</em>
+										<div class="absArea">
+											<span class="frmInp frmInpS txt"><input type="checkbox" id="chkSample01"><label for="chkSample01">(-)으로 변경</label></span>
+										</div>
+									</li>
+									<li class="inpFrm frmUnit">
+										<label class="titInp" for="inp02_06">추가분담금 (계산식)</label>
+										<span class="inpA inpA02">
+											<input type="tel" id="inp02_06" value="1,000,000" disabled> <!-- 2023.08.16 수정 / disabled 처리 -->
+											<span class="unit">원</span>
+										</span>
+										<em class="moneyKor">일백만</em>
+										<div class="absArea">
+											<ul class="frmList inBlock">
+												<li><span class="frmInp frmInpS txt"><input type="radio" id="radDefault001" name="radDefault01" checked=""><label for="radDefault001">기존</label></span></li>
+												<li><span class="frmInp frmInpS txt"><input type="radio" id="radDefault002" name="radDefault01"><label for="radDefault002">신규</label></span></li>
+											</ul>
+										</div>
+									</li>
+									<!-- 2023.08.16 수정 / 임대차 계약 기간 추가 -->
+									<li class="inpFrm">
+										<strong class="titInp">임대차 계약 기간</strong>
+										<!-- 2023.08.31 날짜 input 수정 -->
+										<div class="calendar">
+											<span class="inpW inpDateF">
+												<input type="tel" id="inpDateTerm01" placeholder="YYYY-MM-DD">
+												<input type="date">
+											</span>
+											<span class="wave">~</span>
+											<span class="inpW inpDateF">
+												<input type="tel" id="inpDateTerm02" placeholder="YYYY-MM-DD">
+												<input type="date">
+											</span>
+										</div>
+										<!-- //2023.08.31 날짜 input 수정 -->
+										<div class="selectWrap mt12">
+											<select title="초일 선택" data-header="초일" data-msg="초일불산입">
+												<option value="01">초일불산입</option>
+												<option value="02">초일산입</option>
+											</select>
+										</div>
+									</li>
+									<!-- //2023.08.16 수정 / 임대차 계약 기간 추가 -->
+								</ul>
+							</div>
+						</div>
+						<div class="acctItem" data-js-tabacc="acc3">
+							<button type="button" class="toggleBtn" aria-expanded="false">지급 시기</button>
+							<div class="toggleCont">
+								<ul class="inpList">
+									<li class="inpFrm frmUnit">
+										<label class="titInp" for="inp03_01">중도금 1차 지급일</label>
+										<span class="inpA inpA02">
+											<span class="inpW">
+												<input type="tel" id="inp03_01" value="3,000,000,000">
+												<span class="unit">원</span>
+												<em class="moneyKor">일백만</em>
+											</span>
+											<!-- 2023.08.31 날짜 input 수정 -->
+											<span class="inpW inpDateF">
+												<input type="tel" id="inpDateMoney01" placeholder="YYYY-MM-DD">
+												<input type="date">
+											</span>
+											<!-- //2023.08.31 날짜 input 수정 -->
+										</span>
+									</li>
+									<li class="inpFrm frmUnit">
+										<label class="titInp" for="inp03_02">중도금 2차 지급일</label>
+										<span class="inpA inpA02">
+											<span class="inpW">
+												<input type="tel" id="inp03_02" value="3,000,000,000">
+												<span class="unit">원</span>
+												<em class="moneyKor">일백만</em>
+											</span>
+											<!-- 2023.08.31 날짜 input 수정 -->
+											<span class="inpW inpDateF">
+												<input type="tel" id="inpDateMoney02" placeholder="YYYY-MM-DD">
+												<input type="date">
+											</span>
+											<!-- //2023.08.31 날짜 input 수정 -->
+										</span>
+									</li>
+									<li class="inpFrm frmUnit">
+										<label class="titInp" for="inp03_03">잔금 지급일</label>
+										<span class="inpA inpA02">
+											<span class="inpW">
+												<input type="tel" id="inp03_03" value="3,000,000,000" disabled>
+												<span class="unit">원</span>
+												<em class="moneyKor">일백만</em>
+											</span>
+											<!-- 2023.08.31 날짜 input 수정 -->
+											<span class="inpW inpDateF">
+												<input type="tel" id="inpDateMoney03" placeholder="YYYY-MM-DD">
+												<input type="date">
+											</span>
+											<!-- //2023.08.31 날짜 input 수정 -->
+										</span>
+										<p class="txt mt16">단, 위 잔금 중 <strong>160,000,000원</strong>은 납부하여야 할 분담금 등으로 매수인이 승계하기로 한다.</p>
+									</li>
+									<li class="inpFrm frmUnit">
+										<label class="titInp" for="inp03_04">차임</label>
+										<span class="inpA inpA02">
+											<input type="tel" id="inp03_04" value="3,000,000,000">
+											<span class="unit">원</span>
+										</span>
+										<em class="moneyKor">일백만</em>
+									</li>
+									<li class="inpFrm frmUnit">
+										<strong class="titInp">차임 지급일</strong>
+										<div class="inpA inpA02">
+											<span class="label">매월</span>
+											<input type="tel" value="25">
+											<span class="unit">일</span>
+										</div>
+										<div class="absArea">
+											<span class="frmInp frmInpS txt"><input type="checkbox" id="chkSample02"><label for="chkSample02">말(末)</label></span>
+										</div>
+									</li>
+
+									<li class="inpFrm frmUnit-03">
+										<strong class="titInp">차임 지급일</strong>
+										<div class="inpA inpA02">
+											<div class="inpW">
+												<span class="label">매년</span>
+												<input type="tel" value="8">
+												<span class="unit">월</span>
+											</div>
+											<div class="inpW">
+												<input type="tel" value="25">
+												<span class="unit">일</span>
+											</div>
+										</div>
+										<div class="absArea">
+											<span class="frmInp frmInpS txt"><input type="checkbox" id="chkSample04"><label for="chkSample04">말(末)</label></span>
+										</div>
+									</li>
+
+									<li class="inpFrm frmUnit-03">
+										<label class="titInp" for="inp03_06">부가세</label>
+										<div class="inpA">
+											<div class="selectWrap">
+												<select id="inp03_06" title="부가세 선택" data-header="부가세" data-msg="선택"><!-- 2023.08.31  id 추가 -->
+													<option value="01" selected>없음</option>
+													<option value="02" selected>선불</option>
+													<option value="03" selected>후불</option>
+												</select>
+											</div>
+										</div>
+										<div class="absArea">
+											<span class="frmInp frmInpS txt"><input type="checkbox" id="chkSample03"><label for="chkSample03">부가세(별도)</label></span>
+										</div>
+									</li>
+								</ul>
+								<div class="addInfor">
+									<strong class="titDep5">임대인 인적사항</strong>
+									<ul class="inpList">
+										<li class="inpFrm inpDeleteAni"><!-- input value값 있을 때 삭제버튼 출력 -->
+											<label class="titInp" for="inp04_01">성명</label>
+											<span class="inpA">
+												<input type="text" id="inp04_01" value="김임대">
+												<button type="button" class="icBtn icDel" style="display: none;">삭제</button>
+											</span>
+										</li>
+										<li class="inpFrm inpDeleteAni">
+											<label class="titInp" for="inp04_02">연락처</label>
+											<span class="inpA">
+												<input type="tel" id="inp04_02" value="010-0810-0303">
+												<button type="button" class="icBtn icDel" style="display: none;">삭제</button>
+											</span>
+										</li>
+										<li class="inpFrm inpDeleteAni">
+											<label class="titInp" for="inp04_03">주소</label>
+											<!-- 
+											<span class="inpA">
+												<input type="text" id="inp04_03" value="서울특별시 종로구 도렴동 60">
+												<button type="button" class="icBtn icDel" style="display: none;">삭제</button>
+											</span>
+											-->
+											<!-- 2023.08.03 수정 / textarea 로 변경 -->
+											<span class="inpA">
+												<textarea id="inp04_03" cols="10" rows="10" placeholder="50자 이내 입력 가능"></textarea>
+												<span class="txtNum"><em title="메모 글자 수">0</em> / 50자</span>
+											</span>
+											
+										</li>
+									</ul>
+
+									<strong class="titDep5">임대차관계</strong>
+									<ul class="inpList">
+										<li class="inpFrm frmUnit">
+											<label class="titInp" for="inp05_01">임차보증금</label>
+											<span class="inpA inpA02">
+												<input type="number" id="inp05_01" value="3000000">
+												<span class="unit">원</span>
+											</span>
+											<em class="moneyKor">일백만</em>
+										</li>
+										<li class="inpFrm frmUnit">
+											<label class="titInp" for="inp05_02">월차임</label>
+											<span class="inpA inpA02">
+												<input type="number" id="inp05_02" value="3000000">
+												<span class="unit">원</span>
+											</span>
+											<em class="moneyKor">일백만</em>
+										</li>
+										<li class="inpFrm">
+											<strong class="titInp">계약 기간</strong>
+											<!-- 2023.08.31 날짜 input 수정 -->
+											<div class="calendar">
+												<span class="inpA inpDateF">
+													<input type="tel" id="inpCpmtractTerm01" placeholder="YYYY-MM-DD">
+													<input type="date">
+												</span>
+												<span class="wave">~</span>
+												<span class="inpA inpDateF">
+													<input type="tel" id="inpCpmtractTerm02" placeholder="YYYY-MM-DD">
+													<input type="date">
+												</span>
+											</div>
+											<!-- //2023.08.31 날짜 input 수정 -->
+										</li>
+										<li class="inpFrm inpDeleteAni">
+											<label class="titInp" for="inp05_04">개월</label>
+											<span class="inpA">
+												<input type="number" id="inp05_04" value="24">
+												<button type="button" class="icBtn icDel" style="display: none;">삭제</button>
+											</span>
+										</li>
+										
+										<!-- 2023.08.16 수정 / 마크업 위치 변경 및 텍스트 수정 -->
+										<li class="inpFrm frmUnit">
+											<strong class="titInp">임대인은 본 전대차계약체결에 동의함.</strong>
+											<span class="inpA inpA02">
+												<!-- 2023.08.31 날짜 input 수정 -->
+												<span class="inpW inpDateF">
+													<input type="tel" placeholder="YYYY-MM-DD">
+													<input type="date">
+												</span>
+												<!-- //2023.08.31 날짜 input 수정 -->
+												<span class="inpW">
+													<input type="text" data-placeholder="" class="tLeft" value="김임대">
+													<span class="unit">(인)</span>
+												</span>
+											</span>
+										</li>
+										<li class="inpFrm">
+											<label class="titInp" for="inpAcccountInfor">계좌번호</label>
+											<span class="inpA">
+												<input type="text" id="inpAcccountInfor" value="국민은행 990303-02-020810(김한방)" disabled>
+											</span>
+										</li>
+										<!-- //2023.08.16 수정 / 마크업 위치 변경 및 텍스트 수정 -->
+									</ul>
+
+									<!-- 2023.08.16 수정 / 마크업 위치 변경 및 텍스트 수정 -->
+									<!-- <strong class="titDep5">임대인은 본 전대차계약체결에 동의함.</strong>
+									<ul class="inpList">
+										<li class="inpFrm frmUnit">
+											<strong class="titInp">임대인은 본 전대차계약체결에 동의함.</strong>
+											<span class="inpA inpA02">
+												<span class="inpW">
+													<input type="date" data-placeholder="YYYY-MM-DD" value="2023-03-10" required>
+												</span>
+												<span class="inpW">
+													<input type="text" data-placeholder="" class="tLeft" value="김임대">
+													<span class="unit">(인)</span>
+												</span>
+											</span>
+										</li>
+									</ul>
+									 -->
+								</div>
+								<!-- //addInfor -->
+								<!-- 2023.08.16 수정 / 마크업 변경 -->
+								<!-- 
+								<div class="accountInfor">
+									<span class="titInp">계좌번호</span>
+									<div class="row">
+										<div class="item">
+											<span class="bank">국민은행</span>
+											<span class="number">564702-01-333333</span>
+										</div>
+										<div class="item">
+											<span class="name">김한방</span>
+										</div>
+									</div>
+								</div>
+								-->
+								<!-- //bankInfor -->
+							</div>
+						</div>
+					</div>
+					<!-- //toggleType02 -->
+					<div class="contractDate">
+						<ul class="inpList">
+							<li class="inpFrm">
+								<label class="titInp" for="inp04_01">계약일</label>
+								<!-- 2023.08.31 날짜 input 수정 -->
+								<span class="inpA inpDateF">
+									<input type="tel" placeholder="YYYY-MM-DD">
+									<input type="date">
+								</span>
+								<!-- //2023.08.31 날짜 input 수정 -->
+							</li>
+						</ul>
+					</div>
+					<!-- //contractDate -->
+				</div>
+			</div>
+			<!-- //contractDetail -->
+			<!-- // end of contents -->
+		</div><!-- //container -->
+		<div class="floatingBtns">
+			<div class="btnArea">
+				<button type="button" class="btnDefault btnL action">저장</button>
+			</div>
+		</div>
+		
+		<aside>
+			<div class="asideRight">
+				<button type="button" class="btTop">페이지 상단으로 이동</button><!-- 2023.08.16 onClick 이벤트 삭제 -->			
+			</div>
+		</aside>
+	</section>
+
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/magnt/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/magnt/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/magnt/swiper.min.js"></script>
+<script type="text/javascript" src="/js/magnt/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/magnt/m_common.js"></script>
+
+</html>
+

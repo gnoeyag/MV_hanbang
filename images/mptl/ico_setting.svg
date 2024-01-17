@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <g data-name="그룹 21159">
+        <path transform="translate(2 5.219)" style="stroke-linecap:round;stroke:#121212;stroke-width:1.25px;fill:none" d="M0 0h11.095"/>
+        <path data-name="path" transform="translate(2 10.766)" style="stroke-linecap:round;stroke:#121212;stroke-width:1.25px;fill:none" d="M0 0h11.095"/>
+        <g data-name="path" transform="translate(7.321 3)" style="fill:#fff;stroke:#121212;stroke-width:1.25px">
+            <circle cx="2" cy="2" r="2" style="stroke:none"/>
+            <circle cx="2" cy="2" r="1.375" style="fill:none"/>
+        </g>
+        <g data-name="path" transform="translate(3.773 8.984)" style="fill:#fff;stroke:#121212;stroke-width:1.25px">
+            <circle cx="2" cy="2" r="2" style="stroke:none"/>
+            <circle cx="2" cy="2" r="1.375" style="fill:none"/>
+        </g>
+    </g>
+</svg>

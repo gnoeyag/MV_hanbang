@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>내 집 찾기 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/mptl/h_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">내 집 찾기</h1>
+		</header>
+	
+		<div id="container" class="container">
+			<!-- start of contents -->
+			
+			
+			<div class="fixedFindArea">
+				<h2 class="titDep2">서울 관악구 신림동</h2>
+				<span class="stepView">
+					<strong class="current">2</strong> <span class="dash">/</span> <span class="total">3</span>
+				</span>
+			</div>
+			
+			
+			<ul class="toggleType02 toggleCustomerInfo smallDepth">
+				<li class="acctItem">
+					<button type="button" class="toggleBtn" aria-expanded="false"><strong class="pointCol01">원&middot;투룸</strong></button>
+					<div class="toggleCont">
+						<ul class="inpList">
+							<li class="inpFrm">
+								<p class="labelDesc">원하는 매물 종류를 선택해 주세요.</p>
+								<ul class="frmBox col02 bigSize">
+									<li><input type="radio" id="dealCase01" name="dealCase"><label for="dealCase01">아파트</label></li>
+									<li><input type="radio" id="dealCase02" name="dealCase"><label for="dealCase02">오피스텔</label></li>
+									<li><input type="radio" id="dealCase03" name="dealCase" checked><label for="dealCase03">원&middot;투룸</label></li>
+									<li><input type="radio" id="dealCase04" name="dealCase"><label for="dealCase04">빌라</label></li>
+									<li><input type="radio" id="dealCase05" name="dealCase"><label for="dealCase05">주택</label></li>
+									<li><input type="radio" id="dealCase06" name="dealCase"><label for="dealCase06">다세대&middot;다가구</label></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="acctItem">
+					<button type="button" class="toggleBtn" aria-expanded="true">거래 유형 및 예산<span class="ness">필수입력 항목</span></button>
+					<div class="toggleCont">
+						<ul class="inpList">
+							<li class="inpFrm">
+								<p class="labelDesc">원하는 거래 유형 선택 후 예산을 입력해 주세요.</p>
+								<h3 class="titInp">거래유형<span class="ness">필수입력 항목</span></h3>
+								<ul class="frmBox col04 bigSize">
+									<li><input type="radio" id="dealType01" name="dealType"><label for="dealType01">매매</label></li>
+									<li><input type="radio" id="dealType02" name="dealType"><label for="dealType02">전세</label></li>
+									<li><input type="radio" id="dealType03" name="dealType"><label for="dealType03">월세</label></li>
+									<li><input type="radio" id="dealType04" name="dealType"><label for="dealType04">연세</label></li>
+								</ul>
+								
+								<!--case01. 매매 옵션 선택 시-->
+								<ul class="inpList mt24">
+									<li class="inpFrm frmUnit">
+										<h3 class="titInp">매매가<span class="ness">필수입력 항목</span></h3>
+										<div class="slideArea">
+											<ul class="slideValue">
+												<li class="value01">0</li>
+												<li class="value03">10억원</li>
+												<li class="value05">최대</li>
+											</ul>
+											<div id="slider-range" class="slider"
+												 data-options='{"range":true, "min" : 0, "max": 20, "step": 5, "values": [0, 20], "text":""}'></div>
+											
+											<div class="slideInp inpA02">
+												<div class="inpW unitDbSize">
+													<label for="range01-01" class="label">최소</label>
+													<input type="text" class="amount amountMin" id="range01-01" placeholder="0">
+													<span class="unit">만원</span>
+												</div>
+												<div class="inpW unitDbSize">
+													<label for="range01-02" class="label">최대</label>
+													<input type="text" class="amount amountMax" id="range01-02" placeholder="0">
+													<span class="unit">만원</span>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+								
+								<!--case02. 전세 옵션 선택 시-->
+								<ul class="inpList mt24">
+									<li class="inpFrm frmUnit">
+										<h3 class="titInp">보증금<span class="ness">필수입력 항목</span></h3>
+										<div class="slideArea">
+											<ul class="slideValue">
+												<li class="value01">0</li>
+												<li class="value03">10억원</li>
+												<li class="value05">최대</li>
+											</ul>
+											<div id="slider-range02" class="slider"
+												 data-options='{"range":true, "min" : 0, "max": 20, "step": 5, "values": [0, 20], "text":""}'></div>
+											
+											<div class="slideInp inpA02">
+												<div class="inpW unitDbSize">
+													<label for="range02-01" class="label">최소</label>
+													<input type="text" class="amount amountMin" id="range02-01" placeholder="0">
+													<span class="unit">만원</span>
+												</div>
+												<div class="inpW unitDbSize">
+													<label for="range02-02" class="label">최대</label>
+													<input type="text" class="amount amountMax" id="range02-02" placeholder="0">
+													<span class="unit">만원</span>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+								
+								<!--case03. 월세 옵션 선택 시-->
+								<ul class="inpList mt24">
+									<li class="inpFrm frmUnit">
+										<h3 class="titInp">보증금<span class="ness">필수입력 항목</span></h3>
+										<div class="slideArea">
+											<ul class="slideValue">
+												<li class="value01">0</li>
+												<li class="value03">10억원</li>
+												<li class="value05">최대</li>
+											</ul>
+											<div id="slider-range03" class="slider"
+												 data-options='{"range":true, "min" : 0, "max": 20, "step": 5, "values": [0, 20], "text":""}'></div>
+											
+											<div class="slideInp inpA02">
+												<div class="inpW unitDbSize">
+													<label for="range02-01" class="label">최소</label>
+													<input type="text" class="amount amountMin" id="range03-01" placeholder="0">
+													<span class="unit">만원</span>
+												</div>
+												<div class="inpW unitDbSize">
+													<label for="range02-02" class="label">최대</label>
+													<input type="text" class="amount amountMax" id="range03-02" placeholder="0">
+													<span class="unit">만원</span>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="inpFrm frmUnit">
+										<h3 class="titInp">월세<span class="ness">필수입력 항목</span></h3>
+										<div class="slideArea">
+											<ul class="slideValue">
+												<li class="value01">0</li>
+												<li class="value03">100만원</li>
+												<li class="value05">최대</li>
+											</ul>
+											<div id="slider-range04" class="slider"
+												 data-options='{"range":true, "min" : 0, "max": 20, "step": 5, "values": [0, 20], "text":""}'></div>
+											
+											<div class="slideInp inpA02">
+												<div class="inpW unitDbSize">
+													<label for="range02-01" class="label">최소</label>
+													<input type="text" class="amount amountMin" id="range04-01" placeholder="0">
+													<span class="unit">만원</span>
+												</div>
+												<div class="inpW unitDbSize">
+													<label for="range02-02" class="label">최대</label>
+													<input type="text" class="amount amountMax" id="range04-02" placeholder="0">
+													<span class="unit">만원</span>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+								
+								<!--case04. 연세 옵션 선택 시-->
+								<ul class="inpList mt24">
+									<li class="inpFrm frmUnit">
+										<h3 class="titInp">보증금<span class="ness">필수입력 항목</span></h3>
+										<div class="slideArea">
+											<ul class="slideValue">
+												<li class="value01">0</li>
+												<li class="value03">10억원</li>
+												<li class="value05">최대</li>
+											</ul>
+											<div id="slider-range05" class="slider"
+												 data-options='{"range":true, "min" : 0, "max": 20, "step": 5, "values": [0, 20], "text":""}'></div>
+											
+											<div class="slideInp inpA02">
+												<div class="inpW unitDbSize">
+													<label for="range02-01" class="label">최소</label>
+													<input type="text" class="amount amountMin" id="range05-01" placeholder="0">
+													<span class="unit">만원</span>
+												</div>
+												<div class="inpW unitDbSize">
+													<label for="range02-02" class="label">최대</label>
+													<input type="text" class="amount amountMax" id="range05-02" placeholder="0">
+													<span class="unit">만원</span>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="inpFrm frmUnit">
+										<h3 class="titInp">연세<span class="ness">필수입력 항목</span></h3>
+										<div class="slideArea">
+											<ul class="slideValue">
+												<li class="value01">0</li>
+												<li class="value03">100만원</li>
+												<li class="value05">최대</li>
+											</ul>
+											<div id="slider-range06" class="slider"
+												 data-options='{"range":true, "min" : 0, "max": 20, "step": 5, "values": [0, 20], "text":""}'></div>
+											
+											<div class="slideInp inpA02">
+												<div class="inpW unitDbSize">
+													<label for="range02-01" class="label">최소</label>
+													<input type="text" class="amount amountMin" id="range06-01" placeholder="0">
+													<span class="unit">만원</span>
+												</div>
+												<div class="inpW unitDbSize">
+													<label for="range02-02" class="label">최대</label>
+													<input type="text" class="amount amountMax" id="range06-02" placeholder="0">
+													<span class="unit">만원</span>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="acctItem">
+					<button type="button" class="toggleBtn" aria-expanded="false">옵션</button>
+					<div class="toggleCont">
+						<ul class="inpList">
+							<li class="inpFrm">
+								<p class="labelDesc">
+									원하는 옵션을 선택해 주세요. <br>
+									원하는 옵션이 없다면 넘어가도 괜찮아요.
+								</p>
+								<ul class="frmBox col02 bigSize">
+									<li><input type="checkbox" id="dealOption01" name="dealOption"><label for="dealOption01">역세권</label></li>
+									<li><input type="checkbox" id="dealOption02" name="dealOption"><label for="dealOption02">주차</label></li>
+									<li><input type="checkbox" id="dealOption03" name="dealOption"><label for="dealOption03">즉시 입주</label></li>
+									<li><input type="checkbox" id="dealOption04" name="dealOption"><label for="dealOption04">신축 3년 이내</label></li>
+									<li><input type="checkbox" id="dealOption05" name="dealOption"><label for="dealOption05">저층</label></li>
+									<li><input type="checkbox" id="dealOption06" name="dealOption"><label for="dealOption06">중층</label></li>
+									<li><input type="checkbox" id="dealOption07" name="dealOption"><label for="dealOption07">고층</label></li>
+									<li><input type="checkbox" id="dealOption08" name="dealOption"><label for="dealOption08">남향</label></li>
+									<li><input type="checkbox" id="dealOption09" name="dealOption"><label for="dealOption09">엘리베이터</label></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			
+			
+			<!-- // end of contents -->
+		</div><!-- //container -->
+		
+		<div class="floatingBtns">
+			<div class="btnArea">
+				<button type="button" class="btnDefault btnL action" disabled>결과 보기</button>
+			</div>
+		</div>
+		
+		<aside>
+			<div class="asideRight">
+				<button type="button" class="btTop">페이지 상단으로 이동</button><!-- 2023.08.16 onClick 이벤트 삭제 -->
+			</div>
+		</aside>
+	</section>
+	
+
+	
+	
+	
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/mptl/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/mptl/swiper.min.js"></script>
+<script type="text/javascript" src="/js/mptl/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/mptl/m_common.js"></script>
+
+</html>
+

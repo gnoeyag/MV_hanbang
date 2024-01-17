@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>고객 정보 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body >
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">고객 정보</h1>
+			<div class="menuWrap">
+				<button type="button" class="btNav" aria-expanded="false">메뉴</button>
+				<nav>
+					<div class="navInner">메뉴영역</div>
+				</nav>
+			</div>
+		</header>
+	
+		<div id="container" class="container">
+			<!-- start of contents -->
+
+			<h2 class="titDep2">고객 정보<span>를 입력해 주세요.</span></h2><!-- 2023.08.04 띄어쓰기 수정 -->
+			
+			<ul class="toggleType02 toggleCustomerInfo">
+				<li class="acctItem">
+					<button type="button" class="toggleBtn" aria-expanded="true">1. 매도/임대인 정보</button>
+					<div class="toggleCont">
+						<p class="alertArea">
+							<span class="altTxt">[필드명] + “을/를” +  “선택/입력해 주세요.”</span><!-- 2023.08.04 띄어쓰기 수정 -->
+						</p>
+						<ul class="inpList">
+							<li class="inpFrm inpFrmType03 inpDeleteAni">
+								<label class="titInp" for="inpName">성명<span class="ness">필수입력 항목</span></label>
+								<span class="inpA">
+									<input type="text" id="inpName" placeholder="성명을 입력해 주세요."><!-- 2023.08.04 띄어쓰기 수정 -->
+									<button type="button" class="icBtn icDel">삭제</button>
+								</span>
+								<div class="absArea">
+									<button type="button" class="btnDefault btnXS layPopBtn" data-id="BCM_L0101_FP">기존고객검색</button>
+								</div>
+							</li>
+							<li class="inpFrm inpDeleteAni">
+								<label class="titInp" for="inpNumber">연락처</label>
+								<span class="inpA">
+									<input type="tel" id="inpNumber" placeholder="연락처를 입력해 주세요."><!-- 2023.08.04 띄어쓰기 수정 -->
+									<button type="button" class="icBtn icDel">삭제</button>
+								</span>
+							</li>
+							<li class="inpFrm inpDeleteAni">
+								<label class="titInp" for="inpPhone">휴대폰 번호<span class="ness">필수입력 항목</span></label>
+								<span class="inpA">
+									<input type="tel" id="inpPhone" placeholder="휴대폰 번호를 입력해 주세요."><!-- 2023.08.04 띄어쓰기 수정 -->
+									<button type="button" class="icBtn icDel">삭제</button>
+								</span>
+							</li>
+							<li class="inpFrm">
+								<label class="titInp" for="inpRequestUsed">의뢰물 용도<span class="ness">필수선택 항목</span></label>
+								<span class="inpA">
+									<div class="selectWrap">
+										<select id="inpRequestUsed" title="의뢰물 용도 선택" data-header="의뢰물 용도" data-msg="선택">
+											<option value="01">미정</option>
+											<option value="02">주거용</option>
+											<option value="03">상업용</option>
+											<option value="04">공업용</option>
+											<option value="05">토지</option>
+											<option value="06">복합용도</option>
+										</select>
+									</div>
+								</span>
+							</li>
+							<li class="inpFrm">
+								<label class="titInp" for="inpRequestType">의뢰 유형<span class="ness">필수선택 항목</span></label>
+								<span class="inpA">
+									<div class="selectWrap">
+										<select id="inpRequestType" title="의뢰 유형 선택" data-header="의뢰 유형" data-msg="선택">
+											<option value="01">미정</option>
+											<option value="02">임대전세</option>
+											<option value="03">임대월세</option>
+											<option value="04">임차전세</option>
+											<option value="05">임차월세</option>
+											<option value="06">매도</option>
+											<option value="06">매수</option>
+											<option value="06">투자</option>
+											<option value="06">기타</option>
+											<option value="06">현임차인</option>
+											<option value="06">주인거주</option>
+										</select>
+									</div>
+								</span>
+							</li>
+							<li class="inpFrm">
+								<label class="titInp" for="inpCustomerGroup">고객 그룹</label>
+								<span class="inpA">
+									<div class="selectWrap">
+										<select id="inpCustomerGroup" title="고객 그룹 선택" data-header="고객 그룹" data-msg="선택">
+											<option value="01">기본 그룹</option>
+											<option value="02">등록 그룹</option>
+										</select>
+									</div>
+								</span>
+							</li>
+							<li class="inpFrm">
+								<label class="titInp" for="inpCustomerGroup">고객 등급</label>
+								<span class="inpA">
+									<div class="selectWrap">
+										<select id="inpCustomerGroup" title="고객 등급 선택" data-header="고객 등급" data-msg="선택">
+											<option value="01">1급</option>
+											<option value="02">2급</option>
+											<option value="03">3급</option>
+											<option value="04">일반</option>
+										</select>
+									</div>
+								</span>
+							</li>
+							<li class="inpFrm">
+								<strong class="titInp">업무상황</strong>
+								<span class="inpA">
+									<ul class="frmBox">
+										<li><input type="radio" id="radWorkState01" name="radWorkState"><label for="radWorkState01">진행중</label></li>
+										<li><input type="radio" id="radWorkState02" name="radWorkState"><label for="radWorkState02">종료</label></li>
+									</ul>
+								</span>
+							</li>
+							<li class="inpFrm">
+								<strong class="titInp">접수 구분</strong>
+								<span class="inpA">
+									<ul class="frmBox">
+										<li><input type="radio" id="radAcceptSep01" name="radAcceptSep"><label for="radAcceptSep01">방문</label></li>
+										<li><input type="radio" id="radAcceptSep02" name="radAcceptSep"><label for="radAcceptSep02">전화</label></li>
+									</ul>
+								</span>
+							</li>
+							<li class="inpFrm">
+								<strong class="titInp">예약 일정</strong>
+								<!-- 2023.09.05 날짜 input 수정 -->
+								<div class="inpA">
+									<input type="date" data-placeholder="YYYY-MM-DD" required>
+								</div>
+								<!-- //2023.09.05 날짜 input 수정 -->
+							</li>
+							<li class="inpFrm">
+								<strong class="titInp" >접수 일자</strong>
+								<!-- 2023.09.05 날짜 input 수정 -->
+								<div class="inpA">
+									<input type="date" data-placeholder="YYYY-MM-DD" required>
+								</div>
+								<!-- //2023.09.05 날짜 input 수정 -->
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="acctItem">
+					<button type="button" class="toggleBtn" aria-expanded="false">2. 매수/ 임차인 정보</button>
+					<div class="toggleCont">
+						<p class="alertArea">
+							<span class="altTxt">[필드명] + “을/를” +  “선택/입력해 주세요.”</span><!-- 2023.08.04 띄어쓰기 수정 -->
+						</p>
+						<ul class="inpList">
+							<li class="inpFrm inpFrmType03 inpDeleteAni">
+								<label class="titInp" for="inpName02">성명<span class="ness">필수입력 항목</span></label>
+								<span class="inpA">
+									<input type="text" id="inpName02" placeholder="성명을 입력해 주세요."><!-- 2023.08.04 띄어쓰기 수정 -->
+									<button type="button" class="icBtn icDel">삭제</button>
+								</span>
+								<div class="absArea">
+									<button type="button" class="btnDefault btnXS layPopBtn" data-id="BCM_L0101_FP">기존고객검색</button>
+								</div>
+							</li>
+							<li class="inpFrm inpDeleteAni">
+								<label class="titInp" for="inpNumber02">연락처</label>
+								<span class="inpA">
+									<input type="tel" id="inpNumber02" placeholder="연락처를 입력해 주세요."><!-- 2023.08.04 띄어쓰기 수정 -->
+									<button type="button" class="icBtn icDel">삭제</button>
+								</span>
+							</li>
+							<li class="inpFrm inpDeleteAni">
+								<label class="titInp" for="inpPhone02">휴대폰 번호<span class="ness">필수입력 항목</span></label>
+								<span class="inpA">
+									<input type="tel" id="inpPhone02" placeholder="휴대폰 번호를 입력해 주세요."><!-- 2023.08.04 띄어쓰기 수정 -->
+									<button type="button" class="icBtn icDel">삭제</button>
+								</span>
+							</li>
+							<li class="inpFrm">
+								<label class="titInp" for="inpRequestUsed02">의뢰물 용도<span class="ness">필수선택 항목</span></label>
+								<span class="inpA">
+									<div class="selectWrap">
+										<select id="inpRequestUsed02" title="의뢰물 용도 선택" data-header="의뢰물 용도" data-msg="선택">
+											<option value="01">미정</option>
+											<option value="02">주거용</option>
+											<option value="03">상업용</option>
+											<option value="04">공업용</option>
+											<option value="05">토지</option>
+											<option value="06">복합용도</option>
+										</select>
+									</div>
+								</span>
+							</li>
+							<li class="inpFrm">
+								<label class="titInp" for="inpRequestType02">의뢰 유형<span class="ness">필수선택 항목</span></label>
+								<span class="inpA">
+									<div class="selectWrap">
+										<select id="inpRequestType02" title="의뢰 유형 선택" data-header="의뢰 유형" data-msg="선택">
+											<option value="01">미정</option>
+											<option value="02">임대전세</option>
+											<option value="03">임대월세</option>
+											<option value="04">임차전세</option>
+											<option value="05">임차월세</option>
+											<option value="06">매도</option>
+											<option value="06">매수</option>
+											<option value="06">투자</option>
+											<option value="06">기타</option>
+											<option value="06">현임차인</option>
+											<option value="06">주인거주</option>
+										</select>
+									</div>
+								</span>
+							</li>
+							<li class="inpFrm">
+								<label class="titInp" for="inpCustomerGroup02">고객 그룹</label>
+								<span class="inpA">
+									<div class="selectWrap">
+										<select id="inpCustomerGroup02" title="고객 그룹 선택" data-header="고객 그룹" data-msg="선택">
+											<option value="01">기본 그룹</option>
+											<option value="02">등록 그룹</option>
+										</select>
+									</div>
+								</span>
+							</li>
+							<li class="inpFrm">
+								<label class="titInp" for="inpCustomerGroup02">고객 등급</label>
+								<span class="inpA">
+									<div class="selectWrap">
+										<select id="inpCustomerGroup02" title="고객 등급 선택" data-header="고객 등급" data-msg="선택">
+											<option value="01">1급</option>
+											<option value="02">2급</option>
+											<option value="03">3급</option>
+											<option value="04">일반</option>
+										</select>
+									</div>
+								</span>
+							</li>
+							<li class="inpFrm">
+								<strong class="titInp">업무상황</strong>
+								<span class="inpA">
+									<ul class="frmBox">
+										<li><input type="radio" id="radWorkState04" name="radWorkState02"><label for="radWorkState04">진행중</label></li>
+										<li><input type="radio" id="radWorkState05" name="radWorkState02"><label for="radWorkState05">종료</label></li>
+									</ul>
+								</span>
+							</li>
+							<li class="inpFrm">
+								<strong class="titInp">접수 구분</strong>
+								<span class="inpA">
+									<ul class="frmBox">
+										<li><input type="radio" id="radAcceptSep03" name="radAcceptSep02"><label for="radAcceptSep03">방문</label></li>
+										<li><input type="radio" id="radAcceptSep04" name="radAcceptSep02"><label for="radAcceptSep04">전화</label></li>
+									</ul>
+								</span>
+							</li>
+							<li class="inpFrm">
+								<strong class="titInp">예약 일정</strong>
+								<!-- 2023.09.05 날짜 input 수정 -->
+								<div class="inpA">
+									<input type="date" data-placeholder="YYYY-MM-DD" required>
+								</div>
+								<!-- //2023.09.05 날짜 input 수정 -->
+							</li>
+							<li class="inpFrm">
+								<strong class="titInp" >접수 일자</strong>
+								<!-- 2023.09.05 날짜 input 수정 -->
+								<div class="inpA">
+									<input type="date" data-placeholder="YYYY-MM-DD" required>
+								</div>
+								<!-- //2023.09.05 날짜 input 수정 -->
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<ul class="agreeList">
+				<li>
+					<span class="frmInp frmInpS txt">
+						<input type="checkbox" id="chkAgree"><label for="chkAgree">개인정보 수집 및 이용 동의</label>
+						<button type="button" class="btLink layPopBtn" data-id="pop_agree-01">상세보기</button>
+					</span>
+				</li>
+			</ul>
+			<!-- // end of contents -->
+		</div><!-- //container -->
+		
+		<div class="floatingBtns">
+			<div class="btnArea">
+				<button type="button" class="btnDefault btnL btLineP">임시저장</button>
+				<button type="button" class="btnDefault btnL action" disabled>완료</button>
+			</div>
+		</div>
+		<aside>
+			<div class="asideRight">
+				<button type="button" class="btTop">페이지 상단으로 이동</button><!-- 2023.08.16 onClick 이벤트 삭제 -->
+			</div>
+		</aside>
+	</section>
+
+	<!-- popup 개인정보 수집 및 이용 동의 -->
+	<section id="pop_agree-01" class="layPop layFull" tabindex="0">
+		<header>
+			<h2 class="titLay">개인정보 수집 및 이용 동의</h2>
+		</header>
+	
+		<div class="layContainer" tabindex="0">
+			<div class="layContent">
+				<div id="laypopTop"></div>
+				<div class="termsArea">
+					<h4 class="titL">[ 개인정보 수집 및 이용 동의 ]</h4>
+					<ol class="termsList">
+						<li>
+							<h5 class="titM">1. 수집하는 개인정보의 항목</h5>
+							<p class="txt">첫째, 한방공인중개사사무소 는(은) 고객관리, 계약서 작성 및 관리 등 각종 서비스의 제공을 위해 아래와 같은 최소한의 개인정보를 수집하고 있습니다.</p>
+							<ul class="barList">
+								<li>수집항목(필수) : 이름, 주소, 휴대폰번호, 전화번호, 생년월일, 성별</li>
+								<li>수집항목(선택) : 이메일 ( 동의 / 미동의 )</li>
+							</ul>
+						</li>
+						<li>
+							<h5 class="titM">2. 개인정보 수집방법</h5>
+							<p class="txt">한방공인중개사사무소 는(은) 다음과 같은 방법으로 개인정보를 수집합니다.</p>
+							<ul class="barList">
+								<li><p class="txt">한국공인중개사협회 한방부동산거래정보망 시스템 사용이 허가 된 개업공인중개사의 직접 입력을 통한 시스템 등록</p></li>
+							</ul>
+						</li>
+						<li>
+							<h5 class="titM">3. 개인정보의 수집 및 이용목적</h5>
+							<p class="txt">개인정보의 수집은 아래와 같은 목적을 위하여 수집하며 이외의 목적으로는 사용되지 않습니다.</p>
+							<ul class="barList">
+								<li>부동산 거래를 위한 매물 관리</li>
+								<li>부동산 거래를 위한 계약서 작성</li>
+								<li>지속가능한 서비스 제공을 위한 고객관리</li>
+							</ul>
+							<p class="txt">단, 주민등록번호는 공인중개사법 제26조(거래계약서의 작성 등) 및 부동산거래신고에 관한 법률 제3조(부동산거래의 신고)의 목적 이외에는 사용되지 않습니다.</p>
+						</li>
+						<li>
+							<h5 class="titM">4. 개인정보의 보유 및 이용기간</h5>
+							<p class="txt">저장된 개인정보는 원칙적으로 개인정보의 수집 및 이용목적이 달성되면 지체 없이 파기합니다. 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다.</p>
+							<ul class="barList">
+								<li>관련법령에 의한 정보보유 사유</li>
+							</ul>
+							<p class="txt">상법, 전자금융거래법 등 관계법령의 규정에 의하여 보존할 필요가 있는 경우 관례법령에서 정한 일정한 기간 동안 개인정보를 보관합니다. 이 경우 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 아래와 같습니다.</p>
+							<ul class="barList">
+								<li>부동산 계약서 거래 기록 보존 이유 : 공인중개사법 및 공인중개사법 시행령</li>
+								<li>보존 기간 : 5년</li>
+							</ul>
+						</li>
+						<li>
+							<h5 class="titM">5. 개인정보의 처리위탁</h5>
+							<p class="txt">한방공인중개사사무소는(은) 다음과 같이 개인정보처리를 위탁하고 있습니다.</p>
+							<ul class="barList">
+								<li>개인정보처리를 위탁받은자(수탁자) : 한국공인중개사협회</li>
+								<li>위탁업무내용 : 한방부동산거래정보망 서비스 제공<br>  
+									(매물등록, 고객등록, 계약서 작성 등에 필요한 개인정보 저장시스템의 관리업무)</li>
+							</ul>
+							<p class="txt">위탁계약 시 개인정보보호의 안전을 기하기 위하여 개인정보보호 관련 법규의 준수, 개인정보에 관한 제3자 제공 금지 및 사고시의 책임부담 등을 명확히 규정하고 당해 계약 내용을 서면으로 보관하고 있습니다.</p>
+						</li>
+					</ol>
+
+					<div class="signArea">
+						<p class="bulletDang">동의를 거부할 수 있으며, 동의 거부 시 제공되는 중개서비스가 제한될 수 있으나 그에 대한 불이익은 없습니다.</p>
+						<ol class="circleList">
+							<li><span class="bullet">①</span>개인정보 제공자 :    성  명<br>(서 명)     ( 동의 , 동의거부 )</li>
+							<li><span class="bullet">②</span>개인정보 제공자 :    성  명<br>(서 명)     ( 동의 , 동의거부 )</li>
+						</ol>
+						<div class="date">
+							<strong>수집일시 :</strong><span>년</span><span>월</span><span>일</span>
+						</div>
+						<!-- 2023.08.29 수정 -->
+						<ol class="circleList">
+							<li><span class="bullet">①</span>개인정보 수집자 :    한방공인중개사사무소 <span>성  명</span><br>(서 명) </li>
+						</ol>
+						<p class="bulletDang">한방부동산거래정보망에 고객의 정보를 등록할 경우 개인정보 수집 및 이용동의를 받아야 합니다.</p>
+						<!-- //2023.08.29 수정 -->
+					</div>
+			
+				</div>
+			</div>
+			<!-- 2023.08.29 버튼 삭제 -->
+			<!-- div class="popBtns">
+				<div class="inner">
+					<button type="button" class="btnDefault btnL">이전</button>
+					<button type="button" class="btnDefault btnL action">다음</button>
+				</div>
+			</div -->
+			<!-- //2023.08.29 버튼 삭제 -->
+		</div><!-- //layContainer-->
+		<button type="button" class="closeL">팝업 닫기</button>
+	</section>
+	<!-- popup 개인정보 수집 및 이용 동의 -->
+
+	<!-- popup 고객 조회 -->
+	<section id="BCM_L0101_FP" class="layPop layFull" tabindex="0">
+		<header>
+			<h2 class="titLay">고객 조회</h2>
+		</header>
+	
+		<div class="layContainer" tabindex="0">
+			<div class="layContent">
+				
+				<div class="inpFrm searchArea type02 inpDeleteAni">
+					<div class="inpA">
+						<input type="search" id="inpSearch02" placeholder="검색어를 입력해 주세요." title="검색어를 입력해 주세요.">
+						<button type="button" class="icBtn icDel">삭제</button>
+						<button type="submit" class="icBtn icSearch">검색</button>
+					</div>
+				</div>
+
+				<div class="countTit">
+					<span class="txt">총 <strong class="count">163</strong>건</span>
+					<div class="controller">
+						<div class="selectWrap btnSort">
+							<select id="pop_sort" title="정렬 선택" data-msg="정렬" data-header="정렬">
+								<option value="01">오름차순</option>
+								<option value="02">내림차순</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<ul class="customerList">
+					<li>
+						<a href="#" role="button">
+							<div class="flagArea">
+								<span class="flag request02">임대월세</span>
+								<span class="flag sthType">상업용</span>
+								<span class="flag write01">진행중</span>
+							</div>
+							<strong class="tit">[갭투자] <em>김한방</em><span>종로구 거주자</span></strong>
+							<span class="phoneNum">010-1234-5678</span>
+							<span class="memoTxt">메모내용 노출 영역입니다. 메모내용 노출 영역입니다. 메모내용 노출 영역입니다.</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" role="button">
+							<div class="flagArea">
+								<span class="flag deal02">전세</span>
+								<span class="flag sthType">상업용</span>
+								<span class="flag write01">진행중</span>
+							</div>
+							<strong class="tit">[기본그룹] <em>김한방</em><span>종로구 거주자</span></strong>
+							<span class="phoneNum">010-1234-5678</span>
+							<span class="memoTxt">메모내용 노출 영역입니다. 메모내용 노출 영역입니다. 메모내용 노출 영역입니다.</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" role="button">
+							<div class="flagArea">
+								<span class="flag request01">매도</span>
+								<span class="flag sthType">주거용</span>
+								<span class="flag write01">진행중</span>
+							</div>
+							<strong class="tit">[갭투자] <em>김한방</em><span>종로구 거주자</span></strong>
+							<span class="phoneNum">010-1234-5678</span>
+							<span class="memoTxt">메모내용 노출 영역입니다. 메모내용 노출 영역입니다. 메모내용 노출 영역입니다.</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" role="button">
+							<div class="flagArea">
+								<span class="flag request01">매도</span>
+								<span class="flag sthType">주거용</span>
+								<span class="flag public03">종료</span>
+							</div>
+							<strong class="tit">[갭투자] <em>김한방</em><span>종로구 거주자</span></strong>
+							<span class="phoneNum">010-1234-5678</span>
+							<span class="memoTxt">메모내용 노출 영역입니다. 메모내용 노출 영역입니다. 메모내용 노출 영역입니다.</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" role="button">
+							<div class="flagArea">
+								<span class="flag request01">매도</span>
+								<span class="flag sthType">상업용</span>
+								<span class="flag public03">종료</span>
+							</div>
+							<strong class="tit">[갭투자] <em>김한방</em><span>종로구 거주자</span></strong>
+							<span class="phoneNum">010-1234-5678</span>
+							<span class="memoTxt">메모내용 노출 영역입니다. 메모내용 노출 영역입니다. 메모내용 노출 영역입니다.</span>
+						</a>
+					</li>
+				</ul>
+				
+			</div>
+			
+		</div><!-- //layContainer-->
+		<button type="button" class="closeL">팝업 닫기</button>
+	</section>
+	<!-- //popup 고객 조회 -->
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/magnt/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/magnt/swiper.min.js"></script>
+<script type="text/javascript" src="/js/magnt/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/magnt/m_common.js"></script>
+
+</html>
+

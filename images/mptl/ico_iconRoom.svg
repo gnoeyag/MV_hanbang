@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g data-name="icon">
+        <g data-name="그룹 18037">
+            <g data-name="사각형 13592" transform="translate(6 15)" style="stroke:#fff;stroke-width:1.5px;fill:none">
+                <rect width="28" height="20" rx="2" style="stroke:none"/>
+                <rect x=".75" y=".75" width="26.5" height="18.5" rx="1.25" style="fill:none"/>
+            </g>
+            <g data-name="사각형 13596" style="stroke:#fff;stroke-width:1.5px;fill:none">
+                <path d="M2 0h4a2 2 0 0 1 2 2v8H0V2a2 2 0 0 1 2-2z" style="stroke:none" transform="translate(16 25)"/>
+                <path d="M2 .75h4A1.25 1.25 0 0 1 7.25 2v7.25H.75V2A1.25 1.25 0 0 1 2 .75z" style="fill:none" transform="translate(16 25)"/>
+            </g>
+            <g data-name="다각형 5" style="fill:none">
+                <path d="M15.212.64a1.25 1.25 0 0 1 1.576 0l12.48 10.14a1.25 1.25 0 0 1-.789 2.22H3.521a1.25 1.25 0 0 1-.788-2.22z" style="stroke:none" transform="translate(4 3.5)"/>
+                <path d="M16 1.933 4.225 11.5h23.55L16 1.933M16 .36c.28 0 .559.093.788.28l12.48 10.139c.913.742.388 2.22-.789 2.22H3.521c-1.177 0-1.702-1.478-.789-2.22L15.212.64c.23-.186.509-.28.788-.28z" style="fill:#fff;stroke:none" transform="translate(4 3.5)"/>
+            </g>
+            <g data-name="그룹 18038" transform="translate(-240.754 -935.6)">
+                <rect data-name="사각형 13593" width="1.5" height="4" rx=".75" transform="translate(264.254 954.352)" style="fill:#fff"/>
+                <rect data-name="사각형 13594" width="1.5" height="4" rx=".75" transform="translate(260.004 954.352)" style="fill:#fff"/>
+                <rect data-name="사각형 13595" width="1.5" height="4" rx=".75" transform="translate(255.754 954.352)" style="fill:#fff"/>
+            </g>
+        </g>
+    </g>
+</svg>

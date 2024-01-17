@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>메인 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/mptl/h_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper mainWrapper">
+		<header>
+			<h1 class="logo"><a href="UHM_01_P.html"><img src="/images/mptl/common/img_logo.svg" alt="한방"></a></h1>
+			<a href="#" class="iconNotice newAlarm" role="button"><img src="/images/mptl/common/ico_notice.svg" alt="알림"></a>
+		</header>
+
+		<!--container-->
+		<div id="container" class="container">
+		
+		</div>
+		<!-- //container -->
+
+	</section>
+	
+
+<!--관심 지역 등록 FP-->
+<section id="pop_interestAreaL" class="layPop layFull" tabindex="0"><!-- 스크롤 시 layScroll 클래스 추가 -->
+	<header class="hidden">
+		<h2 class="titLay">관심 지역을 등록</h2>
+	</header>
+
+	<div class="layContainer" tabindex="0">
+		<div class="layContent">
+			<!--20230721 수정 - 마침표 삭제-->
+			<p class="titDep2">관심 지역을 등록<span>하면 <br>해당 지역 정보를 알려드려요</span></p>
+			<div class="inpFrm searchArea type02 inpDeleteAni">
+				<div class="inpA roleBtnSch hasIcoSch">
+					<input type="search" id="inpSearch02" placeholder="관심 지역명을 입력해 주세요" title="관심 지역명 검색" value="서울 동작구 신대방동"> <!--20230731 수정 : placeholder 기획수정 1.7v-->
+					<button type="button" class="icBtn icDel">삭제</button>
+					<button type="button" class="btSearch">검색</button>
+				</div>
+				<!--검색어 입력 시 노출 레이어-->
+				<div class="searchIngResult inpBtm">
+					<ul class="list">
+						<li>
+							<a href="#" class="item">
+								<em class="word">경기 평택시<strong class="matching">신대</strong>동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">대전 대덕구<strong class="matching">신대</strong>동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">서울 동작구<strong class="matching">신대</strong>방동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">경기 평택시<strong class="matching">신대</strong>동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">대전 대덕구<strong class="matching">신대</strong>동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">서울 동작구<strong class="matching">신대</strong>방동</em>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--//검색어 입력 시 노출 레이어-->
+			</div>
+			<p class="referText">관심 지역의 읍/면/동 기준으로 조회 가능해요.</p> <!--20230803 수정 : 문구 추가-->
+		</div>
+		<div class="popBtns">
+			<div class="inner">
+				<!--<button type="button" class="btnDefault btnL action" disabled>등록하기</button>-->
+				<!--[D] 지역명 옵션 목록에서 지역명 터치 시, 활성화 : disabled 속성 삭제-->
+				<button type="button" class="btnDefault btnL action">등록하기</button>
+			</div>
+		</div>
+	</div>
+	<button type="button" class="closeL">팝업 닫기</button>
+	<!--[D] 컨팜 레이어 : COMM_alert.html 파일 참고-->
+</section>
+<!--//관심 지역 등록 FP-->
+
+<div class="dimmed"></div>
+
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/mptl/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/mptl/swiper.min.js"></script>
+<script type="text/javascript" src="/js/mptl/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/mptl/m_common.js"></script>
+
+<script>
+	$(function(){
+		// 관심 지역 검색 중 화면 샘플
+		mvJs.popup.show($('#pop_interestAreaL'));
+	})
+</script>
+</html>
+

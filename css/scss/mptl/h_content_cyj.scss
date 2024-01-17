@@ -1,0 +1,420 @@
+@charset "utf-8";
+
+@import '_hbase', '_hfont';
+
+/* 메뉴 */
+.menuTop{@extend %fullWidth;position:relative;background:$col_bg100;
+	.btnMenus{position:relatived;height:48px;
+		> a{@extend %textHidden;position:absolute;top:6px;display:inline-block;width:36px;height:36px;}
+		.btAlram{right:54px;
+			&:after{@include pseudo(24px,24px);background:url(#{$img_url}/common/spr_main.svg) no-repeat -130px 0}
+			.new{position:absolute;top:6px;right:6px;width:4px;height:4px;border-radius:50%;background:#ff532b}
+		}
+		.btSetting{right:14px;
+			&:after{@include pseudo(24px,24px);background:url(#{$img_url}/common/spr_main.svg) no-repeat -156px 0}
+		}
+	}
+	.myLoginArea{display:flex;padding:0 20px 24px;
+		figure{position:relative;flex:0 0 48px;height:48px;
+			img{width:100%;height:100%;border-radius:50%;object-fit:cover}
+			.registChannel{@extend %textHidden;position:absolute;bottom:0;right:0;width:16px;height:16px;
+				&.kakao{background:url(#{$img_url}/img_kakao.svg) no-repeat}
+				&.naver{background:url(#{$img_url}/img_naver.svg) no-repeat}
+				&.google{background:url(#{$img_url}/img_gooogle.svg) no-repeat}
+			}
+		}
+		.txtArea{position:relative;width:100%;display:flex;padding-left:12px;justify-content:center;flex-direction:column;
+			span{color:$col_g500;font-size:rem(12px);line-height:1.14;}
+			strong{position:relative;display:inline-block;margin-top:3px;padding-right:18px;color:$col_g100;font-size:rem(18px);font-weight:$weight700;
+				&:after{content:'';display:inline-block;width:18px;height:18px;vertical-align:-3px;background:url(#{$img_url}/common/spr_icon.svg) no-repeat -73px -27px;transform:rotate(-180deg)}
+				.btnSS{position:absolute;top:50%;right:20px;margin-top:-13px;display:inline-block}
+			}
+		}
+	}
+	&.loginBefore{padding-top:48px}
+}
+
+.navList{@extend %fullWidth;background:$col_white;
+	> li{border-top:1px solid $col_g800;
+		&:first-child{border-top:0}
+		> a{position:relative;display:block;padding:0 0 0 48px;color:$col_g200;font-size:rem(16px);font-weight:$weight500;line-height:56px;
+			&:before{@include pseudo(20px,20px);left:20px;margin-left:0;background:url(#{$img_url}/common/spr_nav.svg) no-repeat}
+			&:after{@include pseudo(20px,20px);left:auto;right:20px;margin-left:0;background:url(#{$img_url}/common/spr_icon.svg) no-repeat -40px 0;transform:rotate(-90deg)}
+		}
+		&.nav02 > a:before{background-position:-22px 0}
+		&.nav03 > a:before{background-position:-44px 0}
+		&.nav04 > a:before{background-position:-66px 0}
+		&.nav05 > a:before{background-position:-88px 0}
+		&.nav06 > a:before{background-position:-110px 0}
+        &.nav07 > a:before{background-position:-132px 0}
+        &.nav08 > a:before{background-position:-154px 0}
+        &.nav09 > a:before{background-position:-176px 0}
+        &.nav10 > a:before{background-position:-198px 0}
+        &.nav11 > a:before{background-position:-220px 0}
+		&.line{border-top:8px solid $col_diviedLine;}
+        &.line2{border-top:1px solid $col_g800}
+	}
+	&.settingList{border-bottom:8px solid $col_diviedLine;
+		> li{position:relative;padding:0 20px;color:$col_g200;font-size:rem(16px);font-weight:$weight500;line-height:56px;
+			> a{margin:0 -20px;padding:0 20px;
+				&:before{display:none}
+			}
+			span{position:absolute;top:50%;right:20px;margin-top:-9px;color:$col_g500;}
+			.btRefresh{@extend %textHidden;width:24px;height:24px;margin-left:4px;background:url(#{$img_url}/icon_refresh.svg) no-repeat;vertical-align:middle}
+		}
+	}
+}
+
+.menuFooter{padding:24px 0 0;
+	.callCustomer{position:relative;display:block;margin-bottom:24px;
+		&:after{@extend %pseudoAbs;bottom:4px;right:0;width:32px;height:32px;background:url(#{$img_url}/common/spr_nav.svg) no-repeat -242px 0}
+		.tit{color:$col_g400;font-size:rem(16px);font-weight:$weight700;line-height:1.18}
+		.info{margin-top:12px;color:$col_g400;}
+	}
+	.snsList{margin-top:30px;
+		> li{margin-top:24px;font-size:0;
+			&:first-child{margin-top:32px}
+			.tit{display:block;margin-bottom:12px;color:$col_g500;font-size:rem(12px);line-height:1.17}
+			> a{position:relative;display:inline-block;width:50%;height:24px;padding-left:32px;font-size:rem(14px);line-height:24px;
+				&:before{@extend %pseudoAbs;top:0;left:0;width:24px;height:24px;background:url(#{$img_url}/icon_blog.svg) no-repeat}
+				&.snsYoutube:before{background-image:url(#{$img_url}/icon_youtube.svg)}
+				&.snsKakao:before{background-image:url(#{$img_url}/icon_kakao.svg)}
+				&.snsSMS:before{background-image:url(#{$img_url}/icon_message.svg)}
+			}
+		}
+	}
+	.menuUtil{margin-top:32px;border-top:1px solid $col_white;font-size:0;
+		> a{position:relative;display:inline-block;padding:16px 12px;color:$col_g500;font-size:rem(12px);line-height:1;
+			&:first-child{margin-left:-12px;
+				&:before{display:none}
+			}
+			&:before{content:'';display:block;position:absolute;top:18px;left:0;width:1px;height:10px;background:$col_g700}
+			
+		}
+	}
+}
+
+//알림
+.alarm{margin-top:-16px;
+    .item{
+        padding: 16px 20px 24px;
+        border-bottom: 1px solid $col_g800;
+        margin:0 -20px;
+        &:first-of-type{
+            padding-top: 0;
+        }
+        .date{
+            height: 41px;
+            line-height: 41px;
+            font-weight: $weight500;
+            .today{
+                color: $col_point;
+                margin-right: 4px;
+            }
+        }
+        .alarmList{
+            > li{
+                margin-top: 16px;
+                &:first-child{
+                    margin-top: 0;
+                }
+                >a {
+                    display: block;
+                    padding: 16px;
+                    position: relative;
+                    border-radius: 0 8px 8px 8px;
+                    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.06);
+                    border: solid 1px #f2f2f2;
+                    &.active{
+                        background: $col_g900;
+                        box-shadow: none;
+						border:none;
+                    }
+                }
+                .tit{
+                    display: block;
+                    font-size: rem(12px);
+                    line-height: 1.67;
+                    color: $col_g400;
+                }
+                .txt{
+                    margin-top: 8px;
+                }
+                .time{
+                    position: absolute;
+                    right: 16px;
+                    top: 16px;
+                    font-size: rem(12px);
+                    color: $col_g500;
+                }
+            }
+        }
+    }
+}
+
+.btArea{margin-top:11px;text-align:right;
+	> button{display:inline-block;height:29px;padding:0;color:$col_g400;font-weight:$weight500;font-size:rem(16px);line-height:29px;text-align:right}
+}
+
+//개인정보 관리
+.privacyInfo{position:relative;background:$col_white;
+	figure{position:relative;display:inline-block;width:48px;height:48px;vertical-align:top;
+		img{width:100%;height:100%;border-radius:50%;object-fit:cover}
+	}
+	.txtArea{display:inline-block;width:calc(100% - 52px);
+		strong{position:relative;display:inline-block;margin:11px 0 0 12px;color:$col_g100;font-size:rem(18px);font-weight:$weight700}
+	}
+	.btnXS{position:absolute;top:50%;right:0;margin-top:-13px;display:inline-block}
+}
+.privacyCont{margin:16px -20px 0;padding:0 20px 38px;border-bottom:8px solid $col_diviedLine;
+	.referText{font-size:rem(14px);
+		&:before{top:2px}
+	}
+}
+.infoListS{
+	> li{display:flex;padding:10px 0 8px 0;
+		.tit{width:114px;flex-shrink:0;color:$col_g400;
+			.frmChange{margin-left:4px}
+		}
+		.data{width:100%;color:$col_g300;font-weight:$weight500;text-align:right;
+			.flagMark{margin-left:6px}
+			&.ellipsisTxt{
+				@include ellipsis(1, auto);
+			}
+			.btCopy{
+				margin-left: 4px;
+			}
+			em{display:block}
+		}
+		
+	}
+}
+.layPop{
+	&.layQuit{left:40px;right:40px;
+		header{height:auto}
+		.titLay{height:70px;padding:24px 20px 0;font-size:rem(16px);line-height:1.38}
+		.txtQuit{margin-bottom:14px;}
+		.popBtns{
+			.inner{display:block;padding:0 16px;
+				.btLink2{width:100%;margin-top:4px;padding:15px 0;color:$col_g400;text-align:center;line-height:1}
+			}
+		}
+	}
+}
+
+//알림설정
+.alarmSetting{
+    .grayBox02{
+        margin-top: -16px;
+    }
+    .togList{
+        border-bottom: 0;
+        > li{
+            border-top: 1px solid $col_g700;
+            padding: 0 20px;
+            margin: 0 -20px;
+            &:first-child{
+                border-top: 0;
+            }
+            .btTog{
+                label{
+                    padding: 17px 0 15px;
+                    height: auto;
+                    > *{
+                        display: block;
+                    }
+                    .tit{
+                        font-size: rem(16px);
+                        color: $col_g100;
+                    }
+                    .txt{
+                        font-size: rem(12px);
+                        color: $col_g500;
+                        margin-top: 4px;
+                        padding-right: 100px;
+                    }
+                    &:before{
+                        top: 25px;
+                    }
+                    &:after{
+                        top: 28px;
+                    }
+                }
+            }
+        }
+        &.divider{
+            margin-top: 0;padding:0;
+        }
+        &.depth2{
+            > li{
+                border-top: 1px solid $col_g800;
+
+                .btTog{
+                    label{
+                        .tit{
+                            color: $col_g200;
+                            font-weight: $weight500;
+                        }
+                        &:before{
+                            top: 14px;
+                        }
+                        &:after{
+                            top: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .alarmTime{
+        background: $col_g900;
+        margin: 0 -20px;
+        padding: 24px 20px 32px;
+    }
+}
+
+.yearMonth{
+    display: flex;
+    justify-content: space-between;
+    margin:0 -12px;
+    .item{
+        flex: 1 0;
+        position: relative;
+        margin:0 12px;
+        &:before, &:after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: $col_g800;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 84px;
+        }
+        &:after{
+            top: 136px;
+        }
+        .swiperWrap{
+            &.swiperVertical{
+                height: 224px;
+            }
+        }
+        .swiper-slide{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 38px;
+            font-size: rem(16px);
+            color: $col_g200;
+            opacity: 0.2;
+            &.swiper-slide-prev, &.swiper-slide-next{
+                opacity: 0.5;
+                height: 48px;
+            }
+            &.swiper-slide-active{
+                opacity: 1;
+                font-weight: $weight700;
+                height: 52px;
+            }
+        }
+    }
+}
+//매물 문의
+.countTitLine{margin:-9px -20px 0 !important;padding:0 20px 7px;border-bottom:1px solid $col_g700}
+.utilArea.utilAreaLine{margin:-16px -20px 0;padding:0 20px;border-bottom:1px solid $col_g700}
+.objectListInquery{
+	.date{margin-bottom:12px;color:$col_g200;font-weight:$weight700}
+	.inqueryTxt{@include ellipsis(1, auto);margin-top:12px;padding:0 12px;color:$col_g200;line-height:44px;border-radius:0 8px 8px 8px;background:$col_bg100;}
+	&.editMode{
+        .inqueryTxt{margin-left:32px} 
+    }
+}
+.layPop.layCent.laySenMessage{
+    .figSec.bgGray{
+        > a{position:relative;
+            .btIco.icArr{position:absolute;bottom:-10px;right:0;font-weight:$weight500}
+        }
+    }
+    .inqueryCont{margin-top:16px;padding-top:14px;border-top:1px solid $col_g800;
+        .txt{color:$col_g200;font-weight:$weight700;line-height:1.42}
+        .date{display:block;margin-top:5px;color:$col_g500;font-size:rem(12px)}
+    }
+    &.layInqueryDetail{
+        header{height:54px;
+            .titLay{padding-top:15px}
+        }
+        .layContainer{padding-top:54px;
+            .layContent{padding-top:0}
+        }
+		.figSec.bgGray > a {
+			padding-bottom:20px;
+		}
+    }
+}
+
+
+//공지사항
+.announcement{
+    &.toggleType02{
+        border-top: 1px solid $col_g600;
+		border-bottom:none;
+        > li{
+            &.acctItem{
+                border-bottom:1px solid $col_g800;border-top:0;
+                .toggleBtn{
+                    padding: 16px 55px 16px 20px;
+                    &:after{margin-top:-22px}
+                }
+                .toggleCont{border-top:none;background:$col_g900}
+            }
+            .tit{
+                display: block;
+                position: relative;
+                color: $col_g200;
+                &.new{
+                    &:after{
+                        content:'';
+                        @extend %textHidden;
+                        display: inline-block;
+                        width: 10px;
+                        height: 16px;
+                        margin-left: 4px;
+                        vertical-align: middle;
+                        background: url(#{$img_url}/ico_n.svg) no-repeat;
+                    }
+                }
+            }
+            .option{ 
+                margin-top: 8px;
+                > *{
+                    font-size: rem(12px);
+                    color: $col_g400;
+                }
+                .sort{
+                    &:before{
+                        content: '';
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 3px;
+                        height: 3px;
+                        background: #dadada;
+                        border-radius: 100%;
+                        margin: 0 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//광고문의
+.advertisingArea{position:relative;padding-top:144px;background:url(#{$img_url}/img_adverse.svg) no-repeat;
+    .adverTit{display:block;color:$col_g200;font-size:rem(22px);font-weight:$weight400;
+        em{color:$col_g200;font-size:rem(22px);font-weight:$weight700;}
+    }
+    .txt{display:block;margin-top:12px;padding-right:40px;line-height:1.27}
+    .emailLink{display:block;margin-top:15px}
+}

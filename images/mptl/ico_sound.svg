@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g transform="translate(7.5 3)" style="stroke:#6b59e3;stroke-width:1.5px;fill:none">
+        <rect width="9" height="13" rx="4.5" style="stroke:none"/>
+        <rect x=".75" y=".75" width="7.5" height="11.5" rx="3.75" style="fill:none"/>
+    </g>
+    <g data-name="그룹 20750">
+        <path data-name="path" transform="translate(12 18)" style="stroke-linecap:round;stroke:#6b59e3;stroke-width:1.5px;fill:none" d="M0 2V0"/>
+        <path data-name="path" d="M12 0a6.926 6.926 0 0 1-6 4 6.926 6.926 0 0 1-6-4" transform="translate(6 14)" style="stroke-miterlimit:10;stroke-linecap:round;stroke:#6b59e3;stroke-width:1.5px;fill:none"/>
+    </g>
+</svg>

@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>고객 관리 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body >
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper submainWrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">고객 관리</h1>
+			<div class="menuWrap">
+				<button type="button" class="btNav" aria-expanded="false">메뉴</button>
+				<nav>
+					<div class="navInner">메뉴영역</div>
+				</nav>
+			</div>
+		</header>
+
+		<div id="container" class="container">
+			<!-- start of contents -->
+            <div class="searchWrap">
+				<div class="inpFrm searchArea inpDeleteAni">
+					<div class="inpA">
+						<input type="search" id="inpSearch" placeholder="검색어를 입력해 주세요." title="검색어 입력">
+						<button type="button" class="icBtn icDel">삭제</button>
+						<button type="submit" class="icBtn icSearch">검색</button>
+					</div>
+					<button type="button" class="btFilter layPopBtn" data-id="BUG_010101_FP">계약서 조회 설정</button>
+				</div>
+			</div>
+			<div class="countTit">
+				<span class="txt">총 <strong class="count">163</strong>건</span>
+			</div>
+            <ul class="cardList">
+				<li>
+					<a href="#" role="button">
+						<div class="cardType">
+							<div class="flagWrap">
+								<span class="flag request01">매도</span>
+								<!--  
+									매도 request01
+									임대월세 request02
+									임대전세 request03
+									임차월세 request04
+                                    임차전세 request05
+									매수 request06
+									투자 request07
+                                    기타 request08
+                                    현임차인 request09
+                                    주인거주 request09
+								-->
+                                <span class="flag sthType">상업용</span>
+                                <span class="flag endType">종료</span> <!-- 2023.08.25 수정 / 업무 상태 플래그 수정 -->
+							</div>
+							<div class="txtWrap02">
+                                <span class="txt01">고객 그룹 21자 노출</span>
+								<strong class="tit">고객 성명 최대 25자 모두 노출</strong>
+								<span class="txt02">별칭 등록 없을 경우 비노출 최대 25자 노출</span>
+                                <span class="txt03">010-1234-5678</span>
+							</div>
+						</div>
+					</a>
+				</li>
+                <li>
+					<a href="#" role="button">
+						<div class="cardType">
+							<div class="flagWrap">
+								<span class="flag request02">임대월세</span>
+                                <span class="flag sthType">주거용</span>
+							</div>
+                            <div class="txtWrap02">
+                                <span class="txt01">갭투자</span>
+								<strong class="tit">김한방</strong>
+								<span class="txt02"><mark>종로구</mark> 거주자</span> <!-- 검색어 포함 내용 mark -->
+                                <span class="txt03">010-1234-5678</span>
+							</div>
+						</div>
+					</a>
+				</li>
+                <li>
+					<a href="#" role="button">
+						<div class="cardType">
+							<div class="flagWrap">
+								<span class="flag request03">임대전세</span>
+                                <span class="flag sthType">토지</span>
+							</div>
+							<div class="txtWrap02">
+                                <span class="txt01">갭투자</span>
+								<strong class="tit">김한방</strong>
+								<span class="txt02"><mark>종로구</mark> 거주자</span>
+                                <span class="txt03">010-1234-5678</span>
+							</div>
+						</div>
+					</a>
+				</li>
+                <li>
+					<a href="#" role="button">
+						<div class="cardType">
+							<div class="flagWrap">
+								<span class="flag request08">기타</span>
+                                <span class="flag sthType">복합용도</span>
+							</div>
+							<div class="txtWrap02">
+                                <span class="txt01">갭투자</span>
+								<strong class="tit">김한방</strong>
+								<span class="txt02"><mark>종로구</mark> 거주자</span>
+                                <span class="txt03">010-1234-5678</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<div class="noData">
+                        ‘검색어’에 대한 검색 결과가 없습니다.
+                        <p class="subTxt">맞춤법을 확인하거나 다른 검색어를 입력해주세요.</p>
+                    </div>
+                    <!--CS 데이터가 없는 경우 -->
+                    <!-- 
+                    <div class="noData">
+                        고객 관리의 데이터가 없습니다
+                        <p class="subTxt">CS의 해당 메뉴에서 확인해주세요.</p>
+                    </div>
+                    -->
+                    <!--//CS 데이터가 없는 경우 -->
+				</li>
+			</ul>
+			<!-- // end of contents -->
+		</div><!-- //container -->
+
+		<div class="dockBar">
+			<div class="inner">
+				<a href="#" role="button" class="btNavi01">종합</a>
+				<a href="#" role="button" class="btNavi02">매물</a>
+				<a href="#" role="button" class="btNavi03">쪽지</a>
+				<a href="#" role="button" class="btNavi04">일정</a>
+				<a href="#" role="button" class="btNavi05">알림</a>
+			</div>
+		</div>
+		<aside>
+			<div class="asideRight">
+				<button type="button" class="btTop">페이지 상단으로 이동</button><!-- 2023.08.16 onClick 이벤트 삭제 -->
+				<div class="pageAside">
+					<a href="#" class="btTool">고객 정보 수정/등록 </a>
+				</div>
+			</div>
+		</aside>
+	</section>
+
+    <!-- 고객 조회 설정 Layer -->
+    <section id="BUG_010101_FP" class="layPop layFull btTopAdd" tabindex="0">
+		<header>
+			<h2 class="titLay">고객 조회 설정</h2>
+		</header>
+	
+		<div class="layContainer" tabindex="0">
+			<div class="layContent">
+                <div id="laypopTop"></div>
+                <ul class="inpList">
+                    <li class="inpFrm">
+                        <strong class="titInp">고객 유형</strong>
+                        <ul class="frmBox col02">
+                            <li><input type="radio" id="customerType01" name="customerType" checked><label for="customerType01">전체</label></li>
+                            <li><input type="radio" id="customerType02" name="customerType"><label for="customerType02">건물관리고객</label></li>
+                        </ul>
+                    </li>
+                    <li class="inpFrm">
+                        <label class="titInp" for="inpCustomergroup">고객 그룹</label>
+                        <span class="inpA">
+                            <div class="selectWrap">
+                                <select id="inpCustomergroup" title="고객 그룹 선택" data-header="고객 그룹">
+                                    <option value="01" selected>전체</option>
+                                    <option value="02">기본그룹</option>
+                                </select>
+                            </div>
+                        </span>
+                    </li>
+                    <li class="inpFrm">
+                        <strong class="titInp">고객 등급</strong>
+                        <ul class="frmBox col03">
+                            <li><input type="radio" id="customerRating01" name="customerRating" checked><label for="customerRating01">전체</label></li>
+                            <li><input type="radio" id="customerRating02" name="customerRating"><label for="customerRating02">1급</label></li>
+                            <li><input type="radio" id="customerRating03" name="customerRating"><label for="customerRating03">2급</label></li>
+                            <li><input type="radio" id="customerRating04" name="customerRating"><label for="customerRating04">3급</label></li>
+                            <li><input type="radio" id="customerRating05" name="customerRating"><label for="customerRating05">일반</label></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="inpList divider">
+					<li class="inpFrm">
+                        <label class="titInp" for="inpQuesttype">의뢰 유형</label>
+                        <span class="inpA">
+                            <div class="selectWrap">
+                                <select id="inpQuesttype" title="의뢰 유형 선택" data-header="의뢰 유형">
+                                    <option value="01" selected>전체</option>
+                                    <option value="02">미정</option>
+                                    <option value="03">임대전세</option>
+                                    <option value="04">임대월세</option>
+                                    <option value="05">임차전세</option>
+                                    <option value="06">임차월세</option>
+                                    <option value="07">매도</option>
+                                    <option value="08">매수</option>
+                                    <option value="09">투자</option>
+                                    <option value="10">기타</option>
+                                    <option value="11">현임차인</option>
+                                    <option value="12">주인거주</option>
+                                </select>
+                            </div>
+                        </span>
+                    </li>
+                    <li class="inpFrm">
+                        <label class="titInp" for="inpPurpose">의뢰물 용도</label>
+                        <span class="inpA">
+                            <div class="selectWrap">
+                                <select id="inpPurpose" title="의뢰물 용도 선택" data-header="의뢰물 용도">
+                                    <option value="01" selected>전체</option>
+                                    <option value="02">미정</option>
+                                    <option value="03">주거용</option>
+                                    <option value="04">상업용</option>
+                                    <option value="05">공업용</option>
+                                    <option value="06">토지</option>
+                                    <option value="07">복합용도</option>
+                                </select>
+                            </div>
+                        </span>
+                    </li>
+                </ul>
+                <ul class="inpList divider">
+                    <li class="inpFrm">
+                        <strong class="titInp">업무 상태</strong>
+                        <ul class="frmBox col03">
+                            <li><input type="radio" id="businessStatus01" name="businessStatus" checked><label for="businessStatus01">전체</label></li>
+                            <li><input type="radio" id="businessStatus02" name="businessStatus"><label for="businessStatus02">진행중</label></li>
+                            <li><input type="radio" id="businessStatus03" name="businessStatus"><label for="businessStatus03">종료</label></li>
+                        </ul>
+                    </li>
+                    <li class="inpFrm">
+                        <strong class="titInp">접수 구분</strong>
+                        <ul class="frmBox col03">
+                            <li><input type="radio" id="Classification01" name="Classification" checked><label for="Classification01">전체</label></li>
+                            <li><input type="radio" id="Classification02" name="Classification"><label for="Classification02">방문</label></li>
+                            <li><input type="radio" id="Classification03" name="Classification"><label for="Classification03">전화</label></li>
+                        </ul>
+                    </li>
+                    <li class="inpFrm">
+                        <strong class="titInp">정렬 기준</strong>
+                        <ul class="frmBox col02">
+                            <li><input type="radio" id="sortBy01" name="sortBy" checked><label for="sortBy01">오름차순</label></li>
+                            <li><input type="radio" id="sortBy02" name="sortBy"><label for="sortBy02">내림차순</label></li>
+                        </ul>
+                    </li>
+                </ul>
+			</div>
+            <div class="popBtns">
+				<div class="inner">
+					<button type="button" class="btnDefault btnL btLineP">초기화</button>
+					<button type="button" class="btnDefault btnL action">적용하기</button>
+				</div>
+			</div>
+		</div><!-- //layCont-->
+		<button type="button" class="closeL">팝업 닫기</button>
+        <button type="button" class="btTopL" onclick="location.href='#laypopTop'">페이지 상단으로 이동</button>
+	</section>
+	<!-- //고객 조회 설정 Layer -->
+
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/magnt/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/magnt/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/magnt/swiper.min.js"></script>
+<script type="text/javascript" src="/js/magnt/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/magnt/m_common.js"></script>
+
+</html>
+

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g transform="translate(-104.274 -385.879)">
+        <rect data-name="사각형 23079" width="20" height="20" rx="1.537" transform="translate(106.274 386.879)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#707070;stroke-width:1.5px;fill:none"/>
+        <g data-name="타원 240" transform="translate(110.274 390.879)" style="stroke:#707070;stroke-width:1.5px;fill:none">
+            <circle cx="6" cy="6" r="6" style="stroke:none"/>
+            <circle cx="6" cy="6" r="5.25" style="fill:none"/>
+        </g>
+        <path data-name="선 418" transform="translate(118.274 391.879)" style="stroke:#707070;stroke-width:1.5px;fill:none" d="M3 0 0 3"/>
+        <path data-name="선 421" transform="translate(118.274 398.879)" style="stroke:#707070;stroke-width:1.5px;fill:none" d="M3 3 0 0"/>
+        <path data-name="선 419" transform="translate(111.274 391.879)" style="stroke:#707070;stroke-width:1.5px;fill:none" d="m0 0 3 3"/>
+        <path data-name="선 420" transform="translate(111.274 398.879)" style="stroke:#707070;stroke-width:1.5px;fill:none" d="m0 3 3-3"/>
+        <g data-name="사각형 23080" transform="translate(113.274 406.129)" style="stroke:#707070;stroke-width:1.5px;fill:none">
+            <rect width="6" height="3.75" rx="1" style="stroke:none"/>
+            <rect x=".75" y=".75" width="4.5" height="2.25" rx=".25" style="fill:none"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>테마 목록 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/mptl/h_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">테마 목록</h1>
+		</header>
+	
+		<div id="container" class="container">
+			<!-- start of contents -->
+			
+			<h2 class="titDep2 titIcoTheme theme12 titTop">신축 첫 입주</h2> <!--20230821 theme12 샘플 클래스명 변경-->
+			<!--20230821 theme1,theme2 ... UPT_01_P.html 의 각 테마 아이콘 클래스명 참고-->
+			
+			<div class="stickySection">
+				<div class="inpFrm searchArea inpDeleteAni">
+					<div class="inpA hasFilter hasIcoSch">
+						<input type="search" id="inpSearch" placeholder="지역명을 입력해 주세요" title="지역명 검색" value="">
+						<button type="button" class="icBtn icDel">삭제</button>
+						<button type="submit" class="icBtn icSearch">검색</button>
+					</div>
+					<button type="button" class="btFilter layPopBtn" data-id="pop_searchSetting">필터</button>
+				</div>
+				
+				<!--[D] 자동완성 중 인 경우 해당 searchIngResult 영역 활성화-->
+				<div class="searchIngResult popLay">
+					<ul class="list">
+						<li>
+							<a href="#" class="item">
+								<em class="word">경기 평택시 <strong class="matching">신대</strong>동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">대전 대덕구 <strong class="matching">신대</strong>동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">서울 동작구 <strong class="matching">신대</strong>방동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">경기 평택시 <strong class="matching">신대</strong>동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">대전 대덕구 <strong class="matching">신대</strong>동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">서울 동작구 <strong class="matching">신대</strong>방동</em>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--//자동완성 중 인 경우 해당 searchIngResult 영역 활성화-->
+				
+				<div class="btnSwiper">
+					<button type="button" class="btnDefault btnRound isSelected" data-controls="anchorTabContents01">아파트</button>
+					<button type="button" class="btnDefault btnRound isSelected" data-controls="anchorTabContents02">매매, 전세, 월세, 연세</button>
+					<button type="button" class="btnDefault btnRound isSelected" data-controls="anchorTabContents03">면적 전체</button>
+				</div>
+			</div>
+			
+			<div id="tabContTotalWrap" class="tabContTotalWrap">
+				<div class="tabInner">
+					<!--[D] 활성화 된 탭 컨텐츠, 해당 영역 안에서 토글로 보여짐-->
+					
+					<!--테마 매물 없을 시 해당영역만 노출-->
+					<div class="noData" style="display: block">
+						선택하신 테마에 대한 매물이 없어요
+						<p class="subTxt">조건을 재설정하여 테마 매물을 찾아 보세요.</p>
+					</div>
+					<!--//테마 매물 없을 시 해당영역만 노출-->
+					
+	
+				</div>
+			</div>
+			
+			<!-- // end of contents -->
+		</div><!-- //container -->
+	
+		
+		<aside>
+			<div class="asideRight">
+				<button type="button" class="btTop">페이지 상단으로 이동</button><!-- 2023.08.16 onClick 이벤트 삭제 -->
+			</div>
+		</aside>
+	</section>
+	
+	
+
+	
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/mptl/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/mptl/swiper.min.js"></script>
+<script type="text/javascript" src="/js/mptl/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/mptl/m_common.js"></script>
+
+</html>
+

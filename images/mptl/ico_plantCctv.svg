@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g data-name="icon / icon_24px_facility_CCTV">
+        <path data-name="사각형 13418" transform="rotate(-67.501 8.437 2.504)" style="fill:none;stroke:#707070;stroke-linejoin:round;stroke-width:1.5px" d="M0 0h9.024v14.581H0z"/>
+        <path data-name="선 175" transform="translate(7.257 3.193)" style="stroke-linecap:round;fill:none;stroke:#707070;stroke-linejoin:round;stroke-width:1.5px" d="M1.417.587 0 0"/>
+        <path data-name="패스 63837" d="m18.917 12.45 2.833 3.691 2.774-6.7-4.613.607" transform="translate(-1.321 -.5)" style="fill:none;stroke:#707070;stroke-linejoin:round;stroke-width:1.5px"/>
+        <path data-name="패스 63838" d="M11.107 13.714v7.67H.75" transform="translate(.25 -.869)" style="stroke-linecap:round;fill:none;stroke:#707070;stroke-linejoin:round;stroke-width:1.5px"/>
+        <path data-name="선 176" transform="translate(1 17.825)" style="stroke-linecap:round;fill:none;stroke:#707070;stroke-linejoin:round;stroke-width:1.5px" d="M0 5.38V0"/>
+    </g>
+</svg>

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>공적 장부 열람 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">공적 장부 열람</h1>
+		</header>
+	
+		<div id="container" class="container">
+			<!-- start of contents -->
+			
+			
+		
+			
+			
+			<!-- // end of contents -->
+		</div><!-- //container -->
+		
+	
+		
+		<aside>
+			<div class="asideRight">
+				<button type="button" class="btTop">페이지 상단으로 이동</button><!-- 2023.08.16 onClick 이벤트 삭제 -->
+			</div>
+		</aside>
+	</section>
+	
+	
+	<!--공적 장부 열람 상세-->
+	<section id="pop_tenonDetail" class="layPop layFull layArea" tabindex="0">
+		<header>
+			<h2 class="titLay">공적 장부 열람</h2>
+		</header>
+		
+		<div class="layContainer" tabindex="0">
+			<div class="layContent">
+				
+				<article class="targetInfo">
+					<strong class="address">서울 종로구 수송동 58-4</strong>
+					<p class="addressEtc">서울 종로구 삼봉로95</p>
+					<button type="button" class="btnDefault btnXS">재검색</button>
+				</article>
+				
+				<div class="divider">
+					<ul class="infoList">
+						<li>
+							<h4 class="titDep4">기본정보</h4>
+							<ul class="infoListS">
+								<li>
+									<span class="tit">주용도</span>
+									<span class="data">주용도 정보</span>
+								</li>
+								<li>
+									<span class="tit">지역</span>
+									<span class="data">지역 정보</span>
+								</li>
+								<li>
+									<span class="tit">토지/대지 면적</span>
+									<span class="data"><strong class="pointCol01">N</strong>/<strong class="pointCol01">N</strong>m²</span>
+								</li>
+								<li>
+									<span class="tit">지목</span>
+									<span class="data">지목 정보</span>
+								</li>
+								<li>
+									<span class="tit">연/건면적</span>
+									<span class="data"><strong class="pointCol01">N</strong>/<strong class="pointCol01">N</strong>m²</span>
+								</li>
+								<li>
+									<span class="tit">세대</span>
+									<span class="data">-</span>
+								</li>
+								<li>
+									<span class="tit">용적률</span>
+									<span class="data"><strong class="pointCol01">N</strong>%</span>
+								</li>
+								<li>
+									<span class="tit">주차장</span>
+									<span class="data"><strong class="pointCol01">N</strong>대</span>
+								</li>
+								<li>
+									<span class="tit">기타용도</span>
+									<span class="data">기타용도 정보</span>
+								</li>
+								<li>
+									<span class="tit">기준시가</span> <!--20230824 기획 수정 1.6V-->
+									<span class="data"><strong class="pointCol01">N</strong>원/m²</span>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					
+					<div class="btnListWrap">
+						<button type="button" class="btnDefault btnS btGrayL layPopBtn" data-id="pop_pubTenonDetail">건축물대장</button>
+						<button type="button" class="btnDefault btnS btGrayL layPopBtn" data-id="pop_pubTenonDetail">토지대장</button>
+						<button type="button" class="btnDefault btnS btGrayL layPopBtn" data-id="pop_pubTenonDetail">지적도</button>
+						<button type="button" class="btnDefault btnS btGrayL layPopBtn" data-id="pop_pubTenonDetail">토지이용계획</button>
+						<button type="button" class="btnDefault btnS btGrayL layPopBtn" data-id="pop_pubTenonDetail">학군</button>
+					</div>
+				</div>
+			</div>
+		</div><!-- //layCont-->
+		<button type="button" class="closeL">팝업 닫기</button>
+	</section>
+	<!--//공적 장부 열람 상세-->
+	
+
+	
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/magnt/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/magnt/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/magnt/swiper.min.js"></script>
+<script type="text/javascript" src="/js/magnt/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/magnt/m_common.js"></script>
+<script>
+	$(function(){
+		// 공적 장부 열람 레이어
+		mvJs.popup.show($('#pop_tenonDetail'));
+	})
+</script>
+</html>
+

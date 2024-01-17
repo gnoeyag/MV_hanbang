@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>고객 정보 등록/수정 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body >
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">고객 정보 등록/수정</h1>
+			<div class="menuWrap">
+				<button type="button" class="btNav" aria-expanded="false">메뉴</button>
+				<nav>
+					<div class="navInner">메뉴영역</div>
+				</nav>
+			</div>
+		</header>
+
+		<div id="container" class="container">
+			<!-- start of contents -->
+            <div class="boxTop">
+				<h2 class="titDep2">고객 정보<span>를 입력해 주세요.</span></h2>
+				<p class="alertArea"> <!-- 필수값 미입력시 노출 -->
+					<span class="altTxt">[필드명] + “을/를” +  “선택/입력해 주세요.”</span>
+				</p>
+			</div>
+
+            <div class="inpEditCont">
+                <div class="titArea">
+                    <h3 class="titDep3">기본 정보</h3>
+                </div>
+                <ul class="inpList">
+                    <li class="inpFrm inpDeleteAni">
+                        <label class="titInp" for="inpName">성명<span class="ness">필수입력 항목</span></label>
+                        <span class="inpA">
+                            <input type="text" id="inpName" placeholder="성명을 입력해주세요.">
+                            <button type="button" class="icBtn icDel">삭제</button>
+                        </span>
+                    </li>
+                    <li class="inpFrm inpDeleteAni">
+                        <label class="titInp" for="inpByname">별칭</label>
+                        <span class="inpA">
+                            <input type="text" id="inpByname" placeholder="별칭을 입력해주세요.">
+                            <button type="button" class="icBtn icDel">삭제</button>
+                        </span>
+                    </li>
+                    <li class="inpFrm inpDeleteAni">
+                        <label class="titInp" for="inpPhone">휴대폰 번호<span class="ness">필수입력 항목</span></label>
+                        <span class="inpA">
+                            <input type="tel" id="inpPhone" placeholder="휴대폰 번호를 입력해주세요.">
+                            <button type="button" class="icBtn icDel">삭제</button>
+                        </span>
+                        <div class="absArea">
+                            <button type="button" class="btnDefault btnXS">중복 조회</button>
+                        </div>
+                    </li>
+                    <li class="inpFrm inpDeleteAni inpDelBtn">
+                        <!-- 2023.09.08 수정 / 마크업 수정 -->
+                        <div class="inner">
+                            <strong class="titInp">연락처</strong>
+                            <span class="item">
+                                <span class="inpA">
+                                    <input type="tel" placeholder="연락처1" title="연락처 입력">
+                                    <button type="button" class="icBtn icDel">삭제</button>
+                                </span>
+                                <button type="button" class="icDel02">연락처 삭제</button>
+                            </span>
+                            <span class="item">
+                                <span class="inpA">
+                                    <input type="tel" placeholder="연락처2" title="연락처 입력">
+                                    <button type="button" class="icBtn icDel">삭제</button>
+                                </span>
+                                <button type="button" class="icDel02">연락처 삭제</button>
+                            </span>
+                            <span class="item">
+                                <span class="inpA">
+                                    <input type="tel" placeholder="연락처3" title="연락처 입력">
+                                    <button type="button" class="icBtn icDel">삭제</button>
+                                </span>
+                                <button type="button" class="icDel02">연락처 삭제</button>
+                            </span>
+                        </div>
+                        <button type="button" class="btnDefault btnS btGrayL icPlus">연락처 추가</button>
+                        <!-- //2023.09.08 수정 / 마크업 수정 -->
+                    </li>
+                    <li class="inpFrm inpDeleteAni">
+                        <label class="titInp" for="inpEmail">이메일</label>
+                        <span class="inpA">
+                            <input type="text" id="inpEmail" placeholder="이메일을 입력해주세요.">
+                            <button type="button" class="icBtn icDel">삭제</button>
+                        </span>
+                    </li>
+                    <li class="inpFrm inpDeleteAni">
+                        <label class="titInp" for="inpAddr">주소</label>
+                        <span class="inpA">
+                            <input type="text" id="inpAddr" placeholder="주소를 입력해주세요.">
+                            <button type="button" class="icBtn icDel">삭제</button>
+                        </span>
+                        <!-- 
+                        <span class="inpA">
+                            <textarea id="inp04_03" cols="10" rows="10" placeholder="주소를 입력해주세요."></textarea>
+                            <span class="txtNum"><em title="메모 글자 수">0</em> / 50자</span>
+                        </span>
+                        -->
+                    </li>
+                </ul>
+            </div>
+
+            <div class="inpEditCont divider">
+                <div class="titArea">
+                    <h3 class="titDep3">기타 정보</h3>
+                    <!-- 2023.09.20 수정 / 버튼 삭제 -->
+                    <!-- 
+                    <div class="side">
+                        <a href="#" class="btnDefault btnXS">신규 매물 등록</a>
+                    </div>
+                    -->
+                    <!-- //2023.09.20 수정 / 버튼 삭제 -->
+                </div>
+                <ul class="inpList">
+                    <li class="inpFrm">
+                        <strong class="titInp">예약 일정</strong>
+                        <!-- 2023.09.05 날짜 input 수정 -->
+                        <div class="inpA">
+                            <input type="date" data-placeholder="YYYY-MM-DD" required>
+                        </div>
+                        <!-- //2023.09.05 날짜 input 수정 -->
+                    </li>
+                    <li class="inpFrm">
+                        <label for="inpContents" class="titInp">메모</label>
+                        <span class="inpA">
+                            <textarea id="inpContents" cols="10" rows="10" placeholder="메모 내용을 입력해주세요."></textarea>
+                            <span class="txtNum"><em title="메모 글자 수">0</em> / 100자</span>
+                        </span>
+                    </li>
+                    <li class="inpFrm">
+                        <label class="titInp" for="inpCustomergroup">고객 그룹</label>
+                        <span class="inpA">
+                            <div class="selectWrap">
+                                <select id="inpCustomergroup" title="고객 그룹 선택" data-header="고객 그룹">
+                                    <option value="01" selected>전체</option>
+                                    <option value="02">기본그룹</option>
+                                </select>
+                            </div>
+                        </span>
+                    </li>
+                    <li class="inpFrm">
+                        <label class="titInp" for="inpCustomerGroup">고객 등급</label>
+                        <span class="inpA">
+                            <div class="selectWrap">
+                                <select id="inpCustomerGroup" title="고객 등급 선택" data-header="고객 등급" data-msg="선택">
+                                    <option value="01">1급</option>
+                                    <option value="02">2급</option>
+                                    <option value="03">3급</option>
+                                    <option value="04" selected>일반</option>
+                                </select>
+                            </div>
+                        </span>
+                    </li>
+                    <li class="inpFrm">
+                        <label class="titInp" for="inpRequestType">의뢰 유형</label>
+                        <span class="inpA">
+                            <div class="selectWrap">
+                                <select id="inpRequestType" title="의뢰 유형 선택" data-header="의뢰 유형" data-msg="선택">
+                                    <option value="01" selected>미정</option>
+                                    <option value="02">임대전세</option>
+                                    <option value="03">임대월세</option>
+                                    <option value="04">임차전세</option>
+                                    <option value="05">임차월세</option>
+                                    <option value="06">매도</option>
+                                    <option value="06">매수</option>
+                                    <option value="06">투자</option>
+                                    <option value="06">기타</option>
+                                    <option value="06">현임차인</option>
+                                    <option value="06">주인거주</option>
+                                </select>
+                            </div>
+                        </span>
+                    </li>
+                    <li class="inpFrm">
+                        <label class="titInp" for="inpRequestUsed">의뢰물 용도</label>
+                        <span class="inpA">
+                            <div class="selectWrap">
+                                <select id="inpRequestUsed" title="의뢰물 용도 선택" data-header="의뢰물 용도" data-msg="선택">
+                                    <option value="01" selected>미정</option>
+                                    <option value="02">주거용</option>
+                                    <option value="03">상업용</option>
+                                    <option value="04">공업용</option>
+                                    <option value="05">토지</option>
+                                    <option value="06">복합용도</option>
+                                </select>
+                            </div>
+                        </span>
+                    </li>
+                    <li class="inpFrm">
+                        <strong class="titInp">업무 상태</strong>
+                        <ul class="frmBox col02">
+                            <li><input type="radio" id="businessStatus02" name="businessStatus" checked><label for="businessStatus02">진행중</label></li>
+                            <li><input type="radio" id="businessStatus03" name="businessStatus"><label for="businessStatus03">종료</label></li>
+                        </ul>
+                    </li>
+                    <li class="inpFrm">
+                        <strong class="titInp">접수 일자</strong>
+                        <!-- 2023.09.05 날짜 input 수정 -->
+                        <div class="inpA">
+                            <input type="date" data-placeholder="YYYY-MM-DD" required>
+                        </div>
+                        <!-- //2023.09.05 날짜 input 수정 -->
+                    </li>
+                    <li class="inpFrm">
+                        <strong class="titInp">접수 구분</strong>
+                        <ul class="frmBox col02">
+                            <li><input type="radio" id="Classification02" name="Classification" checked><label for="Classification02">방문</label></li>
+                            <li><input type="radio" id="Classification03" name="Classification"><label for="Classification03">전화</label></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="inpEditCont divider">
+                <div class="titArea">
+                    <h3 class="titDep3">건물 정보</h3>
+                </div>
+                <div class="buildingInfo">
+                    <ul>
+                        <li>
+                            <span class="txt">도렴빌딩</span>
+                            <div class="btn">
+                                <a href="#" class="icEdit">건물 정보 수정</a>
+                                <button type="button" class="icDel03">건물 정보 삭제</button>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="txt">센터포인트 광화문 빌딩</span>
+                            <div class="btn">
+                                <a href="#" class="icEdit">건물 정보 수정</a>
+                                <button type="button" class="icDel03">건물 정보 삭제</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="btnDefault btnS btGrayL icPlus">건물 관리 등록</a>
+            </div>
+
+            <div class="inpEditCont divider">
+                <ul class="agreeList">
+                    <li>
+                        <span class="frmInp frmInpS txt">
+                            <input type="checkbox" id="chkAgree"><label for="chkAgree">개인정보 수집 및 이용 동의</label>
+                            <button type="button" class="btLink layPopBtn" data-id="pop_agree-01">상세보기</button>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+			<!-- // end of contents -->
+		</div><!-- //container -->
+
+        <div class="floatingBtns">
+			<div class="btnArea type02">
+				<button type="button" class="btnDefault btnL" >취소</button>
+				<button type="button" class="btnDefault btnL action">저장</button>
+			</div>
+		</div>
+
+		<aside>
+			<div class="asideRight">
+				<button type="button" class="btTop">페이지 상단으로 이동</button><!-- 2023.08.16 onClick 이벤트 삭제 -->
+			</div>
+		</aside>
+	</section>
+
+    
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/magnt/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/magnt/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/magnt/swiper.min.js"></script>
+<script type="text/javascript" src="/js/magnt/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/magnt/m_common.js"></script>
+
+</html>
+

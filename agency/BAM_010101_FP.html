@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>내 중개사무소 정보 수정 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- 내 중개사무소 정보 수정 Layer -->
+	<section id="BAM_010101_FP" class="layPop layFull btTopAdd" tabindex="0" style="display: block;">
+		<header>
+			<h2 class="titLay">내 중개사무소 정보 수정</h2>
+		</header>
+	
+		<div class="layContainer" tabindex="0">
+			<div class="layContent topNone">
+                <div id="laypopTop"></div>
+                <div class="grayBox02">
+                    <p class="listGuide2 mt0">주소, 개설등록번호, 연락처, 휴대폰 번호 수정은 PC에서 가능합니다.</p> <!-- 2023.08.24 수정 / 문구 수정-->
+                </div>
+                <ul class="inpList inpLink mt24">
+                    <li class="inpFrm">
+                        <strong class="titInp02">대표 사진</strong> <!-- 2023.09.04 수정 / 타이틀 클래스 수정 -->
+                        <span class="linkInp">
+                            <input type="file"  accept="image/*">
+                            <span>등록하기</span>
+                        </span>					
+                    </li>
+                    <li class="inpFrm">
+                        <strong class="titInp02">대표 사진</strong> <!-- 2023.09.04 수정 / 타이틀 클래스 수정 -->
+                        <figure class="inpPhoto"><img src="/images/magnt/dummy/@img_thumb01.jpg" alt=""></figure>
+                        <div class="btns">
+                            <button type="button" class="btnDefault btnXS layPopBtn" data-id="pop_photoEdit">편집</button>
+                            <button type="button" class="btnDefault btnXS">삭제</button>
+                        </div>			
+                    </li>
+                    <li class="inpFrm">
+                        <label class="titInp02" for="inp01_01">소개</label> <!-- 2023.09.04 수정 / 타이틀 클래스 수정 -->
+                        <span class="inpA">
+                            <textarea id="inpFeature" cols="10" rows="10" placeholder="예&#41; 항상 친절한 마음으로 다하겠습니다."></textarea>
+                            <span class="txtNum"><em title="소개 글자 수">0</em> / 100자</span>
+                        </span>
+                    </li>
+                    <li class="inpFrm">
+                        <strong class="titInp02">전문분야</strong> <!-- 2023.09.04 수정 / 타이틀 클래스 수정 -->
+                        <!-- 2023.08.23 수정 / 마크업 수정 -->
+                        <div class="selectArea noScroll">
+                            <div class="scrollWrap">
+                                <div class="inner">
+                                    <p class="area">아파트<button type="button" class="icBtn icDelS">삭제</button></p>
+                                    <p class="area">원룸/빌라<button type="button" class="icBtn icDelS">삭제</button></p>
+                                    <p class="area">재개발/재건축<button type="button" class="icBtn icDelS">삭제</button></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 
+                        <div class="selectArea noDivider">
+                            <div class="inner">
+                                <p class="area">아파트<button type="button" class="icBtn icDelS">삭제</button></p>
+                                <p class="area">원룸,빌라<button type="button" class="icBtn icDelS">삭제</button></p>
+                                <p class="area">오피스텔<button type="button" class="icBtn icDelS">삭제</button></p>
+                            </div>
+                        </div>
+                        -->
+
+                        <button type="button" class="btnDefault btnS btGrayL icPlus layPopBtn" data-id="pop_bailiwick">선택하기</button>
+                        <p class="listGuide2 mt12">최대 3개까지 선택할 수 있습니다.</p>
+                    </li>
+                    <li class="inpFrm">
+                        <strong class="titInp02">SNS URL(주소)</strong> <!-- 2023.09.04 수정 / 타이틀 클래스 수정 -->
+                        <ul class="inpList">
+                            <li class="inpFrm inpDeleteAni inpDelBtn mt0">
+                                <div class="inner">
+                                    <span class="item">
+                                        <span class="inpA">
+                                            <input type="text" placeholder="예&#41; blog.naver.com" title="SNS URL(주소) 입력">
+                                            <button type="button" class="icBtn icDel">삭제</button>
+                                        </span>
+                                        <button type="button" class="icDel02">SNS URL(주소) 삭제</button>
+                                    </span>
+                                    <span class="item">
+                                        <span class="inpA">
+                                            <input type="text" placeholder="예&#41; www.hanbang.com" title="SNS URL(주소) 입력">
+                                            <button type="button" class="icBtn icDel">삭제</button>
+                                        </span>
+                                        <button type="button" class="icDel02">SNS URL(주소) 삭제</button>
+                                    </span>
+                                    <span class="item">
+                                        <span class="inpA">
+                                            <input type="text" placeholder="예&#41; www.youtube.com" title="SNS URL(주소) 입력">
+                                            <button type="button" class="icBtn icDel">삭제</button>
+                                        </span>
+                                        <button type="button" class="icDel02">SNS URL(주소) 삭제</button>
+                                    </span>
+                                    <span class="item">
+                                        <span class="inpA">
+                                            <input type="text" placeholder="예&#41; www.facebook.com" title="SNS URL(주소) 입력">
+                                            <button type="button" class="icBtn icDel">삭제</button>
+                                        </span>
+                                        <button type="button" class="icDel02">SNS URL(주소) 삭제</button>
+                                    </span>
+                                    <span class="item">
+                                        <span class="inpA">
+                                            <input type="text" placeholder="예&#41; www.instagram.com" title="SNS URL(주소) 입력">
+                                            <button type="button" class="icBtn icDel">삭제</button>
+                                        </span>
+                                        <button type="button" class="icDel02">SNS URL(주소) 삭제</button>
+                                    </span>
+                                    <button type="button" class="btnDefault btnS btGrayL icPlus layPopBtn" data-id="pop_snsType">추가하기</button>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="listGuide2 mt12">최대 5개까지 추가할 수 있습니다.</p>
+                    </li>
+                </ul>
+			</div>
+            <div class="popBtns">
+                <div class="inner">
+                    <button type="button" class="btnDefault btnL action" disabled>수정 완료</button>
+                </div>
+            </div>
+		</div><!-- //layCont-->
+		<button type="button" class="closeL">팝업 닫기</button>
+        <button type="button" class="btTopL" onclick="location.href='#laypopTop'">페이지 상단으로 이동</button>
+	</section>
+	<!-- //내 중개사무소 정보 수정 Layer -->
+
+    <!-- popup 전문분야 -->
+	<section id="pop_bailiwick" class="layPop layBtm" tabindex="0">
+		<header class="subTxt">
+			<h2 class="titLay">전문분야 선택</h2>
+            <p class="txt">최대 3개까지 선택 가능합니다.</p>
+		</header>
+	
+		<div class="layContainer" tabindex="0">
+			<div class="layContent">
+				<ul class="frmBox col02">
+					<li><input type="checkbox" id="chkBailiwick01"><label for="chkBailiwick01">아파트</label></li>
+					<li><input type="checkbox" id="chkBailiwick02"><label for="chkBailiwick02">원룸/빌라</label></li>
+					<li><input type="checkbox" id="chkBailiwick03"><label for="chkBailiwick03">오피스텔</label></li>
+					<li><input type="checkbox" id="chkBailiwick04"><label for="chkBailiwick04">상가</label></li>
+					<li><input type="checkbox" id="chkBailiwick05"><label for="chkBailiwick05">사무실</label></li>
+					<li><input type="checkbox" id="chkBailiwick06"><label for="chkBailiwick06">공장/창고</label></li>
+					<li><input type="checkbox" id="chkBailiwick07"><label for="chkBailiwick07">토지</label></li>
+					<li><input type="checkbox" id="chkBailiwick08"><label for="chkBailiwick08">건물</label></li>
+					<li><input type="checkbox" id="chkBailiwick09"><label for="chkBailiwick09">분양권</label></li>
+					<li><input type="checkbox" id="chkBailiwick10"><label for="chkBailiwick10">재개발/재건축</label></li>
+					<li><input type="checkbox" id="chkBailiwick11"><label for="chkBailiwick11">경매/투자</label></li>
+					<li><input type="checkbox" id="chkBailiwick12"><label for="chkBailiwick12">외국인렌트</label></li>
+				</ul>
+			</div>
+			<div class="popBtns">
+				<div class="inner">
+					<button type="button" class="btnDefault btnL action">선택 완료</button>
+				</div>
+			</div>
+		</div><!-- //layContainer-->
+		<button type="button" class="closeL">팝업 닫기</button>
+	
+	</section>
+	<!-- //popup 전문분야 -->
+
+    <!-- popup사진 편집 -->
+	<section id="pop_photoEdit" class="layPop layFull" tabindex="0">
+		<header>
+			<h2 class="titLay">사진 편집</h2>
+		</header>
+	
+		<div class="layContainer" tabindex="0">
+			<div class="layContent">
+				<div class="btnRightArea">
+					<button type="button" class="btnDefault btnXS">편집 초기화</button>
+				</div>
+                <div class="agencyPhoto">
+                    <div class="photoArea">
+                        <figure><img src="/images/magnt/dummy/@img_thumb01.jpg" alt=""></figure>
+                    </div>
+                </div>
+				<ul class="photoEdit">
+					<li><button type="button" class="btCrop">자르기</button></li>
+					<li><button type="button" class="btRotate">회전</button></li>
+					<li><button type="button" class="btMosaic" disabled>모자이크</button></li>
+					<li><button type="button" class="btMark" disabled>워터마크</button></li><!-- 클릭시 clickON 클래스 추가 -->
+				</ul>
+			</div>
+
+			<div class="popBtns">
+				<div class="inner">
+					<button type="button" class="btnDefault btnL action">적용하기</button>
+				</div>
+			</div>
+		</div><!-- //layCont-->
+		<button type="button" class="closeL">팝업 닫기</button>
+	</section>
+	<!-- //popup사진 편집 -->
+
+    <!-- popup SNS 유형 선택 -->
+    <section id="pop_snsType" class="layPop layBtm" tabindex="0">
+        <header>
+            <h2 class="titLay">SNS 유형 선택</h2>
+        </header>
+    
+        <div class="layContainer" tabindex="0">
+            <div class="layContent">
+                <ul class="frmBox col01">
+                    <li><input type="radio" id="chkSnsType01" name="chkSnsType" checked=""><label for="chkSnsType01">네이버블로그</label></li>
+                    <li><input type="radio" id="chkSnsType02" name="chkSnsType"><label for="chkSnsType02">홈페이지</label></li>
+                    <li><input type="radio" id="chkSnsType03" name="chkSnsType"><label for="chkSnsType03">유튜브</label></li>
+                    <li><input type="radio" id="chkSnsType04" name="chkSnsType"><label for="chkSnsType04">페이스북</label></li>
+                    <li><input type="radio" id="chkSnsType05" name="chkSnsType"><label for="chkSnsType05">인스타그램</label></li>
+                </ul>
+            </div>
+            <div class="popBtns">
+                <div class="inner">
+                    <button type="button" class="btnDefault btnL action">확인</button>
+                </div>
+            </div>
+        </div><!-- //layContainer-->
+        <button type="button" class="closeL">팝업 닫기</button>
+    
+    </section>
+    <!-- //popup SNS 유형 선택 -->
+
+    <div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/magnt/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/magnt/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/magnt/swiper.min.js"></script>
+<script type="text/javascript" src="/js/magnt/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/magnt/m_common.js"></script>
+
+</html>

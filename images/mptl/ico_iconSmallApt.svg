@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g data-name="그룹 18205">
+        <g data-name="그룹 18045">
+            <g data-name="사각형 13601" style="stroke:#fff;stroke-width:1.5px;fill:none">
+                <path d="M2 0h6v11H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" style="stroke:none" transform="translate(5.999 24)"/>
+                <path d="M2 .75h5.25v9.5H2A1.25 1.25 0 0 1 .75 9V2A1.25 1.25 0 0 1 2 .75z" style="fill:none" transform="translate(5.999 24)"/>
+            </g>
+            <g data-name="빼기 11" style="fill:none">
+                <path d="M12 8H6.516a1.009 1.009 0 0 1-.189-.018H.755A.752.752 0 0 1 0 7.23a.742.742 0 0 1 .23-.538L5.774.324A1.017 1.017 0 0 1 6.516 0H12v8z" style="stroke:none" transform="translate(1.999 17.501)"/>
+                <path d="M10.504 6.5v-5H6.74L2.402 6.482H6.47l.094.018h3.941m1.5 1.5H6.516a1.01 1.01 0 0 1-.189-.018H.809C.791 7.98.773 7.98.755 7.98a.752.752 0 0 1-.752-.75c0-.205.08-.395.227-.538L5.774.324C5.966.118 6.236 0 6.516 0h5.488v8z" style="fill:#fff;stroke:none" transform="translate(1.999 17.501)"/>
+            </g>
+        </g>
+        <g data-name="그룹 18044">
+            <g data-name="그룹 109">
+                <g data-name="그룹 18039" transform="translate(-237.155 -941.942)">
+                    <rect data-name="사각형 13593" width="1.5" height="4" rx=".75" transform="translate(264.254 954.352)" style="fill:#fff"/>
+                    <rect data-name="사각형 13594" width="1.5" height="4" rx=".75" transform="translate(260.004 954.352)" style="fill:#fff"/>
+                    <rect data-name="사각형 13595" width="1.5" height="4" rx=".75" transform="translate(255.754 954.352)" style="fill:#fff"/>
+                </g>
+            </g>
+            <g data-name="그룹 18040">
+                <g data-name="그룹 18039" transform="translate(-237.155 -935.942)">
+                    <rect data-name="사각형 13593" width="1.5" height="4" rx=".75" transform="translate(264.254 954.352)" style="fill:#fff"/>
+                    <rect data-name="사각형 13594" width="1.5" height="4" rx=".75" transform="translate(260.004 954.352)" style="fill:#fff"/>
+                    <rect data-name="사각형 13595" width="1.5" height="4" rx=".75" transform="translate(255.754 954.352)" style="fill:#fff"/>
+                </g>
+            </g>
+            <g data-name="그룹 18043">
+                <path data-name="패스 64117" d="M26.728 15.07V38.2a.933.933 0 0 1-.988.865H7.716a.933.933 0 0 1-.988-.865V15.5" transform="translate(6.773 -4.771)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#fff;stroke-width:1.5px;fill:none"/>
+                <path data-name="패스 64118" d="M26.854 9.2 14.083.914a1.054 1.054 0 0 0-1.149.011L.75 9.2" transform="translate(9.85 3.251)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#fff;stroke-width:1.5px;fill:none"/>
+            </g>
+            <g data-name="사각형 13707" style="stroke:#fff;stroke-width:1.5px;fill:none">
+                <path d="M2 0h4a2 2 0 0 1 2 2v8H0V2a2 2 0 0 1 2-2z" style="stroke:none" transform="translate(19 24.999)"/>
+                <path d="M2 .75h4A1.25 1.25 0 0 1 7.25 2v7.25H.75V2A1.25 1.25 0 0 1 2 .75z" style="fill:none" transform="translate(19 24.999)"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>알림 | 한방부동산</title> <!-- 2023.08.02 수정 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body >
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper submainWrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">알림</h1> 
+            <button type="button" class="btSetting">알림 설정</button>
+			<div class="menuWrap">
+				<button type="button" class="btNav" aria-expanded="false">메뉴</button>
+				<nav>
+					<div class="navInner">메뉴영역</div>
+				</nav>
+			</div>
+		</header>
+
+		<div id="container" class="container">
+			<!-- start of contents -->
+            <div class="tabWrap tabScript">
+                <ul class="tabType03">
+                    <li><a href="#" role="button" aria-selected="true">전체</a></li>
+                    <li><a href="#" role="button" aria-selected="false">허위매물신고</a></li>
+                    <li><a href="#" role="button" aria-selected="false">거래완료</a></li>
+                    <li><a href="#" role="button" aria-selected="false">매물</a></li>
+                    <li><a href="#" role="button" aria-selected="false">중개요청</a></li>
+                    <li><a href="#" role="button" aria-selected="false">쪽지</a></li>
+                    <li><a href="#" role="button" aria-selected="false">일정</a></li>
+                    <li><a href="#" role="button" aria-selected="false">공지사항</a></li>
+                </ul>
+            </div>
+            <div class="alarm">
+                <div class="item">
+                    <div class="date"><strong class="today">오늘</strong>2023.06.30(금)</div>
+                    <ul class="alarmList">
+                        <li>
+                            <a href="#" role="button">
+                                <strong class="tit high">허위매물신고</strong> <!-- 중요도가 높은 알림은 high 클래스 추가 -->
+                                <p class="txt"><strong>14325번 매물</strong> 허위매물신고가 접수되었습니다.</p>
+                                <span class="time">2분 전</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" role="button">
+                                <strong class="tit high">매물거래완료</strong>
+                                <p class="txt"><strong>14325번 매물</strong> 허위매물신고가 접수되었습니다.</p>
+                                <span class="time">23시간 전</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="date">2023.06.28(수)</div>
+                    <ul class="alarmList">
+                        <li>
+                            <a href="#" role="button" class="active"> <!-- 읽은 알림 active 클래스 추가 -->
+                                <strong class="tit">중개요청 접수</strong>
+                                <p class="txt">‘경기도 용인시 수지구’ 매물의 중개요청이 접수되었습니다.</p>
+                                <span class="time">3일 전</span> <!-- 2023.09.04 수정 / 표기 방식 변경 -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" role="button" class="active">
+                                <strong class="tit">매물문의 쪽지</strong>
+                                <p class="txt">14312번 매물의 매물문의 쪽지가 도착했습니다</p>
+                                <span class="time">3일 전</span> <!-- 2023.09.04 수정 / 표기 방식 변경 -->
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="listGuide2 mt16">받은 알림은 30일 동안 보관됩니다.</p>
+
+                <div class="noData">
+                    받은 알림 내역이 없습니다
+                </div>
+            </div>
+			<!-- // end of contents -->
+		</div><!-- //container -->
+
+		<div class="dockBar">
+			<div class="inner">
+				<a href="#" role="button" class="btNavi01">종합</a>
+				<a href="#" role="button" class="btNavi02">매물</a>
+				<a href="#" role="button" class="btNavi03">쪽지</a>
+				<a href="#" role="button" class="btNavi04">일정</a>
+				<a href="#" role="button" class="btNavi05" aria-selected="true">알림</a>
+			</div>
+		</div>
+
+		<aside>
+			<div class="asideRight">
+				<button type="button" class="btTop">페이지 상단으로 이동</button><!-- 2023.08.16 onClick 이벤트 삭제 -->			
+			</div>
+		</aside>
+	</section>
+
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/magnt/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/magnt/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/magnt/swiper.min.js"></script>
+<script type="text/javascript" src="/js/magnt/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/magnt/m_common.js"></script>
+
+</html>
+

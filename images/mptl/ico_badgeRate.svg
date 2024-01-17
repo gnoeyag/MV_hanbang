@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="znow48g5ba">
+            <path data-name="사각형 13498" transform="translate(-.064)" style="fill:#fff;stroke:#707070;opacity:0" d="M0 0h24v24H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 17897">
+        <g data-name="마스크 그룹 49" style="clip-path:url(#znow48g5ba)" transform="translate(.064)">
+            <g data-name="그룹 18121">
+                <rect data-name="사각형 13654" width="6" height="2.5" rx=".5" transform="translate(2 18.5)" style="fill:#ffcb83"/>
+                <rect data-name="사각형 13652" width="6" height="2.5" rx=".5" transform="translate(1.936 21)" style="fill:#feb644"/>
+                <rect data-name="사각형 13653" width="6" height="2.5" rx=".5" transform="translate(2 16)" style="fill:#feb644"/>
+            </g>
+            <g data-name="그룹 18119">
+                <g data-name="그룹 18118" transform="translate(0 -3.081)">
+                    <rect data-name="사각형 13656" width="6" height="2.5" rx=".5" transform="translate(8.936 21.581)" style="fill:#ffcb83"/>
+                    <rect data-name="사각형 13657" width="6" height="2.5" rx=".5" transform="translate(8.936 24.081)" style="fill:#feb644"/>
+                </g>
+                <rect data-name="사각형 13655" width="6" height="2.5" rx=".5" transform="translate(8.936 16)" style="fill:#feb644"/>
+                <rect data-name="사각형 13661" width="6" height="2.5" rx=".5" transform="translate(8.936 13.5)" style="fill:#ffcb83"/>
+                <rect data-name="사각형 13662" width="6" height="2.5" rx=".5" transform="translate(8.936 11)" style="fill:#feb644"/>
+            </g>
+            <g data-name="그룹 18120" transform="translate(-1)">
+                <rect data-name="사각형 13659" width="6" height="2.5" rx=".5" transform="translate(16.936 18.5)" style="fill:#ffcb83"/>
+                <rect data-name="사각형 13674" width="6" height="2.5" rx=".5" transform="translate(16.936 13.5)" style="fill:#ffcb83"/>
+                <rect data-name="사각형 13660" width="6" height="2.5" rx=".5" transform="translate(16.936 21)" style="fill:#feb644"/>
+                <rect data-name="사각형 13658" width="6" height="2.5" rx=".5" transform="translate(16.936 16)" style="fill:#feb644"/>
+            </g>
+            <path data-name="패스 64109" d="m.238 5.924 7.629-4.376 2.056 3.361 9.028-5.272" transform="rotate(-7 46.265 -9.438)" style="stroke-linejoin:round;fill:none;stroke:#6b59e3;stroke-linecap:round;stroke-width:1.5px"/>
+            <g data-name="그룹 18122">
+                <path data-name="패스 64116" d="m17.427 2.729 3.167.252" transform="rotate(-2.98 3.166 -9.322)" style="fill:none;stroke:#6b59e3;stroke-linecap:round;stroke-width:1.5px"/>
+                <path data-name="패스 64117" d="M0 .252 3.168 0" transform="rotate(-68 13.893 -12.368)" style="fill:none;stroke:#6b59e3;stroke-linecap:round;stroke-width:1.5px"/>
+            </g>
+        </g>
+    </g>
+</svg>

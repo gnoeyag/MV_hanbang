@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
+    <defs>
+        <filter id="4gcvtqljqa" x="0" y="0" width="43" height="43" filterUnits="userSpaceOnUse">
+            <feOffset dy=".5"/>
+            <feGaussianBlur stdDeviation=".5" result="blur"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g style="filter:url(#4gcvtqljqa)">
+        <rect data-name="bg" width="40" height="40" rx="20" transform="translate(1.5 1)" style="fill:#6c5ae6"/>
+    </g>
+    <g data-name="그룹 17834" transform="translate(16.5 12)">
+        <path data-name="패스 65735" d="M10.439 9.178h1.35l2.107 6.5H-3.257l1.555-6.5h1.151" transform="translate(0 1.019)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#fff;stroke-width:1.5px"/>
+        <path data-name="패스 63855" d="M4.4 12.453a.809.809 0 0 0 1.214 0l.01-.012.037-.044.138-.164c.118-.141.286-.345.488-.6.4-.5.94-1.194 1.48-1.962A21.132 21.132 0 0 0 9.28 7.237a5.683 5.683 0 0 0 .741-2.4A4.926 4.926 0 0 0 5.01 0 4.926 4.926 0 0 0 0 4.836a5.683 5.683 0 0 0 .741 2.4 21.132 21.132 0 0 0 1.505 2.436c.54.768 1.078 1.461 1.48 1.962.2.251.37.454.488.6l.138.164.037.044.01.012z" transform="translate(0 1)" style="fill-rule:evenodd;fill:none;stroke:#fff;stroke-width:1.5px"/>
+        <circle data-name="타원 217" cx="2" cy="2" r="2" transform="translate(3.01 3.996)" style="fill:#fff"/>
+    </g>
+</svg>

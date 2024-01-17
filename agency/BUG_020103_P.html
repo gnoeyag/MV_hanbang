@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>건물 관리 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body >
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">건물 관리</h1>
+			<div class="menuWrap">
+				<button type="button" class="btNav" aria-expanded="false">메뉴</button>
+				<nav>
+					<div class="navInner">메뉴영역</div>
+				</nav>
+			</div>
+		</header>
+
+		<div id="container" class="container">
+			<!-- start of contents -->
+            <div class="boxTop">
+				<h2 class="titDep2">건물 정보<span>를 입력해 주세요.</span></h2>
+				<p class="alertArea"> <!-- 필수값 미입력시 노출 -->
+					<span class="altTxt">[필드명] + “을/를” +  “선택/입력해 주세요.”</span>
+				</p>
+			</div>
+
+            <div class="inpEditCont">
+                <div class="titArea">
+                    <h3 class="titDep3">건물 정보</h3>
+                </div>
+                <ul class="inpList">
+                    <li class="inpFrm inpDeleteAni">
+                        <label class="titInp" for="inpName">건물명<span class="ness">필수입력 항목</span></label>
+                        <span class="inpA">
+                            <input type="text" id="inpName" placeholder="건물명을 입력해주세요.">
+                            <button type="button" class="icBtn icDel">삭제</button>
+                        </span>
+                    </li>
+                    <li class="inpFrm inpDeleteAni">
+                        <label class="titInp" for="inpConcierge">관리인사항</label>
+                        <span class="inpA">
+                            <input type="text" id="inpConcierge" placeholder="관리인사항을 입력해주세요.">
+                            <button type="button" class="icBtn icDel">삭제</button>
+                        </span>
+                    </li>
+                    <li class="inpFrm inpDeleteAni">
+                        <label class="titInp" for="inpBuilding">건물사항</label>
+                        <span class="inpA">
+                            <input type="text" id="inpBuilding" placeholder="건물사항을 입력해주세요.">
+                            <button type="button" class="icBtn icDel">삭제</button>
+                        </span>
+                    </li>
+                    <li class="inpFrm">
+                        <label for="inpDong" class="titInp">건물 주소</label>
+                        <span class="inpA">
+                            <button type="button" class="btnDefault btnS btGray01 layPopBtn" data-id="pop_areaSelect">지역 검색</button>
+                        </span>
+                        <!-- 지역 검색 후 -->
+                        <div class="addrArea">
+                            <span class="addrBasic">인천광역시 연수구 연수동 624</span>
+                            <ul class="frmList inBlock">
+                                <li><span class="frmInp frmInpS txt"><input type="radio" id="radAreaType01" name="radAreaType" checked><label for="radAreaType01">일반</label></span></li>
+                                <li><span class="frmInp frmInpS txt"><input type="radio" id="radAreaType02" name="radAreaType"><label for="radAreaType02">산</label></span></li>
+                            </ul>
+                            <div class="inpFrm frmUnit-03">
+                                <div class="inpA">
+                                    <input type="tel" id="inpDetailAddr01">
+                                    <span class="dash">-</span>
+                                    <input type="tel" id="inpDetailAddr02">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //지역 검색 후 -->
+                    </li>
+                </ul>
+            </div>
+
+            <div class="inpEditCont divider">
+                <div class="titArea">
+                    <h3 class="titDep3">세부 정보</h3>
+                </div>
+                <div class="utilArea">
+                    <span class="frmInp txt"><input type="checkbox" id="chkAll"><label for="chkAll">전체 선택</label></span>
+                    <div class="btnAreaR">
+                        <button type="button" class="btnDefault btnXS">삭제</button>
+                    </div>
+                </div>
+                <div class="toggleType02 mt16">
+                    <div class="acctItem">
+                        <span class="frmInp frmInpS"><input type="checkbox" id="chkDetail01"><label for="chkDetail01"></label></span>
+                        <button type="button" class="toggleBtn" aria-expanded="true">세부 정보1</button>
+                        <div class="toggleCont">
+                            <ul class="inpList">
+                                <li class="inpFrm inpDeleteAni">
+                                    <label class="titInp" for="inpRoom">호실</label>
+                                    <span class="inpA">
+                                        <input type="text" id="inpRoom" placeholder="호실을 입력해주세요.">
+                                        <button type="button" class="icBtn icDel">삭제</button>
+                                    </span>
+                                </li>
+                                <li class="inpFrm inpDeleteAni">
+                                    <label class="titInp" for="inpHighlights">주요사항</label>
+                                    <span class="inpA">
+                                        <input type="text" id="inpHighlights" placeholder="주요사항을 입력해주세요.">
+                                        <button type="button" class="icBtn icDel">삭제</button>
+                                    </span>
+                                </li>
+                                <li class="inpFrm inpDeleteAni">
+                                    <label class="titInp" for="inpLessee">임차인</label>
+                                    <span class="inpA">
+                                        <input type="text" id="inpLessee" placeholder="임차인을 입력해주세요.">
+                                        <button type="button" class="icBtn icDel">삭제</button>
+                                    </span>
+                                </li>
+                                <li class="inpFrm inpDeleteAni">
+                                    <label class="titInp" for="inpPhone">휴대폰 번호</label>
+                                    <span class="inpA">
+                                        <input type="tel" id="inpPhone" placeholder="휴대폰 번호을 입력해주세요.">
+                                        <button type="button" class="icBtn icDel">삭제</button>
+                                    </span>
+                                </li>
+                                <li class="inpFrm">
+                                    <strong class="titInp">임대 만료일</strong>
+                                    <!-- 2023.09.05 날짜 input 수정 -->
+                                    <div class="inpA">
+                                        <input type="date" data-placeholder="YYYY-MM-DD" required>
+                                    </div>
+                                    <!-- //2023.09.05 날짜 input 수정 -->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="acctItem">
+                        <span class="frmInp frmInpS"><input type="checkbox" id="chkDetail02"><label for="chkDetail02"></label></span>
+                        <button type="button" class="toggleBtn" aria-expanded="false">세부 정보2</button>
+                        <div class="toggleCont">
+                            <ul class="inpList">
+                                <li class="inpFrm inpDeleteAni">
+                                    <label class="titInp" for="inpRoom">호실</label>
+                                    <span class="inpA">
+                                        <input type="text" id="inpRoom" placeholder="호실을 입력해주세요.">
+                                        <button type="button" class="icBtn icDel">삭제</button>
+                                    </span>
+                                </li>
+                                <li class="inpFrm inpDeleteAni">
+                                    <label class="titInp" for="inpHighlights">주요사항</label>
+                                    <span class="inpA">
+                                        <input type="text" id="inpHighlights" placeholder="주요사항을 입력해주세요.">
+                                        <button type="button" class="icBtn icDel">삭제</button>
+                                    </span>
+                                </li>
+                                <li class="inpFrm inpDeleteAni">
+                                    <label class="titInp" for="inpLessee">임차인</label>
+                                    <span class="inpA">
+                                        <input type="text" id="inpLessee" placeholder="임차인을 입력해주세요.">
+                                        <button type="button" class="icBtn icDel">삭제</button>
+                                    </span>
+                                </li>
+                                <li class="inpFrm inpDeleteAni">
+                                    <label class="titInp" for="inpPhone">휴대폰 번호</label>
+                                    <span class="inpA">
+                                        <input type="tel" id="inpPhone" placeholder="휴대폰 번호을 입력해주세요.">
+                                        <button type="button" class="icBtn icDel">삭제</button>
+                                    </span>
+                                </li>
+                                <li class="inpFrm">
+                                    <strong class="titInp">임대 만료일</strong>
+                                    <!-- 2023.09.05 날짜 input 수정 -->
+                                    <div class="inpA">
+                                        <input type="date" data-placeholder="YYYY-MM-DD" required>
+                                    </div>
+                                    <!-- //2023.09.05 날짜 input 수정 -->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="acctItem">
+                        <span class="frmInp frmInpS"><input type="checkbox" id="chkDetail03"><label for="chkDetail03"></label></span>
+                        <button type="button" class="toggleBtn" aria-expanded="false">세부 정보3</button>
+                        <div class="toggleCont">
+                            <ul class="inpList">
+                                <li class="inpFrm inpDeleteAni">
+                                    <label class="titInp" for="inpRoom">호실</label>
+                                    <span class="inpA">
+                                        <input type="text" id="inpRoom" placeholder="호실을 입력해주세요.">
+                                        <button type="button" class="icBtn icDel">삭제</button>
+                                    </span>
+                                </li>
+                                <li class="inpFrm inpDeleteAni">
+                                    <label class="titInp" for="inpHighlights">주요사항</label>
+                                    <span class="inpA">
+                                        <input type="text" id="inpHighlights" placeholder="주요사항을 입력해주세요.">
+                                        <button type="button" class="icBtn icDel">삭제</button>
+                                    </span>
+                                </li>
+                                <li class="inpFrm inpDeleteAni">
+                                    <label class="titInp" for="inpLessee">임차인</label>
+                                    <span class="inpA">
+                                        <input type="text" id="inpLessee" placeholder="임차인을 입력해주세요.">
+                                        <button type="button" class="icBtn icDel">삭제</button>
+                                    </span>
+                                </li>
+                                <li class="inpFrm inpDeleteAni">
+                                    <label class="titInp" for="inpPhone">휴대폰 번호</label>
+                                    <span class="inpA">
+                                        <input type="tel" id="inpPhone" placeholder="휴대폰 번호을 입력해주세요.">
+                                        <button type="button" class="icBtn icDel">삭제</button>
+                                    </span>
+                                </li>
+                                <li class="inpFrm">
+                                    <strong class="titInp">임대 만료일</strong>
+                                    <!-- 2023.09.05 날짜 input 수정 -->
+                                    <div class="inpA">
+                                        <input type="date" data-placeholder="YYYY-MM-DD" required>
+                                    </div>
+                                    <!-- //2023.09.05 날짜 input 수정 -->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btnDefault btnM btGrayL icPlus">세부 정보 추가</button>
+            </div>
+            
+			<!-- // end of contents -->
+		</div><!-- //container -->
+
+        <div class="floatingBtns">
+			<div class="btnArea type02">
+				<button type="button" class="btnDefault btnL" >취소</button>
+				<button type="button" class="btnDefault btnL action">저장</button>
+			</div>
+		</div>
+
+		<aside>
+			<div class="asideRight">
+				<button type="button" class="btTop">페이지 상단으로 이동</button><!-- 2023.08.16 onClick 이벤트 삭제 -->
+			</div>
+		</aside>
+	</section>
+
+    <!-- popup 지역 검색 -->
+	<section id="pop_areaSelect" class="layPop layFull layArea" tabindex="0">
+		<header>
+			<h2 class="titLay">지역 검색</h2>
+		</header>
+	
+		<div class="layContainer" tabindex="0">
+			<div class="layContent">
+                
+                <div class="inpFrm searchArea type02 inpDeleteAni">
+					<div class="inpA">
+						<input type="search" id="inpSearch02" placeholder="읍/면/동 검색" title="읍/면/동 검색">
+						<button type="button" class="icBtn icDel">삭제</button>
+						<button type="submit" class="icBtn icSearch">검색</button>
+					</div>
+				</div>
+
+				<ul class="tabType01">
+					<li><a href="#" role="button" aria-selected="true">법정동</a></li>
+					<li><a href="#" role="button" aria-selected="false">행정동</a></li>
+				</ul>
+
+                <div class="areaSelWrapResult"><!-- 2023.09.18 클래스 추가 -->
+                    <div class="areaSelWrap">
+                        <div class="noDataSearch">
+                            <strong class="tit">TIP. 이렇게 검색해 보세요!</strong>
+                            <span class="txt">읍/면/동으로 지역을 검색해 주세요.<br>예) 모현읍, 노은면, 죽전동</span>
+                        </div>
+                        <ul class="chkList">
+                            <li><input type="radio" id="radAreaSel01" name="radAreaSel" checked><label for="radAreaSel01">경기도 용인시 수지구 <strong class="matching">죽전</strong>동</label></li>
+                            <li><input type="radio" id="radAreaSel02" name="radAreaSel"><label for="radAreaSel02">경기도 용인시 수지구 <strong class="matching">죽전</strong>1동</label></li>
+                            <li><input type="radio" id="radAreaSel03" name="radAreaSel"><label for="radAreaSel03">경기도 용인시 수지구 <strong class="matching">죽전</strong>2동</label></li>
+                            <li><input type="radio" id="radAreaSel04" name="radAreaSel"><label for="radAreaSel04">경기도 용인시 수지구 <strong class="matching">죽전</strong>3동</label></li>
+                            <li><input type="radio" id="radAreaSel05" name="radAreaSel"><label for="radAreaSel05">경기도 용인시 수지구 <strong class="matching">죽전</strong>4동</label></li>
+                            <li><input type="radio" id="radAreaSel06" name="radAreaSel"><label for="radAreaSel06">경기도 용인시 수지구 <strong class="matching">죽전</strong>5동</label></li>
+                            <li><input type="radio" id="radAreaSel07" name="radAreaSel"><label for="radAreaSel07">경기도 용인시 수지구 <strong class="matching">죽전</strong>동</label></li>
+                            <li><input type="radio" id="radAreaSel08" name="radAreaSel"><label for="radAreaSel08">경기도 용인시 수지구 <strong class="matching">죽전</strong>1동</label></li>
+                            <li><input type="radio" id="radAreaSel09" name="radAreaSel"><label for="radAreaSel09">경기도 용인시 수지구 <strong class="matching">죽전</strong>2동</label></li>
+                            <li><input type="radio" id="radAreaSel10" name="radAreaSel"><label for="radAreaSel10">경기도 용인시 수지구 <strong class="matching">죽전</strong>3동</label></li>
+                            <li><input type="radio" id="radAreaSel11" name="radAreaSel"><label for="radAreaSel11">경기도 용인시 수지구 <strong class="matching">죽전</strong>4동</label></li>
+                            <li><input type="radio" id="radAreaSel12" name="radAreaSel"><label for="radAreaSel12">경기도 용인시 수지구 <strong class="matching">죽전</strong>5동</label></li>
+                            <li><input type="radio" id="radAreaSel13" name="radAreaSel"><label for="radAreaSel13">경기도 용인시 수지구 <strong class="matching">죽전</strong>동</label></li>
+                            <li><input type="radio" id="radAreaSel14" name="radAreaSel"><label for="radAreaSel14">경기도 용인시 수지구 <strong class="matching">죽전</strong>1동</label></li>
+                        </ul>
+				    </div>
+                    <div class="selectArea">
+                        <div class="inner">
+                            <p class="area">경기도 용인시 수지구 죽전동<button type="button" class="icBtn icDelS">삭제</button></p>
+                        </div>
+                    </div>
+                </div>
+				
+			</div>
+
+			<div class="popBtns">
+				<div class="inner">
+					<button type="button" class="btnDefault btnL action" disabled>선택완료</button>
+				</div>
+			</div>
+		</div><!-- //layCont-->
+		<button type="button" class="closeL">팝업 닫기</button>
+	</section>
+	<!-- //popup 지역 선택 -->
+
+
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/magnt/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/magnt/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/magnt/swiper.min.js"></script>
+<script type="text/javascript" src="/js/magnt/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/magnt/m_common.js"></script>
+
+</html>
+

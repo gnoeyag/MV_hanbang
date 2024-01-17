@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="i708qltbxa">
+            <path data-name="사각형 22997" style="fill:none" d="M0 0h15.904v21.243H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 21140">
+        <path data-name="패스 65740" d="m8.839 109.044 2.69-1.435 1.512 2.638 3.333-11.614-2.1-.6-2.1-.6z" transform="translate(-4.964 -87.126)" style="fill:#6b59e3"/>
+        <path data-name="패스 65741" d="m88.589 98.028-2.1.6 3.333 11.614 1.519-2.638 2.683 1.435-3.337-11.609z" transform="translate(-73.895 -87.126)" style="fill:#6b59e3"/>
+        <g data-name="그룹 21139">
+            <g data-name="그룹 21138" style="clip-path:url(#i708qltbxa)" transform="translate(4.111 .878)">
+                <path data-name="패스 65742" d="M7.952 0A7.948 7.948 0 1 1 0 7.942 7.943 7.943 0 0 1 7.952 0" transform="translate(0 .001)" style="fill-rule:evenodd;fill:#fcc900"/>
+                <path data-name="패스 65743" d="M8.137 0a7.941 7.941 0 0 1 7.934 7.443 13.476 13.476 0 0 1-7.934 2.572A13.476 13.476 0 0 1 .2 7.442 7.947 7.947 0 0 1 8.137 0" transform="translate(-.185 .001)" style="fill:#fae013;fill-rule:evenodd"/>
+                <path data-name="패스 65744" d="M22.509 15.832a6.574 6.574 0 1 1-6.574 6.574 6.576 6.576 0 0 1 6.574-6.574" transform="translate(-14.557 -14.463)" style="fill:#dd9b00;fill-rule:evenodd"/>
+                <path data-name="패스 65745" d="M22.694 15.832a6.578 6.578 0 0 1 6.565 6.188 6.573 6.573 0 0 1-13.121 0 6.576 6.576 0 0 1 6.556-6.188" transform="translate(-14.742 -14.463)" style="fill:#edaa00;fill-rule:evenodd"/>
+                <path data-name="패스 65746" d="m44.822 37.918 1.308 2.3 2.6.527a.352.352 0 0 1 .272.421.272.272 0 0 1-.1.176l-1.772 1.947.3 2.633a.354.354 0 0 1-.316.386.339.339 0 0 1-.184-.026l-2.414-1.1-2.414 1.1a.354.354 0 0 1-.465-.176.37.37 0 0 1-.026-.193l.29-2.624-1.782-1.957a.358.358 0 0 1 .018-.5.51.51 0 0 1 .167-.088l2.6-.527 1.308-2.308a.357.357 0 0 1 .483-.132.291.291 0 0 1 .132.14" transform="translate(-36.563 -34.469)" style="fill:#fcc900"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24.001" viewBox="0 0 24 24.001">
+    <g data-name="타원 174" transform="translate(2 4.001)" style="stroke:#656565;stroke-width:1.5px;fill:none">
+        <circle cx="10" cy="10" r="10" style="stroke:none"/>
+        <circle cx="10" cy="10" r="9.25" style="fill:none"/>
+    </g>
+    <text transform="translate(12 17.001)" style="fill:#656565;stroke:transparent;font-size:10px;font-family:Pretendard-ExtraBold,Pretendard;font-weight:800"><tspan x="-5.842" y="0">kg</tspan></text>
+    <g data-name="패스 64174" style="fill:none">
+        <path d="M2.384 0h5.96c1.317 0 2.384 1.791 2.384 4v2c0 1.06-.708-.48-5.564-.852C2.689 5.192 0 7.149 0 6V4c0-2.209 1.067-4 2.384-4z" style="stroke:none" transform="translate(6.636 .345)"/>
+        <path d="M2.39 1.5c-.219.06-.89.912-.89 2.5v.483c.988-.356 2.303-.811 3.638-.834l.07-.002.07.006c1.764.135 3.046.42 3.95.69V4c0-1.588-.67-2.44-.89-2.5H2.39M2.384 0h5.96c1.317 0 2.385 1.79 2.385 4v2c0 1.06-.708-.48-5.565-.852C2.69 5.192 0 7.148 0 6V4c0-2.21 1.067-4 2.384-4z" style="fill:#656565;stroke:none" transform="translate(6.636 .345)"/>
+    </g>
+</svg>

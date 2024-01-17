@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+    <g data-name="그룹 17814">
+        <g data-name="사각형 13404" transform="translate(9 9)" style="stroke:#6b59e3;stroke-width:1.5px;fill:none">
+            <rect width="18" height="18" rx="1" style="stroke:none"/>
+            <rect x=".75" y=".75" width="16.5" height="16.5" rx=".25" style="fill:none"/>
+        </g>
+        <g data-name="그룹 17810">
+            <path data-name="선 164" style="stroke-linecap:round;stroke:#6b59e3;stroke-width:1.5px;fill:none" d="M0 2V0" transform="translate(10 5)"/>
+            <path data-name="선 165" transform="translate(26 5)" style="stroke-linecap:round;stroke:#6b59e3;stroke-width:1.5px;fill:none" d="M0 2V0"/>
+        </g>
+        <g data-name="그룹 17811">
+            <path data-name="선 164" style="stroke-linecap:round;stroke:#6b59e3;stroke-width:1.5px;fill:none" d="M0 2V0" transform="translate(10 29)"/>
+            <path data-name="선 165" transform="translate(26 29)" style="stroke-linecap:round;stroke:#6b59e3;stroke-width:1.5px;fill:none" d="M0 2V0"/>
+        </g>
+        <g data-name="그룹 17812">
+            <path data-name="선 164" style="stroke-linecap:round;stroke:#6b59e3;stroke-width:1.5px;fill:none" d="M0 2V0" transform="rotate(90 -1.5 8.5)"/>
+            <path data-name="선 165" transform="rotate(90 -9.5 16.5)" style="stroke-linecap:round;stroke:#6b59e3;stroke-width:1.5px;fill:none" d="M0 2V0"/>
+        </g>
+        <g data-name="그룹 17813">
+            <path data-name="선 164" style="stroke-linecap:round;stroke:#6b59e3;stroke-width:1.5px;fill:none" d="M0 2V0" transform="rotate(90 10.5 20.5)"/>
+            <path data-name="선 165" transform="rotate(90 2.5 28.5)" style="stroke-linecap:round;stroke:#6b59e3;stroke-width:1.5px;fill:none" d="M0 2V0"/>
+        </g>
+        <text data-name="m²" transform="translate(11.5 22)" style="fill:#6b59e3;font-size:10px;font-family:Pretendard-Bold,Pretendard;font-weight:700"><tspan x="0" y="0">m²</tspan></text>
+    </g>
+</svg>

@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>중개 요청 등록 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/mptl/h_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">중개 요청 등록</h1>
+		</header>
+	
+		<div id="container" class="container">
+			<!-- start of contents -->
+			
+			
+			<ul class="inpList inpListGap titTop">
+				<li class="inpFrm">
+					<span class="titInp titBInp"><strong>매물 종류</strong><span class="ness">필수입력 항목</span></span>
+					<div class="inpA">
+						<button type="button" class="btnDefault btnSelect layPopBtn" data-id="pop_dealingCase">매물 종류를 선택해 주세요</button>
+						<!--20230802 수정 : 오타 수정-->
+					</div>
+				</li>
+				<li class="inpFrm">
+					<span class="titInp titBInp"><strong>거래 유형 및 금액</strong><span class="ness">필수입력 항목</span></span>
+					<div class="inpA">
+						<ul class="frmBox">
+							<li><input type="radio" id="dealType01" name="dealType" checked><label for="dealType01">매매</label></li>
+							<li><input type="radio" id="dealType02" name="dealType"><label for="dealType02">전세</label></li>
+							<li><input type="radio" id="dealType03" name="dealType"><label for="dealType03">월세</label></li>
+							<li><input type="radio" id="dealType04" name="dealType"><label for="dealType04">연세</label></li>
+						</ul>
+					</div>
+					
+					<!--각 거래 유형에 따른 세부 form show/hide-->
+					<div class="supBox" style="display: block">
+						<!--매매 선택 시-->
+						<div class="inpFrm frmUnit">
+							<label class="titInp" for="inpDealingPrice">매매가<span class="ness">필수입력 항목</span></label>
+							<div class="inpA">
+								<span class="inpW">
+									<input type="tel" id="inpDealingPrice" value="45000" placeholder="0" required>
+									<!--20230802 수정 : placeholder 추가-->
+									<!--[D]금액 입력 시, 인풋 하단 우측에 입력한 금액 한글 표기 노출-->
+									<!--<span class="unitConvert isShow">사억오천만</span>-->
+									<!--20230731 수정 - 헬프 텍스트 공통 삭제 기획 수정 1.7v -->
+								</span>
+								<span class="unit">만원</span>  <!--20230731 수정 - 단위 기획 수정 1.7v -->
+							</div>
+						</div>
+						<!--//매매 선택 시-->
+						
+						<!--전세 선택 시-->
+						<div class="inpFrm frmUnit"> <!--20230802 수정 : 단위 변경 unitOne 삭제 하기 공통-->
+							<label class="titInp" for="inpDeposit">보증금<span class="ness">필수입력 항목</span></label>
+							<div class="inpA">
+								<span class="inpW">
+									<input type="tel" id="inpDeposit" placeholder="0" required>
+									<!--20230802 수정 : placeholder 추가-->
+									<span class="unitConvert"></span>
+								</span>
+								<span class="unit">만원</span> <!--20230802 수정 : 단위 변경 하기 공통-->
+							</div>
+						</div>
+						<!--//전세 선택 시-->
+						
+						<!--월세 선택 시-->
+						<div class="inpFrm frmUnit">
+							<label class="titInp" for="inpDeposit2">보증금<span class="ness">필수입력 항목</span></label>
+							<div class="inpA">
+								<span class="inpW">
+									<input type="tel" id="inpDeposit2" placeholder="0" required>
+									<!--20230802 수정 : placeholder 추가-->
+								</span>
+								<span class="unit">만원</span>
+							</div>
+						</div>
+						<div class="inpFrm frmUnit">
+							<label class="titInp" for="inpMonthly">월세<span class="ness">필수입력 항목</span></label>
+							<div class="inpA">
+								<span class="inpW">
+									<input type="tel" id="inpMonthly" placeholder="0" required>
+									<!--20230802 수정 : placeholder 추가-->
+								</span>
+								<span class="unit">만원</span>
+							</div>
+						</div>
+						<!--//월세 선택 시-->
+						
+						<!--연세 선택 시-->
+						<div class="inpFrm frmUnit">
+							<label class="titInp" for="inpDeposit3">보증금<span class="ness">필수입력 항목</span></label>
+							<div class="inpA">
+								<span class="inpW">
+									<input type="tel" id="inpDeposit3" placeholder="0" required>
+									<!--20230802 수정 : placeholder 추가-->
+								</span>
+								<span class="unit">만원</span>
+							</div>
+						</div>
+						<div class="inpFrm frmUnit">
+							<label class="titInp" for="inpMonthly2">연세<span class="ness">필수입력 항목</span></label>
+							<div class="inpA">
+								<span class="inpW">
+									<input type="tel" id="inpMonthly2" placeholder="0" required>
+									<!--20230802 수정 : placeholder 추가-->
+								</span>
+								<span class="unit">만원</span>
+							</div>
+						</div>
+						<!--//연세 선택 시-->
+					</div>
+					<!--//각 거래 유형에 따른 세부 form show/hide-->
+				</li>
+				<li class="inpFrm">
+					<span class="titInp titBInp"><strong>매물 주소</strong><span class="ness">필수입력 항목</span></span>
+					<div class="inpA">
+						<button type="button" class="btnDefault btnS btGray01 layPopBtn" data-id="pop_addressSearch">주소 검색</button>
+					</div>
+					<div class="inpFrm doubleSelect inpDeleteAni mt12">
+						<div class="inpA">
+							<input type="text" id="inpAddress1" placeholder="" value="서울 종로구 종로1가 24" required readonly>
+						</div>
+						<div class="inpA">
+							<input type="text" id="inpAddress2" placeholder="상세 주소를 입력해 주세요" value="">
+							<button type="button" class="icBtn icDel">삭제</button>
+						</div>
+					</div>
+					
+					<!--20230824 기획v1.9 수정 동/호 입력 필드 삭제-->
+					
+					<!--매물 종류 펜션, 숙박 선택한 경우 노출-->
+					<div class="inpFrm frmUnit unitOne mt12">
+						<label class="titInp titBInp" for="roomCount"><strong>객실 수</strong><span class="ness">필수입력 항목</span></label>
+						<div class="inpA">
+								<span class="inpW">
+									<input type="tel" id="roomCount" placeholder="0">
+								</span>
+							<span class="unit">개</span>
+						</div>
+					</div>
+					<!--//매물 종류 펜션, 숙박 선택한 경우 노출-->
+				</li>
+				<li class="inpFrm frmUnit-03 unitOne">
+					<label class="titInp titBInp" for="inpRoom"><strong>방/욕실 수</strong><span class="ness">필수입력 항목</span></label>
+					<div class="inpA">
+						<span class="inpW">
+							<input type="tel" id="inpRoom" class="placeR" placeholder="0" required>
+							<span class="unit">개</span>
+						</span>
+						<span class="dash">/</span>
+						<span class="inpW">
+							<input type="tel" id="inpBathroom" class="placeR" placeholder="0" required>
+							<span class="unit">개</span>
+						</span>
+					</div>
+				</li>
+				<li class="inpFrm">
+					<span class="titInp titBInp"><strong>테마 정보</strong></span>
+					<div class="selOptList">
+						<p class="area">풀옵션<button type="button" class="icBtn icDelS">삭제</button></p>
+						<p class="area">보증금 조절 가능<button type="button" class="icBtn icDelS">삭제</button></p>
+						<p class="area">급매<button type="button" class="icBtn icDelS">삭제</button></p>
+						<p class="area">역세권<button type="button" class="icBtn icDelS">삭제</button></p>
+					</div>
+					<div class="inpA">
+						<a href="#" role="button" class="linkInp layPopBtn" data-id="pop_themeSel">등록하기</a>
+					</div>
+				</li>
+				<li class="inpFrm">
+					<span class="titInp titBInp"><strong>중개 요청 방법 선택</strong><span class="ness">필수입력 항목</span></span>
+					<div class="inpA">
+						<ul class="frmBox">
+							<li><input type="radio" id="way01" name="way" class="layPopBtn" data-id="pop_moreSearch"><label for="way01">자동 선택</label></li>
+							<li><input type="radio" id="way02" name="way" class="layPopBtn" data-id="pop_officeSearch"><label for="way02">직접 선택</label></li>
+						</ul>
+					</div>
+					<!--자동 선택 시 노출 문구-->
+					<p class="baseImpTxt">총 <strong class="pointCol01">20</strong>곳의 중개사무소에 중개를 요청할게요.</p>
+					<!--//자동 선택 시 노출 문구-->
+					<!--직접 선택 후 노출 리스트-->
+					<ul class="anchorList noLine">
+						<li>
+							<div class="item">
+								<em class="tit">대성공인중개사</em>
+								<p class="cont">서울 동작구 대방동 (대표 김대성)</p>
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								<em class="tit">굿모닝공인중개사사무소</em>
+								<p class="cont">서울 동작구 상도동 (대표 오아침)</p>
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								<em class="tit">대성공인중개사</em>
+								<p class="cont">서울 동작구 대방동 (대표 김대성)</p>
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								<em class="tit">굿모닝공인중개사사무소</em>
+								<p class="cont">서울 동작구 상도동 (대표 오아침)</p>
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								<em class="tit">굿모닝공인중개사사무소</em>
+								<p class="cont">서울 동작구 상도동 (대표 오아침)</p>
+							</div>
+						</li>
+					</ul>
+					<!--//직접 선택 후 노출 리스트-->
+					<p class="referText">최대 5곳의 중개사무소에서 중개를 수락할 수 있어요.</p><!--20230803 수정 : 문구변경-->
+				</li>
+			</ul>
+			
+			
+			<!-- // end of contents -->
+		</div><!-- //container -->
+		
+		<div class="floatingBtns">
+			<div class="btnArea">
+				<button type="button" class="btnDefault btnL btLineP">미리보기</button>
+				<button type="button" class="btnDefault btnL action" disabled>등록하기</button>
+			</div>
+		</div>
+		
+		<aside>
+			<div class="asideRight">
+				<button type="button" class="btTop">페이지 상단으로 이동</button><!-- 2023.08.16 onClick 이벤트 삭제 -->
+			</div>
+		</aside>
+	</section>
+	
+	
+	<!--매물 종류 BS -->
+	<section id="pop_dealingCase" class="layPop layBtm" tabindex="0">
+		<header>
+			<h2 class="titLay">매물 종류</h2>
+		</header>
+		
+		<div class="layContainer" tabindex="0">
+			<div class="layContent">
+				<ul class="frmBox col03 bigSize">
+					<li><input type="radio" id="dealCase01" name="dealCase"><label for="dealCase01">아파트</label></li>
+					<li><input type="radio" id="dealCase02" name="dealCase"><label for="dealCase02">오피스텔</label></li>
+					<li><input type="radio" id="dealCase03" name="dealCase"><label for="dealCase03">빌라</label></li>
+					<li><input type="radio" id="dealCase04" name="dealCase"><label for="dealCase04">원·투룸</label></li>
+					<li><input type="radio" id="dealCase05" name="dealCase"><label for="dealCase05">다세대</label></li>
+					<li><input type="radio" id="dealCase06" name="dealCase"><label for="dealCase06">다가구</label></li>
+					<li><input type="radio" id="dealCase07" name="dealCase"><label for="dealCase07">단독</label></li>
+					<li><input type="radio" id="dealCase08" name="dealCase"><label for="dealCase08">연립</label></li>
+					<li><input type="radio" id="dealCase09" name="dealCase"><label for="dealCase09">전원주택</label></li>
+					<li><input type="radio" id="dealCase10" name="dealCase"><label for="dealCase10">상가주택</label></li>
+					<li><input type="radio" id="dealCase11" name="dealCase"><label for="dealCase11">상가점포</label></li>
+					<li><input type="radio" id="dealCase12" name="dealCase"><label for="dealCase12">상업용 건물</label></li>
+					<li><input type="radio" id="dealCase13" name="dealCase"><label for="dealCase13">사무실</label></li>
+					<li><input type="radio" id="dealCase14" name="dealCase"><label for="dealCase14" class="multiLine">지식산업 센터</label></li>
+					<li><input type="radio" id="dealCase15" name="dealCase"><label for="dealCase15" class="multiLine">아파트 분양권</label></li>
+					<li><input type="radio" id="dealCase16" name="dealCase"><label for="dealCase16" class="multiLine">오피스텔 분양권</label></li>
+					<li><input type="radio" id="dealCase17" name="dealCase"><label for="dealCase17">숙박</label></li>
+					<li><input type="radio" id="dealCase18" name="dealCase"><label for="dealCase18">펜션</label></li>
+					<li><input type="radio" id="dealCase19" name="dealCase"><label for="dealCase19">공장</label></li>
+					<li><input type="radio" id="dealCase20" name="dealCase"><label for="dealCase20">창고</label></li>
+					<li><input type="radio" id="dealCase21" name="dealCase"><label for="dealCase21">토지</label></li>
+					<li><input type="radio" id="dealCase22" name="dealCase"><label for="dealCase22">재개발</label></li>
+				</ul>
+			</div>
+		</div><!-- //layContainer-->
+		<button type="button" class="closeL">팝업 닫기</button>
+	</section>
+	<!--//매물 종류 BS -->
+	
+	<!--주소 검색 FP-->
+	<section id="pop_addressSearch" class="layPop layFull layArea" tabindex="0">
+		<header>
+			<h2 class="titLay">주소 검색</h2>
+		</header>
+		
+		<div class="layContainer" tabindex="0">
+			<div class="layContent">
+				
+				<div class="inpFrm searchArea type02 inpDeleteAni">
+					<div class="inpA hasIcoSch roleBtnSch">
+						<input type="search" id="inpSearch02" placeholder="주소를 2글자 이상 입력해 주세요" title="주소 검색">
+						<button type="button" class="icBtn icDel">삭제</button>
+						<button type="button" class="btSearch">검색</button>
+					</div>
+				</div>
+				
+				<div class="searchGuide">
+					<ul class="guideCase">
+						<li>
+							<p class="tit">동/읍/면/리 + 번지</p>
+							<p class="txt">예시) 청룡동 930-42</p>
+						</li>
+						<li>
+							<p class="tit">도로명 + 건물번호</p>
+							<p class="txt">예시) 남부순환로 1722</p>
+						</li>
+						<li>
+							<p class="tit">건물명, 아파트명</p>
+							<p class="txt">예시) 한국공인중개사협회회관</p>
+						</li>
+					</ul>
+				</div>
+				
+				<!--[D] 주소 검색 인풋에 포커싱 될 때, 해당 레이어 노출, 주소 검색 시 매칭되는 검색 결과 리스트 보여짐-->
+				<div class="searchAddrResult">
+					<ul>
+						<li>
+							<a href="#">
+								<div class="row">
+									<span class="flag addrType">지번명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>1가 24</span>
+								</div>
+								<div class="row">
+									<span class="flag addrType">도로명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>19</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="row">
+									<span class="flag addrType">지번명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>1가 24</span>
+								</div>
+								<div class="row">
+									<span class="flag addrType">도로명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>19</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="row">
+									<span class="flag addrType">지번명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>1가 24</span>
+								</div>
+								<div class="row">
+									<span class="flag addrType">도로명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>19</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="row">
+									<span class="flag addrType">지번명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>1가 24</span>
+								</div>
+								<div class="row">
+									<span class="flag addrType">도로명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>19</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="row">
+									<span class="flag addrType">지번명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>1가 24</span>
+								</div>
+								<div class="row">
+									<span class="flag addrType">도로명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>19</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="row">
+									<span class="flag addrType">지번명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>1가 24</span>
+								</div>
+								<div class="row">
+									<span class="flag addrType">도로명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>19</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="row">
+									<span class="flag addrType">지번명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>1가 24</span>
+								</div>
+								<div class="row">
+									<span class="flag addrType">도로명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>19</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="row">
+									<span class="flag addrType">지번명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>1가 24</span>
+								</div>
+								<div class="row">
+									<span class="flag addrType">도로명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>19</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="row">
+									<span class="flag addrType">지번명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>1가 24</span>
+								</div>
+								<div class="row">
+									<span class="flag addrType">도로명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>19</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="row">
+									<span class="flag addrType">지번명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>1가 24</span>
+								</div>
+								<div class="row">
+									<span class="flag addrType">도로명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>19</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--//[D] 주소 검색 인풋에 포커싱 될 때, 해당 레이어 노출, 주소 검색 시 매칭되는 검색 결과 리스트 보여짐-->
+			</div>
+		</div><!-- //layCont-->
+		<button type="button" class="closeL">팝업 닫기</button>
+	</section>
+	<!--//주소 검색 FP-->
+	
+	<!-- 테마 정보 BS -->
+	<section id="pop_themeSel" class="layPop layBtm" tabindex="0">
+		<header>
+			<h2 class="titLay">테마 정보 등록</h2>  <!--20230731 수정 - 문구 기획 수정 1.7v -->
+		</header>
+		<div class="layContainer" tabindex="0">
+			<div class="layContent">
+				 <ul class="frmBox col02">
+					<li><input type="checkbox" id="chkTheme01" name="chkTheme"><label for="chkTheme01">올수리</label></li>
+					 <li><input type="checkbox" id="chkTheme02" name="chkTheme"><label for="chkTheme02">리모델링</label></li>
+					<li><input type="checkbox" id="chkTheme03" name="chkTheme"><label for="chkTheme03">풀옵션</label></li>
+					<li><input type="checkbox" id="chkTheme04" name="chkTheme"><label for="chkTheme04">즉시입주 가능</label></li>
+					<li><input type="checkbox" id="chkTheme05" name="chkTheme"><label for="chkTheme05">신축 5년 이내</label></li>
+					<li><input type="checkbox" id="chkTheme06" name="chkTheme"><label for="chkTheme06">반려동물 가능</label></li>
+					<li><input type="checkbox" id="chkTheme07" name="chkTheme"><label for="chkTheme07">전세자금대출 가능</label></li>
+					<li><input type="checkbox" id="chkTheme08" name="chkTheme"><label for="chkTheme08">보증금 조절 가능</label></li>
+					<li><input type="checkbox" id="chkTheme09" name="chkTheme"><label for="chkTheme09">급매</label></li>
+					<li><input type="checkbox" id="chkTheme10" name="chkTheme"><label for="chkTheme10">교육환경 좋은</label></li>
+					<li><input type="checkbox" id="chkTheme11" name="chkTheme"><label for="chkTheme11">역세권</label></li>
+				</ul>
+				<span class="frmInp frmInpS txt mt16"><input type="checkbox" id="chkThemeAll" name="chkTheme"><label for="chkThemeAll">전체 선택</label></span>
+				<!-- 20230802 수정 : frmInpS 클래스 추가-->
+			</div>
+			<div class="popBtns">
+				<!--20230802 수정 - 초기화 버튼 디자인 변경-->
+				<div class="inner btnArea">
+					<button type="button" class="btnDefault btnL btLineP" disabled>초기화</button> <!-- 20230802 수정 : 초기상태 disabled, 테마1개이상 선택 시 초기화 버튼 활성화-->
+					<button type="button" class="btnDefault btnL action">완료</button>
+				</div>
+			</div>
+		</div><!-- //layContainer-->
+		<button type="button" class="closeL">팝업 닫기</button>
+	</section>
+	<!--// 테마 정보 BS -->
+	
+	<!--추가탐색 LP-->
+	<section id="pop_moreSearch" class="layPop layCent noHead" tabindex="0">
+		<div class="layContainer" tabindex="0">
+			<div class="layContent">
+				
+				<h2 class="bgTitLay moreSearch">중개 요청 가능한 중개사무소가 적어요 <br>범위를 더 넓혀서 찾아볼까요?</h2>
+				
+				<div class="process">
+					<em class="percent" style="width:25%"><span class="hidden">진행율</span></em>
+				</div>
+				
+				<div class="popBtns column">
+					<div class="inner">
+						<button type="button" class="btnDefault btnM action">네, 좋아요</button>
+						<button type="button" class="btnDefault btnM btnNoBg">아니요, 그만할래요</button>
+					</div>
+				</div>
+			</div>
+		</div><!-- //layContainer-->
+		<button type="button" class="closeL">팝업 닫기</button>
+	</section>
+	<!--//추가탐색 LP-->
+	
+	
+	<!--중개사무소 검색 FP-->
+	<section id="pop_officeSearch" class="layPop layFull layArea" tabindex="0">
+		<header>
+			<h2 class="titLay">중개사무소 검색</h2>
+		</header>
+		
+		<div class="layContainer" tabindex="0">
+			<div class="layContent">
+				<div class="inpFrm searchArea inpDeleteAni">
+					<div class="inpA hasFilter hasIcoSch">
+						<input type="search" id="inpSearch" placeholder="중개사무소를 입력해 주세요" title="중개사무소 검색">
+						<button type="button" class="icBtn icDel">삭제</button>
+					</div>
+					<button type="button" class="btFilter layPopBtn" data-id="pop_filter">필터</button>
+				</div>
+				
+				<!--[D] 자동완성 중 인 경우 해당 searchIngResult 영역 활성화-->
+				<div class="searchIngResult popLay">
+					<ul class="list">
+						<li>
+							<a href="#" class="item">
+								<em class="word"><strong class="matching">가자</strong>공인중개사사무소</em>
+								<p class="wordSub">서울 관악구 신림동 (대표 이가자)</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word"><strong class="matching">가자</strong>공인중개사사무소</em>
+								<p class="wordSub">서울 관악구 신림동 (대표 이가자)</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word"><strong class="matching">가자</strong>중개사사무소</em>
+								<p class="wordSub">서울 동작구 상도동 (대표 이영석)</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word"><strong class="matching">가자</strong>부동산</em>
+								<p class="wordSub">서울 관악구 신림동 (대표 이가자)</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word"><strong class="matching">가자</strong>중개법인</em>
+								<p class="wordSub">서울 구로구 오류동 (대표 박주호)</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word"><strong class="matching">가자</strong>공인중개사사무소</em>
+								<p class="wordSub">서울 강남구 논현동 (대표 이중혁)</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--//자동완성 중 인 경우 해당 searchIngResult 영역 활성화-->
+				
+				<!--검색 지역 필터에서 선택한 옵션-->
+				<div class="selOptList mt16">
+					<p class="area">서울특별시<button type="button" class="icBtn icDelS">삭제</button></p>
+					<p class="area">경기도<button type="button" class="icBtn icDelS">삭제</button></p>
+				</div>
+				<!--//검색 지역 필터에서 선택한 옵션-->
+				
+				<!--선택 중개사무소 목록-->
+				<ul class="anchorList noLine"> <!--20230802 수정 : 디자인변경 noLine 추가 , mt24 삭제-->
+					<li>
+						<div class="item">
+							<em class="tit">가자공인중개사사무소</em>
+							<p class="cont">서울 관악구 신림동 (대표 이가자)</p>
+							<button type="button" class="icBtn icDelS">삭제</button>
+						</div>
+					</li>
+					<li>
+						<div class="item">
+							<em class="tit">굿모닝공인중개사사무소</em>
+							<p class="cont">서울 동작구 상도동 (대표 오아침)</p>
+							<button type="button" class="icBtn icDelS">삭제</button>
+						</div>
+					</li>
+					<li>
+						<div class="item">
+							<em class="tit">대성공인중개사</em>
+							<p class="cont">서울 동작구 대방동 (대표 김대성)</p>
+							<button type="button" class="icBtn icDelS">삭제</button>
+						</div>
+					</li>
+					<li>
+						<div class="item">
+							<em class="tit">굿모닝공인중개사사무소</em>
+							<p class="cont">서울 종로구 창신동 (대표 이지영)</p>
+							<button type="button" class="icBtn icDelS">삭제</button>
+						</div>
+					</li>
+					<li>
+						<div class="item">
+							<em class="tit">가장부동산중개법인</em>
+							<p class="cont">서울 강남구 논현동 (대표 이중혁)</p>
+							<button type="button" class="icBtn icDelS">삭제</button>
+						</div>
+					</li>
+				</ul>
+				<!--//선택 중개사무소 목록-->
+				
+				<p class="referText mt24">최대 5곳의 중개소에서 중개를 수락할 수 있어요.</p>
+			</div>
+			
+			<div class="popBtns">
+				<div class="inner">
+					<button type="button" class="btnDefault btnL action" disabled>저장하기</button>
+					<!--[D] 중개사무소 1개 이상 선택 시, 활성화 상태로 변경 : disabled 속성 삭제-->
+					<!--<button type="button" class="btnDefault btnL action">저장하기</button>-->
+				</div>
+			</div>
+		</div><!-- //layCont-->
+		<button type="button" class="closeL">팝업 닫기</button>
+	</section>
+	<!--//중개사무소 검색 FP-->
+	
+	<!--검색 지역 BS -->
+	<section id="pop_filter" class="layPop layBtm" tabindex="0">
+		<header>
+			<h2 class="titLay">검색 지역 설정</h2> <!--20230731 수정 - 문구, 기획 수정 1.7v -->
+		</header>
+		
+		<div class="layContainer" tabindex="0">
+			<div class="layContent">
+				<ul class="frmBox col02 bigSize">
+					<li><input type="checkbox" id="area01" name="area"><label for="area01">강원특별자치도</label></li>
+					<li><input type="checkbox" id="area02" name="area"><label for="area02">광주광역시</label></li>
+					<li><input type="checkbox" id="area03" name="area"><label for="area03">경기도</label></li>
+					<li><input type="checkbox" id="area04" name="area"><label for="area04">경상남도</label></li>
+					<li><input type="checkbox" id="area05" name="area"><label for="area05">경상북도</label></li>
+					<li><input type="checkbox" id="area06" name="area"><label for="area06">대구광역시</label></li>
+					<li><input type="checkbox" id="area07" name="area"><label for="area07">부산광역시</label></li>
+					<li><input type="checkbox" id="area08" name="area"><label for="area08">세종특별자치시</label></li>
+					<li><input type="checkbox" id="area09" name="area"><label for="area09">서울특별시</label></li>
+					<li><input type="checkbox" id="area10" name="area"><label for="area10">울산광역시</label></li>
+					<li><input type="checkbox" id="area11" name="area"><label for="area11">인천광역시</label></li>
+					<li><input type="checkbox" id="area12" name="area"><label for="area12">전라남도</label></li>
+					<li><input type="checkbox" id="area13" name="area"><label for="area13">전라북도</label></li>
+					<li><input type="checkbox" id="area14" name="area"><label for="area14">제주특별자치도</label></li>
+					<li><input type="checkbox" id="area15" name="area"><label for="area15">충청남도</label></li>
+					<li><input type="checkbox" id="area16" name="area"><label for="area16">충청북도</label></li>
+				</ul>
+			</div>
+			<div class="popBtns">
+				<!--20230802 수정 - 초기화 버튼 디자인 변경-->
+				<div class="inner btnArea">
+					<button type="button" class="btnDefault btnL btLineP">초기화</button>
+					<button type="button" class="btnDefault btnL action">완료</button>
+				</div>
+			</div>
+		</div><!-- //layContainer-->
+		<button type="button" class="closeL">팝업 닫기</button>
+	</section>
+	<!--//검색 지역 BS -->
+	
+	<!-- toastPopup -->
+	<div class="toastPopup" style="display:block"><!-- 토스트팝업 띄울때 display:block 시켜줌.-->
+		<p class="txt">매물 주소를 먼저 입력해 주세요</p>
+	</div>
+	<!-- //toastPopup -->
+	
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/mptl/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/mptl/swiper.min.js"></script>
+<script type="text/javascript" src="/js/mptl/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/mptl/m_common.js"></script>
+
+</html>
+

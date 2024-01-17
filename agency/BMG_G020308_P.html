@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>관리비 정보 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body >
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">관리비 정보</h1>
+			<div class="menuWrap">
+				<button type="button" class="btNav" aria-expanded="false">메뉴</button>
+				<nav>
+					<div class="navInner">메뉴영역</div>
+				</nav>
+			</div>
+		</header>
+	
+		<div id="container" class="container">
+			<!-- start of contents -->
+
+			<div class="boxTop">
+				<h2 class="titDep2">매물 관리비 정보<span>를<br>입력해 주세요.</span></h2>
+				<p class="alertArea">
+					<span class="altTxt">[필드명] + “을/를” +  “선택/입력해 주세요.”</span>
+				</p>
+			</div>
+			
+			<ul class="inpList">			
+				<li class="inpFrm">
+					<label class="titInp" for="inpType">관리비 부과방식<span class="ness">필수입력 항목</span></label>
+					<span class="inpA">
+						<div class="selectWrap">
+							<select id="inpType" title="관리비 부과방식 선택" data-header="관리비 부과방식">
+								<option value="01">정액 관리비 부과(실비 일부 포함)</option>
+								<option value="02" selected>기타 부과(정액이 아닌 경우 등)</option>
+								<option value="03">확인불가</option>
+							</select>
+						</div>
+					</span>
+				</li>
+				<li class="inpFrm">
+					<label class="titInp" for="inpDealType">관리비 기준<span class="ness">필수입력 항목</span></label>
+					<span class="inpA">
+						<div class="selectWrap">
+							<select id="inpDealType" title="관리비 기준 선택" data-header="관리비 기준">
+								<option value="01">직전 월 관리비 부과금액</option>
+								<option value="02">최근 3개월 관리비 평균 금액</option>
+								<option value="03">최근 1년 관리비 평균 금액</option>
+								<option value="04" selected>기타(직접 입력)</option>
+							</select>
+						</div>
+					</span>
+                    <span class="inpA mt12">
+                        <textarea id="inpFeature" cols="10" rows="10"></textarea>
+                        <span class="txtNum"><em title="소개 글자 수">0</em> / 50자</span>
+                    </span>
+				</li>
+                <li class="inpFrm">
+					<label class="titInp" for="inpDealType">실비 근거<span class="ness">필수입력 항목</span></label>
+					<span class="inpA">
+						<div class="selectWrap selectWrap02">
+							<select id="inpDealType" title="실비 근거 선택" data-header="실비 근거">
+								<option value="01">관리규약 등에 따라 부과</option>
+								<option value="02">공용관리비는 면적/세대별로 부과하고 사용료는 사용량에 따른 부과</option>
+								<option value="03">전체 사용량을 세대수로 나누어 부과</option>
+								<option value="04">세대별 사용량(별도 계량기)에 따라 부과</option>
+                                <option value="05">임대인이 관리비 세부내역을 미고지 하는 경우</option>
+                                <option value="06">관리비가 10만원 미만인 경우(포함된 비목은 표기 필요)</option>
+                                <option value="07">기타(직접입력)</option>
+							</select>
+						</div>
+					</span>
+                    <span class="inpA mt12">
+                        <textarea id="inpFeature" cols="10" rows="10"></textarea>
+                        <span class="txtNum"><em title="소개 글자 수">0</em> / 50자</span>
+                    </span>
+				</li>
+			</ul>
+
+            <div class="inpMaintenance divider">
+                <ul class="inpList mt32">
+                    <li class="inpFrm frmUnit-05">
+                        <strong class="titInp">세부 항목</strong>
+                        <div class="inpA">
+                            <span class="selResult">3개 선택</span>
+                            <button type="button" class="btnDefault btnMS btGray01 layPopBtn" data-id="BMG_G020308_L">선택</button>
+                        </div>
+                    </li>
+                    <li class="inpFrm frmUnit">
+                        <label class="titInp" for="inpDealType">평균 관리비<span class="ness">필수입력 항목</span></label>
+                        <span class="inpA inpA02">
+                            <input type="tel" placeholder="0">
+                            <span class="unit">원</span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+		
+			<!-- // end of contents -->
+		</div><!-- //container -->
+		
+		<div class="floatingBtns">
+			<div class="btnArea">
+				<button type="button" class="btnDefault btnL btLineP">임시저장</button>
+				<button type="button" class="btnDefault btnL action">완료</button>
+			</div>
+		</div>
+
+		<aside>
+			<div class="asideRight">
+				<button type="button" class="btTop">페이지 상단으로 이동</button>
+			</div>
+		</aside>
+	</section>
+
+    <!-- popup 세부 항목 선택 -->
+	<section id="BMG_G020308_L" class="layPop layBtm" tabindex="0">
+		<header>
+			<h2 class="titLay">세부 항목</h2>
+		</header>
+	
+		<div class="layContainer" tabindex="0">
+			<div class="layContent">
+                <ul class="frmBox col02">
+                    <li><input type="checkbox" id="chkSthType01"><label for="chkSthType01">전기 사용료</label></li>
+                    <li><input type="checkbox" id="chkSthType02"><label for="chkSthType02">수도 사용료</label></li>
+                    <li><input type="checkbox" id="chkSthType03"><label for="chkSthType03">가스 사용료</label></li>
+                    <li><input type="checkbox" id="chkSthType04"><label for="chkSthType04">난방 사용료</label></li>
+                    <li><input type="checkbox" id="chkSthType05"><label for="chkSthType05">인터넷 사용료</label></li>
+                    <li><input type="checkbox" id="chkSthType06"><label for="chkSthType06">TV 사용료</label></li>
+                </ul>
+			</div>
+			<div class="popBtns">
+				<div class="inner">
+					<button type="button" class="btnDefault btnL action">선택 완료</button>
+				</div>
+			</div>
+		</div><!-- //layContainer-->
+		<button type="button" class="closeL">팝업 닫기</button>
+	
+	</section>
+	<!-- //popup 세부 항목 선택 -->
+
+
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/magnt/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/magnt/swiper.min.js"></script>
+<script type="text/javascript" src="/js/magnt/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/magnt/m_common.js"></script>
+
+</html>
+

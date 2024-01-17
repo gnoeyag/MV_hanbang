@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>부동산 정보 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/mptl/h_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">부동산 정보</h1>
+		</header>
+	
+		<div id="container" class="container">
+			<!-- start of contents -->
+			
+			<div class="inpFrm searchArea inpDeleteAni topSearch">
+				<div class="inpA hasIcoSch roleBtnSch"> <!--20230802 수정 : roleBtnSch 추가-->
+					<input type="search" id="inpSearch" placeholder="검색어를 입력해 주세요" title="부동산 뉴스 검색">
+					<button type="button" class="icBtn icDel">삭제</button>
+					<button type="button" class="btSearch">검색</button> <!--20230802 수정 : 검색 추가-->
+				</div>
+			</div>
+			
+			<ul class="tabType01">
+				<li><a href="#" role="button" aria-selected="true">부동산 꿀정보</a></li>
+				<li><a href="#" role="button" aria-selected="false">부쉬맨 채널</a></li>
+			</ul>
+			
+			<div id="tabContents00" class="tabContentWrap tabON">
+				<!--탭 클릭시 해당 영역에 컨텐츠 표시-->
+				
+				<!--검색어 결과가 없을 시 해당영역만 노출-->
+				<!--20230828 기획 문구 변경-->
+				<div class="noData">
+					‘<em>검색어</em>’에 대한 검색 결과가 없습니다.
+					<p class="subTxt">맞춤법을 확인하거나 다른 검색어를 입력해주세요.</p>
+				</div>
+				<!--20230802 수정 - 마침표 삭제-->
+				<!--//검색어 결과가 없을 시 해당영역만 노출-->
+				
+				
+				<!--//탭 클릭시 해당 영역에 컨텐츠 표시-->
+			</div>
+			
+			<!-- // end of contents -->
+		</div><!-- //container -->
+		
+		<aside>
+			<div class="asideRight">
+				<button type="button" class="btTop">페이지 상단으로 이동</button><!-- 2023.08.16 onClick 이벤트 삭제 -->
+			</div>
+		</aside>
+	</section>
+	
+	
+	
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/mptl/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/mptl/swiper.min.js"></script>
+<script type="text/javascript" src="/js/mptl/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/mptl/m_common.js"></script>
+
+</html>
+

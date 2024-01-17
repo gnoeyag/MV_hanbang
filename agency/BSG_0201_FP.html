@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>일정 등록 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- 일정 등록 Layer -->
+	<section id="BSG_0201_FP" class="layPop layFull btTopAdd" tabindex="0" style="display: block;">
+		<header>
+			<h2 class="titLay">일정 등록</h2>
+		</header>
+	
+		<div class="layContainer" tabindex="0">
+			<div class="layContent">
+                <div id="laypopTop"></div>
+                <div class="flagWrap">
+                    <span class="flag schedule04">일반</span>
+                    <!-- 
+                        schedule01 : 매물
+                        schedule02 : 계약
+                        schedule03 : 고객
+                        schedule04 : 일반
+                    -->
+                </div>
+                <ul class="inpList mt30">
+                    <li class="inpFrm">
+                        <label for="inpCalSearch" class="titInp">날짜<span class="ness">필수입력 항목</span></label>
+                        <!-- 2023.09.05 날짜 input 수정 -->
+                        <div class="inpA">
+                            <input type="date" id="inpCalSearch" data-placeholder="YYYY-MM-DD" required>
+                        </div>
+                        <!-- //2023.09.05 날짜 input 수정 -->
+                    </li>
+                    <li class="inpFrm">
+                        <label for="inpContents" class="titInp">메모<span class="ness">필수입력 항목</span></label>
+                        <span class="inpA">
+                            <textarea id="inpContents" cols="10" rows="10" placeholder="메모 내용을 입력해주세요."></textarea>
+                            <span class="txtNum"><em title="메모 글자 수">0</em> / 100자</span>
+                        </span>
+                    </li>
+                    
+                </ul>
+			</div>
+            <div class="popBtns">
+                <div class="inner">
+                    <button type="button" class="btnDefault btnL action" disabled>일정 등록</button>
+                </div>
+            </div>
+		</div><!-- //layCont-->
+		<button type="button" class="closeL">팝업 닫기</button>
+        <button type="button" class="btTopL" onclick="location.href='#laypopTop'">페이지 상단으로 이동</button>
+	</section>
+	<!-- //일정 등록 Layer -->
+
+</body>
+
+<script type="text/javascript" src="/js/magnt/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/magnt/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/magnt/swiper.min.js"></script>
+<script type="text/javascript" src="/js/magnt/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/magnt/m_common.js"></script>
+
+</html>

@@ -1,0 +1,146 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+	<title>한방부동산 - HTML List</title>
+	<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+	<link href="guide.css" rel="stylesheet" type="text/css">
+	<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<section class='guideHeader'>
+	<script>$('.guideHeader').load('include/gnb00.html');</script>
+	
+</section>
+
+<section class="guideContents">
+	
+	
+    <h2 class="guideTit2">기본 규칙</h2>
+		
+	<h3 class="guideTit3">프로젝트 목적</h3>
+	<ul class="guideList">
+		<li>한방부동산 App 사이트 리뉴얼</li>
+		<!-- li>웹접근성 마크 획득</li -->
+	</ul>
+	
+	<h3 class="guideTit3">적용 대상 OS/해상도</h3>
+		
+	<p>추후 정의</p>
+	
+	
+	<h3 class="guideTit3">HTML 문서 작성 기본 규칙</h3>
+	<ul class="guideList">
+		<li><strong>DTD</strong> : HTML5</li>
+		<li><strong>인코딩</strong> : utf-8</li>
+	</ul>
+	
+	<h3 class="guideTit3">작업 기본 규칙</h3>
+	<ul class="guideList">
+		<li>label이 없는 input, select는 title 속성을 넣어주세요.</li>
+		<li>담당 사이트의 검수는 담당기획자에게 작업된 리스트 페이지를 메일로 요청합니다. 요청할때 각 기획/디자인 담당자, 각 PL을 참조로 보냅니다.</li>
+		<li>Aria 기법을 이용하여 접근성 준수 예) role="text", role="button" 등</li>
+		<li>전화번호는 필히 &lt;a href="tel:전화번호"&gt;&lt;/a&gt; 링크 걸어줌.</li>
+	</ul>
+	
+	<h3 class="guideTit3">CSS 코드 작성 규칙</h3>
+	<ul class="guideList">
+		<li>모든 속성은 영문 소문자로만 작성한다.</li>
+		<li>@charset 선언시에만 큰따옴표("")를 사용하고 그외의 속성 파라미터값에는 작은 따옴표('')를 사용한다.</li>
+		<li>background의 url 속성의 파라미터값에는 따옴표를 사용하지 않는다.</li>
+		<li>마지막 속성의 세미콜론(;)은 삭제한다.</li>
+		<li>css 코드는 작성할때는 들여쓰기를 하지 않는다.</li>
+		<li>속성간에는 공백, 줄내림을 하지 않으며 모든 속성을 붙여쓰기 한다. 단, scrollbars, CSS3에서 배경그라데이션 색상과 같이 하나의 속성을 여러개의 핵을 써야할 경우에는 허용한다.</li>
+		<li>중괄호 좌우 공백은 제거한다.</li>
+		<li>의미있는 객체를 구분하기 위한 빈 줄은 한줄을 초과하지 않게 한다.</li>
+		<li>CSS 최적화를 위해 약식 속성을 이용하여 css 속성이 반복되지 않게 한다.(font, margin, padding, background, border)</li>
+		<li>약식 속성을 이용하되 속성값이 하나만 있는 경우는 약식 속성을 이용하지 않는다.</li>
+		<li>최적화를 위해 '0'뒤의 단위는 생략한다.</li>
+		<li>배경이미지 위치값은 문자식 표현(left, top, center)은 숫자식(0,100% 50%)으로 선언한다.</li>
+	</ul>
+	
+	<h3 class="guideTit3">속성 선언 순서</h3>
+	<ul class="guideList">
+		<li>overflow</li>
+		<li>display</li>
+		<li>float</li>
+		<li>position, top, left, right, bottom</li>
+		<li>width, height</li>
+		<li>margin, padding</li>
+		<li>color, font, letter-spacing, white-space</li>
+		<li>text-align, vertical-align, text-decoration, text-indent, border</li>
+		<li>background, z-index</li>
+		<li>기타(위에 언급하지 않은 나머지 속성들)</li>
+	</ul>
+	
+	<h3 class="guideTit3">Entity code</h3>
+	<table cellpadding="0" cellspacing="0" class="htmlList">
+	<colgroup><col width="15%" /><col width="18%" /><col width="15%" /><col width="18%" /><col width="15%" /><col width="*" /></colgroup>
+	<tbody>            
+		<tr>
+			<th>&amp;</th>
+			<td>&amp;amp;</td>
+			<th>&lt;</th>
+			<td>&amp;lt;</td>
+			<th>&gt;</th>
+			<td>&amp;gt;</td>
+		</tr>
+		<tr>
+			<th>&middot;</th>
+			<td>&amp;middot;</td>
+			<th></th>
+			<td></td>
+			<th></th>
+			<td></td>
+		</tr>
+	</tbody>
+	</table>
+	
+	<h3 class="guideTit3">단위</h3>
+	<ul class="guideList">
+		<li>px, rem을 사용한다.</li>
+	</ul>
+	
+	<h3 class="guideTit3">z-index</h3>
+	<ul class="guideList">
+		<li>z-index 값은 최소 1부터 시작하며 최고 10000이며, 10 단위로 증감한다. 단, 중간에 변수가 생기면 예외로 1단위 값을 지정할 수 있다.</li>
+	</ul>
+	
+	<h3 class="guideTit3">Visual code 셋팅</h3>
+	<ul class="guideList">
+		<li>탭크기 : 4</li>
+		<li>Extension : Live Server</li>
+	</ul>
+	
+	<h3 class="guideTit3">폴더 구조</h3>
+	<table cellpadding="0" cellspacing="0" class="htmlList">
+	<colgroup><col width="15%" /><col width="18%" /><col width="15%" /><col width="18%" /><col width="15%" /><col width="*" /></colgroup>
+	<tbody>            
+		<tr>
+			<th>공통</th>
+			<td>/common</td>
+			<th>공인중개사</th>
+			<td>/agency</td>
+			<th>대국민</th>
+			<td>/user</td>
+		</tr>
+	</tbody>
+	</table>
+    
+
+</section>
+</body>
+
+<script type="text/javascript" src="guide.js"></script>
+<script type="text/javascript">
+
+	var gnbNO = 0;
+	var snbNO = 99;
+  
+</script>
+
+</html>

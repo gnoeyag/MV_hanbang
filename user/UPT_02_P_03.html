@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>테마 목록 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/mptl/h_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">테마 목록</h1>
+		</header>
+	
+		<div id="container" class="container">
+			<!-- start of contents -->
+			
+			<h2 class="titDep2 titIcoTheme theme1 titTop">신혼부부 추천</h2> <!--20230821 theme01 -> theme1 로 클래스명 변경-->
+			<!--20230821 theme1,theme2 ... UPT_01_P.html 의 각 테마 아이콘 클래스명 참고-->
+			
+			<div class="stickySection">
+				<div class="inpFrm searchArea inpDeleteAni">
+					<div class="inpA hasFilter hasIcoSch">
+						<input type="search" id="inpSearch" placeholder="지역명을 입력해 주세요" title="지역명 검색" value="">
+						<button type="button" class="icBtn icDel">삭제</button>
+						<button type="submit" class="icBtn icSearch">검색</button>
+					</div>
+					<button type="button" class="btFilter layPopBtn" data-id="pop_searchSetting">필터</button>
+				</div>
+				
+				<!--[D] 자동완성 중 인 경우 해당 searchIngResult 영역 활성화-->
+				<div class="searchIngResult popLay" style="display:block">
+					<ul class="list">
+						<li>
+							<a href="#" class="item">
+								<em class="word">경기 평택시 <strong class="matching">신대</strong>동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">대전 대덕구 <strong class="matching">신대</strong>동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">서울 동작구 <strong class="matching">신대</strong>방동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">경기 평택시 <strong class="matching">신대</strong>동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">대전 대덕구 <strong class="matching">신대</strong>동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">서울 동작구 <strong class="matching">신대</strong>방동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">대전 대덕구 <strong class="matching">신대</strong>동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">서울 동작구 <strong class="matching">신대</strong>방동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">경기 평택시 <strong class="matching">신대</strong>동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">대전 대덕구 <strong class="matching">신대</strong>동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">서울 동작구 <strong class="matching">신대</strong>방동</em>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--//자동완성 중 인 경우 해당 searchIngResult 영역 활성화-->
+				
+				<div class="btnSwiper">
+					<button type="button" class="btnDefault btnRound isSelected" data-controls="anchorTabContents01">아파트</button>
+					<button type="button" class="btnDefault btnRound isSelected" data-controls="anchorTabContents02">매매, 전세, 월세, 연세</button>
+					<button type="button" class="btnDefault btnRound isSelected" data-controls="anchorTabContents03">면적 전체</button>
+				</div>
+			</div>
+			
+			<div id="tabContTotalWrap" class="tabContTotalWrap">
+				<div class="tabInner">
+					<!--[D] 활성화 된 탭 컨텐츠, 해당 영역 안에서 토글로 보여짐-->
+					
+					<!-- 2023.10.13 수정 / 필터 추가 -->
+					<div class="sortingFillter">
+						<div class="item">
+							<span class="txt">총 <strong class="count">163</strong>건</span>
+						</div>
+						<div class="item">
+							<button type="button" class="btnSorting active">최신순</button> <!-- [D] 선택 시 active 클래스 추가 -->
+							<button type="button" class="btnSorting">관심순</button>
+							<button type="button" class="btnSorting">조회순</button>
+							<button type="button" class="btnSorting">가격순</button> <!-- 가격순이 디폴트 / 높은가격순 class : rateUp, 낮은가격순 class : rateDown 추가 -->
+							<button type="button" class="btnSorting">면적순</button> <!-- 가격순이 디폴트 / 넓은면적순 class : rateUp, 낮은면적순 class : rateDown 추가 -->
+						</div>
+					</div>
+					<!-- //2023.10.13 수정 / 필터 추가 -->
+					<!-- 
+					<div class="countTit mt18">
+						<span class="txt">총 <strong class="count">163</strong>건</span>
+						<span class="txt">총 <strong class="count pointCol01">163</strong>건</span>
+						검색 후 카운트 개수 강조 표시 - pointCol01 클래스 추가
+						<div class="controller">
+							<div class="selectWrap btnSort">
+								<select id="pop_sort" title="정렬 선택" data-msg="최신순" data-header="정렬">
+									<option value="01" selected>최신순</option>
+									<option value="02">가격순</option>
+									<option value="03">조회순</option>
+									<option value="04">관심순</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					-->
+					
+					<ul class="objectList thumbSmall">
+						<li>
+							<article class="figSec">
+								<a href="#" class="figSecItem">
+									<div class="defineSec">
+										<span class="defineSecPart"><span class="flag sthType">아파트</span> 광나루 현대 103동</span>
+										<strong class="defineSecPrice"><span class="flag state01">급</span> <em class="price">매매 12억 5,000 ~ 13억 8,000</em></strong><!--20230818 중복매물일 경우 금액 범위로 수정(하기 공통)-->
+										<span class="defineSecNormal">132/152㎡, 15/30층, 남동향, 방12</span>
+									</div>
+									<!--20230818 중복 중개 매물 건 일 경우 이미지 비노출-->
+								</a>
+								<!--중복 중개 매물 존재 할 경우 해당 버튼 노출 : show/hide - isActive class 유무-->
+								<button type="button" class="btnDuplicate isActive">중개사 <strong class="pointCol01">4</strong>곳</button>
+							</article>
+						</li>
+						<!--중복 중개 매물일 경우-->
+						<li class="listDuplicate" style="display:block">
+							<article class="figSec">
+								<a href="#" class="figSecItem">
+									<div class="defineSec">
+										<span class="defineSecPart"><span class="flag sthType">아파트</span> 광나루 현대 103동</span>
+										<strong class="defineSecPrice"><span class="flag state01">급</span> <em class="price">매매 15억 8,000</em></strong>
+										<span class="defineSecNormal">132/152㎡, 15/30층, 남동향, 방12</span>
+									</div>
+									<figure class="figSecImg"><img src="/images/mptl/dummy/@img_sample.jpg" alt=""></figure>
+								</a>
+							</article>
+						</li>
+						<!--중복 중개 매물일 경우-->
+						<li class="listDuplicate" style="display:block">
+							<article class="figSec">
+								<a href="#" class="figSecItem">
+									<div class="defineSec">
+										<span class="defineSecPart"><span class="flag sthType">아파트</span> 광나루 현대 103동</span>
+										<strong class="defineSecPrice"><span class="flag state01">급</span> <em class="price">매매 15억 8,000</em></strong>
+										<span class="defineSecNormal">132/152㎡, 15/30층, 남동향, 방12</span>
+										<span class="flag sthDate01">검증매물 2023.05.23</span>
+									</div>
+									<figure class="figSecImg"><img src="/images/mptl/dummy/@img_sample.jpg" alt=""></figure>
+								</a>
+							</article>
+						</li>
+						<!--중복 중개 매물일 경우-->
+						<li class="listDuplicate" style="display:block">
+							<article class="figSec">
+								<a href="#" class="figSecItem">
+									<div class="defineSec">
+										<span class="defineSecPart"><span class="flag sthType">아파트</span> 광나루 현대 103동</span>
+										<strong class="defineSecPrice"><span class="flag state01">급</span> <em class="price">매매 15억 8,000</em></strong>
+										<span class="defineSecNormal">132/152㎡, 15/30층, 남동향, 방12</span>
+										<span class="flag sthDate01">검증매물 2023.05.23</span>
+									</div>
+									<figure class="figSecImg"><img src="/images/mptl/dummy/@img_sample.jpg" alt=""></figure>
+								</a>
+							</article>
+						</li>
+						<li>
+							<article class="figSec">
+								<a href="#" class="figSecItem">
+									<div class="defineSec">
+										<span class="defineSecPart"><span class="flag sthType">빌라</span> 현대 테라타워 영통동</span>
+										<strong class="defineSecPrice"><span class="flag state01">급</span> <em class="price">매매 12억 5,000 ~ 13억 8,000</em></strong><!--20230818 중복매물일 경우 금액 범위로 수정(하기 공통)-->
+										<span class="defineSecNormal">132/152㎡, 15/30층, 남동향, 방12</span>
+									</div>
+									<!--20230818 중복 중개 매물 건 일 경우 이미지 비노출-->
+								</a>
+								<!--중복 중개 매물 존재 할 경우 해당 버튼 노출 : show/hide - isActive class 유무-->
+								<button type="button" class="btnDuplicate">중개사 <strong class="pointCol01">4</strong>곳</button>
+							</article>
+						</li>
+						<li>
+							<article class="figSec">
+								<a href="#" class="figSecItem">
+									<div class="defineSec">
+										<span class="defineSecPart"><span class="flag sthType">빌라</span> 현대 테라타워 영통동</span>
+										<strong class="defineSecPrice"><span class="flag state03">경매</span> <em class="price">매매 15억 8,000</em></strong>
+										<span class="defineSecNormal">132/152㎡, 15/30층, 남동향, 방12</span>
+										<span class="defineSecNormal">광진구, 경기고학군, 아차산역 5호선</span>
+										<span class="defineSecNormal mtGap">여의도그랜드공인중개사</span>
+										<span class="flag sthDate02">일반매물 2023.05.23</span>
+									</div>
+									<figure class="figSecImg"><img src="/images/mptl/dummy/@img_sample.jpg" alt=""></figure>
+								</a>
+							</article>
+						</li>
+					</ul>
+					<button type="button" class="btnDefault btnS btnBlt wAuto"><span>더 보기</span></button>
+				</div>
+			</div>
+			
+			<!-- // end of contents -->
+		</div><!-- //container -->
+	
+		
+		<aside>
+			<div class="asideRight">
+				<button type="button" class="btTop">페이지 상단으로 이동</button><!-- 2023.08.16 onClick 이벤트 삭제 -->
+			</div>
+		</aside>
+	</section>
+	
+	
+
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/mptl/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/mptl/swiper.min.js"></script>
+<script type="text/javascript" src="/js/mptl/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/mptl/m_common.js"></script>
+
+</html>
+

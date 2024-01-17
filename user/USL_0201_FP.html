@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>분양 지도 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/mptl/h_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+<section id="wrapper" class="wrapper mapWrapper02"> <!--지도 전용 mapWrapper02 class 추가-->
+	<header>
+		<button type="button" class="btprev">이전</button>
+		<h1 class="titPage">분양 지도</h1>
+	</header>
+	
+	<div id="container" class="container">
+		<!-- start of contents -->
+		
+	
+		
+		<!-- // end of contents -->
+	</div><!-- //container -->
+	
+	
+</section>
+
+
+<!-- 분양 조회 설정 FP -->
+<section id="pop_searchSetting" class="layPop layFull" tabindex="0" style="display: block">
+	<header>
+		<h2 class="titLay">분양 조회 설정</h2>
+	</header>
+	
+	<div class="layContainer" tabindex="0">
+		<div class="layContent">
+			
+			<div class="tabWrap"><!-- 2023.08.31 viewTab anchorTabFixed 클래스 삭제 -->
+				<div class="btnSwiper sizeUp fixed">
+					<!--하기 옵션 선택 시 isSelected 클래스 추가-->
+					<button type="button" class="btnDefault btnRound isSelected" data-controls="anchorTabContents01">아파트 +2</button>
+					<button type="button" class="btnDefault btnRound isSelected" aria-selected="true" data-controls="anchorTabContents02">접수예정, 접수중, 접수마감, 입주예정, 입주모집</button>
+					<button type="button" class="btnDefault btnRound isSelected" aria-selected="false" data-controls="anchorTabContents03">면적 전체</button>
+					<!--<button type="button" class="btnDefault btnRound" aria-selected="false" data-controls="anchorTabContents04">매물 특징</button>
+                    <button type="button" class="btnDefault btnRound" aria-selected="false" data-controls="anchorTabContents05">매물 옵션</button>-->
+				</div>
+			</div>
+			
+			<!--분양 종류-->
+			<div class="anchorTab pdBInner" id="anchorTabContents01">
+				<ul class="inpList mt32">
+					<li class="inpFrm">
+						<h3 class="titInp">분양 종류</h3>
+						<ul class="frmBox col02 bigSize">
+							<li><input type="checkbox" id="dealCase01" name="dealCase" checked><label for="dealCase01">아파트</label></li>
+							<li><input type="checkbox" id="dealCase02" name="dealCase" checked><label for="dealCase02">오피스텔</label></li>
+							<li><input type="checkbox" id="dealCase03" name="dealCase" checked><label for="dealCase03">기타</label></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!--//분양 종류-->
+			
+			<!--분양 단계-->
+			<div class="anchorTab pdBInner" id="anchorTabContents02">
+				<ul class="inpList">
+					<li class="inpFrm">
+						<h3 class="titInp">분양 단계</h3>
+						<ul class="frmBox col02 bigSize">
+							<li><input type="checkbox" id="dealType01" name="dealType" checked><label for="dealType01">접수예정</label></li>
+							<li><input type="checkbox" id="dealType02" name="dealType" checked><label for="dealType02">접수중</label></li>
+							<li><input type="checkbox" id="dealType03" name="dealType" checked><label for="dealType03">접수마감</label></li>
+							<li><input type="checkbox" id="dealType04" name="dealType" checked><label for="dealType04">입주예정</label></li>
+							<li><input type="checkbox" id="dealType05" name="dealType" checked><label for="dealType05">입주모집</label></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!--//거래/금액-->
+			
+			<!--면적-->
+			<div class="anchorTab pdBInner" id="anchorTabContents03">
+				<ul class="inpList">
+					<li class="inpFrm frmUnit">
+						<h3 class="titInp">분양가</h3>
+						<div class="slideArea">
+							<ul class="slideValue">
+								<li class="value01">0</li>
+								<li class="value03">10억원</li>
+								<li class="value05">최대</li>
+							</ul>
+							<div id="slider-range" class="slider"
+								 data-options='{"range": true, "min": 0, "max": 20, "step": 1, "values": [0, 20], "text":"" }'></div>
+							
+							<div class="slideInp inpA02">
+								<div class="inpW unitDbSize">
+									<label for="range01-01" class="label">최소</label>
+									<input type="text" class="amount amountMin" id="range01-01" placeholder="0">
+									<span class="unit">만원</span>
+								</div>
+								<div class="inpW unitDbSize">
+									<label for="range01-02" class="label">최대</label>
+									<input type="text" class="amount amountMax" id="range01-02" placeholder="0">
+									<span class="unit">만원</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="inpFrm frmUnit">
+						<h3 class="titInp">면적
+							<button type="button" class="btnSize">평</button>
+						</h3>
+						<div class="slideArea">
+							<ul class="slideValue">
+								<li class="value01">0</li>
+								<li class="value02">66.11㎡</li>
+								<li class="value03">123.23㎡</li>
+								<li class="value04">198.34㎡</li>
+								<li class="value05">최대</li>
+							</ul>
+							<div id="slider-range04" class="slider"
+								 data-options='{"range":true, "min" : 0, "max": 264.464, "step": 5, "values": [0, 264.464], "text":""}'></div>
+							
+							<div class="slideInp textType inpSize04"> <!--평형 일 경우 클래스 변경 inpSize04 -> inpSize02-->
+								<div class="inpW">
+									<input type="text" class="amount amountMin" id="range04-01">
+								</div>
+								<span class="dash">~</span>
+								<div class="inpW">
+									<input type="text" class="amount amountMax" id="range04-02">
+									<span class="unit">㎡</span>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<p class="referText type14">아파트는 공급면적, 오피스텔은 전용면적을 기준으로 조회됩니다.</p><!-- 2023.09.14 추가 -->
+			</div>
+			<!--//면적-->
+			
+		
+		</div>
+		<div class="popBtns">
+			<div class="inner">
+				<button type="button" class="btnDefault btnL btLineP">초기화</button>
+				<button type="button" class="btnDefault btnL action">완료</button>
+			</div>
+		</div>
+	</div><!-- //layCont-->
+	<button type="button" class="closeL">팝업 닫기</button>
+</section>
+<!-- //분양 조회 설정 FP -->
+
+
+<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/mptl/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/mptl/swiper.min.js"></script>
+<script type="text/javascript" src="/js/mptl/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/mptl/m_common.js"></script>
+
+</html>
+

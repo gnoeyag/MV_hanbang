@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <g data-name="그룹 21107" transform="translate(-20 -168)">
+        <g data-name="사각형 22971" transform="translate(23.2 169.92)" style="stroke:#353535;fill:none">
+            <rect width="13.6" height="14.328" rx="2" style="stroke:none"/>
+            <rect x=".5" y=".5" width="12.6" height="13.328" rx="1.5" style="fill:none"/>
+        </g>
+        <path data-name="선 292" transform="translate(23 186)" style="stroke-linecap:round;stroke-miterlimit:10;stroke:#353535;fill:none" d="M0 0h14"/>
+        <circle data-name="타원 213" cx="1.2" cy="1.2" r="1.2" transform="translate(26 179.5)" style="stroke-linecap:round;stroke-miterlimit:10;stroke:#353535;fill:none"/>
+        <circle data-name="타원 214" cx="1.2" cy="1.2" r="1.2" transform="translate(31.6 179.5)" style="stroke-linecap:round;stroke-miterlimit:10;stroke:#353535;fill:none"/>
+        <path data-name="선 293" transform="translate(24.112 177.85)" style="stroke-linecap:round;stroke-miterlimit:10;stroke:#353535;fill:none" d="M0 0h12.007"/>
+        <path data-name="선 294" transform="translate(30 170.729)" style="stroke-linecap:round;stroke-miterlimit:10;stroke:#353535;fill:none" d="M0 0v6.593"/>
+    </g>
+</svg>

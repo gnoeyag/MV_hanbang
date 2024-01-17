@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>데이터 없음 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body >
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<div id="container" class="container">
+			<!-- start of contents -->
+			
+			<div class="errorWrap">
+				<strong class="tit">페이지를 찾을 수가 없습니다.</strong>
+				<span class="subTxt">일시적인 오류로 원하시는 페이지를 <br>찾을 수 없습니다.</span>
+				<span class="subTxt02">잠시 후에 다시 시도해 주세요!</span>
+
+				<div class="btnArea">
+					<a href="#" role="button" class="btnDefault btnS btGrayL">메인 이동</a>
+					<button type="button" class="btnDefault btnS btGrayL">로그아웃</button>
+				</div>
+			</div>
+
+			<!-- // end of contents -->
+
+		</div><!-- //container -->
+
+		
+		<aside>
+			<div class="asideRight">
+				<button type="button" class="btTop">페이지 상단으로 이동</button><!-- 2023.08.16 onClick 이벤트 삭제 -->
+			</div>
+		</aside>
+		
+	</section>
+
+	<!-- popup 쪽지 조회 설정 -->
+	<section id="BCG_010101_FP" class="layPop layFull" tabindex="0">
+		<header>
+			<h2 class="titLay">쪽지 조회 설정</h2>
+		</header>
+	
+		<div class="layContainer" tabindex="0">
+			<div class="layContent">
+				<ul class="inpList">			
+					<li class="inpFrm">
+						<label class="titInp" for="inpType">매물 유형</label>
+						<span class="inpA">
+							<div class="selectWrap">
+								<select id="inpType" title="매물 유형 선택" data-header="매물 유형">
+									<option value="01" selected>전체</option>
+									<option value="01">아파트</option>
+									<option value="02">아파트분양권</option>
+									<option value="03">주상복합</option>
+									<option value="04">주상복합분양권</option>
+									<option value="05">오피스텔</option>
+									<option value="06">오피스텔분양권</option>
+									<option value="07">다세대</option>
+									<option value="08">다가구</option>
+									<option value="09">원룸</option>
+									<option value="10">단독</option>
+									<option value="11">토지</option>
+									<option value="12">빌라</option>
+									<option value="13">연립</option>
+									<option value="14">상가주택</option>
+									<option value="15">전원주택</option>
+									<option value="16">상가점포</option>
+									<option value="17">상업용건물</option>
+									<option value="18">공장</option>
+									<option value="19">사무실</option>
+									<option value="20">재개발</option>
+									<option value="21">지식산업센터</option>
+									<option value="22">펜션</option>
+									<option value="23">숙박</option>
+									<option value="24">창고</option>
+								</select>
+							</div>
+						</span>
+					</li>
+					<li class="inpFrm">
+						<label class="titInp" for="inpDealType">거래 유형</label>
+						<span class="inpA">
+							<div class="selectWrap">
+								<select id="inpDealType" title="거래 유형 선택" data-header="거래 유형">
+									<option value="00" selected>전체</option>
+									<option value="01">매매</option>
+									<option value="02">전세</option>
+									<option value="03">월세</option>
+									<option value="04">투자</option>
+									<option value="05">연세</option>
+								</select>
+							</div>
+						</span>
+					</li>
+				</ul>
+
+				<ul class="inpList divider">
+					<li class="inpFrm">
+						<strong class="titInp">매물 지역</strong>
+						<div class="inpA">
+							<ul class="frmBox col02">
+								<li><input type="radio" id="inpZone01" name="inpZone" checked><label for="inpZone01">주거래 지역</label></li>
+								<li><input type="radio" id="inpZone02" name="inpZone" class="layPopBtn" data-id="BCM_L02_P"><label for="inpZone02">직접 선택</label></li>
+							</ul>
+						</div>
+						<!-- 주거래 지역 선택 시 노출 -->
+						<div class="inpFrm">
+							<label class="titInp" for="inpMainSales">주거래 지역</label>
+							<span class="inpA">
+								<div class="selectWrap">
+									<select id="inpMainSales" title="주거래 지역 선택" data-header="주거래 지역">
+										<option value="01" selected>전체</option>
+									</select>
+								</div>
+							</span>
+						</div>
+						<!-- 주거래 지역 선택 시 노출 -->
+
+						<!-- 직접 선택 후 선택한 지역 노출 -->
+
+						<div class="selAreaWrap">
+							<p class="selArea">
+								수지구 죽전동[법정동], 수지구 죽전1동[행정동], 수지구 죽전2동[법정동],  수지구 상현동[법정동], 수지구 죽전동[법정동], 수지구 죽전1동[행정동], 수지구 죽전2동[법정동],  수지구 상현동[법정동]
+							</p>
+							<a href="#" role="button" class="linkInp linkInpS layPopBtn" data-id="BCG_0201_PL2">선택하기</a>
+							<p class="listGuide2">최대 10개까지 선택 가능합니다.</p>
+						</div>
+						<!-- //직접 선택 후 선택한 지역 노출 -->
+					</li>
+				</ul>
+
+				
+				<ul class="inpList divider">
+					<li class="inpFrm">
+						<label for="inpSearchTerm" class="titInp">조회 기간</label>
+						<div class="inpA">
+							<div class="selectWrap">
+								<select id="inpSearchTerm" title="조회 기간 선택" data-header="조회 기간">
+									<option value="00" selected>전체</option>
+									<option value="01">최근 3일</option>
+									<option value="02">최근 7일</option>
+									<option value="03">최근 1달</option>
+									<option value="04">최근 6개월</option>
+									<option value="04">최근 1년</option>
+									<option value="04">직접 선택</option>
+								</select>
+							</div>
+						</div>
+						<!-- 직접 선택 시 노출 -->
+						<div class="calendar">
+                            <div class="inpA">
+                                <input type="date" id="" data-placeholder="YYYY-MM-DD" required="">
+                            </div>
+                            <span class="wave">~</span>
+                            <div class="inpA">
+                                <input type="date" id="" data-placeholder="YYYY-MM-DD" required="">
+                            </div>
+                        </div>
+						<!-- //직접 선택 시 노출 -->
+					</li>
+				</ul>
+				
+
+			</div>
+			<div class="popBtns">
+				<div class="inner">
+					<button type="button" class="btnDefault btnL btLineP">초기화</button>
+					<button type="button" class="btnDefault btnL action">적용하기</button>
+				</div>
+			</div>
+		</div><!-- //layCont-->
+		<button type="button" class="closeL">팝업 닫기</button>
+	</section>
+	<!-- //popup 쪽지 조회 설정 -->
+
+	
+
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/magnt/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/magnt/swiper.min.js"></script>
+<script type="text/javascript" src="/js/magnt/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/magnt/m_common.js"></script>
+
+</html>
+

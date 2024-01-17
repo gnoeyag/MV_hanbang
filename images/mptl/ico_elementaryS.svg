@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <path data-name="패스 64118" d="M16.573 6.219v14.189H6.213V6.475" transform="translate(.606 -.298)" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none;stroke:#fff"/>
+    <path data-name="패스 64119" d="M15.139 12.973h4.029v9.209H.75v-9.209h4.029" transform="translate(2.041 -2.069)" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none;stroke:#fff"/>
+    <path data-name="패스 64120" d="M17.863 5.765 10.845.75 4.14 5.765" transform="translate(1.151 1.138)" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none;stroke:#fff"/>
+    <text transform="translate(12 18)" style="stroke:transparent;font-size:8px;font-family:Pretendard-Bold,Pretendard;font-weight:700;fill:#fff"><tspan x="-3.457" y="0">초</tspan></text>
+    <path data-name="패스 65883" d="M11 5.9v2.23" style="stroke-width:2.2px;fill:none;stroke:#fff" transform="translate(1 1)"/>
+</svg>

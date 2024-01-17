@@ -1,0 +1,174 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+	<title>한방부동산 - HTML List</title>
+	<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+	<link href="guide.css" rel="stylesheet" type="text/css">
+	<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+	<style>
+		.anchorTab{background:pink;height:400px}
+	</style>
+</head>
+
+<body>
+<section class='guideHeader'>
+	<script>$('.guideHeader').load('include/gnb00.html');</script>
+	
+</section>
+
+<section class="guideContents">
+	
+	
+    <h2 class="guideTit2">Tab</h2>
+
+	<ul class="tabType01">
+		<li><a href="#" role="button" aria-selected="true">tabType01<span class="new">새글</span></a></li>
+		<li><a href="#" role="button" aria-selected="false">1/n 탭</a></li>
+		<li><a href="#" role="button" aria-selected="false">1/n 탭</a></li>
+	</ul>
+	<br><br>
+	<ul class="tabType02">
+		<li><a href="#" role="button" aria-selected="true">tabType02 탭<span class="new">새글</span></a></li>
+		<li><a href="#" role="button" aria-selected="false">탭명</a></li>
+		<li><a href="#" role="button" aria-selected="false">inline-block 탭</a></li>
+	</ul>
+	<br><br>
+
+	
+	
+	<ul class="tabType03">
+		<li><a href="#" role="button" aria-selected="true">tab03</a></li>
+		<li><a href="#" role="button" aria-selected="false">생활시설</a></li>
+		<li><a href="#" role="button" aria-selected="false">보안시설</a></li>
+		<li><a href="#" role="button" aria-selected="false">기타시설</a></li>
+	</ul>
+	<br><br>
+	
+	<ul class="tabType04">
+		<li><a href="#" role="button" aria-selected="true">냉방시설</a></li>
+		<li><a href="#" role="button" aria-selected="false">생활시설</a></li>
+		<li><a href="#" role="button" aria-selected="false">보안시설</a></li>
+		<li><a href="#" role="button" aria-selected="false">기타시설</a></li>
+	</ul>
+	<br><br>
+
+	<ul class="tabType05">
+		<li><a href="#" role="button" aria-selected="true">중도금 1차</a></li>
+		<li><a href="#" role="button" aria-selected="false">중도금 2차</a></li>
+		<li><a href="#" role="button" aria-selected="false">잔금</a></li>
+		<li><a href="#" role="button" aria-selected="false">계약만기</a></li>
+	</ul>
+	<br><br>
+	
+
+	<div class="tabWrap">
+		<ul class="tabType02">
+			<li><a href="#" role="button" aria-selected="true">전체 <em>34</em></a></li>
+			<li><a href="#" role="button" aria-selected="false">공개 <em>34</em></a></li>
+			<li><a href="#" role="button" aria-selected="false">거래완료 <em>34</em></a></li>
+			<li><a href="#" role="button" aria-selected="false">전송종료 <em>34</em></a></li>
+			<li><a href="#" role="button" aria-selected="false">거래완료 <em>34</em></a></li>
+			<li><a href="#" role="button" aria-selected="false">전송종료 <em>34</em></a></li>
+		</ul>
+	</div>
+	<br><br>
+
+	<div class="tabWrap tabWrapN">
+		<ul class="tabType05">
+			<li><a href="#" role="button" aria-selected="true">중도금 1차</a></li>
+			<li><a href="#" role="button" aria-selected="false">중도금 2차</a></li>
+			<li><a href="#" role="button" aria-selected="false">잔금</a></li>
+			<li><a href="#" role="button" aria-selected="false">계약만기</a></li>
+			<li><a href="#" role="button" aria-selected="false">매물</a></li>
+			<li><a href="#" role="button" aria-selected="false">단지</a></li>
+		</ul>
+	</div>
+	<br><br>
+
+	<div class="tabWrap tabScript">
+		<ul class="tabType03">
+			<li><a href="#" role="button" aria-selected="true">스크롤 탭 고정</a></li>
+			<li><a href="#" role="button" aria-selected="false">1/n 탭</a></li>
+			<li><a href="#" role="button" aria-selected="false">1/n 탭</a></li>
+			<li><a href="#" role="button" aria-selected="false">법정동</a></li>
+			<li><a href="#" role="button" aria-selected="false">1/n 탭</a></li>
+			<li><a href="#" role="button" aria-selected="false">1/n 탭</a></li>
+		</ul>
+	</div>
+	<br><br>
+
+	<ul class="tabType01">
+		<li><a href="#" role="button" aria-selected="true" data-controls="tabContents01">컨텐츠 변경 탭</a></li>
+		<li><a href="#" role="button" aria-selected="false" data-controls="tabContents02">1/n 탭</a></li>
+		<li><a href="#" role="button" aria-selected="false" data-controls="tabContents03">1/n 탭</a></li>
+	</ul>
+
+	<div id="tabContents01" class="tabContentWrap tabON">
+		탭 컨텐츠 1
+	</div>
+
+	<div id="tabContents02" class="tabContentWrap">
+		탭 컨텐츠 2
+	</div>
+
+	<div id="tabContents03" class="tabContentWrap">
+		탭 컨텐츠 3
+	</div>
+	<br><br>
+
+	<div class="tabWrap viewTab anchorTabFixed">
+		<ul class="tabType02">
+			<li><a href="#" role="button" aria-selected="true" data-controls="anchorTabContents01">앵커 스크롤 탭 고정</a></li>
+			<li><a href="#" role="button" aria-selected="false" data-controls="anchorTabContents02">스크롤 탭1</a></li>
+			<li><a href="#" role="button" aria-selected="false" data-controls="anchorTabContents03">스크롤 탭2</a></li>
+			<li><a href="#" role="button" aria-selected="false" data-controls="anchorTabContents04">법정동</a></li>
+		</ul>
+	</div>
+
+	<div id="anchorTabContents01" class="anchorTab">
+		<div class="tabInner">
+			탭 컨텐츠1
+		</div>
+	</div>
+
+	<div id="anchorTabContents02" class="anchorTab">
+		<div class="tabInner">
+			탭 컨텐츠2
+		</div>
+	</div>
+
+	<div id="anchorTabContents03" class="anchorTab">
+		<div class="tabInner">
+			탭 컨텐츠3
+		</div>
+	</div>
+
+	<div id="anchorTabContents04" class="anchorTab">
+		<div class="tabInner">
+			탭 컨텐츠4
+		</div>
+	</div>
+	
+
+	
+</section>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/magnt/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/magnt/swiper.min.js"></script>
+<script type="text/javascript" src="/js/magnt/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/magnt/m_common.js"></script>
+<script type="text/javascript" src="guide.js"></script>
+<script type="text/javascript">
+
+	var gnbNO = 0;
+	var snbNO = 8;
+  
+</script>
+
+</html>

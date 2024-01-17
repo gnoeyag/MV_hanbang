@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>공적 장부 열람 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/mptl/h_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">공적 장부 열람</h1>
+		</header>
+
+		<div id="container" class="container">
+			<!-- start of contents -->
+
+
+
+
+
+			<!-- // end of contents -->
+		</div><!-- //container -->
+
+
+
+		<aside>
+			<div class="asideRight">
+				<button type="button" class="btTop">페이지 상단으로 이동</button><!-- 2023.08.16 onClick 이벤트 삭제 -->
+			</div>
+		</aside>
+	</section>
+
+
+
+	<!--공적 장부 열람 FP-->
+	<section id="pop_publicTenonOpen" class="layPop layFull layArea" tabindex="0">
+		<header>
+			<h2 class="titLay">공적 장부 열람</h2>
+		</header>
+
+		<div class="layContainer" tabindex="0">
+			<div class="layContent">
+
+				<div class="inpFrm searchArea inpDeleteAni pdbSearch">
+					<div class="inpA hasIcoSch roleBtnSch">
+						<input type="search" id="inpSearch02" placeholder="주소를 입력해 주세요" title="주소 검색" value="">
+						<button type="button" class="icBtn icDel">삭제</button>
+						<button type="button" class="btSearch">검색</button>
+					</div>
+				</div>
+
+				<div class="mapArea mapPrevSch">
+					<!--sample 지도 이미지 : 작업시에는 지워주세요!-->
+					<img src="/images/mptl/dummy/@img_map_vertical.jpg" alt="">
+
+					<!--좌측 컨트롤 영역-->
+					<div class="mapControl">
+						<button type="button" class="ico icoMyPosition"><span class="hidden">현재 위치</span></button>
+						<div class="group">
+							<button type="button" class="ico icoMapPlus"><span class="hidden">지도 확대</span></button>
+							<button type="button" class="ico icoMapMinus"><span class="hidden">지도 축소</span></button>
+						</div>
+					</div>
+					<!--//좌측 컨트롤 영역-->
+
+					<!--지도 비율-->
+					<div class="mapRate">
+						<span class="hidden">지도 비율</span>
+						<span class="mapSizeRate">100m</span>
+					</div>
+					<!--//지도 비율-->
+
+					<!--20230817 수정 - 레이어 wrap div 삭제-->
+					<div style="position:absolute;top:120px;left:50%;transform:translateX(-50%);z-index:10;">
+						<strong class="popBubAdd">서울 종로구 세종로 119</strong>
+						<p class="popBubAddEtc">서울 종로구 종로1 교보생명빌딩</p>
+						<button type="button" class="btnDefault btnPop layPopBtn" data-id="pop_tenonDetail">공적 장부 보기</button>
+					</div>
+					<!--//20230817 수정 - 레이어 wrap div 삭제-->
+
+				</div>
+
+				<!--[D] 주소 검색 인풋에 포커싱 될 때, 해당 레이어 노출, 주소 검색 시 매칭되는 검색 결과 리스트 보여짐-->
+				<div class="searchAddrResult" style="display:none">
+					<ul>
+						<li>
+							<a href="#">
+								<div class="row">
+									<span class="flag addrType">지번명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>1가 24</span>
+								</div>
+								<div class="row">
+									<span class="flag addrType">도로명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>19</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="row">
+									<span class="flag addrType">지번명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>1가 24</span>
+								</div>
+								<div class="row">
+									<span class="flag addrType">도로명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>19</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="row">
+									<span class="flag addrType">지번명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>1가 24</span>
+								</div>
+								<div class="row">
+									<span class="flag addrType">도로명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>19</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="row">
+									<span class="flag addrType">지번명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>1가 24</span>
+								</div>
+								<div class="row">
+									<span class="flag addrType">도로명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>19</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="row">
+									<span class="flag addrType">지번명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>1가 24</span>
+								</div>
+								<div class="row">
+									<span class="flag addrType">도로명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>19</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="row">
+									<span class="flag addrType">지번명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>1가 24</span>
+								</div>
+								<div class="row">
+									<span class="flag addrType">도로명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>19</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="row">
+									<span class="flag addrType">지번명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>1가 24</span>
+								</div>
+								<div class="row">
+									<span class="flag addrType">도로명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>19</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="row">
+									<span class="flag addrType">지번명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>1가 24</span>
+								</div>
+								<div class="row">
+									<span class="flag addrType">도로명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>19</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="row">
+									<span class="flag addrType">지번명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>1가 24</span>
+								</div>
+								<div class="row">
+									<span class="flag addrType">도로명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>19</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="row">
+									<span class="flag addrType">지번명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>1가 24</span>
+								</div>
+								<div class="row">
+									<span class="flag addrType">도로명</span>
+									<span class="addrText">서울 <strong class="pointCol01">종로</strong>구 <strong class="pointCol01">종로</strong>19</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+					<!--//[D] 주소 검색 인풋에 포커싱 될 때, 해당 레이어 노출, 주소 검색 시 매칭되는 검색 결과 리스트 보여짐-->
+			</div>
+		</div><!-- //layCont-->
+		<button type="button" class="closeL">팝업 닫기</button>
+	</section>
+	<!--//공적 장부 열람 FP-->
+
+
+
+	<!-- toastPopup -->
+	<div class="toastPopup type02" style="display:block"><!-- 토스트팝업 띄울때 display:block 시켜줌.-->
+		<p class="txt">지도를 확대해 주세요</p>
+	</div>
+	<!-- //toastPopup -->
+
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/mptl/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/mptl/swiper.min.js"></script>
+<script type="text/javascript" src="/js/mptl/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/mptl/m_common.js"></script>
+<script>
+	$(function(){
+		// 공적 장부 열람 레이어
+		mvJs.popup.show($('#pop_publicTenonOpen'));
+	})
+</script>
+</html>
+

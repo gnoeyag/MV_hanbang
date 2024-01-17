@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>금액/옵션 정보 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body >
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">금액/옵션 정보</h1>
+			<div class="menuWrap">
+				<button type="button" class="btNav" aria-expanded="false">메뉴</button>
+				<nav>
+					<div class="navInner">메뉴영역</div>
+				</nav>
+			</div>
+		</header>
+	
+		<div id="container" class="container">
+			<!-- start of contents -->
+
+			<div class="boxTop">
+				<h2 class="titDep2">매물 금액과 옵션<span>을 <br>입력해 주세요.</span></h2>
+				<p class="alertArea">
+					<span class="altTxt">[필드명] + “을/를” +  “선택/입력해 주세요.”</span>
+				</p>
+			</div>
+			
+			<ul class="inpList">
+				<li class="inpFrm frmUnit">
+					<label class="titInp" for="inpDeposit">보증금<span class="ness">필수입력 항목</span></label>
+					<span class="inpA">
+						<input type="tel" id="inpDeposit" placeholder="0">
+						<span class="unit">만원</span>
+					</span>
+				</li>
+				<li class="inpFrm frmUnit">
+					<label class="titInp" for="inpLoan">융자금<span class="ness">필수입력 항목</span></label>
+					<span class="inpA">
+						<input type="tel" id="inpLoan" placeholder="0">
+						<span class="unit">만원</span>
+					</span>
+				</li>
+				<li class="inpFrm">
+					<label class="titInp" for="inpLoan">융자금 비율<span class="ness">필수입력 항목</span></label>
+					<span class="inpA">
+						<div class="selectWrap">
+							<select id="inpWay" title="융자금 비율 선택" data-msg="선택" data-header="융자금 비율">
+								<option value="01">융자금 없음</option>
+								<option value="02">30% 미만(시세 대비)</option>
+								<option value="03">30% 이상(시세 대비)</option><!-- 2023.08.28 띄어쓰기 수정 -->
+							</select>
+						</div>
+					</span>
+				</li>
+			</ul>
+
+			<ul class="inpList divider">
+				<li class="inpFrm frmUnit tooltipWrap">
+					<label class="titInp" for="inpMaintenanceCost">관리비</label> <!-- 2023.09.18 수정 / 필수 입력 항목 삭제 -->
+					<button type="button" class="btnTool" aria-expanded="false">설명보기</button>
+					<div class="tooltipCont">
+						<div class="context">
+							※ 제 6조(건축물 및 그 밖에 토지의 정착물에 관한 인터넷 표시 &middot; 광고 명시사항)11호에 따라 “관리비”는 『공동주택관리법』 제 23조에 따른 관리비의 월 평균액수를 표시하되, 그 외의 비목이 포함된 경우 그 내용을 표시하여야 합니다. 다만 『주택법』 에 따른 주택 이외의 건축물은 관리비를 표시하지 아니할 수 있습니다.<br>
+							참고로 0원 입력 시 관리비 없음으로 표시됩니다
+						</div>
+						<button type="button" class="btnClose">닫기</button>
+					</div>					
+					<span class="inpA inpA02">
+						<input type="tel" id="inpMaintenanceCost" placeholder="0">
+						<span class="unit">원</span>
+					</span>
+				</li>
+				<li class="inpFrm frmUnit-05">
+					<strong class="titInp">관리비 항목</strong> <!-- 2023.09.18 수정 / 필수 입력 항목 삭제 -->
+					<span class="inpA">
+						<span class="selResult">3개 선택</span>
+						<button type="button" class="btnDefault btnMS btGray01 layPopBtn" data-id="pop_MaintenanceItem">선택</button>
+					</span>
+				</li>
+				<li class="inpFrm tooltipWrap">
+					<label class="titInp" for="inpExpenditure">비목</label> <!-- 2023.09.18 수정 / 필수 입력 항목 삭제 -->
+					<button type="button" class="btnTool" aria-expanded="false">설명보기</button>
+					<div class="tooltipCont">
+						<div class="context">
+							※ 제 6조(건축물 및 그 밖에 토지의 정착물에 관한 인터넷 표시 &middot; 광고 명시사항)11호에 따라 “관리비”는 『공동주택관리법』 제 23조에 따른 관리비의 월 평균액수를 표시하되, 그 외의 비목이 포함된 경우 그 내용을 표시하여야 합니다. 다만, 『주택법』 에 따른 주택 이외의 건축물은 관리비를 표시하지 아니할 수 있습니다.<br>(예시) 다세대주택의 경우, 관리비 매월 4만원, 수도료 매월 1만원
+						</div>
+						<button type="button" class="btnClose">닫기</button>
+					</div>		
+					<span class="inpA">
+						<textarea id="inpExpenditure" placeholder="예) 관리비 매월 4만원, 수도료 매월 1만원"></textarea>
+					</span>
+				</li>
+				<li class="inpFrm">
+					<label class="titInp" for="inpWay">건축물용도(층별 용도)<span class="ness">필수입력 항목</span></label>
+					<span class="inpA">
+						<div class="selectWrap">
+							<select id="inpWay" title="건축물용도(층별 용도) 선택" data-msg="선택" data-header="건축물용도(층별 용도)">
+								<option value="01">단독주택</option>
+								<option value="02">공동주택</option>
+								<option value="03">제1종 근린생활시설</option>
+								<option value="04">제2종 근린생활시설</option>
+								<option value="05">문화 및 집회시설</option>
+								<option value="06">종교시설</option>
+								<option value="07">판매시설</option>
+								<option value="08">운수시설</option>
+								<option value="09">의료시설</option>
+								<option value="10">교육연구시설</option>
+								<option value="11">노유자(老幼者: 노인 및 어린이) 시설</option>
+								<option value="12">수련시설</option>
+								<option value="13">운동시설</option>
+								<option value="14">업무시설</option>
+								<option value="15">숙박시설</option>
+								<option value="16">위락(慰樂)시설</option>
+								<option value="17">공장</option>
+								<option value="18">창고시설</option>
+								<option value="19">위험물 저장 및 처리 시설</option>
+								<option value="20">자동차 관련 시설</option>
+								<option value="21">동물 및 식물 관련 시설</option>
+								<option value="22">자원순환 관련 시설</option>
+								<option value="23">교정(敎正) 및 군사 시설</option>
+								<option value="24">방송통신시설</option>
+								<option value="25">발전시설</option>
+								<option value="26">묘지 관련 시설</option>
+								<option value="27">관광 휴게 시설</option>
+								<option value="28">장례시설</option>
+								<option value="29">야영장 시설</option>
+								<option value="30">미등기건물</option>
+								<option value="31">그 밖에 토지의 정착물</option>
+							</select>
+						</div>
+					</span>
+				</li>
+				<li class="inpFrm frmUnit-03 tooltipWrap">
+					<strong class="titInp">주차<span class="ness">필수입력 항목</span></strong>
+					<button type="button" class="btnTool" aria-expanded="false">설명보기</button>
+					<div class="tooltipCont">
+						<div class="context">
+							※ 제 6조(건축물 및 그 밖에 토지의 정착물에 관한 인터넷 표시 &middot; 광고 명시사항)10호에 따라 “주차대수”는 총 가능한 주차대수 또는 세대 당 가능한 주차대수를 구분하여 표시하여야 합니다.<br>
+							참고로 소수점 한자리까지 표기가 가능합니다. 예시) 1.5
+						</div>
+						<button type="button" class="btnClose">닫기</button>
+					</div>
+					<span class="inpA inpA02">
+						<span class="inpW">
+							<span class="label">총</span>
+							<input type="tel" id="inpParking" placeholder="0" class="placeR">
+							<span class="unit">대</span>
+						</span>
+						<span class="inpW">
+							<span class="label">가구당</span>
+							<input type="tel" title="가구당 주차대수 입력" placeholder="0"  class="placeR">
+							<span class="unit">대</span>
+						</span>
+					</span>
+				</li>
+			</ul>
+
+			<ul class="inpList divider">
+				<li><span class="frmInp frmInpS txt"><input type="checkbox" id="chkCompNone"><label for="chkCompNone">사용검사일, 사용승인일, 준공인가일 확인 불가</label></span></li><!-- 2023.08.29 추가, 2023.09.18 위치 이동 -->
+				<li class="inpFrm  tooltipWrap">
+					<label for="inpUsedCheck" class="titInp">사용검사일<span class="ness">필수입력 항목</span></label>
+					<button type="button" class="btnTool" aria-expanded="false">설명보기</button>
+					<div class="tooltipCont">
+						<div class="context">
+							※ 제 6조(건축물 및 그 밖에 토지의 정착물에 관한 인터넷 표시 &middot; 광고 명시사항)9호에 따라 “사용검사일 &middot; 사용승인일 &middot; 준공인가일”은 해당 건축물 및 그 밖의 토지의 정착물을 규율하는 법률에 따라 행정기관이 승인한 날짜를 정확하게 표시하여야 합니다.<br>
+							참고사항 : 건축물대장에서 건축물의 사용승인일을 적시하고 있는 등 각 건축물 및 그 밖의 토지정착물을 규율하는 개별 법률에 따라 행정기관이 승인한 “사용검사일 &middot; 사용승인일 &middot; 준공인가일” 중 당해 건축물 등에 따라 선택적으로 표기하면 됩니다.<br>
+							해당일자를 직접입력 또는 선택이 가능하며, 직접입력 시 아래의 예시와 같이 입력하여야 합니다.<br>
+							예시) 2021-01-01
+						</div>
+						<button type="button" class="btnClose">닫기</button>
+					</div>
+					<!-- 2023.09.05 날짜 input 수정 -->
+					<div class="inpA">
+						<input type="date" id="inpUsedCheck" data-placeholder="YYYY-MM-DD" required disabled>
+					</div>
+					<!-- //2023.09.05 날짜 input 수정 -->
+				</li>
+				<li class="inpFrm tooltipWrap toolTipUP">
+					<label for="inpApproval" class="titInp">사용승인일<span class="ness">필수입력 항목</span></label>
+					<button type="button" class="btnTool" aria-expanded="false">설명보기</button>
+					<div class="tooltipCont">
+						<div class="context">
+							※ 제 6조(건축물 및 그 밖에 토지의 정착물에 관한 인터넷 표시 &middot; 광고 명시사항)9호에 따라 “사용검사일 &middot; 사용승인일 &middot; 준공인가일”은 해당 건축물 및 그 밖의 토지의 정착물을 규율하는 법률에 따라 행정기관이 승인한 날짜를 정확하게 표시하여야 합니다.<br>
+							참고사항 : 건축물대장에서 건축물의 사용승인일을 적시하고 있는 등 각 건축물 및 그 밖의 토지정착물을 규율하는 개별 법률에 따라 행정기관이 승인한 “사용검사일 &middot; 사용승인일 &middot; 준공인가일” 중 당해 건축물 등에 따라 선택적으로 표기하면 됩니다.<br>
+							해당일자를 직접입력 또는 선택이 가능하며, 직접입력 시 아래의 예시와 같이 입력하여야 합니다.<br>
+							예시) 2021-01-01
+						</div>
+						<button type="button" class="btnClose">닫기</button>
+					</div>
+					<!-- 2023.09.05 날짜 input 수정 -->
+					<div class="inpA">
+						<input type="date" id="inpApproval" data-placeholder="YYYY-MM-DD" required>
+					</div>
+					<!-- //2023.09.05 날짜 input 수정 -->
+				</li>
+				<li class="inpFrm  tooltipWrap toolTipUP">
+					<label for="inpCompletion" class="titInp">준공인가일<span class="ness">필수입력 항목</span></label>
+					<button type="button" class="btnTool" aria-expanded="false">설명보기</button>
+					<div class="tooltipCont">
+						<div class="context">
+							※ 제 6조(건축물 및 그 밖에 토지의 정착물에 관한 인터넷 표시 &middot; 광고 명시사항)9호에 따라 “사용검사일 &middot; 사용승인일 &middot; 준공인가일”은 해당 건축물 및 그 밖의 토지의 정착물을 규율하는 법률에 따라 행정기관이 승인한 날짜를 정확하게 표시하여야 합니다.<br>
+							참고사항 : 건축물대장에서 건축물의 사용승인일을 적시하고 있는 등 각 건축물 및 그 밖의 토지정착물을 규율하는 개별 법률에 따라 행정기관이 승인한 “사용검사일 &middot; 사용승인일 &middot; 준공인가일” 중 당해 건축물 등에 따라 선택적으로 표기하면 됩니다.<br>
+							해당일자를 직접입력 또는 선택이 가능하며, 직접입력 시 아래의 예시와 같이 입력하여야 합니다.<br>
+							예시) 2021-01-01
+						</div>
+						<button type="button" class="btnClose">닫기</button>
+					</div>
+					<!-- 2023.09.05 날짜 input 수정 -->
+					<div class="inpA">
+						<input type="date" id="inpCompletion" data-placeholder="YYYY-MM-DD" required>
+					</div>
+					<!-- //2023.09.05 날짜 input 수정 -->
+				</li>
+			</ul>
+			<!-- // end of contents -->
+		</div><!-- //container -->
+		
+		<div class="floatingBtns">
+			<div class="btnArea">
+				<button type="button" class="btnDefault btnL btLineP">임시저장</button>
+				<button type="button" class="btnDefault btnL action">완료</button>
+			</div>
+		</div>
+
+		<aside>
+			<div class="asideRight">
+				<button type="button" class="btTop">페이지 상단으로 이동</button><!-- 2023.08.16 onClick 이벤트 삭제 -->
+			</div>
+		</aside>
+	</section>
+
+	
+
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/magnt/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/magnt/swiper.min.js"></script>
+<script type="text/javascript" src="/js/magnt/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/magnt/m_common.js"></script>
+
+</html>
+

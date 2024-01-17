@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>VR 등록 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">VR 등록</h1>
+		</header>
+		
+		
+		<div id="container" class="container">
+			<!-- start of contents -->
+			<h2 class="titDep2">사진 정보<span>를 입력해 주세요.</span></h2>
+			<p class="alertArea">
+				<span class="altTxt">[필드명] + “을/를” +  “선택/입력해 주세요.”</span>
+			</p>
+			<ul class="inpList inpLink">
+				<li class="inpFrm">
+					<strong class="titInp">대표 사진<span class="ness">필수입력 항목</span></strong>
+					<span class="linkInp">
+						<input type="file"  accept="image/*">
+						<span>등록하기</span>
+					</span>					
+				</li>
+				<li class="inpFrm">
+					<strong class="titInp">대표 사진<span class="ness">필수입력 항목</span></strong>
+					<figure class="inpPhoto"><img src="/resource/images/dummy/@img_thumb01.jpg" alt=""></figure>
+					<div class="btns">
+						<button type="button" class="btnDefault btnS">편집</button>
+						<button type="button" class="btnDefault btnS">삭제</button>
+					</div>			
+				</li>
+				<li class="inpFrm inpDeleteAni">
+					<label class="titInp" for="inpVR">VR명<span class="ness">필수입력 항목</span></label>
+					<span class="inpA">
+						<input type="text" id="inpVR" placeholder="VR명 입력" title="VR명 입력">
+						<button type="button" class="icBtn icDel">삭제</button>
+					</span>					
+				</li>
+				<li class="inpFrm inpDeleteAni">
+					<label class="titInp" for="inpVRurl">VR URL(주소)<span class="ness">필수입력 항목</span></label>
+					<span class="inpA">
+						<input type="url" id="inpVRurl" placeholder="http 또는 https가 포함된 URL 입력" title="http 또는 https가 포함된 URL 입력">
+						<button type="button" class="icBtn icDel">삭제</button>
+					</span>	
+					<div class="btns">
+						<button type="button" class="btnDefault btnS">VR 보기</button>
+					</div>					
+				</li>
+			</ul>
+			<ul class="listType01 mt16">
+				<li>VR은 업무협약 종료 및 업체 사정에 의해 신규가입이 불가하며, 수동등록 기능만 사용이 가능합니다.</li>
+				<li>네이버 부동산 전송 시 VR은 노출되지 않습니다.</li>
+			</ul>
+			
+			<!-- // end of contents -->
+		</div><!-- //container -->
+		
+		<div class="floatingBtns">
+			<div class="btnArea">
+				<button type="button" class="btnDefault btnL" >임시저장</button>
+				<button type="button" class="btnDefault btnL action">다음</button>
+			</div>
+		</div>
+	</section>
+	
+	
+</body>
+
+<script type="text/javascript" src="/js/magnt/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/magnt/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/magnt/swiper.min.js"></script>
+<script type="text/javascript" src="/js/magnt/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/magnt/m_common.js"></script>
+
+</html>
+

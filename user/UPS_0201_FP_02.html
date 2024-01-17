@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>중개 요청 등록 | 한방부동산</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+	<link href="/css/mptl/h_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+<section id="wrapper" class="wrapper">
+	<header>
+		<button type="button" class="btprev">이전</button>
+		<h1 class="titPage">중개 요청 등록</h1>
+	</header>
+	
+	<div id="container" class="container">
+		<!-- start of contents -->
+		
+		
+		
+		
+		
+		<!-- // end of contents -->
+	</div><!-- //container -->
+	
+	<div class="floatingBtns">
+		<div class="btnArea">
+			<button type="button" class="btnDefault btnL btLineP">미리보기</button>
+			<button type="button" class="btnDefault btnL action" disabled>등록하기</button>
+		</div>
+	</div>
+	
+	<aside>
+		<div class="asideRight">
+			<button type="button" class="btTop">페이지 상단으로 이동</button><!-- 2023.08.16 onClick 이벤트 삭제 -->
+		</div>
+	</aside>
+</section>
+
+
+<!--중개사무소 검색 FP-->
+<section id="pop_officeSearch" class="layPop layFull layArea" tabindex="0">
+	<header>
+		<h2 class="titLay">중개사무소 검색</h2>
+	</header>
+	
+	<div class="layContainer" tabindex="0">
+		<div class="layContent">
+			<div class="inpFrm searchArea inpDeleteAni typeSquare"> <!--20230807 디자인 변경 : typeSquare 클래스 추가-->
+				<div class="inpA hasFilter hasIcoSch">
+					<input type="search" id="inpSearch" placeholder="중개사무소를 입력해 주세요" title="중개사무소 검색" value="가자">
+					<button type="button" class="icBtn icDel">삭제</button>
+					<button type="submit" class="icBtn icSearch">검색</button><!-- 20230731 수정 : 버튼 추가-->
+				</div>
+				<button type="button" class="btFilter layPopBtn" data-id="pop_filter">필터</button>
+			</div>
+			
+			<!--[D] 자동완성 중 인 경우 해당 searchIngResult 영역 활성화-->
+			<div class="searchIngResult popLay" style="display:block">
+				<ul class="list">
+					<li>
+						<a href="#" class="item">
+							<em class="word"><strong class="matching">가자</strong>공인중개사사무소</em>
+							<p class="wordSub">서울 관악구 신림동 (대표 이가자)</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="item">
+							<em class="word"><strong class="matching">가자</strong>공인중개사사무소</em>
+							<p class="wordSub">서울 관악구 신림동 (대표 이가자)</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="item">
+							<em class="word"><strong class="matching">가자</strong>중개사사무소</em>
+							<p class="wordSub">서울 동작구 상도동 (대표 이영석)</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="item">
+							<em class="word"><strong class="matching">가자</strong>부동산</em>
+							<p class="wordSub">서울 관악구 신림동 (대표 이가자)</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="item">
+							<em class="word"><strong class="matching">가자</strong>중개법인</em>
+							<p class="wordSub">서울 구로구 오류동 (대표 박주호)</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="item">
+							<em class="word"><strong class="matching">가자</strong>공인중개사사무소</em>
+							<p class="wordSub">서울 강남구 논현동 (대표 이중혁)</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--//자동완성 중 인 경우 해당 searchIngResult 영역 활성화-->
+			
+			<!--검색 지역 필터에서 선택한 옵션-->
+			<div class="selOptList mt16">
+				<p class="area">서울특별시<button type="button" class="icBtn icDelS">삭제</button></p>
+				<p class="area">경기도<button type="button" class="icBtn icDelS">삭제</button></p>
+			</div>
+			<!--//검색 지역 필터에서 선택한 옵션-->
+			
+			<!--선택 중개사무소 목록-->
+			<ul class="anchorList noLine"> <!--20230802 수정 : 디자인변경 noLine 추가 , mt24 삭제-->
+				<li>
+					<div class="item">
+						<em class="tit">가자공인중개사사무소</em>
+						<p class="cont">서울 관악구 신림동 (대표 이가자)</p>
+						<button type="button" class="icBtn icDelS">삭제</button>
+					</div>
+				</li>
+				<li>
+					<div class="item">
+						<em class="tit">굿모닝공인중개사사무소</em>
+						<p class="cont">서울 동작구 상도동 (대표 오아침)</p>
+						<button type="button" class="icBtn icDelS">삭제</button>
+					</div>
+				</li>
+				<li>
+					<div class="item">
+						<em class="tit">대성공인중개사</em>
+						<p class="cont">서울 동작구 대방동 (대표 김대성)</p>
+						<button type="button" class="icBtn icDelS">삭제</button>
+					</div>
+				</li>
+				<li>
+					<div class="item">
+						<em class="tit">굿모닝공인중개사사무소</em>
+						<p class="cont">서울 종로구 창신동 (대표 이지영)</p>
+						<button type="button" class="icBtn icDelS">삭제</button>
+					</div>
+				</li>
+				<li>
+					<div class="item">
+						<em class="tit">가장부동산중개법인</em>
+						<p class="cont">서울 강남구 논현동 (대표 이중혁)</p>
+						<button type="button" class="icBtn icDelS">삭제</button>
+					</div>
+				</li>
+			</ul>
+			<!--//선택 중개사무소 목록-->
+			
+			<p class="referText mt24">최대 5곳의 중개사무소에 중개를 요청할 수 있어요.</p><!--20230803 수정 : 문구변경-->
+		</div>
+		
+		<div class="popBtns">
+			<div class="inner">
+				<button type="button" class="btnDefault btnL action" disabled>저장하기</button>
+				<!--[D] 중개사무소 1개 이상 선택 시, 활성화 상태로 변경 : disabled 속성 삭제-->
+				<!--<button type="button" class="btnDefault btnL action">저장하기</button>-->
+			</div>
+		</div>
+	</div><!-- //layCont-->
+	<button type="button" class="closeL">팝업 닫기</button>
+</section>
+<!--//중개사무소 검색 FP-->
+
+<!--검색 지역 BS -->
+<section id="pop_filter" class="layPop layBtm" tabindex="0">
+	<header>
+		<h2 class="titLay">검색 지역 설정</h2> <!--20230731 수정 - 문구, 기획 수정 1.7v -->
+	</header>
+	
+	<div class="layContainer" tabindex="0">
+		<div class="layContent">
+			<ul class="frmBox col02 bigSize">
+				<li><input type="checkbox" id="area01" name="area"><label for="area01">강원특별자치도</label></li>
+				<li><input type="checkbox" id="area02" name="area"><label for="area02">광주광역시</label></li>
+				<li><input type="checkbox" id="area03" name="area"><label for="area03">경기도</label></li>
+				<li><input type="checkbox" id="area04" name="area"><label for="area04">경상남도</label></li>
+				<li><input type="checkbox" id="area05" name="area"><label for="area05">경상북도</label></li>
+				<li><input type="checkbox" id="area06" name="area"><label for="area06">대구광역시</label></li>
+				<li><input type="checkbox" id="area07" name="area"><label for="area07">부산광역시</label></li>
+				<li><input type="checkbox" id="area08" name="area"><label for="area08">세종특별자치시</label></li>
+				<li><input type="checkbox" id="area09" name="area"><label for="area09">서울특별시</label></li>
+				<li><input type="checkbox" id="area10" name="area"><label for="area10">울산광역시</label></li>
+				<li><input type="checkbox" id="area11" name="area"><label for="area11">인천광역시</label></li>
+				<li><input type="checkbox" id="area12" name="area"><label for="area12">전라남도</label></li>
+				<li><input type="checkbox" id="area13" name="area"><label for="area13">전라북도</label></li>
+				<li><input type="checkbox" id="area14" name="area"><label for="area14">제주특별자치도</label></li>
+				<li><input type="checkbox" id="area15" name="area"><label for="area15">충청남도</label></li>
+				<li><input type="checkbox" id="area16" name="area"><label for="area16">충청북도</label></li>
+			</ul>
+		</div>
+		<div class="popBtns">
+			<!--20230802 수정 - 초기화 버튼 디자인 변경-->
+			<div class="inner btnArea">
+				<button type="button" class="btnDefault btnL btLineP">초기화</button>
+				<button type="button" class="btnDefault btnL action">완료</button>
+			</div>
+		</div>
+	</div><!-- //layContainer-->
+	<button type="button" class="closeL">팝업 닫기</button>
+</section>
+<!--//검색 지역 BS -->
+
+<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/mptl/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/mptl/swiper.min.js"></script>
+<script type="text/javascript" src="/js/mptl/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/mptl/m_common.js"></script>
+<script>
+	$(function(){
+		// 주소 검색 중, 후 레이어
+		mvJs.popup.show($('#pop_officeSearch'));
+	})
+</script>
+</html>
+

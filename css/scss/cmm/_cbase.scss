@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+	$body_color:#fff;
+
+	//color
+	$default_col:#4d4d4d; 
+	
+	$col_g100:#121212;
+	$col_g200:#353535;
+	$col_g300:#4d4d4d;
+	$col_g400:#707070;
+	$col_g500:#949494;
+	$col_g600:#b7b7b7;
+	$col_g700:#dbdbdb;
+	$col_g800:#f2f2f2;
+	$col_g900:#fbfbfb;
+	$col_g1000:#ececec;
+	$col_g1100:#f7f7f7;
+	$col_diviedLine:#efefef;
+
+	$col_p100:#312867;
+	$col_p200:#41368a;
+	$col_p300:#5144ad;
+	$col_p400:#5648b8;
+	$col_p500:#6151cf;
+	$col_p600:#d1ccf7;
+	$col_p700:#e9e6fb;
+	$col_p800:#f0effd;
+
+	$col_bg100:#f1f4f7;
+	$col_bg200:#a1aef2;
+	$col_bg300:#59c9b7;
+	$col_bg400:#f7f8ff;
+	$col_bg500:#9493a2;
+
+	$col_white:#fff;
+	$col_black:#000;
+	$col_point:#6c5ae6;
+
+	$col_secondary1:#9586ff;
+	$col_secondary2:#638bff;
+	$col_secondary3:#61d3c1;
+	$col_secondary4:#5061eb;
+
+	$col_status1:#ff694a;
+	$col_status2:#ef5350;
+
+	$col_etc01:#A5A4B4;
+	$col_etc02:#EBEEFF;
+	$col_etc03:#E6F2F0;
+	$col_etc04:#009D8B;
+	$col_etc05:#E3F1F9;
+	$col_etc06:#309DE2;
+	$col_etc07:#E3E8F9;
+	$col_etc08:#1544BC;
+	$col_etc09:#F9E9FD;
+	$col_etc10:#BD1DED;
+	$col_etc11:#FEEDE6;
+	$col_etc12:#F17A3C;
+	$col_etc13:#D8D8D8;
+	$col_etc14:#FC6242;
+	$col_etc15:#656565;
+	$col_etc16:#7499ff;
+	$col_etc17:#dc93ff;
+	$col_etc18:#ffc15f;
+	$col_etc19:#fb777c;
+	$col_etc20:#53daaf;
+	$col_etc21:#fff5f5;
+	$col_etc22:#FFEFEE;
+	$col_etc23:#FC6161;
+	
+
+	$col_b04:rgba($col_black, 0.04);
+	$col_b07:rgba($col_black, 0.07);
+	$col_b40:rgba($col_black, 0.4);
+	$col_b50:rgba($col_black, 0.5);
+	$col_b60:rgba($col_black, 0.6);
+	$col_b70:rgba($col_black, 0.7);
+	$col_b80:rgba($col_black, 0.8);
+	$col_b90:rgba($col_black, 0.9);
+	$col_g40:rgba($col_g200, 0.4);
+	$col_w60:rgba($col_white, 0.6);
+	$col_w70:rgba($col_white, 0.7);
+	$col_w80:rgba($col_white, 0.8);
+	$col_w90:rgba($col_white, 0.9);
+	
+
+	//font
+	$default_font:Pretendard, -apple-system,BlinkMacSystemFont,Open Sans,Helvetica Neue,sans-serif;
+	$default_weight:400;
+
+	$weight400:400;
+	$weight500:500;
+	$weight700:700;
+	
+	//url
+	$img_url:"/images/magnt";
+
+	//media query size	
+	$sizeS:360px;
+	
+	//extend	
+	%hidden{overflow:hidden;position:absolute;width:1px;height:1px;margin:-1px !important;clip:rect(0 0 0 0)}
+	%textHidden{overflow:hidden;text-indent:-9999px}
+	%size14{font-size:1.4rem;line-height:1.25}
+	%pseudoAbs{content:'';display:block;position:absolute}
+	%fullWidth{margin:0 -20px}
+	%fullPading{padding:0 20px}
+	
+	%box_shadow1{box-shadow:0 5px 10px 2px rgba($col_black, 0.065)} //아래 셰도우
+	%box_shadow2{box-shadow:1px -4px 8px rgba($col_black, 0.1)}  //위 셰도우
+	%box_shadow3{box-shadow:0 4px 8px rgba($col_black, 0.07)}  //사방 셰도우
+
+	%font14B{font-size:rem(14px);font-weight:$weight700;line-height:1.42}
+	%font14{font-size:rem(14px);font-weight:$weight500;line-height:1.28}
+	%font12{font-size:rem(12px);color:$col_g200}
+	
+	//mixin
+	$font-body:10px;
+	
+	@function rem($val) { 
+		@return $val/$font-body * 1rem;		
+	}
+	
+	
+	@mixin prefix($property, $value) {
+		-webkit-#{$property}:$value;
+		-moz-#{$property}:$value;
+		#{$property}:$value;
+	}
+
+	@mixin pseudo($width, $height) {
+		content:'';display:block;position:absolute;top:50%;left:50%;width:$width;height:$height;margin-top:-$height/2;margin-left:-$width/2;
+	}
+
+	@mixin ellipsis($line, $height) {
+		@if ($line == 1) { 
+			display:block;
+			overflow: hidden;
+			text-overflow: ellipsis; 
+			white-space: nowrap; 
+		} @else { 
+			display: -webkit-box; 
+			overflow: hidden; 
+			text-overflow: ellipsis; 
+			-webkit-box-orient: vertical; 
+			-webkit-line-clamp: $line; 
+			height:$height;
+		} 
+	}

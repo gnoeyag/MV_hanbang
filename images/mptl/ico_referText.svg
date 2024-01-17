@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+    <g style="fill:#fff;stroke:#67549d;opacity:.2">
+        <circle cx="7" cy="7" r="7" style="stroke:none"/>
+        <circle cx="7" cy="7" r="6.5" style="fill:none"/>
+    </g>
+    <path d="M9921.938 20880.783a1.049 1.049 0 1 1 1.049 1 1.022 1.022 0 0 1-1.049-1zm.048-2v-5h2v5z" transform="translate(-9915.986 -20870.783)" style="fill:#67549d;stroke:transparent;stroke-miterlimit:10"/>
+</svg>

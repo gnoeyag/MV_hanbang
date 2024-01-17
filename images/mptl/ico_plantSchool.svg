@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g transform="translate(-49.066 -1240)">
+        <path transform="translate(49.066 1240)" style="fill:#0ff;opacity:.001" d="M0 0h24v24H0z"/>
+        <path data-name="패스 64118" d="M16.573 6.219v14.189H6.213V6.475" transform="translate(49.673 1240.66)" style="fill:none;stroke:#656565;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+        <path data-name="패스 64119" d="M15.139 12.973h4.029v9.209H.75v-9.209h4.029" transform="translate(51.107 1238.887)" style="fill:none;stroke:#656565;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+        <path data-name="패스 64120" d="M17.863 5.765 10.845.75 4.14 5.765" transform="translate(50.218 1242.096)" style="fill:none;stroke:#656565;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+        <path data-name="사각형 13676" transform="translate(58.508 1253.906)" style="fill:none;stroke:#656565;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="M0 0h5.116v7.162H0z"/>
+        <ellipse data-name="타원 160" cx="2.047" cy="2.046" rx="2.047" ry="2.046" transform="translate(59.02 1247.119)" style="fill:none;stroke:#656565;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+    </g>
+</svg>

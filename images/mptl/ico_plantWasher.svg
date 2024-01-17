@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g transform="translate(1.761 2.371)">
+        <path data-name="사각형 13678" transform="translate(2.15 -1.373)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="M0 0h16v21H0z"/>
+        <path data-name="선 270" transform="translate(2.15 3.628)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="M0 0h16"/>
+        <circle data-name="타원 162" cx="5" cy="5" r="5" transform="translate(5.15 6.628)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+        <path data-name="선 272" transform="translate(11.65 1.127)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="M0 0h1.099"/>
+        <path data-name="선 274" transform="translate(14.545 1.127)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="M0 0h1.099"/>
+        <path data-name="패스 65851" d="M10.534 20.123a3.436 3.436 0 0 0 .158 5.061 3.437 3.437 0 0 1 .277 4.939" transform="rotate(90 17.169 18.105)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+    </g>
+</svg>

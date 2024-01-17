@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>관리비 정보 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body >
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">관리비 정보</h1>
+			<div class="menuWrap">
+				<button type="button" class="btNav" aria-expanded="false">메뉴</button>
+				<nav>
+					<div class="navInner">메뉴영역</div>
+				</nav>
+			</div>
+		</header>
+	
+		<div id="container" class="container">
+			<!-- start of contents -->
+
+			<div class="boxTop">
+				<h2 class="titDep2">매물 관리비 정보<span>를<br>입력해 주세요.</span></h2>
+				<p class="alertArea">
+					<span class="altTxt">[필드명] + “을/를” +  “선택/입력해 주세요.”</span>
+				</p>
+			</div>
+			
+			<ul class="inpList">			
+				<li class="inpFrm">
+					<label class="titInp" for="inpType">관리비 부과방식<span class="ness">필수입력 항목</span></label>
+					<span class="inpA">
+						<div class="selectWrap">
+							<select id="inpType" title="관리비 부과방식 선택" data-header="관리비 부과방식">
+								<option value="01" selected>정액 관리비 부과(실비 일부 포함)</option>
+								<option value="02">기타 부과(정액이 아닌 경우 등)</option>
+								<option value="03">확인불가</option>
+							</select>
+						</div>
+					</span>
+				</li>
+				<li class="inpFrm">
+					<label class="titInp" for="inpDealType">관리비 기준<span class="ness">필수입력 항목</span></label>
+					<span class="inpA">
+						<div class="selectWrap">
+							<select id="inpDealType" title="관리비 기준 선택" data-header="관리비 기준">
+								<option value="01" selected>직전 월 관리비 부과금액</option>
+								<option value="02">최근 3개월 관리비 평균 금액</option>
+								<option value="03">최근 1년 관리비 평균 금액</option>
+								<option value="04">기타(직접 입력)</option>
+							</select>
+						</div>
+					</span>
+                    <span class="inpA mt12">
+                        <textarea id="inpFeature" cols="10" rows="10"></textarea>
+                        <span class="txtNum"><em title="소개 글자 수">0</em> / 50자</span>
+                    </span>
+				</li>
+			</ul>
+
+            <div class="inpMaintenance divider">
+                <h3 class="titDep4">세부 내역</h3>
+                <ul class="inpList">
+                    <li class="inpFrm frmUnit">
+                        <strong class="titInp">일반(공용) 관리비<span class="ness">필수입력 항목</span></strong>
+                        <ul class="frmList inBlock">
+							<li><span class="frmInp frmInpS txt"><input type="radio" id="radMaintenance0101" name="radMaintenance01"><label for="radMaintenance0101">정액</label></span></li>
+							<li>
+                                <span class="frmInp frmInpS txt">
+                                    <input type="radio" id="radMaintenance0102" name="radMaintenance01"><label for="radMaintenance0102">실비</label>
+                                    <div class="tooltipWrap">
+                                        <button type="button" class="btnTool">설명보기</button>
+                                        <div class="tooltipCont">
+                                            <div class="context">직전 월 관리비 부과금액, 최근 3개월 또는 1년 공용 관리비 평균 부과금액 등</div>
+                                            <button type="button" class="btnClose">닫기</button>
+                                        </div>
+                                    </div>
+                                </span>
+                            </li>
+						</ul>
+                        <span class="inpA inpA02 mt12">
+                            <input type="tel" placeholder="0">
+                            <span class="unit">원</span>
+                        </span>
+                    </li>
+                    <li class="inpFrm frmUnit">
+                        <strong class="titInp">전기 사용료<span class="ness">필수입력 항목</span></strong>
+                        <ul class="frmList inBlock">
+							<li><span class="frmInp frmInpS txt"><input type="radio" id="radMaintenance0201" name="radMaintenance02" checked><label for="radMaintenance0201">정액</label></span></li>
+							<li>
+                                <span class="frmInp frmInpS txt"><input type="radio" id="radMaintenance0202" name="radMaintenance02"><label for="radMaintenance0202">실비(사용량에 따른 별도 부과)</label></span>
+                            </li>
+						</ul>
+                        <span class="inpA inpA02 mt12"> <!-- [D] 정액 선택 시 에만 노출 -->
+                            <input type="tel" placeholder="0">
+                            <span class="unit">원</span>
+                        </span>
+                    </li>
+                    <li class="inpFrm frmUnit">
+                        <strong class="titInp">수도 사용료<span class="ness">필수입력 항목</span></strong>
+                        <ul class="frmList inBlock">
+							<li><span class="frmInp frmInpS txt"><input type="radio" id="radMaintenance0301" name="radMaintenance03" checked><label for="radMaintenance0301">정액</label></span></li>
+							<li>
+                                <span class="frmInp frmInpS txt"><input type="radio" id="radMaintenance0302" name="radMaintenance03"><label for="radMaintenance0302">실비(사용량에 따른 별도 부과)</label></span>
+                            </li>
+						</ul>
+                        <span class="inpA inpA02 mt12"> <!-- [D] 정액 선택 시 에만 노출 -->
+                            <input type="tel" placeholder="0">
+                            <span class="unit">원</span>
+                        </span>
+                    </li>
+                    <li class="inpFrm frmUnit">
+                        <strong class="titInp">가스 사용료<span class="ness">필수입력 항목</span></strong>
+                        <ul class="frmList inBlock">
+							<li><span class="frmInp frmInpS txt"><input type="radio" id="radMaintenance0401" name="radMaintenance04" checked><label for="radMaintenance0401">정액</label></span></li>
+							<li>
+                                <span class="frmInp frmInpS txt"><input type="radio" id="radMaintenance0402" name="radMaintenance04"><label for="radMaintenance0402">실비(사용량에 따른 별도 부과)</label></span>
+                            </li>
+						</ul>
+                        <span class="inpA inpA02 mt12"> <!-- [D] 정액 선택 시 에만 노출 -->
+                            <input type="tel" placeholder="0">
+                            <span class="unit">원</span>
+                        </span>
+                    </li>
+                    <li class="inpFrm frmUnit">
+                        <strong class="titInp">난방 사용료<span class="ness">필수입력 항목</span></strong>
+                        <ul class="frmList inBlock">
+							<li><span class="frmInp frmInpS txt"><input type="radio" id="radMaintenance0501" name="radMaintenance05" checked><label for="radMaintenance0501">정액</label></span></li>
+							<li>
+                                <span class="frmInp frmInpS txt"><input type="radio" id="radMaintenance0502" name="radMaintenance05"><label for="radMaintenance0502">실비(사용량에 따른 별도 부과)</label></span>
+                            </li>
+						</ul>
+                        <span class="inpA inpA02 mt12"> <!-- [D] 정액 선택 시 에만 노출 -->
+                            <input type="tel" placeholder="0">
+                            <span class="unit">원</span>
+                        </span>
+                    </li>
+                    <li class="inpFrm frmUnit">
+                        <strong class="titInp">인터넷 사용료<span class="ness">필수입력 항목</span></strong>
+                        <ul class="frmList inBlock">
+							<li><span class="frmInp frmInpS txt"><input type="radio" id="radMaintenance0601" name="radMaintenance06" checked><label for="radMaintenance0601">정액</label></span></li>
+							<li>
+                                <span class="frmInp frmInpS txt"><input type="radio" id="radMaintenance0602" name="radMaintenance06"><label for="radMaintenance0602">실비(사용량에 따른 별도 부과)</label></span>
+                            </li>
+						</ul>
+                        <span class="inpA inpA02 mt12"> <!-- [D] 정액 선택 시 에만 노출 -->
+                            <input type="tel" placeholder="0">
+                            <span class="unit">원</span>
+                        </span>
+                    </li>
+                    <li class="inpFrm frmUnit">
+                        <strong class="titInp">TV 사용료<span class="ness">필수입력 항목</span></strong>
+                        <ul class="frmList inBlock">
+							<li><span class="frmInp frmInpS txt"><input type="radio" id="radMaintenance0701" name="radMaintenance07" checked><label for="radMaintenance0701">정액</label></span></li>
+							<li>
+                                <span class="frmInp frmInpS txt"><input type="radio" id="radMaintenance0702" name="radMaintenance07"><label for="radMaintenance0702">실비(사용량에 따른 별도 부과)</label></span>
+                            </li>
+						</ul>
+                        <span class="inpA inpA02 mt12"> <!-- [D] 정액 선택 시 에만 노출 -->
+                            <input type="tel" placeholder="0">
+                            <span class="unit">원</span>
+                        </span>
+                    </li>
+                    <li class="inpFrm frmUnit">
+                        <strong class="titInp">기타 관리비</strong>
+                        <span class="inpA inpA02">
+                            <input type="tel" placeholder="0">
+                            <span class="unit">원</span>
+                        </span>
+                        <span class="inpA mt12">
+                            <textarea id="inpFeature" cols="10" rows="10" placeholder="주차비, 건물보험료 등"></textarea>
+                            <span class="txtNum"><em title="소개 글자 수">0</em> / 50자</span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="inpMaintenance divider">
+                <ul class="inpList">
+                    <li class="inpFrm frmUnit">
+                        <strong class="titInp total">관리비 총액(일반 관리비 + 사용료 + 기타 관리비)</strong>
+                        <span class="inpA inpA02 mt12">
+                            <input type="tel" placeholder="0" readonly>
+                            <span class="unit">원</span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+		
+			<!-- // end of contents -->
+		</div><!-- //container -->
+		
+		<div class="floatingBtns">
+			<div class="btnArea">
+				<button type="button" class="btnDefault btnL btLineP">임시저장</button>
+				<button type="button" class="btnDefault btnL action">완료</button>
+			</div>
+		</div>
+
+		<aside>
+			<div class="asideRight">
+				<button type="button" class="btTop">페이지 상단으로 이동</button>
+			</div>
+		</aside>
+	</section>
+
+
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/magnt/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/magnt/swiper.min.js"></script>
+<script type="text/javascript" src="/js/magnt/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/magnt/m_common.js"></script>
+
+</html>
+

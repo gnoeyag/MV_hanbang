@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>지도 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/mptl/h_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper mapWrapper"> <!--지도 전용 mapWrap class 추가-->
+		<header>
+			<h1 class="titPage hidden">지도</h1>
+			<!--검색 필드-->
+			<div class="decoSearch">
+				<div class="searchWord">
+					<strong class="keyword">서울 중구 도렴동</strong> <!--20230825 서울시 -> 서울-->
+				</div>
+				<button type="button" class="btFilter layPopBtn" data-id="pop_searchSetting">필터</button>
+			</div>
+			
+			
+			<div class="btnSwiper">
+				<button type="button" class="btnDefault btnRound isSelected" data-controls="anchorTabContents01">매물 종류</button>
+				<button type="button" class="btnDefault btnRound" data-controls="anchorTabContents02">거래/금액</button>
+				<button type="button" class="btnDefault btnRound" data-controls="anchorTabContents03">면적</button>
+				<button type="button" class="btnDefault btnRound" data-controls="anchorTabContents04">매물 특징</button>
+				<button type="button" class="btnDefault btnRound" data-controls="anchorTabContents05">매물 옵션</button>
+			</div>
+			<!--//검색 필드-->
+			
+		</header>
+	
+		<div id="container" class="container">
+			<!-- start of contents -->
+			
+		
+			
+			<!--하단 목록 레이어-->
+			<div class="listDestination dragTop">
+				<div class="destiWrap">
+					<button type="button" class="dragBtn">매물정보 보기</button>
+					<ul class="tabType01">
+						<li><a href="#" role="button" aria-selected="false">매물 454</a></li>
+						<li><a href="#" role="button" aria-selected="true">단지 56</a></li>
+						<li><a href="#" role="button" aria-selected="false">중개사무소 87</a></li>
+					</ul>
+
+					<!-- 2023.10.13 수정 / 필터 추가 -->
+					<div class="sortingFillter">
+						<div class="item">
+							<button type="button" class="btnSorting active">최신순</button> <!-- [D] 선택 시 active 클래스 추가 -->
+							<button type="button" class="btnSorting">관심순</button>
+							<button type="button" class="btnSorting">조회순</button>
+							<button type="button" class="btnSorting">가격순</button> <!-- 가격순이 디폴트 / 높은가격순 class : rateUp, 낮은가격순 class : rateDown 추가 -->
+							<button type="button" class="btnSorting">면적순</button> <!-- 가격순이 디폴트 / 넓은면적순 class : rateUp, 낮은면적순 class : rateDown 추가 -->
+						</div>
+					</div>
+					<!-- //2023.10.13 수정 / 필터 추가 -->
+					
+					<div class="scrollArea">
+						
+						<div id="tabContTotalWrap" class="tabContTotalWrap">
+							<div class="tabInner">
+								<!--[D] 활성화 된 탭 컨텐츠, 해당 영역 안에서 토글로 보여짐-->
+								
+								<!--단지-->
+								<ul class="objectList">
+									<li>
+										<article class="figSec">
+											<div class="figSecItem">
+												<a href="#" class="defineSec">
+													<span class="flag sthType">아파트</span> <span class="flagLabel">서울 서초구 반포동</span>
+													<strong class="defineSecPrice"><em class="price">반포주공</em></strong>
+													<p class="defineSecNormal">N세대, 총N동, 최저면적~최고면적㎡</p>
+													<p class="defineSecNormal">1980.10. 준공</p>
+													<ul class="dealBoard typeWide mt10">
+														<li class="item">
+															<span class="case">매매</span>
+															<strong class="count hasValue">43</strong>
+														</li>
+														<li class="item">
+															<span class="case">전세</span>
+															<strong class="count hasValue">13</strong>
+														</li>
+														<li class="item">
+															<span class="case">월세</span>
+															<strong class="count hasValue">3</strong>
+														</li>
+														<li class="item">
+															<span class="case">연세</span>
+															<strong class="count">0</strong>
+														</li>
+													</ul>
+												</a>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="figSec">
+											<div class="figSecItem">
+												<a href="#" class="defineSec">
+													<span class="flag sthType">아파트</span> <span class="flagLabel">서울 서초구 반포동</span>
+													<strong class="defineSecPrice"><em class="price">반포주공</em></strong>
+													<p class="defineSecNormal">N세대, 총N동, 최저면적~최고면적㎡</p>
+													<p class="defineSecNormal">1980.10. 준공</p>
+													<ul class="dealBoard typeWide mt10">
+														<li class="item">
+															<span class="case">매매</span>
+															<strong class="count hasValue">43</strong>
+														</li>
+														<li class="item">
+															<span class="case">전세</span>
+															<strong class="count hasValue">13</strong>
+														</li>
+														<li class="item">
+															<span class="case">월세</span>
+															<strong class="count hasValue">3</strong>
+														</li>
+														<li class="item">
+															<span class="case">연세</span>
+															<strong class="count">0</strong>
+														</li>
+													</ul>
+												</a>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="figSec">
+											<div class="figSecItem">
+												<a href="#" class="defineSec">
+													<span class="flag sthType">아파트</span> <span class="flagLabel">서울 서초구 반포동</span>
+													<strong class="defineSecPrice"><em class="price">반포주공</em></strong>
+													<p class="defineSecNormal">N세대, 총N동, 최저면적~최고면적㎡</p>
+													<p class="defineSecNormal">1980.10. 준공</p>
+													<ul class="dealBoard typeWide mt10">
+														<li class="item">
+															<span class="case">매매</span>
+															<strong class="count hasValue">43</strong>
+														</li>
+														<li class="item">
+															<span class="case">전세</span>
+															<strong class="count hasValue">13</strong>
+														</li>
+														<li class="item">
+															<span class="case">월세</span>
+															<strong class="count hasValue">3</strong>
+														</li>
+														<li class="item">
+															<span class="case">연세</span>
+															<strong class="count">0</strong>
+														</li>
+													</ul>
+												</a>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="figSec">
+											<div class="figSecItem">
+												<a href="#" class="defineSec">
+													<span class="flag sthType">아파트</span> <span class="flagLabel">서울 서초구 반포동</span>
+													<strong class="defineSecPrice"><em class="price">반포주공</em></strong>
+													<p class="defineSecNormal">N세대, 총N동, 최저면적~최고면적㎡</p>
+													<p class="defineSecNormal">1980.10. 준공</p>
+													<ul class="dealBoard typeWide mt10">
+														<li class="item">
+															<span class="case">매매</span>
+															<strong class="count hasValue">43</strong>
+														</li>
+														<li class="item">
+															<span class="case">전세</span>
+															<strong class="count hasValue">13</strong>
+														</li>
+														<li class="item">
+															<span class="case">월세</span>
+															<strong class="count hasValue">3</strong>
+														</li>
+														<li class="item">
+															<span class="case">연세</span>
+															<strong class="count">0</strong>
+														</li>
+													</ul>
+												</a>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="figSec">
+											<div class="figSecItem">
+												<a href="#" class="defineSec">
+													<span class="flag sthType">아파트</span> <span class="flagLabel">서울 서초구 반포동</span>
+													<strong class="defineSecPrice"><em class="price">반포주공</em></strong>
+													<p class="defineSecNormal">N세대, 총N동, 최저면적~최고면적㎡</p>
+													<p class="defineSecNormal">1980.10. 준공</p>
+													<ul class="dealBoard typeWide mt10">
+														<li class="item">
+															<span class="case">매매</span>
+															<strong class="count hasValue">43</strong>
+														</li>
+														<li class="item">
+															<span class="case">전세</span>
+															<strong class="count hasValue">13</strong>
+														</li>
+														<li class="item">
+															<span class="case">월세</span>
+															<strong class="count hasValue">3</strong>
+														</li>
+														<li class="item">
+															<span class="case">연세</span>
+															<strong class="count">0</strong>
+														</li>
+													</ul>
+												</a>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="figSec">
+											<div class="figSecItem">
+												<a href="#" class="defineSec">
+													<span class="flag sthType">아파트</span> <span class="flagLabel">서울 서초구 반포동</span>
+													<strong class="defineSecPrice"><em class="price">반포주공</em></strong>
+													<p class="defineSecNormal">N세대, 총N동, 최저면적~최고면적㎡</p>
+													<p class="defineSecNormal">1980.10. 준공</p>
+													<ul class="dealBoard typeWide mt10">
+														<li class="item">
+															<span class="case">매매</span>
+															<strong class="count hasValue">43</strong>
+														</li>
+														<li class="item">
+															<span class="case">전세</span>
+															<strong class="count hasValue">13</strong>
+														</li>
+														<li class="item">
+															<span class="case">월세</span>
+															<strong class="count hasValue">3</strong>
+														</li>
+														<li class="item">
+															<span class="case">연세</span>
+															<strong class="count">0</strong>
+														</li>
+													</ul>
+												</a>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="figSec">
+											<div class="figSecItem">
+												<a href="#" class="defineSec">
+													<span class="flag sthType">아파트</span> <span class="flagLabel">서울 서초구 반포동</span>
+													<strong class="defineSecPrice"><em class="price">반포주공</em></strong>
+													<p class="defineSecNormal">N세대, 총N동, 최저면적~최고면적㎡</p>
+													<p class="defineSecNormal">1980.10. 준공</p>
+													<ul class="dealBoard typeWide mt10">
+														<li class="item">
+															<span class="case">매매</span>
+															<strong class="count hasValue">43</strong>
+														</li>
+														<li class="item">
+															<span class="case">전세</span>
+															<strong class="count hasValue">13</strong>
+														</li>
+														<li class="item">
+															<span class="case">월세</span>
+															<strong class="count hasValue">3</strong>
+														</li>
+														<li class="item">
+															<span class="case">연세</span>
+															<strong class="count">0</strong>
+														</li>
+													</ul>
+												</a>
+											</div>
+										</article>
+									</li>
+								</ul>
+								<!--//단지-->
+								
+						
+								
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<!--//하단 목록 레이어-->
+			
+			<!-- // end of contents -->
+		</div><!-- //container -->
+		
+		<div class="dockBar">
+			<div class="inner">
+				<a href="#" role="button" class="btNavi01" aria-selected="false">홈</a>
+				<a href="#" role="button" class="btNavi02" aria-selected="false">분양</a>
+				<a href="#" role="button" class="btNavi03" aria-selected="true">지도</a>
+				<a href="#" role="button" class="btNavi04" aria-selected="false">관심</a>
+				<div id="navi" class="naviWrap">
+					<button type="button" class="btNav" aria-expanded="false">메뉴</button>
+					<nav>
+						<div class="navInner">메뉴영역</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- toastPopup -->
+	<div class="toastPopup"><!-- 토스트팝업 띄울때 display:block 시켜줌.-->
+		<p class="txt">관심 지역으로 등록되었어요</p>
+	</div>
+	<!-- //toastPopup -->
+	
+	
+	<!-- 지도 설정 BS -->
+	<section id="pop_mapSetting" class="layPop layBtm" tabindex="0">
+		<header>
+			<h2 class="titLay">지도 설정</h2>
+		</header>
+		<div class="layContainer" tabindex="0">
+			<div class="layContent">
+				
+				<h3 class="titDep4 mt0">지도 유형</h3>
+				<ul class="frmBox mapTypeSelect">
+					<li><input type="radio" id="normal" name="chkMapType" class="img_mapTypeNormal" checked><label for="normal">일반</label></li>
+					<li><input type="radio" id="land" name="chkMapType" class="img_mapTypeLand"><label for="land">지적</label></li>
+					<li><input type="radio" id="terrain" name="chkMapType" class="img_mapTypeTerrain"><label for="terrain">지형</label></li>
+				</ul>
+				
+				<h3 class="titDep4">안전 / 편의 시설</h3>
+				<ul class="frmBox selectFacility">
+					<li><input type="radio" id="convenience" name="chkFacility" class="icon_convenience"><label for="convenience">편의점</label></li>
+					<li><input type="radio" id="medical" name="chkFacility" class="icon_medical"><label for="medical">의료</label></li>
+					<li><input type="radio" id="shopping" name="chkFacility" class="icon_shopping"><label for="shopping">쇼핑</label></li>
+					<li><input type="radio" id="gym" name="chkFacility" class="icon_gym"><label for="gym">운동</label></li>
+					<li><input type="radio" id="traffic" name="chkFacility" class="icon_traffic"><label for="traffic">교통</label></li>
+					<li><input type="radio" id="police" name="chkFacility" class="icon_police"><label for="police">치안</label></li>
+					<li><input type="radio" id="cctv" name="chkFacility" class="icon_cctv"><label for="cctv">CCTV</label></li>
+				</ul>
+				
+				<p class="referText mt16">안전/편의 시설은 100m 비율부터 노출돼요.</p>
+			</div>
+			<div class="popBtns">
+				<div class="inner btnArea type02">
+					<button type="button" class="btnDefault btnL action">확인</button>
+				</div>
+			</div>
+		</div><!-- //layContainer-->
+		<button type="button" class="closeL">팝업 닫기</button>
+	</section>
+	<!--// 지도 설정 BS -->
+	
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/mptl/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/mptl/swiper.min.js"></script>
+<script type="text/javascript" src="/js/mptl/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/mptl/m_common.js"></script>
+
+</html>
+

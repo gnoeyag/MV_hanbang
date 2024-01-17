@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>위치정보 일반 지도 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/mptl/h_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+
+
+		</header>
+
+		<div id="container" class="container">
+			<!-- start of contents -->
+
+
+
+
+			<!-- // end of contents -->
+		</div><!-- //container -->
+
+
+	</section>
+
+	<!-- 위치정보_일반 지도 FP -->
+	<section id="ACM_E07_FP" class="layPop layFull layFull-type02" tabindex="0">
+		<header>
+			<h2 class="titLay">서울 광진구 구의동 661</h2>
+		</header>
+
+		<div class="layContainer" tabindex="0">
+			<div class="layContent">
+
+				<div class="mapArea mapFull">  <!-- 2023.10.05 수정 / mapFull 클래스 추가 -->
+					<!-- 일반지도로 보기 -->
+					<div class="mapType">
+						<img src="/images/magnt/dummy/@img_map02.jpg" alt="">
+						<strong class="icoPin" style="top:350px;left:164px"><span class="hidden">현재위치</span></strong>
+					</div>
+					<!-- //일반지도로 보기 -->
+
+					<!-- 로드맵으로 보기 -->
+					<div class="roadmapType" style="display: none;">
+						<img src="/images/magnt/dummy/@img_map03.jpg" alt="">
+						<strong class="icoPin" style="top:350px;left:164px"><span class="hidden">현재위치</span></strong>
+					</div>
+					<!-- //일반지도로 보기 -->					
+				</div>
+				<div class="mapBtnArea">
+					<span class="frmMap icNormal"><input type="radio" id="radMapNormal01" name="radMapSel" checked><label for="radMapNormal01">일반지도로 보기</label></span>
+					<span class="frmMap icRoadview"><input type="radio" id="radMapRoad01" name="radMapSel"><label for="radMapRoad01">로드맵으로 보기</label></span>
+				</div>
+			</div>
+		</div><!-- //layContainer-->
+		<button type="button" class="closeL">팝업 닫기</button>
+
+	</section>
+	<!--// 위치정보_일반 지도 FP -->
+
+
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/mptl/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/mptl/swiper.min.js"></script>
+<script type="text/javascript" src="/js/mptl/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/mptl/m_common.js"></script>
+<script>
+	$(function(){
+		// 위치정보_일반 지도 호출
+		mvJs.popup.show($('#ACM_E07_FP'));
+	})
+</script>
+</html>
+

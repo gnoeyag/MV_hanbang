@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <path data-name="패스 65775" d="M5.909 6.129V4.755a4.005 4.005 0 1 1 8.01 0v15.919" transform="translate(3.344 .789)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+    <path data-name="패스 65777" d="M7.617 13.015H2.691V9.74a1.964 1.964 0 0 1 1.964-1.964h1A1.964 1.964 0 0 1 7.617 9.74z" transform="translate(4.098 -.857)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+    <path data-name="선 317" transform="translate(9.252 15.125)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="M0 0v.879"/>
+    <path data-name="선 318" transform="translate(9.252 18.315)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="M0 0v.879"/>
+    <path data-name="선 319" transform="translate(9.252 21.504)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="M0 0v.879"/>
+    <path data-name="선 320" transform="translate(6.247 15.125)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="M.13 0 0 .869"/>
+    <path data-name="선 321" transform="translate(5.775 18.279)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="M.13 0 0 .869"/>
+    <path data-name="선 322" transform="translate(5.303 21.434)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="M.13 0 0 .869"/>
+    <path data-name="선 323" transform="translate(12.128 15.125)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="m0 0 .13.869"/>
+    <path data-name="선 324" transform="translate(12.6 18.279)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="m0 0 .13.869"/>
+    <path data-name="선 325" transform="translate(13.072 21.434)" style="fill:none;stroke:#707070;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="m0 0 .13.869"/>
+</svg>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>내 집 찾기 | 한방부동산</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/mptl/h_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<p class="skip"><a href="#container">본문 바로가기</a></p>
+	<section id="wrapper" class="wrapper">
+		<header>
+			<button type="button" class="btprev">이전</button>
+			<h1 class="titPage">내 집 찾기</h1>
+		</header>
+	
+		<div id="container" class="container">
+			<!-- start of contents -->
+			
+			<h2 class="titDep2 findHomeTit">내 집 찾기</h2>
+			<p class="normalText">원하는 집을 찾을 때까지! <br>
+				간단한 질문만으로 찾는 조건에 딱 맞는 매물을 찾아드려요.</p>  <!--20230830 문구 수정 -->
+			
+			<h3 class="titDep4 mt32">선호 지역 선택</h3>
+			
+			<div class="inpFrm searchArea type02 inpDeleteAni mt12">
+				<div class="inpA roleBtnSch hasIcoSch icoNone"> <!-- 2023.10.26 수정 / icoNone 클래스 추가 -->
+					<input type="text" id="inpSearch02" placeholder="선호 지역명을 입력해 주세요" title="읍/면/동 검색" value="서울 동작구 신대방동">
+					<button type="button" class="icBtn icDel">삭제</button>
+					<button type="button" class="btSearch" style="display: none;">검색</button>
+				</div>
+				
+				<!--검색어 입력 시 노출 레이어-->
+				<!--[D] 자동완성 중 인 경우 해당 searchIngResult 영역 활성화-->
+				<div class="searchIngResult inpBtm" style="display:none">
+					<ul class="list">
+						<li>
+							<a href="#" class="item">
+								<em class="word">경기 평택시 <strong class="matching">신대</strong>동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">대전 대덕구 <strong class="matching">신대</strong>동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">서울 동작구 <strong class="matching">신대</strong>방동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">경기 평택시 <strong class="matching">신대</strong>동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">대전 대덕구 <strong class="matching">신대</strong>동</em>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<em class="word">서울 동작구 <strong class="matching">신대</strong>방동</em>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--//검색어 입력 시 노출 레이어-->
+			</div>
+			
+			<p class="referText">검색 지역의 시/군/구 기준으로 맞춤 매물을 찾아 드려요.</p>
+			
+			<!-- // end of contents -->
+		</div><!-- //container -->
+		
+		<div class="floatingBtns">
+			<div class="btnArea">
+				<button type="button" class="btnDefault btnL action">다음</button>
+			</div>
+		</div>
+		
+		<aside>
+			<div class="asideRight">
+				<button type="button" class="btTop">페이지 상단으로 이동</button><!-- 2023.08.16 onClick 이벤트 삭제 -->
+			</div>
+		</aside>
+	</section>
+	
+
+	
+	
+	
+	<div class="dimmed"></div>
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/mptl/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/mptl/swiper.min.js"></script>
+<script type="text/javascript" src="/js/mptl/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/mptl/m_common.js"></script>
+
+</html>
+

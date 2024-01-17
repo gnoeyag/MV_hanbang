@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>캘린더 템플릿</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="/css/magnt/a_content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<section id="wrapper" class="wrapper">
+			
+		<div id="container" class="container">
+			<!-- start of contents -->
+
+			<ul class="inpList">
+				<!-- 단일 type -->
+				<li class="inpFrm">
+					<div class="inpA">
+						<input type="date" id="inpTitsample01" data-placeholder="YYYY-MM-DD" required>
+					</div>
+					<p class="txtErr">날짜 형식이 올바르지 않습니다.</p>
+				</li>
+
+				<!-- range type -->
+				<li class="inpFrm">
+					<div class="calendar">
+						<span class="inpW">
+							<input type="date" id="inpTitsample02" data-placeholder="YYYY-MM-DD" required>
+						</span>
+						<span class="wave">~</span>
+						<span class="inpW">
+							<input type="date" id="inpTitsample03" data-placeholder="YYYY-MM-DD" required>
+						</span>
+					</div>
+					<p class="txtErr">날짜 형식이 올바르지 않습니다.</p>
+					<p class="txtErr">조회 기간이 올바르지 않습니다. 다시 선택해주세요.</p>
+				</li>
+			</ul>
+
+		
+			<!-- // end of contents -->
+		</div><!-- //container -->		
+	</section>
+
+</body>
+
+<script type="text/javascript" src="/js/mptl/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/magnt/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/magnt/swiper.min.js"></script>
+<script type="text/javascript" src="/js/magnt/m_selectbox.js"></script>
+<script type="text/javascript" src="/js/magnt/m_common.js"></script>
+</html>
